@@ -1,0 +1,15 @@
+trait,treatment,n_corals,n_events,median_day,iqr_low,iqr_high
+hole_in_center,28C,12,12,3.5,3,4
+hole_in_center,31C,12,12,3,3,4
+new_corallites_on_tip,28C,12,12,12,12,12.5
+new_corallites_on_tip,31C,12,4,14,13.5,14
+pigment_over_wound,28C,12,4,3.5,3,6
+pigment_over_wound,31C,12,6,15,6.75,15
+polyp_in_hole,28C,12,12,3.5,3,4
+polyp_in_hole,31C,12,12,3,3,4
+tip_exist,28C,12,12,6,6,6.5
+tip_exist,31C,12,12,6,6,8
+tip_extension,28C,12,11,8,8,8
+tip_extension,31C,12,11,8,8,9
+wound_smoothed,28C,12,12,4,4,6
+wound_smoothed,31C,12,12,4,4,4

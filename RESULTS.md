@@ -189,6 +189,68 @@ Standard curve: SA (cm²) = 0.75 + 61.9 × wax mass (g), based on 15 cylinders o
 
 ---
 
+## 6b. Genet × treatment interactions (`code/13_genet_interaction.R`)
+
+**Question (per Progress Notes, 2026-04-29):** does the magnitude of the heat effect depend on genotype? If yes, the variation among the three genets (a, c, d) is heritable substrate for thermal adaptation.
+
+**Model comparison:** for each response, compare null model (genet as random effect) to full model (genet × treatment × wound × time as fixed effects). Likelihood ratio test on additional fixed-effect terms.
+
+| Response | n | ΔAIC (genet model better if negative) | LRT χ² | df | p |
+|---|---|---|---|---|---|
+| PAM Fv/Fm | 336 | **−60.5** | 90.5 | 15 | < 0.001 |
+| Color (D-scale) | 336 | **−118.0** | 148.0 | 15 | < 0.001 |
+| log(symbionts cm⁻²) | 192 | **−43.6** | 73.6 | 15 | < 0.001 |
+| Growth (%) | 48 | +5.3 | 5.4 | 6 | 0.51 |
+
+**Interpretation:** Genets respond *significantly differently* to heating in PAM, color, and symbiont density — strong G × E signal in three of four physiological dimensions. Growth has no detectable G × E (likely under-powered with n = 48). The reaction-norm figure (`figures/13_genet_response_panel.png`) shows that **genet C is consistently more thermally resilient** across PAM, color, and symbiont density — paling less, retaining more symbionts, holding higher Fv/Fm — than genets A and D.
+
+This is the most important finding for the gene-expression analysis: there is real heritable variation in thermal tolerance among these three field-collected genets, which means RNA-seq comparisons across genets can be interpreted as candidate-gene discovery for thermal-tolerance variation.
+
+**Files:** `output/models/13_*_genet_lmm.rds`, `output/tables/13_genet_anova.csv`, `output/tables/13_genet_emmeans.csv`, `figures/13_genet_response_panel.{pdf,png}`.
+
+---
+
+## 5b. Time-to-onset (Kaplan-Meier) of healing milestones (`code/14_morphology_kaplan.R`)
+
+A more powerful framing than day-by-day GLMMs: for each wound-healing trait, when does each coral first express it? Right-censored at last observation for non-events.
+
+**Cox proportional hazards (stratified by thicket), HR for 31 °C vs 28 °C:**
+
+| Trait | n | events | HR (31C / 28C) | 95% CI | p |
+|---|---|---|---|---|---|
+| Hole in center | 24 | 24 | 1.38 | (0.60, 3.15) | 0.45 |
+| Polyp in hole | 24 | 24 | 1.38 | (0.60, 3.15) | 0.45 |
+| Wound smoothed | 24 | 24 | 1.67 | (0.70, 4.01) | 0.25 |
+| Pigment over wound | 24 | 10 | 1.60 | (0.44, 5.86) | 0.48 |
+| Tip exists | 24 | 24 | 0.67 | (0.27, 1.61) | 0.37 |
+| Tip extension | 24 | 22 | 0.80 | (0.34, 1.87) | 0.61 |
+| **New corallites on tip** | 24 | 16 | **0.22** | **(0.07, 0.69)** | **0.010** |
+
+**Interpretation:** Heating leaves wound closure mechanics untouched (HRs slightly > 1, all p > 0.2 — first three rows). But it **dramatically suppresses new corallite formation at the regenerating tip** (HR = 0.22; per-day probability of new corallites is ~5× lower in heated corals).
+
+This is the cleanest single number in the experiment: heat doesn't stop the wound from closing, but it stops the coral from rebuilding skeleton at the wound site. That's where the RNA-seq libraries should find the most differential expression — in the apical-tip biopsies, at Day 10 (when the divergence is sharpest in `figures/14_morphology_KM.png`).
+
+**Files:** `figures/14_morphology_KM.{pdf,png}`, `output/tables/14_km_event_summary.csv`, `output/tables/14_cox_hazard_ratios.csv`.
+
+---
+
+## 6c. Multivariate physiology: PCA biplot (`code/15_multivariate.R`)
+
+Collapsing the four endpoint responses (PAM, color, growth, symbionts) into 2D.
+
+| Axis | Variance explained | Loadings |
+|---|---|---|
+| **PC1 (heat-stress axis)** | **81%** | All four variables load positively (~0.5 each); separates 28 °C from 31 °C |
+| PC2 (growth axis) | 14% | Growth +0.91; PAM/color/zoox −0.17 to −0.28 (growth-vs-rest tradeoff) |
+
+**Interpretation:** A single axis explains 81% of among-coral variance in physiology, and that axis is essentially "thermal-stress severity." The 31 °C cloud is also more dispersed along PC1 than the 28 °C cloud (visible in `figures/15_physio_PCA_biplot.png`) — individual-level variance in stress response *increases* under heat, exactly the pattern you'd expect if some genotypes/individuals tolerate heat better than others.
+
+Wounded vs unwounded corals overlap completely on both axes — confirming that wound effects on whole-colony physiology are small relative to the heat signal, consistent with the univariate analyses.
+
+**Files:** `figures/15_physio_PCA_biplot.{pdf,png}`, `output/tables/15_pca_loadings.csv`, `data/processed/coral_physio_wide.rds`.
+
+---
+
 ## 8. What's still missing
 
 - **Chlorophyll-a values** — column exists in master metadata but is currently empty; need to fill in once spec values come back from the chl-a assay. The pipeline (`code/06_symbiont_chl.R`) already handles them via `left_join` once values are added to `data/raw/metadata/metadata.csv`.

@@ -23,7 +23,10 @@ scripts <- c(
   "09_ysi_water_chem.R",
   "10_worms.R",
   "11_combined_figure.R",
-  "12_extended_stats.R"
+  "12_extended_stats.R",
+  "13_genet_interaction.R",
+  "14_morphology_kaplan.R",
+  "15_multivariate.R"
 )
 
 t0 <- Sys.time()
