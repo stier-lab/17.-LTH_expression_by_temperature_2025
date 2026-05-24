@@ -4,11 +4,8 @@
 #          Total runtime ~3 minutes (Apex XML parse dominates first pass).
 # =============================================================================
 
-# Source from project root regardless of cwd
-project_root <- normalizePath(dirname(dirname(sys.frame(1)$ofile %||% "code/_run_all.R")))
-if (!dir.exists(file.path(project_root, "code"))) {
-  project_root <- here::here()
-}
+# Source from project root (resolve via here::here, which uses .Rproj/.here)
+project_root <- here::here()
 setwd(project_root)
 
 scripts <- c(
@@ -26,7 +23,8 @@ scripts <- c(
   "12_extended_stats.R",
   "13_genet_interaction.R",
   "14_morphology_kaplan.R",
-  "15_multivariate.R"
+  "15_multivariate.R",
+  "16_main_figure.R"
 )
 
 t0 <- Sys.time()

@@ -1,0 +1,17 @@
+file,size_kb,mtime,status
+02_pam_fvfm_trajectory.png,126.4,2026-05-24T05:04:42Z,PASS
+03_color_trajectory.png,102,2026-05-24T05:04:42Z,PASS
+04_morphology_trajectories.png,236.5,2026-05-24T05:04:43Z,PASS
+05_buoyant_weight_growth.png,97.7,2026-05-24T05:04:44Z,PASS
+06_symbiont_chl_by_day.png,168,2026-05-24T05:04:44Z,PASS
+06_symbiont_density_by_day.png,136.4,2026-05-24T05:04:44Z,PASS
+07_wax_standard_curve.png,93.7,2026-05-24T05:04:44Z,PASS
+08_apex_temperature.png,210.7,2026-05-24T05:06:17Z,PASS
+08b_apex_temperature_full.png,184.7,2026-05-24T05:06:17Z,PASS
+09_ysi_water_chem.png,451.8,2026-05-24T05:06:18Z,PASS
+10_worm_presence.png,111,2026-05-24T05:06:18Z,PASS
+11_main_response_panel.png,277.8,2026-05-24T05:06:19Z,PASS
+13_genet_response_panel.png,157,2026-05-24T05:06:22Z,PASS
+14_morphology_KM.png,112,2026-05-24T05:06:23Z,PASS
+15_physio_PCA_biplot.png,137,2026-05-24T05:06:23Z,PASS
+16_manuscript_fig1.png,370.4,2026-05-24T05:06:24Z,PASS
