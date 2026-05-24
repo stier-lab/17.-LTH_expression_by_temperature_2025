@@ -1,0 +1,150 @@
+# =============================================================================
+# Purpose: Integrative cross-response genet dashboard. For each of the 3
+#          genets (a, c, d), compute a standardized "heat sensitivity" effect
+#          across every response variable (PAM, color, growth, symbionts,
+#          and 7 morphology traits). Build a forest plot of all effect sizes
+#          to identify which genet is most/least thermally sensitive across
+#          every dimension.
+#
+#          Also produces a composite "thermal resilience score" per genet
+#          — the inverse of mean standardized effect across responses.
+#
+# Input:   output/tables/12_genet_treatment_effects.csv   (continuous responses)
+#          output/tables/14_cox_hazard_ratios.csv         (per-genet HR for KM)
+#          output/tables/15_genet_pca_displacement.csv    (multivariate)
+# Output:  figures/19_genet_dashboard.{pdf,png}            — forest plot
+#          figures/19b_genet_resilience_ranking.{pdf,png}  — composite score
+#          output/tables/19_genet_resilience_summary.csv
+# =============================================================================
+
+source(here::here("code", "00_setup.R"))
+
+cont <- read_csv(file.path(TBL_DIR, "12_genet_treatment_effects.csv"),
+                 show_col_types = FALSE)
+cox  <- read_csv(file.path(TBL_DIR, "14_cox_hazard_ratios.csv"),
+                 show_col_types = FALSE)
+pca  <- read_csv(file.path(TBL_DIR, "15_genet_pca_displacement.csv"),
+                 show_col_types = FALSE)
+
+# ---- Standardize continuous-response effects ------------------------------
+# Continuous responses (from script 12) give estimate = mean(28C) - mean(31C)
+# at Day 14 (end of experiment) per genet × wound, with SE. We collapse over
+# wound (both wounded and unwounded show heat effects), keeping the
+# standardized effect as estimate / SD_pooled.
+cont_eff <- cont |>
+  group_by(response, thicket) |>
+  summarise(estimate = mean(estimate, na.rm = TRUE),
+            se = mean(SE, na.rm = TRUE),
+            .groups = "drop") |>
+  # Re-scale per-response so values are comparable
+  group_by(response) |>
+  mutate(z = estimate / max(abs(estimate), na.rm = TRUE)) |>
+  ungroup() |>
+  mutate(metric = "Δ phenotype (28C − 31C, end of experiment)")
+
+# ---- Standardize Cox hazard ratios (per genet) ----------------------------
+# HR < 1 means 31C delays/prevents trait expression — i.e., heat sensitivity.
+# Convert to log(HR) so negative = heat-impaired, positive = heat-promoted.
+cox_per_genet <- cox |>
+  filter(grepl("^genet=", scope), is.finite(HR_31_vs28),
+         HR_31_vs28 > 0, HR_31_vs28 < Inf) |>
+  mutate(thicket = sub("^genet=", "", scope),
+         logHR = log(HR_31_vs28),
+         response = paste0("morph_", trait))
+
+cox_eff <- cox_per_genet |>
+  group_by(response) |>
+  mutate(z = -logHR / max(abs(logHR), na.rm = TRUE)) |>
+  # Sign flipped: more negative HR (delayed healing) → more positive z (more impaired)
+  ungroup() |>
+  select(response, thicket, estimate = logHR, z) |>
+  mutate(metric = "−log(HR 31C/28C) for healing trait onset",
+         se = NA_real_)
+
+# ---- Combine and forest plot ---------------------------------------------
+all_eff <- bind_rows(
+  cont_eff |> select(response, thicket, estimate, se, z, metric),
+  cox_eff
+) |>
+  mutate(
+    response_label = case_when(
+      response == "pam_fvfm"          ~ "PAM Fv/Fm",
+      response == "color_dscale"      ~ "Color (D-scale)",
+      response == "growth_pct"        ~ "Growth %",
+      response == "log_zoox_density"  ~ "log symbionts cm⁻²",
+      grepl("^morph_", response)      ~ str_to_sentence(
+        gsub("_", " ", sub("^morph_", "", response))),
+      TRUE                            ~ response
+    ),
+    domain = case_when(
+      response %in% c("pam_fvfm","color_dscale","growth_pct","log_zoox_density")
+        ~ "Physiology",
+      grepl("hole|polyp|smoothed", response_label, ignore.case = TRUE)
+        ~ "Wound closure",
+      grepl("tip|corallite", response_label, ignore.case = TRUE)
+        ~ "Regeneration",
+      TRUE
+        ~ "Other"
+    )
+  )
+
+# Sort by domain then by response_label for the y-axis
+all_eff <- all_eff |>
+  mutate(response_label = factor(response_label,
+                                  levels = unique(response_label[order(domain, response_label)])))
+
+p_dash <- ggplot(all_eff,
+                  aes(z, response_label,
+                      colour = thicket, shape = thicket)) +
+  geom_vline(xintercept = 0, linetype = "dashed", colour = "grey60",
+             linewidth = 0.3) +
+  geom_point(size = 3.2, alpha = 0.9) +
+  scale_colour_manual(values = PAL_GENO, name = "Genet") +
+  scale_shape_manual(values = c(a = 16, c = 17, d = 15), name = "Genet") +
+  facet_grid(domain ~ ., scales = "free_y", space = "free_y") +
+  labs(x = "Standardized heat sensitivity (each row's max-scaled effect)",
+       y = NULL,
+       title = "Genet × response heat-sensitivity dashboard",
+       subtitle = "Right of zero = the genet's phenotype is worse under 31 °C than 28 °C") +
+  theme_pub(9) +
+  theme(panel.grid.major.y = element_line(colour = "grey95", linewidth = 0.2),
+        strip.text.y = element_text(face = "bold"))
+
+save_fig(p_dash, "19_genet_dashboard", width = 180, height = 175)
+
+# ---- Composite thermal resilience score ----------------------------------
+# Per genet: mean standardized heat sensitivity across all responses.
+# More-negative composite = more resilient (smaller heat effects).
+resilience <- all_eff |>
+  group_by(thicket) |>
+  summarise(
+    mean_sensitivity   = mean(z, na.rm = TRUE),
+    median_sensitivity = median(z, na.rm = TRUE),
+    n_responses        = n(),
+    .groups = "drop"
+  ) |>
+  left_join(pca |> select(thicket, pca_displacement = displacement),
+            by = "thicket") |>
+  mutate(rank_overall = rank(mean_sensitivity))
+
+write_csv(resilience, file.path(TBL_DIR, "19_genet_resilience_summary.csv"))
+
+p_rank <- ggplot(resilience,
+                  aes(reorder(thicket, -mean_sensitivity),
+                      mean_sensitivity, fill = thicket)) +
+  geom_col(width = 0.55, alpha = 0.85, colour = "black", linewidth = 0.3) +
+  geom_text(aes(label = sprintf("displacement = %.2f", pca_displacement)),
+            vjust = -0.4, size = 3, colour = "grey20") +
+  scale_fill_manual(values = PAL_GENO, guide = "none") +
+  labs(x = "Genet", y = "Mean standardized heat sensitivity",
+       title = "Thermal resilience ranking across all responses",
+       subtitle = "Bar height = average heat penalty across 11 responses; lower = more resilient. Text shows multivariate PCA displacement.") +
+  coord_cartesian(ylim = c(0, max(resilience$mean_sensitivity) * 1.15)) +
+  theme_pub(10)
+
+save_fig(p_rank, "19b_genet_resilience_ranking", width = 130, height = 110)
+
+cat("\n=== Genet resilience summary ===\n")
+print(resilience |> mutate(across(where(is.numeric), \(x) round(x, 3))))
+cat("\nWrote 19_genet_dashboard.{pdf,png}, 19b_genet_resilience_ranking.{pdf,png},",
+    "19_genet_resilience_summary.csv\n")

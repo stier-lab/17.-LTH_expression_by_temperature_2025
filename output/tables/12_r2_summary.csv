@@ -1,5 +1,5 @@
 response,R2_marginal,R2_conditional
-pam_fvfm,0.397,0.682
-color_dscale,0.507,0.754
-growth_pct,0.322,0.655
-log_zoox_density,0.577,0.686
+pam_fvfm,0.622,0.719
+color_dscale,0.706,0.824
+growth_pct,0.386,0.386
+log_zoox_density,0.719,0.758

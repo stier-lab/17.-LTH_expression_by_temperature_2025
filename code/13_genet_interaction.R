@@ -1,21 +1,30 @@
 # =============================================================================
-# Purpose: Test for genet × treatment interactions in the four primary
-#          continuous responses. The Progress Notes flagged this as a key
-#          question: "Add in genet effects and see if there is a difference."
-#          If genets respond differently to heating, that genetic variation
-#          is the substrate for adaptation.
+# Purpose: Formal LRT test of whether adding genet × treatment improves fit
+#          over a baseline without genet structure, plus a reaction-norm
+#          figure showing each genet's mean response shift under heating.
+#
+#          Note: the BROADER genet analysis (per-response interaction tests,
+#          per-genet emmeans contrasts, full ANOVA) is integrated into the
+#          primary statistics in code/12_extended_stats.R. This script is the
+#          focused formal test that the Progress Notes asked for (2026-04-29:
+#          "Add in genet effects and see if there is a difference"), kept as
+#          a separate file so reviewers can replicate the comparison directly.
 #
 #          For each response we compare:
-#            null:  response ~ treatment * wound * day + (1|tank) + (1|thicket) + (1|id)
-#            genet: response ~ treatment * wound * day * thicket + (1|tank) + (1|id)
-#          The interaction terms involving thicket are the test of genet
-#          variation in plasticity.
+#            null:  response ~ treatment * wound * day + (1|tank) + (1|id)
+#                                + (1|thicket)               # genet as random
+#            genet: response ~ treatment * wound * day * thicket
+#                                + (1|tank) + (1|id)         # genet as fixed
+#          The likelihood-ratio test on the additional fixed-effect terms is
+#          the formal test of genet variation in plasticity. Significant LRT
+#          → adding genet × treatment significantly improves fit.
+#
 # Input:   data/processed/{pam_clean,color_clean,buoyant_weight_clean,
 #                          symbiont_chl_clean}.rds
-# Output:  output/tables/13_genet_anova.csv             — interaction tests
-#          output/tables/13_genet_emmeans.csv           — per-genet means
+# Output:  output/tables/13_genet_anova.csv             — LRT comparison
+#          output/tables/13_genet_emmeans.csv           — per-genet end-of-exp means
 #          figures/13_genet_response_panel.{pdf,png}    — 4-panel reaction norms
-#          output/models/13_<response>_genet_lmm.rds
+#          output/models/13_<response>_genet_lmm.rds   — alt-model objects
 # =============================================================================
 
 source(here::here("code", "00_setup.R"))

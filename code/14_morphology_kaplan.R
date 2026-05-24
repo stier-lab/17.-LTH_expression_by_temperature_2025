@@ -2,13 +2,21 @@
 # Purpose: Time-to-onset analysis for each wound-healing morphological trait.
 #          For each wounded coral, compute the day when each binary trait
 #          first switches from 0 -> 1 ("event" day). Then fit Kaplan-Meier
-#          curves and Cox proportional-hazards models comparing 28 vs 31 °C.
-#          This is a more powerful framing than the day-by-day GLMMs because
-#          it tests "does heating delay (or prevent) healing milestones?".
+#          curves and Cox proportional-hazards models.
+#
+#          Three Cox tests per trait (nested for LRT comparison):
+#            (a) baseline:    Surv ~ treatment
+#            (b) +genet:      Surv ~ treatment + thicket
+#            (c) interaction: Surv ~ treatment * thicket
+#          LRT (a→b) tests main effect of genet on hazard; LRT (b→c) tests
+#          whether the temperature effect depends on genet.
+#
 # Input:   data/processed/physio_clean.rds
-# Output:  output/tables/14_km_event_summary.csv      — per-trait median time
-#          output/tables/14_cox_hazard_ratios.csv     — HR for 31 vs 28
-#          figures/14_morphology_KM.{pdf,png}         — KM facet figure
+# Output:  output/tables/14_km_event_summary.csv         — per-trait/genet/treatment
+#          output/tables/14_cox_hazard_ratios.csv        — HR for 31 vs 28 (overall + by genet)
+#          output/tables/14_cox_genet_LRT.csv            — does genet × treatment improve fit?
+#          figures/14_morphology_KM.{pdf,png}            — KM by treatment
+#          figures/14b_morphology_KM_by_genet.{pdf,png}  — KM by treatment × genet
 # =============================================================================
 
 source(here::here("code", "00_setup.R"))
@@ -44,31 +52,32 @@ compute_events <- function(d, trait) {
 events <- map_dfr(traits, ~ compute_events(ph, .x))
 
 # ---- KM summary tables ----------------------------------------------------
+# Per trait × genet × treatment median time-to-event
 km_summary <- events |>
-  group_by(trait, treatment) |>
+  group_by(trait, treatment, thicket) |>
   summarise(
     n_corals    = n(),
     n_events    = sum(event),
-    median_day  = median(event_day[event == 1]),
-    iqr_low     = quantile(event_day[event == 1], 0.25, na.rm = TRUE),
-    iqr_high    = quantile(event_day[event == 1], 0.75, na.rm = TRUE),
+    median_day  = if (sum(event) > 0) median(event_day[event == 1]) else NA_real_,
+    iqr_low     = if (sum(event) > 0) quantile(event_day[event == 1], 0.25, na.rm = TRUE) else NA_real_,
+    iqr_high    = if (sum(event) > 0) quantile(event_day[event == 1], 0.75, na.rm = TRUE) else NA_real_,
     .groups = "drop"
   )
 write_csv(km_summary, file.path(TBL_DIR, "14_km_event_summary.csv"))
 
-# ---- Cox PH per trait -----------------------------------------------------
-fit_cox <- function(tr) {
+# ---- Cox PH per trait (overall + per genet) -------------------------------
+fit_cox_overall <- function(tr) {
   d <- events |> filter(trait == tr)
   if (sum(d$event) < 5) return(NULL)
   fit <- tryCatch(
-    coxph(Surv(event_day, event) ~ treatment + strata(thicket),
-          data = d),
+    coxph(Surv(event_day, event) ~ treatment + strata(thicket), data = d),
     error = function(e) NULL
   )
   if (is.null(fit)) return(NULL)
   s <- summary(fit)
   tibble(
     trait      = tr,
+    scope      = "overall (strata=thicket)",
     n          = s$n,
     n_event    = s$nevent,
     HR_31_vs28 = s$conf.int[1, "exp(coef)"],
@@ -78,8 +87,69 @@ fit_cox <- function(tr) {
     p          = s$coefficients[1, "Pr(>|z|)"]
   )
 }
-cox_results <- map_dfr(traits, fit_cox)
+
+fit_cox_per_genet <- function(tr) {
+  events |>
+    filter(trait == tr) |>
+    group_by(thicket) |>
+    group_modify(\(d, k) {
+      if (sum(d$event) < 3) {
+        return(tibble(HR_31_vs28 = NA_real_, HR_lo = NA_real_,
+                      HR_hi = NA_real_, z = NA_real_, p = NA_real_,
+                      n = nrow(d), n_event = sum(d$event)))
+      }
+      fit <- tryCatch(
+        coxph(Surv(event_day, event) ~ treatment, data = d),
+        error = function(e) NULL
+      )
+      if (is.null(fit)) {
+        return(tibble(HR_31_vs28 = NA_real_, HR_lo = NA_real_,
+                      HR_hi = NA_real_, z = NA_real_, p = NA_real_,
+                      n = nrow(d), n_event = sum(d$event)))
+      }
+      s <- summary(fit)
+      tibble(HR_31_vs28 = s$conf.int[1, "exp(coef)"],
+             HR_lo      = s$conf.int[1, "lower .95"],
+             HR_hi      = s$conf.int[1, "upper .95"],
+             z          = s$coefficients[1, "z"],
+             p          = s$coefficients[1, "Pr(>|z|)"],
+             n          = s$n, n_event = s$nevent)
+    }) |>
+    ungroup() |>
+    mutate(trait = tr, scope = paste0("genet=", thicket)) |>
+    select(trait, scope, n, n_event, HR_31_vs28, HR_lo, HR_hi, z, p)
+}
+
+cox_overall   <- map_dfr(traits, fit_cox_overall)
+cox_per_genet <- map_dfr(traits, fit_cox_per_genet)
+cox_results   <- bind_rows(cox_overall, cox_per_genet)
 write_csv(cox_results, file.path(TBL_DIR, "14_cox_hazard_ratios.csv"))
+
+# ---- LRT: does genet × treatment improve over treatment + genet? ----------
+fit_lrt <- function(tr) {
+  d <- events |> filter(trait == tr)
+  if (sum(d$event) < 10) return(NULL)
+  m_base  <- tryCatch(coxph(Surv(event_day, event) ~ treatment, data = d),
+                      error = function(e) NULL)
+  m_add   <- tryCatch(coxph(Surv(event_day, event) ~ treatment + thicket, data = d),
+                      error = function(e) NULL)
+  m_inter <- tryCatch(coxph(Surv(event_day, event) ~ treatment * thicket, data = d),
+                      error = function(e) NULL)
+  if (any(sapply(list(m_base, m_add, m_inter), is.null))) return(NULL)
+  lrt_g  <- anova(m_base, m_add)
+  lrt_gi <- anova(m_add, m_inter)
+  tibble(
+    trait               = tr,
+    chisq_genet_main    = lrt_g$Chisq[2],
+    df_genet_main       = lrt_g$Df[2],
+    p_genet_main        = lrt_g$`Pr(>|Chi|)`[2],
+    chisq_genet_trt_int = lrt_gi$Chisq[2],
+    df_genet_trt_int    = lrt_gi$Df[2],
+    p_genet_trt_int     = lrt_gi$`Pr(>|Chi|)`[2]
+  )
+}
+cox_lrt <- map_dfr(traits, fit_lrt)
+write_csv(cox_lrt, file.path(TBL_DIR, "14_cox_genet_LRT.csv"))
 
 # ---- KM facet figure ------------------------------------------------------
 # Build per-trait, per-treatment survival curves manually for ggplot
@@ -123,5 +193,48 @@ p_km <- ggplot(km_curves, aes(day, cum_event,
 
 save_fig(p_km, "14_morphology_KM", width = 200, height = 130)
 
-cat("\n=== Cox PH hazard ratios (31 °C vs 28 °C) ===\n")
+# ---- Genet-resolved KM figure --------------------------------------------
+km_curves_genet <- events |>
+  group_by(trait, treatment, thicket) |>
+  group_modify(\(d, k) {
+    d <- dplyr::arrange(d, event_day)
+    times <- sort(unique(d$event_day))
+    n_at_risk <- sapply(times, \(t) sum(d$event_day >= t))
+    n_events  <- sapply(times, \(t) sum(d$event_day == t & d$event == 1))
+    haz       <- n_events / pmax(n_at_risk, 1)
+    surv      <- cumprod(1 - haz)
+    tibble(day = c(0, times), cum_event = 1 - c(1, surv))
+  }) |>
+  ungroup() |>
+  mutate(trait = factor(trait,
+                        levels = traits,
+                        labels = c("Hole in center", "Polyp in hole",
+                                   "Wound smoothed", "Pigment over wound",
+                                   "Tip exists", "Tip extension",
+                                   "New corallites on tip")))
+
+p_km_genet <- ggplot(km_curves_genet,
+                      aes(day, cum_event, colour = treatment,
+                          linetype = thicket,
+                          group = interaction(treatment, thicket))) +
+  geom_step(linewidth = 0.55, alpha = 0.85) +
+  facet_wrap(~ trait, ncol = 4) +
+  scale_colour_manual(values = c(`28C` = "#56B4E9", `31C` = "#D55E00"),
+                      name = "Temperature") +
+  scale_linetype_manual(values = c(a = "solid", c = "22", d = "44"),
+                        name = "Genet") +
+  scale_y_continuous(labels = scales::percent_format(accuracy = 1),
+                     limits = c(0, 1)) +
+  labs(x = "Days after wounding",
+       y = "Cumulative % corals expressing trait",
+       title = "Genet-specific healing trajectories",
+       subtitle = "Kaplan-Meier curves by treatment × genet (n ≈ 8 per cell)") +
+  theme_pub(9)
+
+save_fig(p_km_genet, "14b_morphology_KM_by_genet", width = 210, height = 135)
+
+cat("\n=== Cox PH hazard ratios (31 °C vs 28 °C) — overall + per genet ===\n")
 print(cox_results |> mutate(across(where(is.numeric), \(x) round(x, 3))))
+
+cat("\n=== LRT: does adding genet × treatment improve Cox fit? ===\n")
+print(cox_lrt |> mutate(across(where(is.numeric), \(x) round(x, 3))))

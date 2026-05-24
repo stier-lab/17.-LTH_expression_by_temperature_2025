@@ -26,7 +26,8 @@ scripts <- c(
   "15_multivariate.R",
   "16_main_figure.R",
   "17_figure_audit.R",
-  "18_data_validation.R"
+  "18_data_validation.R",
+  "19_genet_dashboard.R"
 )
 
 t0 <- Sys.time()

@@ -1,12 +1,15 @@
 # =============================================================================
-# Purpose: 8 binary morphological characterizations of wound healing over time.
+# Purpose: 9 binary morphological characterizations of wound healing over time.
 #          - For wounded corals only, plot cumulative proportion expressing each
-#            trait by day × treatment.
-#          - Logistic mixed models per trait (binomial GLMM) testing temperature
-#            effect on time-to-trait-onset.
+#            trait by day × treatment, with genet (thicket) as a third
+#            dimension (linetype) so genotype-specific responses are visible.
+#          - Logistic mixed models per trait with treatment × thicket
+#            interaction so genet-level differences in heat response are
+#            tested directly (rather than absorbed in a random intercept).
 # Input:   data/raw/physio_morphology/data.csv
 # Output:  data/processed/physio_clean.rds
-#          figures/04_morphology_trajectories.{pdf,png}
+#          figures/04_morphology_trajectories.{pdf,png}        — pooled-by-genet
+#          figures/04b_morphology_trajectories_by_genet.{pdf,png} — split by genet
 #          output/tables/04_morphology_trait_glmm_summaries.csv
 # =============================================================================
 
@@ -79,23 +82,74 @@ p_traits <- ggplot(prop_df, aes(day, prop,
 
 save_fig(p_traits, "04_morphology_trajectories", width = 200, height = 130)
 
-# ---- Per-trait GLMM (binomial) --------------------------------------------
-# Question: does treatment shift the probability of trait expression?
+# ---- Per-genet trajectory plot --------------------------------------------
+prop_genet_df <- long |>
+  group_by(day, treatment, thicket, trait) |>
+  summarise(prop = mean(expressed), n = n(), .groups = "drop") |>
+  mutate(trait = factor(trait, levels = traits,
+                        labels = c("Polyps out", "Hole in center",
+                                   "Polyp in hole", "Wound smoothed",
+                                   "Pigment over wound", "Tip exists",
+                                   "Tip extension", "New corallites on tip",
+                                   "Algae on wound")))
+
+p_traits_genet <- ggplot(prop_genet_df,
+                          aes(day, prop, colour = treatment,
+                              linetype = thicket,
+                              group = interaction(treatment, thicket))) +
+  geom_line(linewidth = 0.55, alpha = 0.85) +
+  geom_point(size = 1.2, alpha = 0.85) +
+  geom_vline(xintercept = 0, linetype = "dotted", colour = "grey50") +
+  facet_wrap(~ trait, ncol = 4) +
+  scale_colour_manual(values = c(`28C` = "#56B4E9", `31C` = "#D55E00"),
+                      name = "Temperature") +
+  scale_linetype_manual(values = c(a = "solid", c = "22", d = "44"),
+                        name = "Genet") +
+  scale_y_continuous(labels = scales::percent_format(accuracy = 1),
+                     limits = c(0, 1)) +
+  labs(x = "Day relative to wounding (D0)",
+       y = "Wounded corals expressing trait",
+       title = "Morphological wound-healing trajectories by genet",
+       subtitle = "Wounded corals only (n ≈ 8 per genet × treatment cell)") +
+  theme_pub(9)
+
+save_fig(p_traits_genet, "04b_morphology_trajectories_by_genet",
+         width = 210, height = 135)
+
+# ---- Per-trait GLMM with genet × treatment ---------------------------------
+# Question: does the temperature effect on trait expression depend on genet?
+# Uses (1|tank) only as random; thicket becomes a fixed factor.
 fit_one <- function(trait_name) {
-  d <- long |> filter(trait == trait_name, day >= 0)
+  d <- long |>
+    filter(trait == trait_name, day >= 0) |>
+    mutate(thicket = factor(thicket))
   if (length(unique(d$expressed)) < 2) return(NULL)
   fit <- tryCatch(
-    lme4::glmer(expressed ~ treatment * day + (1 | tank) + (1 | thicket),
-                family = binomial, data = d,
-                control = lme4::glmerControl(optimizer = "bobyqa")),
+    suppressMessages(suppressWarnings(
+      lme4::glmer(expressed ~ treatment * day * thicket + (1 | tank),
+                  family = binomial, data = d,
+                  control = lme4::glmerControl(optimizer = "bobyqa",
+                                               optCtrl = list(maxfun = 2e5)))
+    )),
     error = function(e) NULL
   )
   if (is.null(fit)) return(NULL)
-  broom.mixed::tidy(fit, effects = "fixed") |>
+  tidy_fit <- broom.mixed::tidy(fit, effects = "fixed") |>
     mutate(trait = trait_name, n = nrow(d))
+  # Type-II Wald ANOVA — reports significance of treatment, day, thicket and
+  # their interactions
+  av <- as.data.frame(car::Anova(fit, type = 2)) |>
+    tibble::rownames_to_column("term") |>
+    mutate(trait = trait_name)
+  list(tidy = tidy_fit, anova = av)
 }
-trait_results <- map_dfr(traits, fit_one)
-write_csv(trait_results, file.path(TBL_DIR, "04_morphology_trait_glmm_summaries.csv"))
+trait_results <- map(traits, fit_one) |> setNames(traits) |> compact()
+trait_tidy <- map_dfr(trait_results, "tidy")
+trait_anova <- map_dfr(trait_results, "anova")
+write_csv(trait_tidy,  file.path(TBL_DIR, "04_morphology_trait_glmm_summaries.csv"))
+write_csv(trait_anova, file.path(TBL_DIR, "04_morphology_trait_anova_genet.csv"))
 
 cat("Wrote physio_clean.rds, 04_morphology_trajectories.{pdf,png},",
-    "04_morphology_trait_glmm_summaries.csv\n")
+    "04b_morphology_trajectories_by_genet.{pdf,png},",
+    "04_morphology_trait_glmm_summaries.csv,",
+    "04_morphology_trait_anova_genet.csv\n")
