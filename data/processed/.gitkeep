@@ -1,0 +1,3 @@
+# Processed data — regenerable.
+# Every file in this directory is the output of a `code/0X_*.R` script.
+# Deleting and re-running the pipeline must reproduce all files here exactly.

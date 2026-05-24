@@ -1,0 +1,27 @@
+column,unit,description
+species,NA,A. pulchra used exclusively for this experiment,,,,,,,,,,,,,,,,,,,,,,,
+thicket ,NA,arbitrary alphabetical naming system used pre-genotype analysis
+id,NA,specific coral ID
+sample,NA,"The purpose of a certain subset of corals was for either gene expression only (gene), physiology and gene (physio/gene), or microscope photography (photo)"
+wound,yes/no,a coral was either wounded (yes) or control (no)
+tank,NA,Tank assignment,
+treatment,C,Temperature treatment in celcius,,,,,
+biopsy_day,day,experimental day that a coral was collected (D0 is wounding day),,,,,,,,,,,,,,,,,,,,,,,
+biopsy_date,MM/DD/YYYY,date that a sample was biopsied,,,,,,,,,,,,,,,,,,,,,,,
+diameter,mm,longest diameter of a cylindrical biopsy measured with digital calipers,,,,,
+height,mm,longest height of a cylindrical biopsy measured with digital calipers,,,,,
+calculated_SA_caliper,cm^2,Calculated surface area = (2 * 3.141592 * (diameter/2) * height,,,,,
+dry_weight,g,Initial mass of coral after oven drying,,,,,
+wax_weight_1,g,Mass of coral after a single wax dip,,,,,
+wax_weight_2,g,Mass of coral after a secondary wax dip,,,,,
+wax_2_minus_wax_1 ,g,Calculated difference between wax weights = (wax weight 2) - (wax weight 1),,,,,
+calculated_SA_standard_curve,cm^2,Calculated surface area from standard curve = (=(5810*(wax 2 minus 1) +85.7)/100
+notes,NA,General notes,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,

@@ -1,0 +1,32 @@
+Box,Project,Sample description (biopsy day and segment),Sample storage,Number of samples,Total number per box
+1.0,LTH gene expression,D0 tip,coral chunk in DNA/RNA shield,81.0,=sum(E2)
+2.0,LTH gene expression,D0 tip,coral chunk in DNA/RNA shield,15.0,=sum(E3:E5)
+,,D1 tip,coral chunk in DNA/RNA shield,24.0,
+,,D1 wound,coral chunk in DNA/RNA shield,42.0,
+3.0,LTH gene expression,D1 wound,coral chunk in DNA/RNA shield,6.0,=sum(E6:E8)
+,,D1 middle,coral chunk in DNA/RNA shield,48.0,
+,,D1 far,coral chunk in DNA/RNA shield,27.0,
+4.0,LTH gene expression,D1 far,coral chunk in DNA/RNA shield,=21,=SUM(E9:E11)
+,,D3 tip,coral chunk in DNA/RNA shield,24.0,
+,,D3 wound,coral chunk in DNA/RNA shield,36.0,
+5.0,LTH gene expression,D3 wound,coral chunk in DNA/RNA shield,12.0,=SUM(E12:E14)
+,,D3 middle,coral chunk in DNA/RNA shield,48.0,
+,,D3 far,coral chunk in DNA/RNA shield,=21,
+6.0,LTH gene expression,D3 far,coral chunk in DNA/RNA shield,27.0,=sum(E15:E17)
+,,D10 tip,coral chunk in DNA/RNA shield,24.0,
+,,D10 wound,coral chunk in DNA/RNA shield,30.0,
+7.0,LTH gene expression,D10 wound,coral chunk in DNA/RNA shield,18.0,=sum(E18:E20)
+,,D10 middle,coral chunk in DNA/RNA shield,48.0,
+,,D10 far,coral chunk in DNA/RNA shield,=48-33,
+8.0,LTH gene expression,D10 far,coral chunk in DNA/RNA shield,33.0,=sum(E21:E23)
+,,D15 tip,coral chunk in DNA/RNA shield,24.0,
+,,D15 wound,coral chunk in DNA/RNA shield,24.0,
+9.0,LTH gene expression,D15 wound,coral chunk in DNA/RNA shield,24.0,=sum(E24:E26)
+,,D15 middle,coral chunk in DNA/RNA shield,48.0,
+,,D15 far,coral chunk in DNA/RNA shield,9.0,
+10.0,LTH gene expression,D15 far,coral chunk in DNA/RNA shield,39.0,=sum(E27:E28)
+,Near/Far,"D0, D1, D7 mixed",coral slurry in Trizol,36.0,
+11.0,SLOSS (Michelle),D1 biopsies,coral punch biopsy in DNA/RNA shield,71.0,=71
+12.0,SLOSS (Michelle),D50 biopsies,coral punch biopsy in DNA/RNA shield,81.0,=E30
+13.0,SLOSS (Michelle),D50 biopsies,coral punch biopsy in DNA/RNA shield,=143-81,=sum(E31:E32)
+,,various swabs that were missed in last shipment,swab in DNA/RNA shield,6.0,

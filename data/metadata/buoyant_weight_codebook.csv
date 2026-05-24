@@ -1,0 +1,27 @@
+column,unit,description
+species,NA,A. pulchra used exclusively for this experiment,,,,,,,,,,,,,,,,,,,,,,,,,,
+thicket ,NA,arbitrary alphabetical naming system used pre-genotype analysis,,,,,,,,,,,,,,,,,,,,,,,,,,
+id,Number,specific coral ID,,,,,,,,,,,,,,,,,,,,,,,,,,
+wound,yes/no,a coral was either wounded (yes) or control (no),,,,,,,,,,,,,,,,,,,,,,,,,,
+tank,NA,Tank assignment,,,,,,,,,,,,,,,,,,,,,,,,,,
+sample,NA,"The purpose of a certain subset of corals was for either gene expression only (gene), physiology and gene (physio/gene), or microscope photography (photo)",,,,,,,,,,,,,,,,,,,,,,,,,,
+treatment,C,Temperature treatment in celcius,,,,,,,,,,,,,,,,,,,,,,,,,,
+biopsy_day,day,experimental day that a coral was collected (D0 is wounding day),,,,,,,,,,,,,,,,,,,,,,,,,,
+plug_buoyant_weight_uncorrected,g,Buoyant weight of an aragonite plug in seawater,,,,,,,,,,,,,,,,,,,,,,,,,,
+temp_plug,C,temperature of seawater that an aragonite plug was weighed in
+temp_fw,C,temperature of freshwater than an aragonite plug was weighed in
+plug_ref_sw,g,Buoyant weight of a glass reference object in seawater
+plug_ref_fw,g,Buoyant weight of a glass reference object in freshwater
+plug_ref_dry,g,Weight of a glass reference object in air
+initial_coral_buoyant_weigh_uncorrected,g,initial buoyant weight of a coral in seawater
+initial_temp_coral,C,temperature of seawater that initial corals were weighed in
+initial_temp_fw,C,temperature of freshwater that glass reference object was weighed in
+initial_ref_sw,g,Weight of a glass reference object in seawater
+initial_ref_fw,g,Weight of glass reference object in freshwater
+final_coral_weight_uncorrected,g,final buoyant weight of a coral in seawater
+final_temp_coral,C,temperature of seawater that final corals were weighed in
+final_temp_fw,C,temperature of freshwater that glass reference object was weighed in
+final_ref_sw,g,Weight of a glass reference object in seawater
+final_ref_fw,g,Weight of glass reference object in freshwater
+""
+""

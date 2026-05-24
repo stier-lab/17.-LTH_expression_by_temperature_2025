@@ -1,0 +1,16 @@
+column,unit,description
+date,MM/DD/YYYY,Date of PAM data collection,,,,,,,,,,,,,,,,,,,,,,,
+day,NA,"Day of experiment post-wound, where D0 indicates the day of wounding",,,,,,,,,,,,,,,,,,,,,,,
+treatment,C,Temperature treatment in celcius,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+tank,NA,Tank assignment,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+thicket ,NA,arbitrary alphabetical naming system used pre-genotype analysis,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+wound,yes/no,a coral was either wounded (yes) or control (no),,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+sample,NA,"The purpose of a certain subset of corals was for either gene expression only (gene), physiology and gene (physio/gene), or microscope photography (photo)",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+id,Number,specific coral ID,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+location,top/bottom,"PAM was done at 2 locations; at the top of the coral fragment nearest to the wound, and the bottom of the coral fragment approximately 1cm up from the end",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+F,NA,F0 value (fluorescence yield) as read off of Diving PAM
+M,NA,Fm value (maximal fluorescence yield) as read off of Diving PAM
+Y,NA,Yield value as read off of Diving PAM
+E,NA,Relative rate of electron transport as read off of Diving PAM
+Fv/Fm,NA,Calculated as = (yield /100)
+notes,NA,General notes

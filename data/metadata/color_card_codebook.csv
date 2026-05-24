@@ -1,0 +1,15 @@
+column,unit,description
+species,NA,A. pulchra used exclusively for this experiment
+date,MM/DD/YYYY,Date of color card photo and data collection
+day,NA,"Day of experiment post-wound, where D0 indicates the day of wounding"
+treatment,C,Temperature treatment in celcius
+tank,NA,Tank assignment
+thicket ,NA,arbitrary alphabetical naming system used pre-genotype analysis
+sample,NA,"The purpose of a certain subset of corals was for either gene expression only (gene), physiology and gene (physio/gene), or microscope photography (photo)",,,,,,,,,,,,,,,,,,,,,,,
+id,Number,specific coral ID
+wounded,yes/no,a coral was either wounded (yes) or control (no)
+health_status,alive/dead,Indicates if a coral was alive or dead
+color,D1-4,"Color was visually assessed using the ""Coral Watch"" colorcard from Siebeck et al 2006 (https://coralwatch.org/wp-content/uploads/2023/11/Siebeck-et-al-2006-Monitoring-coral-bleaching.pdf)"
+paling,yes/slight/no,"Paling was estimated visually as either ""yes"",""slight"" or ""no"""
+notes,NA,Various notes 
+hole_at_center,NA,"First incidence of hole in center, more details are available under physical characterization "

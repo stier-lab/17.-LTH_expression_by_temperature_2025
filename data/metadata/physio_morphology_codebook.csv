@@ -1,0 +1,22 @@
+column,unit,description
+species,NA,A. pulchra used exclusively for this experiment,,,,,,,,,,,,,,,,,,,,,,,
+date,MM/DD/YYYY,Date of color card photo and data collection,,,,,,,,,,,,,,,,,,,,,,,
+day,NA,"Day of experiment post-wound, where D0 indicates the day of wounding",,,,,,,,,,,,,,,,,,,,,,,
+treatment,C,Temperature treatment in celcius,,,,,,,,,,,,,,,,,,,,,,,
+tank,NA,Tank assignment,,,,,,,,,,,,,,,,,,,,,,,
+thicket ,NA,arbitrary alphabetical naming system used pre-genotype analysis,,,,,,,,,,,,,,,,,,,,,,,
+sample,NA,The purpose of a certain subset of corals (ie physio were tracked until the end whereas others were subsampled at gene expression timepoints),,,,,,,,,,,,,,,,,,,,,,,
+id,Number,specific coral ID,,,,,,,,,,,,,,,,,,,,,,,
+wounded,yes/no,a coral was either wounded (yes) or control (no),,,,,,,,,,,,,,,,,,,,,,,
+health_status,alive/dead,Indicates if a coral was alive or dead,,,,,,,,,,,,,,,,,,,,,,,
+disease_status,NA,AEF indicates that acropora-eating flatworms were found on this coral on a particular day
+polyps_out,yes/no,Indicates if the majority of polyps were out and relaxed determined by visual assessment
+hole_in_center,yes/no,Indicates if a hole was present in the center of the wound as determined by visual assessment
+polyp_in_hole,yes/no,Indicates if a polyp was present in the hole as determined by visual assessment
+wound_smoothed,yes/no,"Indicates if the wounded issue showed signs of skeletal remodeling, or smoothing, as determined by visual assessment "
+pigment_over_wound,yes/no,Indicates if the wound area appeared pigmented
+tip_exist,yes/no,Indicates if the axial corallite was present as determined by visual assessment
+tip_extension,yes/no,Indicates if the axial corallite extended vertically as determined by visual assessment
+new_corallites_on_tip,yes/no,Indicates if newly budding corallites were present along the length of the of the axial corallite as determined by visual assessment 
+algae_on_wound,yes/no,Indicates if algae was present on wound area
+notes,NA,General notes

@@ -1,0 +1,20 @@
+project,tag,option,description
+LTH gene expression,project name,LTH,"""long term heating"" experiment"
+,day,D0,day 0 (tips taken during time of wounding)
+,,D1,day 1 post wounding
+,,D3,day 3 post wounding
+,,D10,day 10 post wounding
+,,D15,day 15 post wounding
+,segment,tip,1cm tip of coral
+,,W,"0.5 cm wound area directly adjacent to ""tip"""
+,,mid,"0.5cm middle area approximately 1cm away from ""wound"" and ""far"" segments"
+,,far,0.5cm far area approximately 1cm up from base of coral
+,number,numbers vary,coral id
+,date,2025-06-01 00:00:00,general month and year the LTH project took place
+Near/Far,genus/species,P,Porites
+,,A,A. pulchra
+,day,D0 ,day 0 post wounding
+,,D1,day 1 post wounding
+,,D7,day 7 post wounding
+,wound sample,S1 ,wound edge
+,,S2,at distance

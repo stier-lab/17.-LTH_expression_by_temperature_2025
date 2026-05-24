@@ -1,0 +1,5 @@
+# Raw data — IMMUTABLE.
+# This file is a placeholder so the directory exists in version control.
+# Files placed here MUST be treated as read-only:
+#   chmod 444 data/raw/*
+# Re-download from Google Drive if anything in here is corrupted, never edit in place.

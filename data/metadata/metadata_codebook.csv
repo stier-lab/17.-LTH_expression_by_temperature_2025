@@ -1,0 +1,32 @@
+column,units,description
+species,NA,A. pulchra used exclusively for this experiment
+collection_date,MM/DD/YYYY,date of collection from field
+coord_lat,decimal degrees,specific collection site per thicket
+coord_long,decimal degrees,specific collection site per thicket
+acclimation_start_date,MM/DD/YYYY,first day nubbins were acclimated to 28oC
+heat_ramp_start_date,MM/DD/YYYY,first day heat-treated nubbins were ramped at 1oC a day until final heat hold temperature
+heat_ramp_end_date,MM/DD/YYYY,the date that heat-treated nubbins reached a final temperature of 31oC and were held
+thicket ,NA,arbitrary alphabetical naming system used pre-genotype analysis
+id,NA,specific coral ID,,
+treatment,C,Temperature treatment
+sample,NA,"The purpose of a certain subset of corals was for either gene expression only (gene), physiology and gene (physio/gene), or microscope photography (photo)"
+wound,yes/no,a coral was either wounded (yes) or control (no)
+tank,NA,Tank assignment,,,,,,,,,,,,,,,,,,,,,,,
+treatment,C,Temperature treatment in celcius,,,,,,,,,,,,,,,,,,,,,,,
+biopsy_day,day,experimental day that a coral was collected (D0 is wounding day)
+biopsy_date,MM/DD/YYYY,"date that the following biopsies were taken for each nubbin: tip, wound, chlorophyll, middle, zooxanthellae, and far (for unwounded); wound, chlorophyll, middle, zooxanthellae (for wounded) corals were taken"
+biopsy_notes,NA,"comments include information about the wound condition, paling, or extra branches and tips"
+collected in liquid nitrogen?,yes/no,"If samples were placed immediately in LN. See DNA/RNAse column if this is ""no"""
+Sub-samples (DNA/RNA shield),NA,"Indicates which sub-samples were taken from a single nubbin for transcriptomics. Corals were sub-sectioned for tip, wound, middle, and far."
+In DNA/RNA shield?,MM/DD/YYYY,"date that a sample was placed in LN. Samples may be flash frozen in LN and then mixed with DNA/RNA shield. See collected in liquid nitrogen column if this is ""ND"""
+percent_growth_bw,percent,"percent growth of fragments from initial (D0) to final (D15) as calculated by ""final buoyant weight minus initial buoyant weight divided by initial buoyant weight"". Plug weight was subtracted from initial and final"
+calculated SA,cm^2,Surface area of the most apical fragment that was airbrushed. Calculated from the wax dipping method using a standard curve of 14 points
+chlorophyll ug/cm^2,ug/cm^2,
+zooxanthellae cells/cm^2,cells/cm^2,
+
+,,,,
+
+
+
+
+,,,,,,,

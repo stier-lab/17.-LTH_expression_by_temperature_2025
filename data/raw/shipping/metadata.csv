@@ -1,0 +1,1002 @@
+species,thicket ,id,sample,wound,tank,treatment,biopsy_date,biopsy_notes,biopsy_day,biopsy_segment,box,Collected in liquid nitrogen?,In DNA/RNA shield?
+a. pulchra,d,203.0,gene ,yes,3.0,28.0,2025-06-05 00:00:00,NA,0.0,tip,1 or 2,no,2025-06-05 00:00:00
+a. pulchra,a,209.0,gene ,yes,3.0,28.0,2025-06-05 00:00:00,NA,0.0,tip,1 or 2,no,2025-06-05 00:00:00
+a. pulchra,c,296.0,gene ,yes,3.0,28.0,2025-06-05 00:00:00,NA,0.0,tip,1 or 2,no,2025-06-05 00:00:00
+a. pulchra,a,160.0,gene ,yes,3.0,28.0,2025-06-07 00:00:00,NA,0.0,tip,1 or 2,yes,2025-06-19 00:00:00
+a. pulchra,d,247.0,gene ,yes,3.0,28.0,2025-06-07 00:00:00,wound has growing tip already,0.0,tip,1 or 2,yes,2025-06-19 00:00:00
+a. pulchra,c,250.0,gene ,yes,3.0,28.0,2025-06-07 00:00:00,NA,0.0,tip,1 or 2,yes,2025-06-19 00:00:00
+a. pulchra,a,191.0,gene ,yes,3.0,28.0,2025-06-14 00:00:00,tip with extension,0.0,tip,1 or 2,yes,2025-06-19 00:00:00
+a. pulchra,d,258.0,gene ,yes,3.0,28.0,2025-06-14 00:00:00,tip with extension,0.0,tip,1 or 2,yes,2025-06-19 00:00:00
+a. pulchra,c,291.0,gene ,yes,3.0,28.0,2025-06-14 00:00:00,tip with extension,0.0,tip,1 or 2,yes,2025-06-19 00:00:00
+a. pulchra,d,113.0,gene/physio,yes,3.0,28.0,2025-06-19 00:00:00,NA,0.0,tip,1 or 2,yes,2025-06-19 00:00:00
+a. pulchra,c,129.0,gene/physio,yes,3.0,28.0,2025-06-19 00:00:00,"nearly healed but not indistinguishable, Zoox sample has branch ",0.0,tip,1 or 2,yes,2025-06-19 00:00:00
+a. pulchra,a,172.0,gene/physio,yes,3.0,28.0,2025-06-19 00:00:00,nearly healed but not indistinguishable ,0.0,tip,1 or 2,yes,2025-06-19 00:00:00
+a. pulchra,a,140.0,gene ,yes,6.0,28.0,2025-06-05 00:00:00,NA,0.0,tip,1 or 2,no,2025-06-05 00:00:00
+a. pulchra,d,238.0,gene ,yes,6.0,28.0,2025-06-05 00:00:00,NA,0.0,tip,1 or 2,no,2025-06-05 00:00:00
+a. pulchra,c,268.0,gene ,yes,6.0,28.0,2025-06-05 00:00:00,NA,0.0,tip,1 or 2,no,2025-06-05 00:00:00
+a. pulchra,a,208.0,gene ,yes,6.0,28.0,2025-06-07 00:00:00,NA,0.0,tip,1 or 2,yes,2025-06-19 00:00:00
+a. pulchra,d,245.0,gene ,yes,6.0,28.0,2025-06-07 00:00:00,NA,0.0,tip,1 or 2,yes,2025-06-19 00:00:00
+a. pulchra,c,282.0,gene ,yes,6.0,28.0,2025-06-07 00:00:00,wound looks covered in coenosarc,0.0,tip,1 or 2,yes,2025-06-19 00:00:00
+a. pulchra,a,135.0,gene ,yes,6.0,28.0,2025-06-14 00:00:00,wound is smooth and tip exists but without extension,0.0,tip,1 or 2,yes,2025-06-19 00:00:00
+a. pulchra,d,248.0,gene ,yes,6.0,28.0,2025-06-14 00:00:00,tip with extension,0.0,tip,1 or 2,yes,2025-06-19 00:00:00
+a. pulchra,c,292.0,gene ,yes,6.0,28.0,2025-06-14 00:00:00,tip has extension,0.0,tip,1 or 2,yes,2025-06-19 00:00:00
+a. pulchra,c,117.0,gene/physio,yes,6.0,28.0,2025-06-19 00:00:00,wound still obvious,0.0,tip,1 or 2,yes,2025-06-19 00:00:00
+a. pulchra,d,146.0,gene/physio,yes,6.0,28.0,2025-06-19 00:00:00,wound still obvious,0.0,tip,1 or 2,yes,2025-06-19 00:00:00
+a. pulchra,a,179.0,gene/physio,yes,6.0,28.0,2025-06-19 00:00:00,wound still obvious,0.0,tip,1 or 2,yes,2025-06-19 00:00:00
+a. pulchra,a,159.0,gene ,yes,9.0,28.0,2025-06-05 00:00:00,NA,0.0,tip,1 or 2,no,2025-06-05 00:00:00
+a. pulchra,d,227.0,gene ,yes,9.0,28.0,2025-06-05 00:00:00,NA,0.0,tip,1 or 2,no,2025-06-05 00:00:00
+a. pulchra,c,288.0,gene ,yes,9.0,28.0,2025-06-05 00:00:00,NA,0.0,tip,1 or 2,no,2025-06-05 00:00:00
+a. pulchra,a,187.0,gene ,yes,9.0,28.0,2025-06-07 00:00:00,NA,0.0,tip,1 or 2,yes,2025-06-19 00:00:00
+a. pulchra,d,218.0,gene ,yes,9.0,28.0,2025-06-07 00:00:00,"wound edge smoothed over, growing tip present with coenosarc",0.0,tip,1 or 2,yes,2025-06-19 00:00:00
+a. pulchra,c,272.0,gene ,yes,9.0,28.0,2025-06-07 00:00:00,NA,0.0,tip,1 or 2,yes,2025-06-19 00:00:00
+a. pulchra,a,189.0,gene ,yes,9.0,28.0,2025-06-14 00:00:00,tip with extension,0.0,tip,1 or 2,yes,2025-06-19 00:00:00
+a. pulchra,d,237.0,gene ,yes,9.0,28.0,2025-06-14 00:00:00,tip with extension,0.0,tip,1 or 2,yes,2025-06-19 00:00:00
+a. pulchra,c,285.0,gene ,yes,9.0,28.0,2025-06-14 00:00:00,tip with extension,0.0,tip,1 or 2,yes,2025-06-19 00:00:00
+a. pulchra,d,118.0,gene/physio,yes,9.0,28.0,2025-06-19 00:00:00,NA,0.0,tip,1 or 2,yes,2025-06-19 00:00:00
+a. pulchra,c,121.0,gene/physio,yes,9.0,28.0,2025-06-19 00:00:00,NA,0.0,tip,1 or 2,yes,2025-06-19 00:00:00
+a. pulchra,a,166.0,gene/physio,yes,9.0,28.0,2025-06-19 00:00:00,middle with branch,0.0,tip,1 or 2,yes,2025-06-19 00:00:00
+a. pulchra,a,164.0,gene ,yes,12.0,28.0,2025-06-05 00:00:00,NA,0.0,tip,1 or 2,no,2025-06-05 00:00:00
+a. pulchra,d,231.0,gene ,yes,12.0,28.0,2025-06-05 00:00:00,2 tips,0.0,tip,1 or 2,no,2025-06-05 00:00:00
+a. pulchra,c,294.0,gene ,yes,12.0,28.0,2025-06-05 00:00:00,NA,0.0,tip,1 or 2,no,2025-06-05 00:00:00
+a. pulchra,a,167.0,gene ,yes,12.0,28.0,2025-06-07 00:00:00,NA,0.0,tip,1 or 2,yes,2025-06-19 00:00:00
+a. pulchra,d,223.0,gene ,yes,12.0,28.0,2025-06-07 00:00:00,NA,0.0,tip,1 or 2,yes,2025-06-19 00:00:00
+a. pulchra,c,301.0,gene ,yes,12.0,28.0,2025-06-07 00:00:00,NA,0.0,tip,1 or 2,yes,2025-06-19 00:00:00
+a. pulchra,a,213.0,gene ,yes,12.0,28.0,2025-06-14 00:00:00,"2 tips on original tip, tip with extension after wounding",0.0,tip,1 or 2,yes,2025-06-19 00:00:00
+a. pulchra,d,243.0,gene ,yes,12.0,28.0,2025-06-14 00:00:00,tip with extension,0.0,tip,1 or 2,yes,2025-06-19 00:00:00
+a. pulchra,c,252.0,gene ,yes,12.0,28.0,2025-06-14 00:00:00,tip exists but extension is questionable,0.0,tip,1 or 2,yes,2025-06-19 00:00:00
+a. pulchra,c,130.0,gene/physio,yes,12.0,28.0,2025-06-19 00:00:00,NA,0.0,tip,1 or 2,yes,2025-06-19 00:00:00
+a. pulchra,d,144.0,gene/physio,yes,12.0,28.0,2025-06-19 00:00:00,NA,0.0,tip,1 or 2,yes,2025-06-19 00:00:00
+a. pulchra,a,177.0,gene/physio,yes,12.0,28.0,2025-06-19 00:00:00,NA,0.0,tip,1 or 2,yes,2025-06-19 00:00:00
+a. pulchra,a,197.0,gene ,yes,4.0,31.0,2025-06-05 00:00:00,dark tip,0.0,tip,1 or 2,no,2025-06-05 00:00:00
+a. pulchra,d,224.0,gene ,yes,4.0,31.0,2025-06-05 00:00:00,NA,0.0,tip,1 or 2,no,2025-06-05 00:00:00
+a. pulchra,c,276.0,gene ,yes,4.0,31.0,2025-06-05 00:00:00,NA,0.0,tip,1 or 2,no,2025-06-05 00:00:00
+a. pulchra,a,138.0,gene ,yes,4.0,31.0,2025-06-07 00:00:00,NA,0.0,tip,1 or 2,yes,2025-06-19 00:00:00
+a. pulchra,d,206.0,gene ,yes,4.0,31.0,2025-06-07 00:00:00,NA,0.0,tip,1 or 2,yes,2025-06-19 00:00:00
+a. pulchra,c,295.0,gene ,yes,4.0,31.0,2025-06-07 00:00:00,NA,0.0,tip,1 or 2,yes,2025-06-19 00:00:00
+a. pulchra,a,136.0,gene ,yes,4.0,31.0,2025-06-14 00:00:00,"tip with extension, paling",0.0,tip,1 or 2,yes,2025-06-19 00:00:00
+a. pulchra,d,215.0,gene ,yes,4.0,31.0,2025-06-14 00:00:00,"tip exists barely, definitely smoothed over",0.0,tip,1 or 2,yes,2025-06-19 00:00:00
+a. pulchra,c,260.0,gene ,yes,4.0,31.0,2025-06-14 00:00:00,2 tips on original frag; tip exists but no extension after wound,0.0,tip,1 or 2,yes,2025-06-19 00:00:00
+a. pulchra,c,133.0,gene/physio,yes,4.0,31.0,2025-06-19 00:00:00,NA,0.0,tip,1 or 2,yes,2025-06-19 00:00:00
+a. pulchra,d,143.0,gene/physio,yes,4.0,31.0,2025-06-19 00:00:00,NA,0.0,tip,1 or 2,yes,2025-06-19 00:00:00
+a. pulchra,a,152.0,gene/physio,yes,4.0,31.0,2025-06-19 00:00:00,"brittle when slicing, branch on wound sample",0.0,tip,1 or 2,yes,2025-06-19 00:00:00
+a. pulchra,a,183.0,gene ,yes,5.0,31.0,2025-06-05 00:00:00,dark tip,0.0,tip,1 or 2,no,2025-06-05 00:00:00
+a. pulchra,d,226.0,gene ,yes,5.0,31.0,2025-06-05 00:00:00,NA,0.0,tip,1 or 2,no,2025-06-05 00:00:00
+a. pulchra,c,263.0,gene ,yes,5.0,31.0,2025-06-05 00:00:00,NA,0.0,tip,1 or 2,no,2025-06-05 00:00:00
+a. pulchra,a,212.0,gene ,yes,5.0,31.0,2025-06-07 00:00:00,low branch,0.0,tip,1 or 2,yes,2025-06-19 00:00:00
+a. pulchra,d,221.0,gene ,yes,5.0,31.0,2025-06-07 00:00:00,NA,0.0,tip,1 or 2,yes,2025-06-19 00:00:00
+a. pulchra,c,270.0,gene ,yes,5.0,31.0,2025-06-07 00:00:00,wound looks smoothed over/possible growing tip and coenosarc,0.0,tip,1 or 2,yes,2025-06-19 00:00:00
+a. pulchra,a,184.0,gene ,yes,5.0,31.0,2025-06-14 00:00:00,"tip with extension, paling",0.0,tip,1 or 2,yes,2025-06-19 00:00:00
+a. pulchra,d,235.0,gene ,yes,5.0,31.0,2025-06-14 00:00:00,wound is smooth and tip exists but without extension,0.0,tip,1 or 2,yes,2025-06-19 00:00:00
+a. pulchra,c,251.0,gene ,yes,5.0,31.0,2025-06-14 00:00:00,tip with extension,0.0,tip,1 or 2,yes,2025-06-19 00:00:00
+a. pulchra,c,115.0,gene/physio,yes,5.0,31.0,2025-06-19 00:00:00,slightly paling,0.0,tip,1 or 2,yes,2025-06-19 00:00:00
+a. pulchra,d,126.0,gene/physio,yes,5.0,31.0,2025-06-19 00:00:00,"paling, brittle",0.0,tip,1 or 2,yes,2025-06-19 00:00:00
+a. pulchra,a,170.0,gene/physio,yes,5.0,31.0,2025-06-19 00:00:00,bleached ,0.0,tip,1 or 2,yes,2025-06-19 00:00:00
+a. pulchra,a,210.0,gene ,yes,10.0,31.0,2025-06-05 00:00:00,NA,0.0,tip,1 or 2,no,2025-06-05 00:00:00
+a. pulchra,c,254.0,gene ,yes,10.0,31.0,2025-06-05 00:00:00,NA,0.0,tip,1 or 2,no,2025-06-05 00:00:00
+a. pulchra,d,256.0,gene ,yes,10.0,31.0,2025-06-05 00:00:00,2 tips,0.0,tip,1 or 2,no,2025-06-05 00:00:00
+a. pulchra,a,193.0,gene ,yes,10.0,31.0,2025-06-07 00:00:00,NA,0.0,tip,1 or 2,yes,2025-06-19 00:00:00
+a. pulchra,d,216.0,gene ,yes,10.0,31.0,2025-06-07 00:00:00,middle with small branch,0.0,tip,1 or 2,yes,2025-06-19 00:00:00
+a. pulchra,c,266.0,gene ,yes,10.0,31.0,2025-06-07 00:00:00,2 tips,0.0,tip,1 or 2,yes,2025-06-19 00:00:00
+a. pulchra,d,186.0,gene ,yes,10.0,31.0,2025-06-14 00:00:00,"wound is smooth, no tip exists, paling",0.0,tip,1 or 2,yes,2025-06-19 00:00:00
+a. pulchra,a,214.0,gene ,yes,10.0,31.0,2025-06-14 00:00:00,"tip with extension, paling",0.0,tip,1 or 2,yes,2025-06-19 00:00:00
+a. pulchra,c,283.0,gene ,yes,10.0,31.0,2025-06-14 00:00:00,tip with extension,0.0,tip,1 or 2,yes,2025-06-19 00:00:00
+a. pulchra,d,110.0,gene/physio,yes,10.0,31.0,2025-06-19 00:00:00,NA,0.0,tip,1 or 2,yes,2025-06-19 00:00:00
+a. pulchra,a,175.0,gene/physio,yes,10.0,31.0,2025-06-19 00:00:00,NA,0.0,tip,1 or 2,yes,2025-06-19 00:00:00
+a. pulchra,a,181.0,gene ,yes,11.0,31.0,2025-06-05 00:00:00,NA,0.0,tip,1 or 2,no,2025-06-05 00:00:00
+a. pulchra,d,228.0,gene ,yes,11.0,31.0,2025-06-05 00:00:00,NA,0.0,tip,1 or 2,no,2025-06-05 00:00:00
+a. pulchra,c,300.0,gene ,yes,11.0,31.0,2025-06-05 00:00:00,2 tips,0.0,tip,1 or 2,no,2025-06-05 00:00:00
+a. pulchra,a,112.0,gene ,yes,11.0,31.0,2025-06-07 00:00:00,2 tips,0.0,tip,1 or 2,yes,2025-06-19 00:00:00
+a. pulchra,d,219.0,gene ,yes,11.0,31.0,2025-06-07 00:00:00,NA,0.0,tip,1 or 2,yes,2025-06-19 00:00:00
+a. pulchra,c,265.0,gene ,yes,11.0,31.0,2025-06-07 00:00:00,NA,0.0,tip,1 or 2,yes,2025-06-19 00:00:00
+a. pulchra,a,195.0,gene ,yes,11.0,31.0,2025-06-14 00:00:00,"tip with extension, paling",0.0,tip,1 or 2,yes,2025-06-19 00:00:00
+a. pulchra,d,240.0,gene ,yes,11.0,31.0,2025-06-14 00:00:00,tip with extension,0.0,tip,1 or 2,yes,2025-06-19 00:00:00
+a. pulchra,c,269.0,gene ,yes,11.0,31.0,2025-06-14 00:00:00,"wound is smooth with a tip, no extension",0.0,tip,1 or 2,yes,2025-06-19 00:00:00
+a. pulchra,c,116.0,gene/physio,yes,11.0,31.0,2025-06-19 00:00:00,NA,0.0,tip,1 or 2,yes,2025-06-19 00:00:00
+a. pulchra,d,149.0,gene/physio,yes,11.0,31.0,2025-06-19 00:00:00,paling,0.0,tip,1 or 2,yes,2025-06-19 00:00:00
+a. pulchra,a,174.0,gene/physio,yes,11.0,31.0,2025-06-19 00:00:00,"paling, wound with branch",0.0,tip,1 or 2,yes,2025-06-19 00:00:00
+a. pulchra,a,111.0,gene ,no,3.0,28.0,2025-06-05 00:00:00,NA,1.0,far,3 or 4,no,2025-06-05 00:00:00
+a. pulchra,d,246.0,gene ,no,3.0,28.0,2025-06-05 00:00:00,NA,1.0,far,3 or 4,no,2025-06-05 00:00:00
+a. pulchra,c,298.0,gene ,no,3.0,28.0,2025-06-05 00:00:00,NA,1.0,far,3 or 4,no,2025-06-05 00:00:00
+a. pulchra,d,203.0,gene ,yes,3.0,28.0,2025-06-05 00:00:00,NA,1.0,far,3 or 4,no,2025-06-05 00:00:00
+a. pulchra,a,209.0,gene ,yes,3.0,28.0,2025-06-05 00:00:00,NA,1.0,far,3 or 4,no,2025-06-05 00:00:00
+a. pulchra,c,296.0,gene ,yes,3.0,28.0,2025-06-05 00:00:00,NA,1.0,far,3 or 4,no,2025-06-05 00:00:00
+a. pulchra,a,192.0,gene ,no,6.0,28.0,2025-06-05 00:00:00,NA,1.0,far,3 or 4,no,2025-06-05 00:00:00
+a. pulchra,d,222.0,gene ,no,6.0,28.0,2025-06-05 00:00:00,NA,1.0,far,3 or 4,no,2025-06-05 00:00:00
+a. pulchra,c,280.0,gene ,no,6.0,28.0,2025-06-05 00:00:00,NA,1.0,far,3 or 4,no,2025-06-05 00:00:00
+a. pulchra,a,140.0,gene ,yes,6.0,28.0,2025-06-05 00:00:00,NA,1.0,far,3 or 4,no,2025-06-05 00:00:00
+a. pulchra,d,238.0,gene ,yes,6.0,28.0,2025-06-05 00:00:00,NA,1.0,far,3 or 4,no,2025-06-05 00:00:00
+a. pulchra,c,268.0,gene ,yes,6.0,28.0,2025-06-05 00:00:00,NA,1.0,far,3 or 4,no,2025-06-05 00:00:00
+a. pulchra,a,148.0,gene ,no,9.0,28.0,2025-06-05 00:00:00,wound with branch,1.0,far,3 or 4,no,2025-06-05 00:00:00
+a. pulchra,d,257.0,gene ,no,9.0,28.0,2025-06-05 00:00:00,NA,1.0,far,3 or 4,no,2025-06-05 00:00:00
+a. pulchra,c,261.0,gene ,no,9.0,28.0,2025-06-05 00:00:00,original tip with branch,1.0,far,3 or 4,no,2025-06-05 00:00:00
+a. pulchra,a,159.0,gene ,yes,9.0,28.0,2025-06-05 00:00:00,NA,1.0,far,3 or 4,no,2025-06-05 00:00:00
+a. pulchra,d,227.0,gene ,yes,9.0,28.0,2025-06-05 00:00:00,NA,1.0,far,3 or 4,no,2025-06-05 00:00:00
+a. pulchra,c,288.0,gene ,yes,9.0,28.0,2025-06-05 00:00:00,NA,1.0,far,3 or 4,no,2025-06-05 00:00:00
+a. pulchra,a,151.0,gene ,no,12.0,28.0,2025-06-05 00:00:00,NA,1.0,far,3 or 4,no,2025-06-05 00:00:00
+a. pulchra,d,234.0,gene ,no,12.0,28.0,2025-06-05 00:00:00,NA,1.0,far,3 or 4,no,2025-06-05 00:00:00
+a. pulchra,c,287.0,gene ,no,12.0,28.0,2025-06-05 00:00:00,NA,1.0,far,3 or 4,no,2025-06-05 00:00:00
+a. pulchra,a,164.0,gene ,yes,12.0,28.0,2025-06-05 00:00:00,NA,1.0,far,3 or 4,no,2025-06-05 00:00:00
+a. pulchra,d,231.0,gene ,yes,12.0,28.0,2025-06-05 00:00:00,2 tips,1.0,far,3 or 4,no,2025-06-05 00:00:00
+a. pulchra,c,294.0,gene ,yes,12.0,28.0,2025-06-05 00:00:00,NA,1.0,far,3 or 4,no,2025-06-05 00:00:00
+a. pulchra,a,182.0,gene ,no,4.0,31.0,2025-06-05 00:00:00,NA,1.0,far,3 or 4,no,2025-06-05 00:00:00
+a. pulchra,d,249.0,gene ,no,4.0,31.0,2025-06-05 00:00:00,NA,1.0,far,3 or 4,no,2025-06-05 00:00:00
+a. pulchra,c,274.0,gene ,no,4.0,31.0,2025-06-05 00:00:00,NA,1.0,far,3 or 4,no,2025-06-05 00:00:00
+a. pulchra,a,197.0,gene ,yes,4.0,31.0,2025-06-05 00:00:00,dark tip,1.0,far,3 or 4,no,2025-06-05 00:00:00
+a. pulchra,d,224.0,gene ,yes,4.0,31.0,2025-06-05 00:00:00,NA,1.0,far,3 or 4,no,2025-06-05 00:00:00
+a. pulchra,c,276.0,gene ,yes,4.0,31.0,2025-06-05 00:00:00,NA,1.0,far,3 or 4,no,2025-06-05 00:00:00
+a. pulchra,a,198.0,gene ,no,5.0,31.0,2025-06-05 00:00:00,branch on original tip,1.0,far,3 or 4,no,2025-06-05 00:00:00
+a. pulchra,d,200.0,gene ,no,5.0,31.0,2025-06-05 00:00:00,NA,1.0,far,3 or 4,no,2025-06-05 00:00:00
+a. pulchra,c,278.0,gene ,no,5.0,31.0,2025-06-05 00:00:00,NA,1.0,far,3 or 4,no,2025-06-05 00:00:00
+a. pulchra,a,183.0,gene ,yes,5.0,31.0,2025-06-05 00:00:00,dark tip,1.0,far,3 or 4,no,2025-06-05 00:00:00
+a. pulchra,d,226.0,gene ,yes,5.0,31.0,2025-06-05 00:00:00,NA,1.0,far,3 or 4,no,2025-06-05 00:00:00
+a. pulchra,c,263.0,gene ,yes,5.0,31.0,2025-06-05 00:00:00,NA,1.0,far,3 or 4,no,2025-06-05 00:00:00
+a. pulchra,a,171.0,gene ,no,10.0,31.0,2025-06-05 00:00:00,wound with branch,1.0,far,3 or 4,no,2025-06-05 00:00:00
+a. pulchra,d,259.0,gene ,no,10.0,31.0,2025-06-05 00:00:00,NA,1.0,far,3 or 4,no,2025-06-05 00:00:00
+a. pulchra,c,262.0,gene ,no,10.0,31.0,2025-06-05 00:00:00,NA,1.0,far,3 or 4,no,2025-06-05 00:00:00
+a. pulchra,a,210.0,gene ,yes,10.0,31.0,2025-06-05 00:00:00,NA,1.0,far,3 or 4,no,2025-06-05 00:00:00
+a. pulchra,c,254.0,gene ,yes,10.0,31.0,2025-06-05 00:00:00,NA,1.0,far,3 or 4,no,2025-06-05 00:00:00
+a. pulchra,d,256.0,gene ,yes,10.0,31.0,2025-06-05 00:00:00,2 tips,1.0,far,3 or 4,no,2025-06-05 00:00:00
+a. pulchra,a,188.0,gene ,no,11.0,31.0,2025-06-05 00:00:00,NA,1.0,far,3 or 4,no,2025-06-05 00:00:00
+a. pulchra,d,244.0,gene ,no,11.0,31.0,2025-06-05 00:00:00,NA,1.0,far,3 or 4,no,2025-06-05 00:00:00
+a. pulchra,c,264.0,gene ,no,11.0,31.0,2025-06-05 00:00:00,tip with branch,1.0,far,3 or 4,no,2025-06-05 00:00:00
+a. pulchra,a,181.0,gene ,yes,11.0,31.0,2025-06-05 00:00:00,NA,1.0,far,3 or 4,no,2025-06-05 00:00:00
+a. pulchra,d,228.0,gene ,yes,11.0,31.0,2025-06-05 00:00:00,NA,1.0,far,3 or 4,no,2025-06-05 00:00:00
+a. pulchra,c,300.0,gene ,yes,11.0,31.0,2025-06-05 00:00:00,2 tips,1.0,far,3 or 4,no,2025-06-05 00:00:00
+a. pulchra,a,111.0,gene ,no,3.0,28.0,2025-06-05 00:00:00,NA,1.0,middle,3.0,no,2025-06-05 00:00:00
+a. pulchra,d,246.0,gene ,no,3.0,28.0,2025-06-05 00:00:00,NA,1.0,middle,3.0,no,2025-06-05 00:00:00
+a. pulchra,c,298.0,gene ,no,3.0,28.0,2025-06-05 00:00:00,NA,1.0,middle,3.0,no,2025-06-05 00:00:00
+a. pulchra,d,203.0,gene ,yes,3.0,28.0,2025-06-05 00:00:00,NA,1.0,middle,3.0,no,2025-06-05 00:00:00
+a. pulchra,a,209.0,gene ,yes,3.0,28.0,2025-06-05 00:00:00,NA,1.0,middle,3.0,no,2025-06-05 00:00:00
+a. pulchra,c,296.0,gene ,yes,3.0,28.0,2025-06-05 00:00:00,NA,1.0,middle,3.0,no,2025-06-05 00:00:00
+a. pulchra,a,192.0,gene ,no,6.0,28.0,2025-06-05 00:00:00,NA,1.0,middle,3.0,no,2025-06-05 00:00:00
+a. pulchra,d,222.0,gene ,no,6.0,28.0,2025-06-05 00:00:00,NA,1.0,middle,3.0,no,2025-06-05 00:00:00
+a. pulchra,c,280.0,gene ,no,6.0,28.0,2025-06-05 00:00:00,NA,1.0,middle,3.0,no,2025-06-05 00:00:00
+a. pulchra,a,140.0,gene ,yes,6.0,28.0,2025-06-05 00:00:00,NA,1.0,middle,3.0,no,2025-06-05 00:00:00
+a. pulchra,d,238.0,gene ,yes,6.0,28.0,2025-06-05 00:00:00,NA,1.0,middle,3.0,no,2025-06-05 00:00:00
+a. pulchra,c,268.0,gene ,yes,6.0,28.0,2025-06-05 00:00:00,NA,1.0,middle,3.0,no,2025-06-05 00:00:00
+a. pulchra,a,148.0,gene ,no,9.0,28.0,2025-06-05 00:00:00,wound with branch,1.0,middle,3.0,no,2025-06-05 00:00:00
+a. pulchra,d,257.0,gene ,no,9.0,28.0,2025-06-05 00:00:00,NA,1.0,middle,3.0,no,2025-06-05 00:00:00
+a. pulchra,c,261.0,gene ,no,9.0,28.0,2025-06-05 00:00:00,original tip with branch,1.0,middle,3.0,no,2025-06-05 00:00:00
+a. pulchra,a,159.0,gene ,yes,9.0,28.0,2025-06-05 00:00:00,NA,1.0,middle,3.0,no,2025-06-05 00:00:00
+a. pulchra,d,227.0,gene ,yes,9.0,28.0,2025-06-05 00:00:00,NA,1.0,middle,3.0,no,2025-06-05 00:00:00
+a. pulchra,c,288.0,gene ,yes,9.0,28.0,2025-06-05 00:00:00,NA,1.0,middle,3.0,no,2025-06-05 00:00:00
+a. pulchra,a,151.0,gene ,no,12.0,28.0,2025-06-05 00:00:00,NA,1.0,middle,3.0,no,2025-06-05 00:00:00
+a. pulchra,d,234.0,gene ,no,12.0,28.0,2025-06-05 00:00:00,NA,1.0,middle,3.0,no,2025-06-05 00:00:00
+a. pulchra,c,287.0,gene ,no,12.0,28.0,2025-06-05 00:00:00,NA,1.0,middle,3.0,no,2025-06-05 00:00:00
+a. pulchra,a,164.0,gene ,yes,12.0,28.0,2025-06-05 00:00:00,NA,1.0,middle,3.0,no,2025-06-05 00:00:00
+a. pulchra,d,231.0,gene ,yes,12.0,28.0,2025-06-05 00:00:00,2 tips,1.0,middle,3.0,no,2025-06-05 00:00:00
+a. pulchra,c,294.0,gene ,yes,12.0,28.0,2025-06-05 00:00:00,NA,1.0,middle,3.0,no,2025-06-05 00:00:00
+a. pulchra,a,182.0,gene ,no,4.0,31.0,2025-06-05 00:00:00,NA,1.0,middle,3.0,no,2025-06-05 00:00:00
+a. pulchra,d,249.0,gene ,no,4.0,31.0,2025-06-05 00:00:00,NA,1.0,middle,3.0,no,2025-06-05 00:00:00
+a. pulchra,c,274.0,gene ,no,4.0,31.0,2025-06-05 00:00:00,NA,1.0,middle,3.0,no,2025-06-05 00:00:00
+a. pulchra,a,197.0,gene ,yes,4.0,31.0,2025-06-05 00:00:00,dark tip,1.0,middle,3.0,no,2025-06-05 00:00:00
+a. pulchra,d,224.0,gene ,yes,4.0,31.0,2025-06-05 00:00:00,NA,1.0,middle,3.0,no,2025-06-05 00:00:00
+a. pulchra,c,276.0,gene ,yes,4.0,31.0,2025-06-05 00:00:00,NA,1.0,middle,3.0,no,2025-06-05 00:00:00
+a. pulchra,a,198.0,gene ,no,5.0,31.0,2025-06-05 00:00:00,branch on original tip,1.0,middle,3.0,no,2025-06-05 00:00:00
+a. pulchra,d,200.0,gene ,no,5.0,31.0,2025-06-05 00:00:00,NA,1.0,middle,3.0,no,2025-06-05 00:00:00
+a. pulchra,c,278.0,gene ,no,5.0,31.0,2025-06-05 00:00:00,NA,1.0,middle,3.0,no,2025-06-05 00:00:00
+a. pulchra,a,183.0,gene ,yes,5.0,31.0,2025-06-05 00:00:00,dark tip,1.0,middle,3.0,no,2025-06-05 00:00:00
+a. pulchra,d,226.0,gene ,yes,5.0,31.0,2025-06-05 00:00:00,NA,1.0,middle,3.0,no,2025-06-05 00:00:00
+a. pulchra,c,263.0,gene ,yes,5.0,31.0,2025-06-05 00:00:00,NA,1.0,middle,3.0,no,2025-06-05 00:00:00
+a. pulchra,a,171.0,gene ,no,10.0,31.0,2025-06-05 00:00:00,wound with branch,1.0,middle,3.0,no,2025-06-05 00:00:00
+a. pulchra,d,259.0,gene ,no,10.0,31.0,2025-06-05 00:00:00,NA,1.0,middle,3.0,no,2025-06-05 00:00:00
+a. pulchra,c,262.0,gene ,no,10.0,31.0,2025-06-05 00:00:00,NA,1.0,middle,3.0,no,2025-06-05 00:00:00
+a. pulchra,a,210.0,gene ,yes,10.0,31.0,2025-06-05 00:00:00,NA,1.0,middle,3.0,no,2025-06-05 00:00:00
+a. pulchra,c,254.0,gene ,yes,10.0,31.0,2025-06-05 00:00:00,NA,1.0,middle,3.0,no,2025-06-05 00:00:00
+a. pulchra,d,256.0,gene ,yes,10.0,31.0,2025-06-05 00:00:00,2 tips,1.0,middle,3.0,no,2025-06-05 00:00:00
+a. pulchra,a,188.0,gene ,no,11.0,31.0,2025-06-05 00:00:00,NA,1.0,middle,3.0,no,2025-06-05 00:00:00
+a. pulchra,d,244.0,gene ,no,11.0,31.0,2025-06-05 00:00:00,NA,1.0,middle,3.0,no,2025-06-05 00:00:00
+a. pulchra,c,264.0,gene ,no,11.0,31.0,2025-06-05 00:00:00,tip with branch,1.0,middle,3.0,no,2025-06-05 00:00:00
+a. pulchra,a,181.0,gene ,yes,11.0,31.0,2025-06-05 00:00:00,NA,1.0,middle,3.0,no,2025-06-05 00:00:00
+a. pulchra,d,228.0,gene ,yes,11.0,31.0,2025-06-05 00:00:00,NA,1.0,middle,3.0,no,2025-06-05 00:00:00
+a. pulchra,c,300.0,gene ,yes,11.0,31.0,2025-06-05 00:00:00,2 tips,1.0,middle,3.0,no,2025-06-05 00:00:00
+a. pulchra,a,111.0,gene ,no,3.0,28.0,2025-06-05 00:00:00,NA,1.0,tip,2.0,no,2025-06-05 00:00:00
+a. pulchra,d,246.0,gene ,no,3.0,28.0,2025-06-05 00:00:00,NA,1.0,tip,2.0,no,2025-06-05 00:00:00
+a. pulchra,c,298.0,gene ,no,3.0,28.0,2025-06-05 00:00:00,NA,1.0,tip,2.0,no,2025-06-05 00:00:00
+a. pulchra,a,192.0,gene ,no,6.0,28.0,2025-06-05 00:00:00,NA,1.0,tip,2.0,no,2025-06-05 00:00:00
+a. pulchra,d,222.0,gene ,no,6.0,28.0,2025-06-05 00:00:00,NA,1.0,tip,2.0,no,2025-06-05 00:00:00
+a. pulchra,c,280.0,gene ,no,6.0,28.0,2025-06-05 00:00:00,NA,1.0,tip,2.0,no,2025-06-05 00:00:00
+a. pulchra,a,148.0,gene ,no,9.0,28.0,2025-06-05 00:00:00,wound with branch,1.0,tip,2.0,no,2025-06-05 00:00:00
+a. pulchra,d,257.0,gene ,no,9.0,28.0,2025-06-05 00:00:00,NA,1.0,tip,2.0,no,2025-06-05 00:00:00
+a. pulchra,c,261.0,gene ,no,9.0,28.0,2025-06-05 00:00:00,original tip with branch,1.0,tip,2.0,no,2025-06-05 00:00:00
+a. pulchra,a,151.0,gene ,no,12.0,28.0,2025-06-05 00:00:00,NA,1.0,tip,2.0,no,2025-06-05 00:00:00
+a. pulchra,d,234.0,gene ,no,12.0,28.0,2025-06-05 00:00:00,NA,1.0,tip,2.0,no,2025-06-05 00:00:00
+a. pulchra,c,287.0,gene ,no,12.0,28.0,2025-06-05 00:00:00,NA,1.0,tip,2.0,no,2025-06-05 00:00:00
+a. pulchra,a,182.0,gene ,no,4.0,31.0,2025-06-05 00:00:00,NA,1.0,tip,2.0,no,2025-06-05 00:00:00
+a. pulchra,d,249.0,gene ,no,4.0,31.0,2025-06-05 00:00:00,NA,1.0,tip,2.0,no,2025-06-05 00:00:00
+a. pulchra,c,274.0,gene ,no,4.0,31.0,2025-06-05 00:00:00,NA,1.0,tip,2.0,no,2025-06-05 00:00:00
+a. pulchra,a,198.0,gene ,no,5.0,31.0,2025-06-05 00:00:00,branch on original tip,1.0,tip,2.0,no,2025-06-05 00:00:00
+a. pulchra,d,200.0,gene ,no,5.0,31.0,2025-06-05 00:00:00,NA,1.0,tip,2.0,no,2025-06-05 00:00:00
+a. pulchra,c,278.0,gene ,no,5.0,31.0,2025-06-05 00:00:00,NA,1.0,tip,2.0,no,2025-06-05 00:00:00
+a. pulchra,a,171.0,gene ,no,10.0,31.0,2025-06-05 00:00:00,wound with branch,1.0,tip,2.0,no,2025-06-05 00:00:00
+a. pulchra,d,259.0,gene ,no,10.0,31.0,2025-06-05 00:00:00,NA,1.0,tip,2.0,no,2025-06-05 00:00:00
+a. pulchra,c,262.0,gene ,no,10.0,31.0,2025-06-05 00:00:00,NA,1.0,tip,2.0,no,2025-06-05 00:00:00
+a. pulchra,a,188.0,gene ,no,11.0,31.0,2025-06-05 00:00:00,NA,1.0,tip,2.0,no,2025-06-05 00:00:00
+a. pulchra,d,244.0,gene ,no,11.0,31.0,2025-06-05 00:00:00,NA,1.0,tip,2.0,no,2025-06-05 00:00:00
+a. pulchra,c,264.0,gene ,no,11.0,31.0,2025-06-05 00:00:00,tip with branch,1.0,tip,2.0,no,2025-06-05 00:00:00
+a. pulchra,a,111.0,gene ,no,3.0,28.0,2025-06-05 00:00:00,NA,1.0,wound,2 or 3,no,2025-06-05 00:00:00
+a. pulchra,d,246.0,gene ,no,3.0,28.0,2025-06-05 00:00:00,NA,1.0,wound,2 or 3,no,2025-06-05 00:00:00
+a. pulchra,c,298.0,gene ,no,3.0,28.0,2025-06-05 00:00:00,NA,1.0,wound,2 or 3,no,2025-06-05 00:00:00
+a. pulchra,d,203.0,gene ,yes,3.0,28.0,2025-06-05 00:00:00,NA,1.0,wound,2 or 3,no,2025-06-05 00:00:00
+a. pulchra,a,209.0,gene ,yes,3.0,28.0,2025-06-05 00:00:00,NA,1.0,wound,2 or 3,no,2025-06-05 00:00:00
+a. pulchra,c,296.0,gene ,yes,3.0,28.0,2025-06-05 00:00:00,NA,1.0,wound,2 or 3,no,2025-06-05 00:00:00
+a. pulchra,a,192.0,gene ,no,6.0,28.0,2025-06-05 00:00:00,NA,1.0,wound,2 or 3,no,2025-06-05 00:00:00
+a. pulchra,d,222.0,gene ,no,6.0,28.0,2025-06-05 00:00:00,NA,1.0,wound,2 or 3,no,2025-06-05 00:00:00
+a. pulchra,c,280.0,gene ,no,6.0,28.0,2025-06-05 00:00:00,NA,1.0,wound,2 or 3,no,2025-06-05 00:00:00
+a. pulchra,a,140.0,gene ,yes,6.0,28.0,2025-06-05 00:00:00,NA,1.0,wound,2 or 3,no,2025-06-05 00:00:00
+a. pulchra,d,238.0,gene ,yes,6.0,28.0,2025-06-05 00:00:00,NA,1.0,wound,2 or 3,no,2025-06-05 00:00:00
+a. pulchra,c,268.0,gene ,yes,6.0,28.0,2025-06-05 00:00:00,NA,1.0,wound,2 or 3,no,2025-06-05 00:00:00
+a. pulchra,a,148.0,gene ,no,9.0,28.0,2025-06-05 00:00:00,wound with branch,1.0,wound,2 or 3,no,2025-06-05 00:00:00
+a. pulchra,d,257.0,gene ,no,9.0,28.0,2025-06-05 00:00:00,NA,1.0,wound,2 or 3,no,2025-06-05 00:00:00
+a. pulchra,c,261.0,gene ,no,9.0,28.0,2025-06-05 00:00:00,original tip with branch,1.0,wound,2 or 3,no,2025-06-05 00:00:00
+a. pulchra,a,159.0,gene ,yes,9.0,28.0,2025-06-05 00:00:00,NA,1.0,wound,2 or 3,no,2025-06-05 00:00:00
+a. pulchra,d,227.0,gene ,yes,9.0,28.0,2025-06-05 00:00:00,NA,1.0,wound,2 or 3,no,2025-06-05 00:00:00
+a. pulchra,c,288.0,gene ,yes,9.0,28.0,2025-06-05 00:00:00,NA,1.0,wound,2 or 3,no,2025-06-05 00:00:00
+a. pulchra,a,151.0,gene ,no,12.0,28.0,2025-06-05 00:00:00,NA,1.0,wound,2 or 3,no,2025-06-05 00:00:00
+a. pulchra,d,234.0,gene ,no,12.0,28.0,2025-06-05 00:00:00,NA,1.0,wound,2 or 3,no,2025-06-05 00:00:00
+a. pulchra,c,287.0,gene ,no,12.0,28.0,2025-06-05 00:00:00,NA,1.0,wound,2 or 3,no,2025-06-05 00:00:00
+a. pulchra,a,164.0,gene ,yes,12.0,28.0,2025-06-05 00:00:00,NA,1.0,wound,2 or 3,no,2025-06-05 00:00:00
+a. pulchra,d,231.0,gene ,yes,12.0,28.0,2025-06-05 00:00:00,2 tips,1.0,wound,2 or 3,no,2025-06-05 00:00:00
+a. pulchra,c,294.0,gene ,yes,12.0,28.0,2025-06-05 00:00:00,NA,1.0,wound,2 or 3,no,2025-06-05 00:00:00
+a. pulchra,a,182.0,gene ,no,4.0,31.0,2025-06-05 00:00:00,NA,1.0,wound,2 or 3,no,2025-06-05 00:00:00
+a. pulchra,d,249.0,gene ,no,4.0,31.0,2025-06-05 00:00:00,NA,1.0,wound,2 or 3,no,2025-06-05 00:00:00
+a. pulchra,c,274.0,gene ,no,4.0,31.0,2025-06-05 00:00:00,NA,1.0,wound,2 or 3,no,2025-06-05 00:00:00
+a. pulchra,a,197.0,gene ,yes,4.0,31.0,2025-06-05 00:00:00,dark tip,1.0,wound,2 or 3,no,2025-06-05 00:00:00
+a. pulchra,d,224.0,gene ,yes,4.0,31.0,2025-06-05 00:00:00,NA,1.0,wound,2 or 3,no,2025-06-05 00:00:00
+a. pulchra,c,276.0,gene ,yes,4.0,31.0,2025-06-05 00:00:00,NA,1.0,wound,2 or 3,no,2025-06-05 00:00:00
+a. pulchra,a,198.0,gene ,no,5.0,31.0,2025-06-05 00:00:00,branch on original tip,1.0,wound,2 or 3,no,2025-06-05 00:00:00
+a. pulchra,d,200.0,gene ,no,5.0,31.0,2025-06-05 00:00:00,NA,1.0,wound,2 or 3,no,2025-06-05 00:00:00
+a. pulchra,c,278.0,gene ,no,5.0,31.0,2025-06-05 00:00:00,NA,1.0,wound,2 or 3,no,2025-06-05 00:00:00
+a. pulchra,a,183.0,gene ,yes,5.0,31.0,2025-06-05 00:00:00,dark tip,1.0,wound,2 or 3,no,2025-06-05 00:00:00
+a. pulchra,d,226.0,gene ,yes,5.0,31.0,2025-06-05 00:00:00,NA,1.0,wound,2 or 3,no,2025-06-05 00:00:00
+a. pulchra,c,263.0,gene ,yes,5.0,31.0,2025-06-05 00:00:00,NA,1.0,wound,2 or 3,no,2025-06-05 00:00:00
+a. pulchra,a,171.0,gene ,no,10.0,31.0,2025-06-05 00:00:00,wound with branch,1.0,wound,2 or 3,no,2025-06-05 00:00:00
+a. pulchra,d,259.0,gene ,no,10.0,31.0,2025-06-05 00:00:00,NA,1.0,wound,2 or 3,no,2025-06-05 00:00:00
+a. pulchra,c,262.0,gene ,no,10.0,31.0,2025-06-05 00:00:00,NA,1.0,wound,2 or 3,no,2025-06-05 00:00:00
+a. pulchra,a,210.0,gene ,yes,10.0,31.0,2025-06-05 00:00:00,NA,1.0,wound,2 or 3,no,2025-06-05 00:00:00
+a. pulchra,c,254.0,gene ,yes,10.0,31.0,2025-06-05 00:00:00,NA,1.0,wound,2 or 3,no,2025-06-05 00:00:00
+a. pulchra,d,256.0,gene ,yes,10.0,31.0,2025-06-05 00:00:00,2 tips,1.0,wound,2 or 3,no,2025-06-05 00:00:00
+a. pulchra,a,188.0,gene ,no,11.0,31.0,2025-06-05 00:00:00,NA,1.0,wound,2 or 3,no,2025-06-05 00:00:00
+a. pulchra,d,244.0,gene ,no,11.0,31.0,2025-06-05 00:00:00,NA,1.0,wound,2 or 3,no,2025-06-05 00:00:00
+a. pulchra,c,264.0,gene ,no,11.0,31.0,2025-06-05 00:00:00,tip with branch,1.0,wound,2 or 3,no,2025-06-05 00:00:00
+a. pulchra,a,181.0,gene ,yes,11.0,31.0,2025-06-05 00:00:00,NA,1.0,wound,2 or 3,no,2025-06-05 00:00:00
+a. pulchra,d,228.0,gene ,yes,11.0,31.0,2025-06-05 00:00:00,NA,1.0,wound,2 or 3,no,2025-06-05 00:00:00
+a. pulchra,c,300.0,gene ,yes,11.0,31.0,2025-06-05 00:00:00,2 tips,1.0,wound,2 or 3,no,2025-06-05 00:00:00
+a. pulchra,a,134.0,gene ,no,3.0,28.0,2025-06-07 00:00:00,"wound with branch, fell off",3.0,far,5 or 6,yes,2025-06-19 00:00:00
+a. pulchra,d,242.0,gene ,no,3.0,28.0,2025-06-07 00:00:00,NA,3.0,far,5 or 6,yes,2025-06-19 00:00:00
+a. pulchra,c,290.0,gene ,no,3.0,28.0,2025-06-07 00:00:00,NA,3.0,far,5 or 6,yes,2025-06-19 00:00:00
+a. pulchra,a,160.0,gene ,yes,3.0,28.0,2025-06-07 00:00:00,NA,3.0,far,5 or 6,yes,2025-06-19 00:00:00
+a. pulchra,d,247.0,gene ,yes,3.0,28.0,2025-06-07 00:00:00,wound has growing tip already,3.0,far,5 or 6,yes,2025-06-19 00:00:00
+a. pulchra,c,250.0,gene ,yes,3.0,28.0,2025-06-07 00:00:00,NA,3.0,far,5 or 6,yes,2025-06-19 00:00:00
+a. pulchra,a,194.0,gene ,no,6.0,28.0,2025-06-07 00:00:00,chlorophyll with branch,3.0,far,5 or 6,yes,2025-06-19 00:00:00
+a. pulchra,d,220.0,gene ,no,6.0,28.0,2025-06-07 00:00:00,double tip,3.0,far,5 or 6,yes,2025-06-19 00:00:00
+a. pulchra,c,281.0,gene ,no,6.0,28.0,2025-06-07 00:00:00,NA,3.0,far,5 or 6,yes,2025-06-19 00:00:00
+a. pulchra,a,208.0,gene ,yes,6.0,28.0,2025-06-07 00:00:00,NA,3.0,far,5 or 6,yes,2025-06-19 00:00:00
+a. pulchra,d,245.0,gene ,yes,6.0,28.0,2025-06-07 00:00:00,NA,3.0,far,5 or 6,yes,2025-06-19 00:00:00
+a. pulchra,c,282.0,gene ,yes,6.0,28.0,2025-06-07 00:00:00,wound looks covered in coenosarc,3.0,far,5 or 6,yes,2025-06-19 00:00:00
+a. pulchra,a,157.0,gene ,no,9.0,28.0,2025-06-07 00:00:00,NA,3.0,far,5 or 6,yes,2025-06-19 00:00:00
+a. pulchra,d,229.0,gene ,no,9.0,28.0,2025-06-07 00:00:00,NA,3.0,far,5 or 6,yes,2025-06-19 00:00:00
+a. pulchra,c,271.0,gene ,no,9.0,28.0,2025-06-07 00:00:00,NA,3.0,far,5 or 6,yes,2025-06-19 00:00:00
+a. pulchra,a,187.0,gene ,yes,9.0,28.0,2025-06-07 00:00:00,NA,3.0,far,5 or 6,yes,2025-06-19 00:00:00
+a. pulchra,d,218.0,gene ,yes,9.0,28.0,2025-06-07 00:00:00,"wound edge smoothed over, growing tip present with coenosarc",3.0,far,5 or 6,yes,2025-06-19 00:00:00
+a. pulchra,c,272.0,gene ,yes,9.0,28.0,2025-06-07 00:00:00,NA,3.0,far,5 or 6,yes,2025-06-19 00:00:00
+a. pulchra,a,190.0,gene ,no,12.0,28.0,2025-06-07 00:00:00,NA,3.0,far,5 or 6,yes,2025-06-19 00:00:00
+a. pulchra,d,201.0,gene ,no,12.0,28.0,2025-06-07 00:00:00,NA,3.0,far,5 or 6,yes,2025-06-19 00:00:00
+a. pulchra,c,273.0,gene ,no,12.0,28.0,2025-06-07 00:00:00,NA,3.0,far,5 or 6,yes,2025-06-19 00:00:00
+a. pulchra,a,167.0,gene ,yes,12.0,28.0,2025-06-07 00:00:00,NA,3.0,far,5 or 6,yes,2025-06-19 00:00:00
+a. pulchra,d,223.0,gene ,yes,12.0,28.0,2025-06-07 00:00:00,NA,3.0,far,5 or 6,yes,2025-06-19 00:00:00
+a. pulchra,c,301.0,gene ,yes,12.0,28.0,2025-06-07 00:00:00,NA,3.0,far,5 or 6,yes,2025-06-19 00:00:00
+a. pulchra,a,211.0,gene ,no,4.0,31.0,2025-06-07 00:00:00,NA,3.0,far,5 or 6,yes,2025-06-19 00:00:00
+a. pulchra,d,236.0,gene ,no,4.0,31.0,2025-06-07 00:00:00,very easy to cut,3.0,far,5 or 6,yes,2025-06-19 00:00:00
+a. pulchra,c,289.0,gene ,no,4.0,31.0,2025-06-07 00:00:00,NA,3.0,far,5 or 6,yes,2025-06-19 00:00:00
+a. pulchra,a,138.0,gene ,yes,4.0,31.0,2025-06-07 00:00:00,NA,3.0,far,5 or 6,yes,2025-06-19 00:00:00
+a. pulchra,d,206.0,gene ,yes,4.0,31.0,2025-06-07 00:00:00,NA,3.0,far,5 or 6,yes,2025-06-19 00:00:00
+a. pulchra,c,295.0,gene ,yes,4.0,31.0,2025-06-07 00:00:00,NA,3.0,far,5 or 6,yes,2025-06-19 00:00:00
+a. pulchra,a,153.0,gene ,no,5.0,31.0,2025-06-07 00:00:00,thin and easy to cut,3.0,far,5 or 6,yes,2025-06-19 00:00:00
+a. pulchra,d,239.0,gene ,no,5.0,31.0,2025-06-07 00:00:00,NA,3.0,far,5 or 6,yes,2025-06-19 00:00:00
+a. pulchra,c,297.0,gene ,no,5.0,31.0,2025-06-07 00:00:00,thick fragment,3.0,far,5 or 6,yes,2025-06-19 00:00:00
+a. pulchra,a,212.0,gene ,yes,5.0,31.0,2025-06-07 00:00:00,low branch,3.0,far,5 or 6,yes,2025-06-19 00:00:00
+a. pulchra,d,221.0,gene ,yes,5.0,31.0,2025-06-07 00:00:00,NA,3.0,far,5 or 6,yes,2025-06-19 00:00:00
+a. pulchra,c,270.0,gene ,yes,5.0,31.0,2025-06-07 00:00:00,wound looks smoothed over/possible growing tip and coenosarc,3.0,far,5 or 6,yes,2025-06-19 00:00:00
+a. pulchra,a,155.0,gene ,no,10.0,31.0,2025-06-07 00:00:00,NA,3.0,far,5 or 6,yes,2025-06-19 00:00:00
+a. pulchra,d,241.0,gene ,no,10.0,31.0,2025-06-07 00:00:00,NA,3.0,far,5 or 6,yes,2025-06-19 00:00:00
+a. pulchra,c,255.0,gene ,no,10.0,31.0,2025-06-07 00:00:00,NA,3.0,far,5 or 6,yes,2025-06-19 00:00:00
+a. pulchra,a,193.0,gene ,yes,10.0,31.0,2025-06-07 00:00:00,NA,3.0,far,5 or 6,yes,2025-06-19 00:00:00
+a. pulchra,d,216.0,gene ,yes,10.0,31.0,2025-06-07 00:00:00,middle with small branch,3.0,far,5 or 6,yes,2025-06-19 00:00:00
+a. pulchra,c,266.0,gene ,yes,10.0,31.0,2025-06-07 00:00:00,2 tips,3.0,far,5 or 6,yes,2025-06-19 00:00:00
+a. pulchra,a,168.0,gene ,no,11.0,31.0,2025-06-07 00:00:00,NA,3.0,far,5 or 6,yes,2025-06-19 00:00:00
+a. pulchra,d,185.0,gene ,no,11.0,31.0,2025-06-07 00:00:00,NA,3.0,far,5 or 6,yes,2025-06-19 00:00:00
+a. pulchra,c,284.0,gene ,no,11.0,31.0,2025-06-07 00:00:00,NA,3.0,far,5 or 6,yes,2025-06-19 00:00:00
+a. pulchra,a,112.0,gene ,yes,11.0,31.0,2025-06-07 00:00:00,2 tips,3.0,far,5 or 6,yes,2025-06-19 00:00:00
+a. pulchra,d,219.0,gene ,yes,11.0,31.0,2025-06-07 00:00:00,NA,3.0,far,5 or 6,yes,2025-06-19 00:00:00
+a. pulchra,c,265.0,gene ,yes,11.0,31.0,2025-06-07 00:00:00,NA,3.0,far,5 or 6,yes,2025-06-19 00:00:00
+a. pulchra,a,134.0,gene ,no,3.0,28.0,2025-06-07 00:00:00,"wound with branch, fell off",3.0,middle,5.0,yes,2025-06-19 00:00:00
+a. pulchra,d,242.0,gene ,no,3.0,28.0,2025-06-07 00:00:00,NA,3.0,middle,5.0,yes,2025-06-19 00:00:00
+a. pulchra,c,290.0,gene ,no,3.0,28.0,2025-06-07 00:00:00,NA,3.0,middle,5.0,yes,2025-06-19 00:00:00
+a. pulchra,a,160.0,gene ,yes,3.0,28.0,2025-06-07 00:00:00,NA,3.0,middle,5.0,yes,2025-06-19 00:00:00
+a. pulchra,d,247.0,gene ,yes,3.0,28.0,2025-06-07 00:00:00,wound has growing tip already,3.0,middle,5.0,yes,2025-06-19 00:00:00
+a. pulchra,c,250.0,gene ,yes,3.0,28.0,2025-06-07 00:00:00,NA,3.0,middle,5.0,yes,2025-06-19 00:00:00
+a. pulchra,a,194.0,gene ,no,6.0,28.0,2025-06-07 00:00:00,chlorophyll with branch,3.0,middle,5.0,yes,2025-06-19 00:00:00
+a. pulchra,d,220.0,gene ,no,6.0,28.0,2025-06-07 00:00:00,double tip,3.0,middle,5.0,yes,2025-06-19 00:00:00
+a. pulchra,c,281.0,gene ,no,6.0,28.0,2025-06-07 00:00:00,NA,3.0,middle,5.0,yes,2025-06-19 00:00:00
+a. pulchra,a,208.0,gene ,yes,6.0,28.0,2025-06-07 00:00:00,NA,3.0,middle,5.0,yes,2025-06-19 00:00:00
+a. pulchra,d,245.0,gene ,yes,6.0,28.0,2025-06-07 00:00:00,NA,3.0,middle,5.0,yes,2025-06-19 00:00:00
+a. pulchra,c,282.0,gene ,yes,6.0,28.0,2025-06-07 00:00:00,wound looks covered in coenosarc,3.0,middle,5.0,yes,2025-06-19 00:00:00
+a. pulchra,a,157.0,gene ,no,9.0,28.0,2025-06-07 00:00:00,NA,3.0,middle,5.0,yes,2025-06-19 00:00:00
+a. pulchra,d,229.0,gene ,no,9.0,28.0,2025-06-07 00:00:00,NA,3.0,middle,5.0,yes,2025-06-19 00:00:00
+a. pulchra,c,271.0,gene ,no,9.0,28.0,2025-06-07 00:00:00,NA,3.0,middle,5.0,yes,2025-06-19 00:00:00
+a. pulchra,a,187.0,gene ,yes,9.0,28.0,2025-06-07 00:00:00,NA,3.0,middle,5.0,yes,2025-06-19 00:00:00
+a. pulchra,d,218.0,gene ,yes,9.0,28.0,2025-06-07 00:00:00,"wound edge smoothed over, growing tip present with coenosarc",3.0,middle,5.0,yes,2025-06-19 00:00:00
+a. pulchra,c,272.0,gene ,yes,9.0,28.0,2025-06-07 00:00:00,NA,3.0,middle,5.0,yes,2025-06-19 00:00:00
+a. pulchra,a,190.0,gene ,no,12.0,28.0,2025-06-07 00:00:00,NA,3.0,middle,5.0,yes,2025-06-19 00:00:00
+a. pulchra,d,201.0,gene ,no,12.0,28.0,2025-06-07 00:00:00,NA,3.0,middle,5.0,yes,2025-06-19 00:00:00
+a. pulchra,c,273.0,gene ,no,12.0,28.0,2025-06-07 00:00:00,NA,3.0,middle,5.0,yes,2025-06-19 00:00:00
+a. pulchra,a,167.0,gene ,yes,12.0,28.0,2025-06-07 00:00:00,NA,3.0,middle,5.0,yes,2025-06-19 00:00:00
+a. pulchra,d,223.0,gene ,yes,12.0,28.0,2025-06-07 00:00:00,NA,3.0,middle,5.0,yes,2025-06-19 00:00:00
+a. pulchra,c,301.0,gene ,yes,12.0,28.0,2025-06-07 00:00:00,NA,3.0,middle,5.0,yes,2025-06-19 00:00:00
+a. pulchra,a,211.0,gene ,no,4.0,31.0,2025-06-07 00:00:00,NA,3.0,middle,5.0,yes,2025-06-19 00:00:00
+a. pulchra,d,236.0,gene ,no,4.0,31.0,2025-06-07 00:00:00,very easy to cut,3.0,middle,5.0,yes,2025-06-19 00:00:00
+a. pulchra,c,289.0,gene ,no,4.0,31.0,2025-06-07 00:00:00,NA,3.0,middle,5.0,yes,2025-06-19 00:00:00
+a. pulchra,a,138.0,gene ,yes,4.0,31.0,2025-06-07 00:00:00,NA,3.0,middle,5.0,yes,2025-06-19 00:00:00
+a. pulchra,d,206.0,gene ,yes,4.0,31.0,2025-06-07 00:00:00,NA,3.0,middle,5.0,yes,2025-06-19 00:00:00
+a. pulchra,c,295.0,gene ,yes,4.0,31.0,2025-06-07 00:00:00,NA,3.0,middle,5.0,yes,2025-06-19 00:00:00
+a. pulchra,a,153.0,gene ,no,5.0,31.0,2025-06-07 00:00:00,thin and easy to cut,3.0,middle,5.0,yes,2025-06-19 00:00:00
+a. pulchra,d,239.0,gene ,no,5.0,31.0,2025-06-07 00:00:00,NA,3.0,middle,5.0,yes,2025-06-19 00:00:00
+a. pulchra,c,297.0,gene ,no,5.0,31.0,2025-06-07 00:00:00,thick fragment,3.0,middle,5.0,yes,2025-06-19 00:00:00
+a. pulchra,a,212.0,gene ,yes,5.0,31.0,2025-06-07 00:00:00,low branch,3.0,middle,5.0,yes,2025-06-19 00:00:00
+a. pulchra,d,221.0,gene ,yes,5.0,31.0,2025-06-07 00:00:00,NA,3.0,middle,5.0,yes,2025-06-19 00:00:00
+a. pulchra,c,270.0,gene ,yes,5.0,31.0,2025-06-07 00:00:00,wound looks smoothed over/possible growing tip and coenosarc,3.0,middle,5.0,yes,2025-06-19 00:00:00
+a. pulchra,a,155.0,gene ,no,10.0,31.0,2025-06-07 00:00:00,NA,3.0,middle,5.0,yes,2025-06-19 00:00:00
+a. pulchra,d,241.0,gene ,no,10.0,31.0,2025-06-07 00:00:00,NA,3.0,middle,5.0,yes,2025-06-19 00:00:00
+a. pulchra,c,255.0,gene ,no,10.0,31.0,2025-06-07 00:00:00,NA,3.0,middle,5.0,yes,2025-06-19 00:00:00
+a. pulchra,a,193.0,gene ,yes,10.0,31.0,2025-06-07 00:00:00,NA,3.0,middle,5.0,yes,2025-06-19 00:00:00
+a. pulchra,d,216.0,gene ,yes,10.0,31.0,2025-06-07 00:00:00,middle with small branch,3.0,middle,5.0,yes,2025-06-19 00:00:00
+a. pulchra,c,266.0,gene ,yes,10.0,31.0,2025-06-07 00:00:00,2 tips,3.0,middle,5.0,yes,2025-06-19 00:00:00
+a. pulchra,a,168.0,gene ,no,11.0,31.0,2025-06-07 00:00:00,NA,3.0,middle,5.0,yes,2025-06-19 00:00:00
+a. pulchra,d,185.0,gene ,no,11.0,31.0,2025-06-07 00:00:00,NA,3.0,middle,5.0,yes,2025-06-19 00:00:00
+a. pulchra,c,284.0,gene ,no,11.0,31.0,2025-06-07 00:00:00,NA,3.0,middle,5.0,yes,2025-06-19 00:00:00
+a. pulchra,a,112.0,gene ,yes,11.0,31.0,2025-06-07 00:00:00,2 tips,3.0,middle,5.0,yes,2025-06-19 00:00:00
+a. pulchra,d,219.0,gene ,yes,11.0,31.0,2025-06-07 00:00:00,NA,3.0,middle,5.0,yes,2025-06-19 00:00:00
+a. pulchra,c,265.0,gene ,yes,11.0,31.0,2025-06-07 00:00:00,NA,3.0,middle,5.0,yes,2025-06-19 00:00:00
+a. pulchra,a,134.0,gene ,no,3.0,28.0,2025-06-07 00:00:00,"wound with branch, fell off",3.0,tip,4.0,yes,2025-06-19 00:00:00
+a. pulchra,d,242.0,gene ,no,3.0,28.0,2025-06-07 00:00:00,NA,3.0,tip,4.0,yes,2025-06-19 00:00:00
+a. pulchra,c,290.0,gene ,no,3.0,28.0,2025-06-07 00:00:00,NA,3.0,tip,4.0,yes,2025-06-19 00:00:00
+a. pulchra,a,194.0,gene ,no,6.0,28.0,2025-06-07 00:00:00,chlorophyll with branch,3.0,tip,4.0,yes,2025-06-19 00:00:00
+a. pulchra,d,220.0,gene ,no,6.0,28.0,2025-06-07 00:00:00,double tip,3.0,tip,4.0,yes,2025-06-19 00:00:00
+a. pulchra,c,281.0,gene ,no,6.0,28.0,2025-06-07 00:00:00,NA,3.0,tip,4.0,yes,2025-06-19 00:00:00
+a. pulchra,a,157.0,gene ,no,9.0,28.0,2025-06-07 00:00:00,NA,3.0,tip,4.0,yes,2025-06-19 00:00:00
+a. pulchra,d,229.0,gene ,no,9.0,28.0,2025-06-07 00:00:00,NA,3.0,tip,4.0,yes,2025-06-19 00:00:00
+a. pulchra,c,271.0,gene ,no,9.0,28.0,2025-06-07 00:00:00,NA,3.0,tip,4.0,yes,2025-06-19 00:00:00
+a. pulchra,a,190.0,gene ,no,12.0,28.0,2025-06-07 00:00:00,NA,3.0,tip,4.0,yes,2025-06-19 00:00:00
+a. pulchra,d,201.0,gene ,no,12.0,28.0,2025-06-07 00:00:00,NA,3.0,tip,4.0,yes,2025-06-19 00:00:00
+a. pulchra,c,273.0,gene ,no,12.0,28.0,2025-06-07 00:00:00,NA,3.0,tip,4.0,yes,2025-06-19 00:00:00
+a. pulchra,a,211.0,gene ,no,4.0,31.0,2025-06-07 00:00:00,NA,3.0,tip,4.0,yes,2025-06-19 00:00:00
+a. pulchra,d,236.0,gene ,no,4.0,31.0,2025-06-07 00:00:00,very easy to cut,3.0,tip,4.0,yes,2025-06-19 00:00:00
+a. pulchra,c,289.0,gene ,no,4.0,31.0,2025-06-07 00:00:00,NA,3.0,tip,4.0,yes,2025-06-19 00:00:00
+a. pulchra,a,153.0,gene ,no,5.0,31.0,2025-06-07 00:00:00,thin and easy to cut,3.0,tip,4.0,yes,2025-06-19 00:00:00
+a. pulchra,d,239.0,gene ,no,5.0,31.0,2025-06-07 00:00:00,NA,3.0,tip,4.0,yes,2025-06-19 00:00:00
+a. pulchra,c,297.0,gene ,no,5.0,31.0,2025-06-07 00:00:00,thick fragment,3.0,tip,4.0,yes,2025-06-19 00:00:00
+a. pulchra,a,155.0,gene ,no,10.0,31.0,2025-06-07 00:00:00,NA,3.0,tip,4.0,yes,2025-06-19 00:00:00
+a. pulchra,d,241.0,gene ,no,10.0,31.0,2025-06-07 00:00:00,NA,3.0,tip,4.0,yes,2025-06-19 00:00:00
+a. pulchra,c,255.0,gene ,no,10.0,31.0,2025-06-07 00:00:00,NA,3.0,tip,4.0,yes,2025-06-19 00:00:00
+a. pulchra,a,168.0,gene ,no,11.0,31.0,2025-06-07 00:00:00,NA,3.0,tip,4.0,yes,2025-06-19 00:00:00
+a. pulchra,d,185.0,gene ,no,11.0,31.0,2025-06-07 00:00:00,NA,3.0,tip,4.0,yes,2025-06-19 00:00:00
+a. pulchra,c,284.0,gene ,no,11.0,31.0,2025-06-07 00:00:00,NA,3.0,tip,4.0,yes,2025-06-19 00:00:00
+a. pulchra,a,134.0,gene ,no,3.0,28.0,2025-06-07 00:00:00,"wound with branch, fell off",3.0,wound,4 or 5,yes,2025-06-19 00:00:00
+a. pulchra,d,242.0,gene ,no,3.0,28.0,2025-06-07 00:00:00,NA,3.0,wound,4 or 5,yes,2025-06-19 00:00:00
+a. pulchra,c,290.0,gene ,no,3.0,28.0,2025-06-07 00:00:00,NA,3.0,wound,4 or 5,yes,2025-06-19 00:00:00
+a. pulchra,a,160.0,gene ,yes,3.0,28.0,2025-06-07 00:00:00,NA,3.0,wound,4 or 5,yes,2025-06-19 00:00:00
+a. pulchra,d,247.0,gene ,yes,3.0,28.0,2025-06-07 00:00:00,wound has growing tip already,3.0,wound,4 or 5,yes,2025-06-19 00:00:00
+a. pulchra,c,250.0,gene ,yes,3.0,28.0,2025-06-07 00:00:00,NA,3.0,wound,4 or 5,yes,2025-06-19 00:00:00
+a. pulchra,a,194.0,gene ,no,6.0,28.0,2025-06-07 00:00:00,chlorophyll with branch,3.0,wound,4 or 5,yes,2025-06-19 00:00:00
+a. pulchra,d,220.0,gene ,no,6.0,28.0,2025-06-07 00:00:00,double tip,3.0,wound,4 or 5,yes,2025-06-19 00:00:00
+a. pulchra,c,281.0,gene ,no,6.0,28.0,2025-06-07 00:00:00,NA,3.0,wound,4 or 5,yes,2025-06-19 00:00:00
+a. pulchra,a,208.0,gene ,yes,6.0,28.0,2025-06-07 00:00:00,NA,3.0,wound,4 or 5,yes,2025-06-19 00:00:00
+a. pulchra,d,245.0,gene ,yes,6.0,28.0,2025-06-07 00:00:00,NA,3.0,wound,4 or 5,yes,2025-06-19 00:00:00
+a. pulchra,c,282.0,gene ,yes,6.0,28.0,2025-06-07 00:00:00,wound looks covered in coenosarc,3.0,wound,4 or 5,yes,2025-06-19 00:00:00
+a. pulchra,a,157.0,gene ,no,9.0,28.0,2025-06-07 00:00:00,NA,3.0,wound,4 or 5,yes,2025-06-19 00:00:00
+a. pulchra,d,229.0,gene ,no,9.0,28.0,2025-06-07 00:00:00,NA,3.0,wound,4 or 5,yes,2025-06-19 00:00:00
+a. pulchra,c,271.0,gene ,no,9.0,28.0,2025-06-07 00:00:00,NA,3.0,wound,4 or 5,yes,2025-06-19 00:00:00
+a. pulchra,a,187.0,gene ,yes,9.0,28.0,2025-06-07 00:00:00,NA,3.0,wound,4 or 5,yes,2025-06-19 00:00:00
+a. pulchra,d,218.0,gene ,yes,9.0,28.0,2025-06-07 00:00:00,"wound edge smoothed over, growing tip present with coenosarc",3.0,wound,4 or 5,yes,2025-06-19 00:00:00
+a. pulchra,c,272.0,gene ,yes,9.0,28.0,2025-06-07 00:00:00,NA,3.0,wound,4 or 5,yes,2025-06-19 00:00:00
+a. pulchra,a,190.0,gene ,no,12.0,28.0,2025-06-07 00:00:00,NA,3.0,wound,4 or 5,yes,2025-06-19 00:00:00
+a. pulchra,d,201.0,gene ,no,12.0,28.0,2025-06-07 00:00:00,NA,3.0,wound,4 or 5,yes,2025-06-19 00:00:00
+a. pulchra,c,273.0,gene ,no,12.0,28.0,2025-06-07 00:00:00,NA,3.0,wound,4 or 5,yes,2025-06-19 00:00:00
+a. pulchra,a,167.0,gene ,yes,12.0,28.0,2025-06-07 00:00:00,NA,3.0,wound,4 or 5,yes,2025-06-19 00:00:00
+a. pulchra,d,223.0,gene ,yes,12.0,28.0,2025-06-07 00:00:00,NA,3.0,wound,4 or 5,yes,2025-06-19 00:00:00
+a. pulchra,c,301.0,gene ,yes,12.0,28.0,2025-06-07 00:00:00,NA,3.0,wound,4 or 5,yes,2025-06-19 00:00:00
+a. pulchra,a,211.0,gene ,no,4.0,31.0,2025-06-07 00:00:00,NA,3.0,wound,4 or 5,yes,2025-06-19 00:00:00
+a. pulchra,d,236.0,gene ,no,4.0,31.0,2025-06-07 00:00:00,very easy to cut,3.0,wound,4 or 5,yes,2025-06-19 00:00:00
+a. pulchra,c,289.0,gene ,no,4.0,31.0,2025-06-07 00:00:00,NA,3.0,wound,4 or 5,yes,2025-06-19 00:00:00
+a. pulchra,a,138.0,gene ,yes,4.0,31.0,2025-06-07 00:00:00,NA,3.0,wound,4 or 5,yes,2025-06-19 00:00:00
+a. pulchra,d,206.0,gene ,yes,4.0,31.0,2025-06-07 00:00:00,NA,3.0,wound,4 or 5,yes,2025-06-19 00:00:00
+a. pulchra,c,295.0,gene ,yes,4.0,31.0,2025-06-07 00:00:00,NA,3.0,wound,4 or 5,yes,2025-06-19 00:00:00
+a. pulchra,a,153.0,gene ,no,5.0,31.0,2025-06-07 00:00:00,thin and easy to cut,3.0,wound,4 or 5,yes,2025-06-19 00:00:00
+a. pulchra,d,239.0,gene ,no,5.0,31.0,2025-06-07 00:00:00,NA,3.0,wound,4 or 5,yes,2025-06-19 00:00:00
+a. pulchra,c,297.0,gene ,no,5.0,31.0,2025-06-07 00:00:00,thick fragment,3.0,wound,4 or 5,yes,2025-06-19 00:00:00
+a. pulchra,a,212.0,gene ,yes,5.0,31.0,2025-06-07 00:00:00,low branch,3.0,wound,4 or 5,yes,2025-06-19 00:00:00
+a. pulchra,d,221.0,gene ,yes,5.0,31.0,2025-06-07 00:00:00,NA,3.0,wound,4 or 5,yes,2025-06-19 00:00:00
+a. pulchra,c,270.0,gene ,yes,5.0,31.0,2025-06-07 00:00:00,wound looks smoothed over/possible growing tip and coenosarc,3.0,wound,4 or 5,yes,2025-06-19 00:00:00
+a. pulchra,a,155.0,gene ,no,10.0,31.0,2025-06-07 00:00:00,NA,3.0,wound,4 or 5,yes,2025-06-19 00:00:00
+a. pulchra,d,241.0,gene ,no,10.0,31.0,2025-06-07 00:00:00,NA,3.0,wound,4 or 5,yes,2025-06-19 00:00:00
+a. pulchra,c,255.0,gene ,no,10.0,31.0,2025-06-07 00:00:00,NA,3.0,wound,4 or 5,yes,2025-06-19 00:00:00
+a. pulchra,a,193.0,gene ,yes,10.0,31.0,2025-06-07 00:00:00,NA,3.0,wound,4 or 5,yes,2025-06-19 00:00:00
+a. pulchra,d,216.0,gene ,yes,10.0,31.0,2025-06-07 00:00:00,middle with small branch,3.0,wound,4 or 5,yes,2025-06-19 00:00:00
+a. pulchra,c,266.0,gene ,yes,10.0,31.0,2025-06-07 00:00:00,2 tips,3.0,wound,4 or 5,yes,2025-06-19 00:00:00
+a. pulchra,a,168.0,gene ,no,11.0,31.0,2025-06-07 00:00:00,NA,3.0,wound,4 or 5,yes,2025-06-19 00:00:00
+a. pulchra,d,185.0,gene ,no,11.0,31.0,2025-06-07 00:00:00,NA,3.0,wound,4 or 5,yes,2025-06-19 00:00:00
+a. pulchra,c,284.0,gene ,no,11.0,31.0,2025-06-07 00:00:00,NA,3.0,wound,4 or 5,yes,2025-06-19 00:00:00
+a. pulchra,a,112.0,gene ,yes,11.0,31.0,2025-06-07 00:00:00,2 tips,3.0,wound,4 or 5,yes,2025-06-19 00:00:00
+a. pulchra,d,219.0,gene ,yes,11.0,31.0,2025-06-07 00:00:00,NA,3.0,wound,4 or 5,yes,2025-06-19 00:00:00
+a. pulchra,c,265.0,gene ,yes,11.0,31.0,2025-06-07 00:00:00,NA,3.0,wound,4 or 5,yes,2025-06-19 00:00:00
+a. pulchra,a,114.0,gene ,no,3.0,28.0,2025-06-14 00:00:00,NA,10.0,far,7 or 8,yes,2025-06-19 00:00:00
+a. pulchra,d,204.0,gene ,no,3.0,28.0,2025-06-14 00:00:00,NA,10.0,far,7 or 8,yes,2025-06-19 00:00:00
+a. pulchra,c,279.0,gene ,no,3.0,28.0,2025-06-14 00:00:00,NA,10.0,far,7 or 8,yes,2025-06-19 00:00:00
+a. pulchra,a,191.0,gene ,yes,3.0,28.0,2025-06-14 00:00:00,tip with extension,10.0,far,7 or 8,yes,2025-06-19 00:00:00
+a. pulchra,d,258.0,gene ,yes,3.0,28.0,2025-06-14 00:00:00,tip with extension,10.0,far,7 or 8,yes,2025-06-19 00:00:00
+a. pulchra,c,291.0,gene ,yes,3.0,28.0,2025-06-14 00:00:00,tip with extension,10.0,far,7 or 8,yes,2025-06-19 00:00:00
+a. pulchra,a,199.0,gene ,no,6.0,28.0,2025-06-14 00:00:00,NA,10.0,far,7 or 8,yes,2025-06-19 00:00:00
+a. pulchra,d,232.0,gene ,no,6.0,28.0,2025-06-14 00:00:00,NA,10.0,far,7 or 8,yes,2025-06-19 00:00:00
+a. pulchra,c,267.0,gene ,no,6.0,28.0,2025-06-14 00:00:00,NA,10.0,far,7 or 8,yes,2025-06-19 00:00:00
+a. pulchra,a,135.0,gene ,yes,6.0,28.0,2025-06-14 00:00:00,wound is smooth and tip exists but without extension,10.0,far,7 or 8,yes,2025-06-19 00:00:00
+a. pulchra,d,248.0,gene ,yes,6.0,28.0,2025-06-14 00:00:00,tip with extension,10.0,far,7 or 8,yes,2025-06-19 00:00:00
+a. pulchra,c,292.0,gene ,yes,6.0,28.0,2025-06-14 00:00:00,tip has extension,10.0,far,7 or 8,yes,2025-06-19 00:00:00
+a. pulchra,a,137.0,gene ,no,9.0,28.0,2025-06-14 00:00:00,chlorophyll sample with branch,10.0,far,7 or 8,yes,2025-06-19 00:00:00
+a. pulchra,d,217.0,gene ,no,9.0,28.0,2025-06-14 00:00:00,"weird grey tip, tip with branch",10.0,far,7 or 8,yes,2025-06-19 00:00:00
+a. pulchra,c,253.0,gene ,no,9.0,28.0,2025-06-14 00:00:00,NA,10.0,far,7 or 8,yes,2025-06-19 00:00:00
+a. pulchra,a,189.0,gene ,yes,9.0,28.0,2025-06-14 00:00:00,tip with extension,10.0,far,7 or 8,yes,2025-06-19 00:00:00
+a. pulchra,d,237.0,gene ,yes,9.0,28.0,2025-06-14 00:00:00,tip with extension,10.0,far,7 or 8,yes,2025-06-19 00:00:00
+a. pulchra,c,285.0,gene ,yes,9.0,28.0,2025-06-14 00:00:00,tip with extension,10.0,far,7 or 8,yes,2025-06-19 00:00:00
+a. pulchra,a,196.0,gene ,no,12.0,28.0,2025-06-14 00:00:00,NA,10.0,far,7 or 8,yes,2025-06-19 00:00:00
+a. pulchra,d,202.0,gene ,no,12.0,28.0,2025-06-14 00:00:00,NA,10.0,far,7 or 8,yes,2025-06-19 00:00:00
+a. pulchra,c,275.0,gene ,no,12.0,28.0,2025-06-14 00:00:00,NA,10.0,far,7 or 8,yes,2025-06-19 00:00:00
+a. pulchra,a,213.0,gene ,yes,12.0,28.0,2025-06-14 00:00:00,"2 tips on original tip, tip with extension after wounding",10.0,far,7 or 8,yes,2025-06-19 00:00:00
+a. pulchra,d,243.0,gene ,yes,12.0,28.0,2025-06-14 00:00:00,tip with extension,10.0,far,7 or 8,yes,2025-06-19 00:00:00
+a. pulchra,c,252.0,gene ,yes,12.0,28.0,2025-06-14 00:00:00,tip exists but extension is questionable,10.0,far,7 or 8,yes,2025-06-19 00:00:00
+a. pulchra,a,142.0,gene ,no,4.0,31.0,2025-06-14 00:00:00,paling,10.0,far,7 or 8,yes,2025-06-19 00:00:00
+a. pulchra,d,230.0,gene ,no,4.0,31.0,2025-06-14 00:00:00,"paling, wound with branch",10.0,far,7 or 8,yes,2025-06-19 00:00:00
+a. pulchra,c,293.0,gene ,no,4.0,31.0,2025-06-14 00:00:00,NA,10.0,far,7 or 8,yes,2025-06-19 00:00:00
+a. pulchra,a,136.0,gene ,yes,4.0,31.0,2025-06-14 00:00:00,"tip with extension, paling",10.0,far,7 or 8,yes,2025-06-19 00:00:00
+a. pulchra,d,215.0,gene ,yes,4.0,31.0,2025-06-14 00:00:00,"tip exists barely, definitely smoothed over",10.0,far,7 or 8,yes,2025-06-19 00:00:00
+a. pulchra,c,260.0,gene ,yes,4.0,31.0,2025-06-14 00:00:00,2 tips on original frag; tip exists but no extension after wound,10.0,far,7 or 8,yes,2025-06-19 00:00:00
+a. pulchra,a,180.0,gene ,no,5.0,31.0,2025-06-14 00:00:00,paling,10.0,far,7 or 8,yes,2025-06-19 00:00:00
+a. pulchra,d,233.0,gene ,no,5.0,31.0,2025-06-14 00:00:00,paling,10.0,far,7 or 8,yes,2025-06-19 00:00:00
+a. pulchra,c,277.0,gene ,no,5.0,31.0,2025-06-14 00:00:00,NA,10.0,far,7 or 8,yes,2025-06-19 00:00:00
+a. pulchra,a,184.0,gene ,yes,5.0,31.0,2025-06-14 00:00:00,"tip with extension, paling",10.0,far,7 or 8,yes,2025-06-19 00:00:00
+a. pulchra,d,235.0,gene ,yes,5.0,31.0,2025-06-14 00:00:00,wound is smooth and tip exists but without extension,10.0,far,7 or 8,yes,2025-06-19 00:00:00
+a. pulchra,c,251.0,gene ,yes,5.0,31.0,2025-06-14 00:00:00,tip with extension,10.0,far,7 or 8,yes,2025-06-19 00:00:00
+a. pulchra,a,158.0,gene ,no,10.0,31.0,2025-06-14 00:00:00,paling,10.0,far,7 or 8,yes,2025-06-19 00:00:00
+a. pulchra,d,205.0,gene ,no,10.0,31.0,2025-06-14 00:00:00,paling,10.0,far,7 or 8,yes,2025-06-19 00:00:00
+a. pulchra,c,286.0,gene ,no,10.0,31.0,2025-06-14 00:00:00,NA,10.0,far,7 or 8,yes,2025-06-19 00:00:00
+a. pulchra,d,186.0,gene ,yes,10.0,31.0,2025-06-14 00:00:00,"wound is smooth, no tip exists, paling",10.0,far,7 or 8,yes,2025-06-19 00:00:00
+a. pulchra,a,214.0,gene ,yes,10.0,31.0,2025-06-14 00:00:00,"tip with extension, paling",10.0,far,7 or 8,yes,2025-06-19 00:00:00
+a. pulchra,c,283.0,gene ,yes,10.0,31.0,2025-06-14 00:00:00,tip with extension,10.0,far,7 or 8,yes,2025-06-19 00:00:00
+a. pulchra,a,207.0,gene ,no,11.0,31.0,2025-06-14 00:00:00,paling,10.0,far,7 or 8,yes,2025-06-19 00:00:00
+a. pulchra,d,225.0,gene ,no,11.0,31.0,2025-06-14 00:00:00,paling,10.0,far,7 or 8,yes,2025-06-19 00:00:00
+a. pulchra,c,299.0,gene ,no,11.0,31.0,2025-06-14 00:00:00,NA,10.0,far,7 or 8,yes,2025-06-19 00:00:00
+a. pulchra,a,195.0,gene ,yes,11.0,31.0,2025-06-14 00:00:00,"tip with extension, paling",10.0,far,7 or 8,yes,2025-06-19 00:00:00
+a. pulchra,d,240.0,gene ,yes,11.0,31.0,2025-06-14 00:00:00,tip with extension,10.0,far,7 or 8,yes,2025-06-19 00:00:00
+a. pulchra,c,269.0,gene ,yes,11.0,31.0,2025-06-14 00:00:00,"wound is smooth with a tip, no extension",10.0,far,7 or 8,yes,2025-06-19 00:00:00
+a. pulchra,a,114.0,gene ,no,3.0,28.0,2025-06-14 00:00:00,NA,10.0,middle,7.0,yes,2025-06-19 00:00:00
+a. pulchra,d,204.0,gene ,no,3.0,28.0,2025-06-14 00:00:00,NA,10.0,middle,7.0,yes,2025-06-19 00:00:00
+a. pulchra,c,279.0,gene ,no,3.0,28.0,2025-06-14 00:00:00,NA,10.0,middle,7.0,yes,2025-06-19 00:00:00
+a. pulchra,a,191.0,gene ,yes,3.0,28.0,2025-06-14 00:00:00,tip with extension,10.0,middle,7.0,yes,2025-06-19 00:00:00
+a. pulchra,d,258.0,gene ,yes,3.0,28.0,2025-06-14 00:00:00,tip with extension,10.0,middle,7.0,yes,2025-06-19 00:00:00
+a. pulchra,c,291.0,gene ,yes,3.0,28.0,2025-06-14 00:00:00,tip with extension,10.0,middle,7.0,yes,2025-06-19 00:00:00
+a. pulchra,a,199.0,gene ,no,6.0,28.0,2025-06-14 00:00:00,NA,10.0,middle,7.0,yes,2025-06-19 00:00:00
+a. pulchra,d,232.0,gene ,no,6.0,28.0,2025-06-14 00:00:00,NA,10.0,middle,7.0,yes,2025-06-19 00:00:00
+a. pulchra,c,267.0,gene ,no,6.0,28.0,2025-06-14 00:00:00,NA,10.0,middle,7.0,yes,2025-06-19 00:00:00
+a. pulchra,a,135.0,gene ,yes,6.0,28.0,2025-06-14 00:00:00,wound is smooth and tip exists but without extension,10.0,middle,7.0,yes,2025-06-19 00:00:00
+a. pulchra,d,248.0,gene ,yes,6.0,28.0,2025-06-14 00:00:00,tip with extension,10.0,middle,7.0,yes,2025-06-19 00:00:00
+a. pulchra,c,292.0,gene ,yes,6.0,28.0,2025-06-14 00:00:00,tip has extension,10.0,middle,7.0,yes,2025-06-19 00:00:00
+a. pulchra,a,137.0,gene ,no,9.0,28.0,2025-06-14 00:00:00,chlorophyll sample with branch,10.0,middle,7.0,yes,2025-06-19 00:00:00
+a. pulchra,d,217.0,gene ,no,9.0,28.0,2025-06-14 00:00:00,"weird grey tip, tip with branch",10.0,middle,7.0,yes,2025-06-19 00:00:00
+a. pulchra,c,253.0,gene ,no,9.0,28.0,2025-06-14 00:00:00,NA,10.0,middle,7.0,yes,2025-06-19 00:00:00
+a. pulchra,a,189.0,gene ,yes,9.0,28.0,2025-06-14 00:00:00,tip with extension,10.0,middle,7.0,yes,2025-06-19 00:00:00
+a. pulchra,d,237.0,gene ,yes,9.0,28.0,2025-06-14 00:00:00,tip with extension,10.0,middle,7.0,yes,2025-06-19 00:00:00
+a. pulchra,c,285.0,gene ,yes,9.0,28.0,2025-06-14 00:00:00,tip with extension,10.0,middle,7.0,yes,2025-06-19 00:00:00
+a. pulchra,a,196.0,gene ,no,12.0,28.0,2025-06-14 00:00:00,NA,10.0,middle,7.0,yes,2025-06-19 00:00:00
+a. pulchra,d,202.0,gene ,no,12.0,28.0,2025-06-14 00:00:00,NA,10.0,middle,7.0,yes,2025-06-19 00:00:00
+a. pulchra,c,275.0,gene ,no,12.0,28.0,2025-06-14 00:00:00,NA,10.0,middle,7.0,yes,2025-06-19 00:00:00
+a. pulchra,a,213.0,gene ,yes,12.0,28.0,2025-06-14 00:00:00,"2 tips on original tip, tip with extension after wounding",10.0,middle,7.0,yes,2025-06-19 00:00:00
+a. pulchra,d,243.0,gene ,yes,12.0,28.0,2025-06-14 00:00:00,tip with extension,10.0,middle,7.0,yes,2025-06-19 00:00:00
+a. pulchra,c,252.0,gene ,yes,12.0,28.0,2025-06-14 00:00:00,tip exists but extension is questionable,10.0,middle,7.0,yes,2025-06-19 00:00:00
+a. pulchra,a,142.0,gene ,no,4.0,31.0,2025-06-14 00:00:00,paling,10.0,middle,7.0,yes,2025-06-19 00:00:00
+a. pulchra,d,230.0,gene ,no,4.0,31.0,2025-06-14 00:00:00,"paling, wound with branch",10.0,middle,7.0,yes,2025-06-19 00:00:00
+a. pulchra,c,293.0,gene ,no,4.0,31.0,2025-06-14 00:00:00,NA,10.0,middle,7.0,yes,2025-06-19 00:00:00
+a. pulchra,a,136.0,gene ,yes,4.0,31.0,2025-06-14 00:00:00,"tip with extension, paling",10.0,middle,7.0,yes,2025-06-19 00:00:00
+a. pulchra,d,215.0,gene ,yes,4.0,31.0,2025-06-14 00:00:00,"tip exists barely, definitely smoothed over",10.0,middle,7.0,yes,2025-06-19 00:00:00
+a. pulchra,c,260.0,gene ,yes,4.0,31.0,2025-06-14 00:00:00,2 tips on original frag; tip exists but no extension after wound,10.0,middle,7.0,yes,2025-06-19 00:00:00
+a. pulchra,a,180.0,gene ,no,5.0,31.0,2025-06-14 00:00:00,paling,10.0,middle,7.0,yes,2025-06-19 00:00:00
+a. pulchra,d,233.0,gene ,no,5.0,31.0,2025-06-14 00:00:00,paling,10.0,middle,7.0,yes,2025-06-19 00:00:00
+a. pulchra,c,277.0,gene ,no,5.0,31.0,2025-06-14 00:00:00,NA,10.0,middle,7.0,yes,2025-06-19 00:00:00
+a. pulchra,a,184.0,gene ,yes,5.0,31.0,2025-06-14 00:00:00,"tip with extension, paling",10.0,middle,7.0,yes,2025-06-19 00:00:00
+a. pulchra,d,235.0,gene ,yes,5.0,31.0,2025-06-14 00:00:00,wound is smooth and tip exists but without extension,10.0,middle,7.0,yes,2025-06-19 00:00:00
+a. pulchra,c,251.0,gene ,yes,5.0,31.0,2025-06-14 00:00:00,tip with extension,10.0,middle,7.0,yes,2025-06-19 00:00:00
+a. pulchra,a,158.0,gene ,no,10.0,31.0,2025-06-14 00:00:00,paling,10.0,middle,7.0,yes,2025-06-19 00:00:00
+a. pulchra,d,205.0,gene ,no,10.0,31.0,2025-06-14 00:00:00,paling,10.0,middle,7.0,yes,2025-06-19 00:00:00
+a. pulchra,c,286.0,gene ,no,10.0,31.0,2025-06-14 00:00:00,NA,10.0,middle,7.0,yes,2025-06-19 00:00:00
+a. pulchra,d,186.0,gene ,yes,10.0,31.0,2025-06-14 00:00:00,"wound is smooth, no tip exists, paling",10.0,middle,7.0,yes,2025-06-19 00:00:00
+a. pulchra,a,214.0,gene ,yes,10.0,31.0,2025-06-14 00:00:00,"tip with extension, paling",10.0,middle,7.0,yes,2025-06-19 00:00:00
+a. pulchra,c,283.0,gene ,yes,10.0,31.0,2025-06-14 00:00:00,tip with extension,10.0,middle,7.0,yes,2025-06-19 00:00:00
+a. pulchra,a,207.0,gene ,no,11.0,31.0,2025-06-14 00:00:00,paling,10.0,middle,7.0,yes,2025-06-19 00:00:00
+a. pulchra,d,225.0,gene ,no,11.0,31.0,2025-06-14 00:00:00,paling,10.0,middle,7.0,yes,2025-06-19 00:00:00
+a. pulchra,c,299.0,gene ,no,11.0,31.0,2025-06-14 00:00:00,NA,10.0,middle,7.0,yes,2025-06-19 00:00:00
+a. pulchra,a,195.0,gene ,yes,11.0,31.0,2025-06-14 00:00:00,"tip with extension, paling",10.0,middle,7.0,yes,2025-06-19 00:00:00
+a. pulchra,d,240.0,gene ,yes,11.0,31.0,2025-06-14 00:00:00,tip with extension,10.0,middle,7.0,yes,2025-06-19 00:00:00
+a. pulchra,c,269.0,gene ,yes,11.0,31.0,2025-06-14 00:00:00,"wound is smooth with a tip, no extension",10.0,middle,7.0,yes,2025-06-19 00:00:00
+a. pulchra,a,114.0,gene ,no,3.0,28.0,2025-06-14 00:00:00,NA,10.0,tip,6.0,yes,2025-06-19 00:00:00
+a. pulchra,d,204.0,gene ,no,3.0,28.0,2025-06-14 00:00:00,NA,10.0,tip,6.0,yes,2025-06-19 00:00:00
+a. pulchra,c,279.0,gene ,no,3.0,28.0,2025-06-14 00:00:00,NA,10.0,tip,6.0,yes,2025-06-19 00:00:00
+a. pulchra,a,199.0,gene ,no,6.0,28.0,2025-06-14 00:00:00,NA,10.0,tip,6.0,yes,2025-06-19 00:00:00
+a. pulchra,d,232.0,gene ,no,6.0,28.0,2025-06-14 00:00:00,NA,10.0,tip,6.0,yes,2025-06-19 00:00:00
+a. pulchra,c,267.0,gene ,no,6.0,28.0,2025-06-14 00:00:00,NA,10.0,tip,6.0,yes,2025-06-19 00:00:00
+a. pulchra,a,137.0,gene ,no,9.0,28.0,2025-06-14 00:00:00,chlorophyll sample with branch,10.0,tip,6.0,yes,2025-06-19 00:00:00
+a. pulchra,d,217.0,gene ,no,9.0,28.0,2025-06-14 00:00:00,"weird grey tip, tip with branch",10.0,tip,6.0,yes,2025-06-19 00:00:00
+a. pulchra,c,253.0,gene ,no,9.0,28.0,2025-06-14 00:00:00,NA,10.0,tip,6.0,yes,2025-06-19 00:00:00
+a. pulchra,a,196.0,gene ,no,12.0,28.0,2025-06-14 00:00:00,NA,10.0,tip,6.0,yes,2025-06-19 00:00:00
+a. pulchra,d,202.0,gene ,no,12.0,28.0,2025-06-14 00:00:00,NA,10.0,tip,6.0,yes,2025-06-19 00:00:00
+a. pulchra,c,275.0,gene ,no,12.0,28.0,2025-06-14 00:00:00,NA,10.0,tip,6.0,yes,2025-06-19 00:00:00
+a. pulchra,a,142.0,gene ,no,4.0,31.0,2025-06-14 00:00:00,paling,10.0,tip,6.0,yes,2025-06-19 00:00:00
+a. pulchra,d,230.0,gene ,no,4.0,31.0,2025-06-14 00:00:00,"paling, wound with branch",10.0,tip,6.0,yes,2025-06-19 00:00:00
+a. pulchra,c,293.0,gene ,no,4.0,31.0,2025-06-14 00:00:00,NA,10.0,tip,6.0,yes,2025-06-19 00:00:00
+a. pulchra,a,180.0,gene ,no,5.0,31.0,2025-06-14 00:00:00,paling,10.0,tip,6.0,yes,2025-06-19 00:00:00
+a. pulchra,d,233.0,gene ,no,5.0,31.0,2025-06-14 00:00:00,paling,10.0,tip,6.0,yes,2025-06-19 00:00:00
+a. pulchra,c,277.0,gene ,no,5.0,31.0,2025-06-14 00:00:00,NA,10.0,tip,6.0,yes,2025-06-19 00:00:00
+a. pulchra,a,158.0,gene ,no,10.0,31.0,2025-06-14 00:00:00,paling,10.0,tip,6.0,yes,2025-06-19 00:00:00
+a. pulchra,d,205.0,gene ,no,10.0,31.0,2025-06-14 00:00:00,paling,10.0,tip,6.0,yes,2025-06-19 00:00:00
+a. pulchra,c,286.0,gene ,no,10.0,31.0,2025-06-14 00:00:00,NA,10.0,tip,6.0,yes,2025-06-19 00:00:00
+a. pulchra,a,207.0,gene ,no,11.0,31.0,2025-06-14 00:00:00,paling,10.0,tip,6.0,yes,2025-06-19 00:00:00
+a. pulchra,d,225.0,gene ,no,11.0,31.0,2025-06-14 00:00:00,paling,10.0,tip,6.0,yes,2025-06-19 00:00:00
+a. pulchra,c,299.0,gene ,no,11.0,31.0,2025-06-14 00:00:00,NA,10.0,tip,6.0,yes,2025-06-19 00:00:00
+a. pulchra,a,114.0,gene ,no,3.0,28.0,2025-06-14 00:00:00,NA,10.0,wound,6 or 7,yes,2025-06-19 00:00:00
+a. pulchra,d,204.0,gene ,no,3.0,28.0,2025-06-14 00:00:00,NA,10.0,wound,6 or 7,yes,2025-06-19 00:00:00
+a. pulchra,c,279.0,gene ,no,3.0,28.0,2025-06-14 00:00:00,NA,10.0,wound,6 or 7,yes,2025-06-19 00:00:00
+a. pulchra,a,191.0,gene ,yes,3.0,28.0,2025-06-14 00:00:00,tip with extension,10.0,wound,6 or 7,yes,2025-06-19 00:00:00
+a. pulchra,d,258.0,gene ,yes,3.0,28.0,2025-06-14 00:00:00,tip with extension,10.0,wound,6 or 7,yes,2025-06-19 00:00:00
+a. pulchra,c,291.0,gene ,yes,3.0,28.0,2025-06-14 00:00:00,tip with extension,10.0,wound,6 or 7,yes,2025-06-19 00:00:00
+a. pulchra,a,199.0,gene ,no,6.0,28.0,2025-06-14 00:00:00,NA,10.0,wound,6 or 7,yes,2025-06-19 00:00:00
+a. pulchra,d,232.0,gene ,no,6.0,28.0,2025-06-14 00:00:00,NA,10.0,wound,6 or 7,yes,2025-06-19 00:00:00
+a. pulchra,c,267.0,gene ,no,6.0,28.0,2025-06-14 00:00:00,NA,10.0,wound,6 or 7,yes,2025-06-19 00:00:00
+a. pulchra,a,135.0,gene ,yes,6.0,28.0,2025-06-14 00:00:00,wound is smooth and tip exists but without extension,10.0,wound,6 or 7,yes,2025-06-19 00:00:00
+a. pulchra,d,248.0,gene ,yes,6.0,28.0,2025-06-14 00:00:00,tip with extension,10.0,wound,6 or 7,yes,2025-06-19 00:00:00
+a. pulchra,c,292.0,gene ,yes,6.0,28.0,2025-06-14 00:00:00,tip has extension,10.0,wound,6 or 7,yes,2025-06-19 00:00:00
+a. pulchra,a,137.0,gene ,no,9.0,28.0,2025-06-14 00:00:00,chlorophyll sample with branch,10.0,wound,6 or 7,yes,2025-06-19 00:00:00
+a. pulchra,d,217.0,gene ,no,9.0,28.0,2025-06-14 00:00:00,"weird grey tip, tip with branch",10.0,wound,6 or 7,yes,2025-06-19 00:00:00
+a. pulchra,c,253.0,gene ,no,9.0,28.0,2025-06-14 00:00:00,NA,10.0,wound,6 or 7,yes,2025-06-19 00:00:00
+a. pulchra,a,189.0,gene ,yes,9.0,28.0,2025-06-14 00:00:00,tip with extension,10.0,wound,6 or 7,yes,2025-06-19 00:00:00
+a. pulchra,d,237.0,gene ,yes,9.0,28.0,2025-06-14 00:00:00,tip with extension,10.0,wound,6 or 7,yes,2025-06-19 00:00:00
+a. pulchra,c,285.0,gene ,yes,9.0,28.0,2025-06-14 00:00:00,tip with extension,10.0,wound,6 or 7,yes,2025-06-19 00:00:00
+a. pulchra,a,196.0,gene ,no,12.0,28.0,2025-06-14 00:00:00,NA,10.0,wound,6 or 7,yes,2025-06-19 00:00:00
+a. pulchra,d,202.0,gene ,no,12.0,28.0,2025-06-14 00:00:00,NA,10.0,wound,6 or 7,yes,2025-06-19 00:00:00
+a. pulchra,c,275.0,gene ,no,12.0,28.0,2025-06-14 00:00:00,NA,10.0,wound,6 or 7,yes,2025-06-19 00:00:00
+a. pulchra,a,213.0,gene ,yes,12.0,28.0,2025-06-14 00:00:00,"2 tips on original tip, tip with extension after wounding",10.0,wound,6 or 7,yes,2025-06-19 00:00:00
+a. pulchra,d,243.0,gene ,yes,12.0,28.0,2025-06-14 00:00:00,tip with extension,10.0,wound,6 or 7,yes,2025-06-19 00:00:00
+a. pulchra,c,252.0,gene ,yes,12.0,28.0,2025-06-14 00:00:00,tip exists but extension is questionable,10.0,wound,6 or 7,yes,2025-06-19 00:00:00
+a. pulchra,a,142.0,gene ,no,4.0,31.0,2025-06-14 00:00:00,paling,10.0,wound,6 or 7,yes,2025-06-19 00:00:00
+a. pulchra,d,230.0,gene ,no,4.0,31.0,2025-06-14 00:00:00,"paling, wound with branch",10.0,wound,6 or 7,yes,2025-06-19 00:00:00
+a. pulchra,c,293.0,gene ,no,4.0,31.0,2025-06-14 00:00:00,NA,10.0,wound,6 or 7,yes,2025-06-19 00:00:00
+a. pulchra,a,136.0,gene ,yes,4.0,31.0,2025-06-14 00:00:00,"tip with extension, paling",10.0,wound,6 or 7,yes,2025-06-19 00:00:00
+a. pulchra,d,215.0,gene ,yes,4.0,31.0,2025-06-14 00:00:00,"tip exists barely, definitely smoothed over",10.0,wound,6 or 7,yes,2025-06-19 00:00:00
+a. pulchra,c,260.0,gene ,yes,4.0,31.0,2025-06-14 00:00:00,2 tips on original frag; tip exists but no extension after wound,10.0,wound,6 or 7,yes,2025-06-19 00:00:00
+a. pulchra,a,180.0,gene ,no,5.0,31.0,2025-06-14 00:00:00,paling,10.0,wound,6 or 7,yes,2025-06-19 00:00:00
+a. pulchra,d,233.0,gene ,no,5.0,31.0,2025-06-14 00:00:00,paling,10.0,wound,6 or 7,yes,2025-06-19 00:00:00
+a. pulchra,c,277.0,gene ,no,5.0,31.0,2025-06-14 00:00:00,NA,10.0,wound,6 or 7,yes,2025-06-19 00:00:00
+a. pulchra,a,184.0,gene ,yes,5.0,31.0,2025-06-14 00:00:00,"tip with extension, paling",10.0,wound,6 or 7,yes,2025-06-19 00:00:00
+a. pulchra,d,235.0,gene ,yes,5.0,31.0,2025-06-14 00:00:00,wound is smooth and tip exists but without extension,10.0,wound,6 or 7,yes,2025-06-19 00:00:00
+a. pulchra,c,251.0,gene ,yes,5.0,31.0,2025-06-14 00:00:00,tip with extension,10.0,wound,6 or 7,yes,2025-06-19 00:00:00
+a. pulchra,a,158.0,gene ,no,10.0,31.0,2025-06-14 00:00:00,paling,10.0,wound,6 or 7,yes,2025-06-19 00:00:00
+a. pulchra,d,205.0,gene ,no,10.0,31.0,2025-06-14 00:00:00,paling,10.0,wound,6 or 7,yes,2025-06-19 00:00:00
+a. pulchra,c,286.0,gene ,no,10.0,31.0,2025-06-14 00:00:00,NA,10.0,wound,6 or 7,yes,2025-06-19 00:00:00
+a. pulchra,d,186.0,gene ,yes,10.0,31.0,2025-06-14 00:00:00,"wound is smooth, no tip exists, paling",10.0,wound,6 or 7,yes,2025-06-19 00:00:00
+a. pulchra,a,214.0,gene ,yes,10.0,31.0,2025-06-14 00:00:00,"tip with extension, paling",10.0,wound,6 or 7,yes,2025-06-19 00:00:00
+a. pulchra,c,283.0,gene ,yes,10.0,31.0,2025-06-14 00:00:00,tip with extension,10.0,wound,6 or 7,yes,2025-06-19 00:00:00
+a. pulchra,a,207.0,gene ,no,11.0,31.0,2025-06-14 00:00:00,paling,10.0,wound,6 or 7,yes,2025-06-19 00:00:00
+a. pulchra,d,225.0,gene ,no,11.0,31.0,2025-06-14 00:00:00,paling,10.0,wound,6 or 7,yes,2025-06-19 00:00:00
+a. pulchra,c,299.0,gene ,no,11.0,31.0,2025-06-14 00:00:00,NA,10.0,wound,6 or 7,yes,2025-06-19 00:00:00
+a. pulchra,a,195.0,gene ,yes,11.0,31.0,2025-06-14 00:00:00,"tip with extension, paling",10.0,wound,6 or 7,yes,2025-06-19 00:00:00
+a. pulchra,d,240.0,gene ,yes,11.0,31.0,2025-06-14 00:00:00,tip with extension,10.0,wound,6 or 7,yes,2025-06-19 00:00:00
+a. pulchra,c,269.0,gene ,yes,11.0,31.0,2025-06-14 00:00:00,"wound is smooth with a tip, no extension",10.0,wound,6 or 7,yes,2025-06-19 00:00:00
+a. pulchra,c,139.0,gene/physio,no,3.0,28.0,2025-06-19 00:00:00,NA,15.0,far,9 or 10,yes,2025-06-19 00:00:00
+a. pulchra,d,156.0,gene/physio,no,3.0,28.0,2025-06-19 00:00:00,NA,15.0,far,9 or 10,yes,2025-06-19 00:00:00
+a. pulchra,a,162.0,gene/physio,no,3.0,28.0,2025-06-19 00:00:00,NA,15.0,far,9 or 10,yes,2025-06-19 00:00:00
+a. pulchra,d,113.0,gene/physio,yes,3.0,28.0,2025-06-19 00:00:00,NA,15.0,far,9 or 10,yes,2025-06-19 00:00:00
+a. pulchra,c,129.0,gene/physio,yes,3.0,28.0,2025-06-19 00:00:00,"nearly healed but not indistinguishable, Zoox sample has branch ",15.0,far,9 or 10,yes,2025-06-19 00:00:00
+a. pulchra,a,172.0,gene/physio,yes,3.0,28.0,2025-06-19 00:00:00,nearly healed but not indistinguishable ,15.0,far,9 or 10,yes,2025-06-19 00:00:00
+a. pulchra,c,123.0,gene/physio,no,6.0,28.0,2025-06-19 00:00:00,NA,15.0,far,9 or 10,yes,2025-06-19 00:00:00
+a. pulchra,d,145.0,gene/physio,no,6.0,28.0,2025-06-19 00:00:00,NA,15.0,far,9 or 10,yes,2025-06-19 00:00:00
+a. pulchra,a,169.0,gene/physio,no,6.0,28.0,2025-06-19 00:00:00,NA,15.0,far,9 or 10,yes,2025-06-19 00:00:00
+a. pulchra,c,117.0,gene/physio,yes,6.0,28.0,2025-06-19 00:00:00,wound still obvious,15.0,far,9 or 10,yes,2025-06-19 00:00:00
+a. pulchra,d,146.0,gene/physio,yes,6.0,28.0,2025-06-19 00:00:00,wound still obvious,15.0,far,9 or 10,yes,2025-06-19 00:00:00
+a. pulchra,a,179.0,gene/physio,yes,6.0,28.0,2025-06-19 00:00:00,wound still obvious,15.0,far,9 or 10,yes,2025-06-19 00:00:00
+a. pulchra,d,122.0,gene/physio,no,9.0,28.0,2025-06-19 00:00:00,NA,15.0,far,9 or 10,yes,2025-06-19 00:00:00
+a. pulchra,c,131.0,gene/physio,no,9.0,28.0,2025-06-19 00:00:00,NA,15.0,far,9 or 10,yes,2025-06-19 00:00:00
+a. pulchra,a,173.0,gene/physio,no,9.0,28.0,2025-06-19 00:00:00,NA,15.0,far,9 or 10,yes,2025-06-19 00:00:00
+a. pulchra,d,118.0,gene/physio,yes,9.0,28.0,2025-06-19 00:00:00,NA,15.0,far,9 or 10,yes,2025-06-19 00:00:00
+a. pulchra,c,121.0,gene/physio,yes,9.0,28.0,2025-06-19 00:00:00,NA,15.0,far,9 or 10,yes,2025-06-19 00:00:00
+a. pulchra,a,166.0,gene/physio,yes,9.0,28.0,2025-06-19 00:00:00,middle with branch,15.0,far,9 or 10,yes,2025-06-19 00:00:00
+a. pulchra,c,125.0,gene/physio,no,12.0,28.0,2025-06-19 00:00:00,NA,15.0,far,9 or 10,yes,2025-06-19 00:00:00
+a. pulchra,d,147.0,gene/physio,no,12.0,28.0,2025-06-19 00:00:00,NA,15.0,far,9 or 10,yes,2025-06-19 00:00:00
+a. pulchra,a,176.0,gene/physio,no,12.0,28.0,2025-06-19 00:00:00,NA,15.0,far,9 or 10,yes,2025-06-19 00:00:00
+a. pulchra,c,130.0,gene/physio,yes,12.0,28.0,2025-06-19 00:00:00,NA,15.0,far,9 or 10,yes,2025-06-19 00:00:00
+a. pulchra,d,144.0,gene/physio,yes,12.0,28.0,2025-06-19 00:00:00,NA,15.0,far,9 or 10,yes,2025-06-19 00:00:00
+a. pulchra,a,177.0,gene/physio,yes,12.0,28.0,2025-06-19 00:00:00,NA,15.0,far,9 or 10,yes,2025-06-19 00:00:00
+a. pulchra,c,141.0,gene/physio,no,4.0,31.0,2025-06-19 00:00:00,NA,15.0,far,9 or 10,yes,2025-06-19 00:00:00
+a. pulchra,d,150.0,gene/physio,no,4.0,31.0,2025-06-19 00:00:00,brittle  ,15.0,far,9 or 10,yes,2025-06-19 00:00:00
+a. pulchra,a,165.0,gene/physio,no,4.0,31.0,2025-06-19 00:00:00,NA,15.0,far,9 or 10,yes,2025-06-19 00:00:00
+a. pulchra,c,133.0,gene/physio,yes,4.0,31.0,2025-06-19 00:00:00,NA,15.0,far,9 or 10,yes,2025-06-19 00:00:00
+a. pulchra,d,143.0,gene/physio,yes,4.0,31.0,2025-06-19 00:00:00,NA,15.0,far,9 or 10,yes,2025-06-19 00:00:00
+a. pulchra,a,152.0,gene/physio,yes,4.0,31.0,2025-06-19 00:00:00,"brittle when slicing, branch on wound sample",15.0,far,9 or 10,yes,2025-06-19 00:00:00
+a. pulchra,c,124.0,gene/physio,no,5.0,31.0,2025-06-19 00:00:00,slightly paling,15.0,far,9 or 10,yes,2025-06-19 00:00:00
+a. pulchra,d,154.0,gene/physio,no,5.0,31.0,2025-06-19 00:00:00,"paling, brittle",15.0,far,9 or 10,yes,2025-06-19 00:00:00
+a. pulchra,a,161.0,gene/physio,no,5.0,31.0,2025-06-19 00:00:00,"bleached, brittle",15.0,far,9 or 10,yes,2025-06-19 00:00:00
+a. pulchra,c,115.0,gene/physio,yes,5.0,31.0,2025-06-19 00:00:00,slightly paling,15.0,far,9 or 10,yes,2025-06-19 00:00:00
+a. pulchra,d,126.0,gene/physio,yes,5.0,31.0,2025-06-19 00:00:00,"paling, brittle",15.0,far,9 or 10,yes,2025-06-19 00:00:00
+a. pulchra,a,170.0,gene/physio,yes,5.0,31.0,2025-06-19 00:00:00,bleached ,15.0,far,9 or 10,yes,2025-06-19 00:00:00
+a. pulchra,c,119.0,gene/physio,no,10.0,31.0,2025-06-19 00:00:00,NA,15.0,far,9 or 10,yes,2025-06-19 00:00:00
+a. pulchra,d,120.0,gene/physio,no,10.0,31.0,2025-06-19 00:00:00,brittle,15.0,far,9 or 10,yes,2025-06-19 00:00:00
+a. pulchra,c,132.0,gene/physio,no,10.0,31.0,2025-06-19 00:00:00,NA,15.0,far,9 or 10,yes,2025-06-19 00:00:00
+a. pulchra,a,178.0,gene/physio,no,10.0,31.0,2025-06-19 00:00:00,brittle,15.0,far,9 or 10,yes,2025-06-19 00:00:00
+a. pulchra,d,110.0,gene/physio,yes,10.0,31.0,2025-06-19 00:00:00,NA,15.0,far,9 or 10,yes,2025-06-19 00:00:00
+a. pulchra,a,175.0,gene/physio,yes,10.0,31.0,2025-06-19 00:00:00,NA,15.0,far,9 or 10,yes,2025-06-19 00:00:00
+a. pulchra,c,127.0,gene/physio,no,11.0,31.0,2025-06-19 00:00:00,NA,15.0,far,9 or 10,yes,2025-06-19 00:00:00
+a. pulchra,d,128.0,gene/physio,no,11.0,31.0,2025-06-19 00:00:00,paling,15.0,far,9 or 10,yes,2025-06-19 00:00:00
+a. pulchra,a,163.0,gene/physio,no,11.0,31.0,2025-06-19 00:00:00,NA,15.0,far,9 or 10,yes,2025-06-19 00:00:00
+a. pulchra,c,116.0,gene/physio,yes,11.0,31.0,2025-06-19 00:00:00,NA,15.0,far,9 or 10,yes,2025-06-19 00:00:00
+a. pulchra,d,149.0,gene/physio,yes,11.0,31.0,2025-06-19 00:00:00,paling,15.0,far,9 or 10,yes,2025-06-19 00:00:00
+a. pulchra,a,174.0,gene/physio,yes,11.0,31.0,2025-06-19 00:00:00,"paling, wound with branch",15.0,far,9 or 10,yes,2025-06-19 00:00:00
+a. pulchra,c,139.0,gene/physio,no,3.0,28.0,2025-06-19 00:00:00,NA,15.0,middle,9.0,yes,2025-06-19 00:00:00
+a. pulchra,d,156.0,gene/physio,no,3.0,28.0,2025-06-19 00:00:00,NA,15.0,middle,9.0,yes,2025-06-19 00:00:00
+a. pulchra,a,162.0,gene/physio,no,3.0,28.0,2025-06-19 00:00:00,NA,15.0,middle,9.0,yes,2025-06-19 00:00:00
+a. pulchra,d,113.0,gene/physio,yes,3.0,28.0,2025-06-19 00:00:00,NA,15.0,middle,9.0,yes,2025-06-19 00:00:00
+a. pulchra,c,129.0,gene/physio,yes,3.0,28.0,2025-06-19 00:00:00,"nearly healed but not indistinguishable, Zoox sample has branch ",15.0,middle,9.0,yes,2025-06-19 00:00:00
+a. pulchra,a,172.0,gene/physio,yes,3.0,28.0,2025-06-19 00:00:00,nearly healed but not indistinguishable ,15.0,middle,9.0,yes,2025-06-19 00:00:00
+a. pulchra,c,123.0,gene/physio,no,6.0,28.0,2025-06-19 00:00:00,NA,15.0,middle,9.0,yes,2025-06-19 00:00:00
+a. pulchra,d,145.0,gene/physio,no,6.0,28.0,2025-06-19 00:00:00,NA,15.0,middle,9.0,yes,2025-06-19 00:00:00
+a. pulchra,a,169.0,gene/physio,no,6.0,28.0,2025-06-19 00:00:00,NA,15.0,middle,9.0,yes,2025-06-19 00:00:00
+a. pulchra,c,117.0,gene/physio,yes,6.0,28.0,2025-06-19 00:00:00,wound still obvious,15.0,middle,9.0,yes,2025-06-19 00:00:00
+a. pulchra,d,146.0,gene/physio,yes,6.0,28.0,2025-06-19 00:00:00,wound still obvious,15.0,middle,9.0,yes,2025-06-19 00:00:00
+a. pulchra,a,179.0,gene/physio,yes,6.0,28.0,2025-06-19 00:00:00,wound still obvious,15.0,middle,9.0,yes,2025-06-19 00:00:00
+a. pulchra,d,122.0,gene/physio,no,9.0,28.0,2025-06-19 00:00:00,NA,15.0,middle,9.0,yes,2025-06-19 00:00:00
+a. pulchra,c,131.0,gene/physio,no,9.0,28.0,2025-06-19 00:00:00,NA,15.0,middle,9.0,yes,2025-06-19 00:00:00
+a. pulchra,a,173.0,gene/physio,no,9.0,28.0,2025-06-19 00:00:00,NA,15.0,middle,9.0,yes,2025-06-19 00:00:00
+a. pulchra,d,118.0,gene/physio,yes,9.0,28.0,2025-06-19 00:00:00,NA,15.0,middle,9.0,yes,2025-06-19 00:00:00
+a. pulchra,c,121.0,gene/physio,yes,9.0,28.0,2025-06-19 00:00:00,NA,15.0,middle,9.0,yes,2025-06-19 00:00:00
+a. pulchra,a,166.0,gene/physio,yes,9.0,28.0,2025-06-19 00:00:00,middle with branch,15.0,middle,9.0,yes,2025-06-19 00:00:00
+a. pulchra,c,125.0,gene/physio,no,12.0,28.0,2025-06-19 00:00:00,NA,15.0,middle,9.0,yes,2025-06-19 00:00:00
+a. pulchra,d,147.0,gene/physio,no,12.0,28.0,2025-06-19 00:00:00,NA,15.0,middle,9.0,yes,2025-06-19 00:00:00
+a. pulchra,a,176.0,gene/physio,no,12.0,28.0,2025-06-19 00:00:00,NA,15.0,middle,9.0,yes,2025-06-19 00:00:00
+a. pulchra,c,130.0,gene/physio,yes,12.0,28.0,2025-06-19 00:00:00,NA,15.0,middle,9.0,yes,2025-06-19 00:00:00
+a. pulchra,d,144.0,gene/physio,yes,12.0,28.0,2025-06-19 00:00:00,NA,15.0,middle,9.0,yes,2025-06-19 00:00:00
+a. pulchra,a,177.0,gene/physio,yes,12.0,28.0,2025-06-19 00:00:00,NA,15.0,middle,9.0,yes,2025-06-19 00:00:00
+a. pulchra,c,141.0,gene/physio,no,4.0,31.0,2025-06-19 00:00:00,NA,15.0,middle,9.0,yes,2025-06-19 00:00:00
+a. pulchra,d,150.0,gene/physio,no,4.0,31.0,2025-06-19 00:00:00,brittle  ,15.0,middle,9.0,yes,2025-06-19 00:00:00
+a. pulchra,a,165.0,gene/physio,no,4.0,31.0,2025-06-19 00:00:00,NA,15.0,middle,9.0,yes,2025-06-19 00:00:00
+a. pulchra,c,133.0,gene/physio,yes,4.0,31.0,2025-06-19 00:00:00,NA,15.0,middle,9.0,yes,2025-06-19 00:00:00
+a. pulchra,d,143.0,gene/physio,yes,4.0,31.0,2025-06-19 00:00:00,NA,15.0,middle,9.0,yes,2025-06-19 00:00:00
+a. pulchra,a,152.0,gene/physio,yes,4.0,31.0,2025-06-19 00:00:00,"brittle when slicing, branch on wound sample",15.0,middle,9.0,yes,2025-06-19 00:00:00
+a. pulchra,c,124.0,gene/physio,no,5.0,31.0,2025-06-19 00:00:00,slightly paling,15.0,middle,9.0,yes,2025-06-19 00:00:00
+a. pulchra,d,154.0,gene/physio,no,5.0,31.0,2025-06-19 00:00:00,"paling, brittle",15.0,middle,9.0,yes,2025-06-19 00:00:00
+a. pulchra,a,161.0,gene/physio,no,5.0,31.0,2025-06-19 00:00:00,"bleached, brittle",15.0,middle,9.0,yes,2025-06-19 00:00:00
+a. pulchra,c,115.0,gene/physio,yes,5.0,31.0,2025-06-19 00:00:00,slightly paling,15.0,middle,9.0,yes,2025-06-19 00:00:00
+a. pulchra,d,126.0,gene/physio,yes,5.0,31.0,2025-06-19 00:00:00,"paling, brittle",15.0,middle,9.0,yes,2025-06-19 00:00:00
+a. pulchra,a,170.0,gene/physio,yes,5.0,31.0,2025-06-19 00:00:00,bleached ,15.0,middle,9.0,yes,2025-06-19 00:00:00
+a. pulchra,c,119.0,gene/physio,no,10.0,31.0,2025-06-19 00:00:00,NA,15.0,middle,9.0,yes,2025-06-19 00:00:00
+a. pulchra,d,120.0,gene/physio,no,10.0,31.0,2025-06-19 00:00:00,brittle,15.0,middle,9.0,yes,2025-06-19 00:00:00
+a. pulchra,c,132.0,gene/physio,no,10.0,31.0,2025-06-19 00:00:00,NA,15.0,middle,9.0,yes,2025-06-19 00:00:00
+a. pulchra,a,178.0,gene/physio,no,10.0,31.0,2025-06-19 00:00:00,brittle,15.0,middle,9.0,yes,2025-06-19 00:00:00
+a. pulchra,d,110.0,gene/physio,yes,10.0,31.0,2025-06-19 00:00:00,NA,15.0,middle,9.0,yes,2025-06-19 00:00:00
+a. pulchra,a,175.0,gene/physio,yes,10.0,31.0,2025-06-19 00:00:00,NA,15.0,middle,9.0,yes,2025-06-19 00:00:00
+a. pulchra,c,127.0,gene/physio,no,11.0,31.0,2025-06-19 00:00:00,NA,15.0,middle,9.0,yes,2025-06-19 00:00:00
+a. pulchra,d,128.0,gene/physio,no,11.0,31.0,2025-06-19 00:00:00,paling,15.0,middle,9.0,yes,2025-06-19 00:00:00
+a. pulchra,a,163.0,gene/physio,no,11.0,31.0,2025-06-19 00:00:00,NA,15.0,middle,9.0,yes,2025-06-19 00:00:00
+a. pulchra,c,116.0,gene/physio,yes,11.0,31.0,2025-06-19 00:00:00,NA,15.0,middle,9.0,yes,2025-06-19 00:00:00
+a. pulchra,d,149.0,gene/physio,yes,11.0,31.0,2025-06-19 00:00:00,paling,15.0,middle,9.0,yes,2025-06-19 00:00:00
+a. pulchra,a,174.0,gene/physio,yes,11.0,31.0,2025-06-19 00:00:00,"paling, wound with branch",15.0,middle,9.0,yes,2025-06-19 00:00:00
+a. pulchra,c,139.0,gene/physio,no,3.0,28.0,2025-06-19 00:00:00,NA,15.0,tip,8.0,yes,2025-06-19 00:00:00
+a. pulchra,d,156.0,gene/physio,no,3.0,28.0,2025-06-19 00:00:00,NA,15.0,tip,8.0,yes,2025-06-19 00:00:00
+a. pulchra,a,162.0,gene/physio,no,3.0,28.0,2025-06-19 00:00:00,NA,15.0,tip,8.0,yes,2025-06-19 00:00:00
+a. pulchra,c,123.0,gene/physio,no,6.0,28.0,2025-06-19 00:00:00,NA,15.0,tip,8.0,yes,2025-06-19 00:00:00
+a. pulchra,d,145.0,gene/physio,no,6.0,28.0,2025-06-19 00:00:00,NA,15.0,tip,8.0,yes,2025-06-19 00:00:00
+a. pulchra,a,169.0,gene/physio,no,6.0,28.0,2025-06-19 00:00:00,NA,15.0,tip,8.0,yes,2025-06-19 00:00:00
+a. pulchra,d,122.0,gene/physio,no,9.0,28.0,2025-06-19 00:00:00,NA,15.0,tip,8.0,yes,2025-06-19 00:00:00
+a. pulchra,c,131.0,gene/physio,no,9.0,28.0,2025-06-19 00:00:00,NA,15.0,tip,8.0,yes,2025-06-19 00:00:00
+a. pulchra,a,173.0,gene/physio,no,9.0,28.0,2025-06-19 00:00:00,NA,15.0,tip,8.0,yes,2025-06-19 00:00:00
+a. pulchra,c,125.0,gene/physio,no,12.0,28.0,2025-06-19 00:00:00,NA,15.0,tip,8.0,yes,2025-06-19 00:00:00
+a. pulchra,d,147.0,gene/physio,no,12.0,28.0,2025-06-19 00:00:00,NA,15.0,tip,8.0,yes,2025-06-19 00:00:00
+a. pulchra,a,176.0,gene/physio,no,12.0,28.0,2025-06-19 00:00:00,NA,15.0,tip,8.0,yes,2025-06-19 00:00:00
+a. pulchra,c,141.0,gene/physio,no,4.0,31.0,2025-06-19 00:00:00,NA,15.0,tip,8.0,yes,2025-06-19 00:00:00
+a. pulchra,d,150.0,gene/physio,no,4.0,31.0,2025-06-19 00:00:00,brittle  ,15.0,tip,8.0,yes,2025-06-19 00:00:00
+a. pulchra,a,165.0,gene/physio,no,4.0,31.0,2025-06-19 00:00:00,NA,15.0,tip,8.0,yes,2025-06-19 00:00:00
+a. pulchra,c,124.0,gene/physio,no,5.0,31.0,2025-06-19 00:00:00,slightly paling,15.0,tip,8.0,yes,2025-06-19 00:00:00
+a. pulchra,d,154.0,gene/physio,no,5.0,31.0,2025-06-19 00:00:00,"paling, brittle",15.0,tip,8.0,yes,2025-06-19 00:00:00
+a. pulchra,a,161.0,gene/physio,no,5.0,31.0,2025-06-19 00:00:00,"bleached, brittle",15.0,tip,8.0,yes,2025-06-19 00:00:00
+a. pulchra,c,119.0,gene/physio,no,10.0,31.0,2025-06-19 00:00:00,NA,15.0,tip,8.0,yes,2025-06-19 00:00:00
+a. pulchra,d,120.0,gene/physio,no,10.0,31.0,2025-06-19 00:00:00,brittle,15.0,tip,8.0,yes,2025-06-19 00:00:00
+a. pulchra,c,132.0,gene/physio,no,10.0,31.0,2025-06-19 00:00:00,NA,15.0,tip,8.0,yes,2025-06-19 00:00:00
+a. pulchra,a,178.0,gene/physio,no,10.0,31.0,2025-06-19 00:00:00,brittle,15.0,tip,8.0,yes,2025-06-19 00:00:00
+a. pulchra,c,127.0,gene/physio,no,11.0,31.0,2025-06-19 00:00:00,NA,15.0,tip,8.0,yes,2025-06-19 00:00:00
+a. pulchra,d,128.0,gene/physio,no,11.0,31.0,2025-06-19 00:00:00,paling,15.0,tip,8.0,yes,2025-06-19 00:00:00
+a. pulchra,a,163.0,gene/physio,no,11.0,31.0,2025-06-19 00:00:00,NA,15.0,tip,8.0,yes,2025-06-19 00:00:00
+a. pulchra,c,139.0,gene/physio,no,3.0,28.0,2025-06-19 00:00:00,NA,15.0,wound,8 or 9,yes,2025-06-19 00:00:00
+a. pulchra,d,156.0,gene/physio,no,3.0,28.0,2025-06-19 00:00:00,NA,15.0,wound,8 or 9,yes,2025-06-19 00:00:00
+a. pulchra,a,162.0,gene/physio,no,3.0,28.0,2025-06-19 00:00:00,NA,15.0,wound,8 or 9,yes,2025-06-19 00:00:00
+a. pulchra,d,113.0,gene/physio,yes,3.0,28.0,2025-06-19 00:00:00,NA,15.0,wound,8 or 9,yes,2025-06-19 00:00:00
+a. pulchra,c,129.0,gene/physio,yes,3.0,28.0,2025-06-19 00:00:00,"nearly healed but not indistinguishable, Zoox sample has branch ",15.0,wound,8 or 9,yes,2025-06-19 00:00:00
+a. pulchra,a,172.0,gene/physio,yes,3.0,28.0,2025-06-19 00:00:00,nearly healed but not indistinguishable ,15.0,wound,8 or 9,yes,2025-06-19 00:00:00
+a. pulchra,c,123.0,gene/physio,no,6.0,28.0,2025-06-19 00:00:00,NA,15.0,wound,8 or 9,yes,2025-06-19 00:00:00
+a. pulchra,d,145.0,gene/physio,no,6.0,28.0,2025-06-19 00:00:00,NA,15.0,wound,8 or 9,yes,2025-06-19 00:00:00
+a. pulchra,a,169.0,gene/physio,no,6.0,28.0,2025-06-19 00:00:00,NA,15.0,wound,8 or 9,yes,2025-06-19 00:00:00
+a. pulchra,c,117.0,gene/physio,yes,6.0,28.0,2025-06-19 00:00:00,wound still obvious,15.0,wound,8 or 9,yes,2025-06-19 00:00:00
+a. pulchra,d,146.0,gene/physio,yes,6.0,28.0,2025-06-19 00:00:00,wound still obvious,15.0,wound,8 or 9,yes,2025-06-19 00:00:00
+a. pulchra,a,179.0,gene/physio,yes,6.0,28.0,2025-06-19 00:00:00,wound still obvious,15.0,wound,8 or 9,yes,2025-06-19 00:00:00
+a. pulchra,d,122.0,gene/physio,no,9.0,28.0,2025-06-19 00:00:00,NA,15.0,wound,8 or 9,yes,2025-06-19 00:00:00
+a. pulchra,c,131.0,gene/physio,no,9.0,28.0,2025-06-19 00:00:00,NA,15.0,wound,8 or 9,yes,2025-06-19 00:00:00
+a. pulchra,a,173.0,gene/physio,no,9.0,28.0,2025-06-19 00:00:00,NA,15.0,wound,8 or 9,yes,2025-06-19 00:00:00
+a. pulchra,d,118.0,gene/physio,yes,9.0,28.0,2025-06-19 00:00:00,NA,15.0,wound,8 or 9,yes,2025-06-19 00:00:00
+a. pulchra,c,121.0,gene/physio,yes,9.0,28.0,2025-06-19 00:00:00,NA,15.0,wound,8 or 9,yes,2025-06-19 00:00:00
+a. pulchra,a,166.0,gene/physio,yes,9.0,28.0,2025-06-19 00:00:00,middle with branch,15.0,wound,8 or 9,yes,2025-06-19 00:00:00
+a. pulchra,c,125.0,gene/physio,no,12.0,28.0,2025-06-19 00:00:00,NA,15.0,wound,8 or 9,yes,2025-06-19 00:00:00
+a. pulchra,d,147.0,gene/physio,no,12.0,28.0,2025-06-19 00:00:00,NA,15.0,wound,8 or 9,yes,2025-06-19 00:00:00
+a. pulchra,a,176.0,gene/physio,no,12.0,28.0,2025-06-19 00:00:00,NA,15.0,wound,8 or 9,yes,2025-06-19 00:00:00
+a. pulchra,c,130.0,gene/physio,yes,12.0,28.0,2025-06-19 00:00:00,NA,15.0,wound,8 or 9,yes,2025-06-19 00:00:00
+a. pulchra,d,144.0,gene/physio,yes,12.0,28.0,2025-06-19 00:00:00,NA,15.0,wound,8 or 9,yes,2025-06-19 00:00:00
+a. pulchra,a,177.0,gene/physio,yes,12.0,28.0,2025-06-19 00:00:00,NA,15.0,wound,8 or 9,yes,2025-06-19 00:00:00
+a. pulchra,c,141.0,gene/physio,no,4.0,31.0,2025-06-19 00:00:00,NA,15.0,wound,8 or 9,yes,2025-06-19 00:00:00
+a. pulchra,d,150.0,gene/physio,no,4.0,31.0,2025-06-19 00:00:00,brittle  ,15.0,wound,8 or 9,yes,2025-06-19 00:00:00
+a. pulchra,a,165.0,gene/physio,no,4.0,31.0,2025-06-19 00:00:00,NA,15.0,wound,8 or 9,yes,2025-06-19 00:00:00
+a. pulchra,c,133.0,gene/physio,yes,4.0,31.0,2025-06-19 00:00:00,NA,15.0,wound,8 or 9,yes,2025-06-19 00:00:00
+a. pulchra,d,143.0,gene/physio,yes,4.0,31.0,2025-06-19 00:00:00,NA,15.0,wound,8 or 9,yes,2025-06-19 00:00:00
+a. pulchra,a,152.0,gene/physio,yes,4.0,31.0,2025-06-19 00:00:00,"brittle when slicing, branch on wound sample",15.0,wound,8 or 9,yes,2025-06-19 00:00:00
+a. pulchra,c,124.0,gene/physio,no,5.0,31.0,2025-06-19 00:00:00,slightly paling,15.0,wound,8 or 9,yes,2025-06-19 00:00:00
+a. pulchra,d,154.0,gene/physio,no,5.0,31.0,2025-06-19 00:00:00,"paling, brittle",15.0,wound,8 or 9,yes,2025-06-19 00:00:00
+a. pulchra,a,161.0,gene/physio,no,5.0,31.0,2025-06-19 00:00:00,"bleached, brittle",15.0,wound,8 or 9,yes,2025-06-19 00:00:00
+a. pulchra,c,115.0,gene/physio,yes,5.0,31.0,2025-06-19 00:00:00,slightly paling,15.0,wound,8 or 9,yes,2025-06-19 00:00:00
+a. pulchra,d,126.0,gene/physio,yes,5.0,31.0,2025-06-19 00:00:00,"paling, brittle",15.0,wound,8 or 9,yes,2025-06-19 00:00:00
+a. pulchra,a,170.0,gene/physio,yes,5.0,31.0,2025-06-19 00:00:00,bleached ,15.0,wound,8 or 9,yes,2025-06-19 00:00:00
+a. pulchra,c,119.0,gene/physio,no,10.0,31.0,2025-06-19 00:00:00,NA,15.0,wound,8 or 9,yes,2025-06-19 00:00:00
+a. pulchra,d,120.0,gene/physio,no,10.0,31.0,2025-06-19 00:00:00,brittle,15.0,wound,8 or 9,yes,2025-06-19 00:00:00
+a. pulchra,c,132.0,gene/physio,no,10.0,31.0,2025-06-19 00:00:00,NA,15.0,wound,8 or 9,yes,2025-06-19 00:00:00
+a. pulchra,a,178.0,gene/physio,no,10.0,31.0,2025-06-19 00:00:00,brittle,15.0,wound,8 or 9,yes,2025-06-19 00:00:00
+a. pulchra,d,110.0,gene/physio,yes,10.0,31.0,2025-06-19 00:00:00,NA,15.0,wound,8 or 9,yes,2025-06-19 00:00:00
+a. pulchra,a,175.0,gene/physio,yes,10.0,31.0,2025-06-19 00:00:00,NA,15.0,wound,8 or 9,yes,2025-06-19 00:00:00
+a. pulchra,c,127.0,gene/physio,no,11.0,31.0,2025-06-19 00:00:00,NA,15.0,wound,8 or 9,yes,2025-06-19 00:00:00
+a. pulchra,d,128.0,gene/physio,no,11.0,31.0,2025-06-19 00:00:00,paling,15.0,wound,8 or 9,yes,2025-06-19 00:00:00
+a. pulchra,a,163.0,gene/physio,no,11.0,31.0,2025-06-19 00:00:00,NA,15.0,wound,8 or 9,yes,2025-06-19 00:00:00
+a. pulchra,c,116.0,gene/physio,yes,11.0,31.0,2025-06-19 00:00:00,NA,15.0,wound,8 or 9,yes,2025-06-19 00:00:00
+a. pulchra,d,149.0,gene/physio,yes,11.0,31.0,2025-06-19 00:00:00,paling,15.0,wound,8 or 9,yes,2025-06-19 00:00:00
+a. pulchra,a,174.0,gene/physio,yes,11.0,31.0,2025-06-19 00:00:00,"paling, wound with branch",15.0,wound,8 or 9,yes,2025-06-19 00:00:00
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,

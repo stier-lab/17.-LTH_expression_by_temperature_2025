@@ -1,0 +1,1003 @@
+species,date,day,treatment,tank,thicket ,sample,id,wounded,health_status,disease_status,polyps_out,hole_in_center,polyp_in_hole,wound_smoothed,pigment_over_wound,tip_exist,tip_extension,new_corallites_on_tip,algae_on_wound,notes
+a. pulchra,2025-06-04 00:00:00,0.0,28.0,3.0,a,gene/physio,172.0,yes,alive,NA,yes,no,no,no,no,no,no,no,no
+a. pulchra,2025-06-04 00:00:00,0.0,28.0,3.0,c,gene/physio,129.0,yes,alive,NA,yes,no,no,no,no,no,no,no,no
+a. pulchra,2025-06-04 00:00:00,0.0,28.0,3.0,d,gene/physio,113.0,yes,alive,NA,yes,no,no,no,no,no,no,no,no
+a. pulchra,2025-06-04 00:00:00,0.0,31.0,4.0,a,gene/physio,152.0,yes,alive,NA,yes,no,no,no,no,no,no,no,no
+a. pulchra,2025-06-04 00:00:00,0.0,31.0,4.0,c,gene/physio,133.0,yes,alive,NA,yes,no,no,no,no,no,no,no,no
+a. pulchra,2025-06-04 00:00:00,0.0,31.0,4.0,d,gene/physio,143.0,yes,alive,NA,yes,no,no,no,no,no,no,no,no
+a. pulchra,2025-06-04 00:00:00,0.0,31.0,5.0,a,gene/physio,170.0,yes,alive,NA,yes,no,no,no,no,no,no,no,no
+a. pulchra,2025-06-04 00:00:00,0.0,31.0,5.0,c,gene/physio,115.0,yes,alive,NA,yes,no,no,no,no,no,no,no,no
+a. pulchra,2025-06-04 00:00:00,0.0,31.0,5.0,d,gene/physio,126.0,yes,alive,NA,yes,no,no,no,no,no,no,no,no
+a. pulchra,2025-06-04 00:00:00,0.0,28.0,6.0,a,gene/physio,179.0,yes,alive,NA,yes,no,no,no,no,no,no,no,no
+a. pulchra,2025-06-04 00:00:00,0.0,28.0,6.0,c,gene/physio,117.0,yes,alive,NA,yes,no,no,no,no,no,no,no,no
+a. pulchra,2025-06-04 00:00:00,0.0,28.0,6.0,d,gene/physio,146.0,yes,alive,NA,yes,no,no,no,no,no,no,no,no
+a. pulchra,2025-06-04 00:00:00,0.0,28.0,9.0,a,gene/physio,166.0,yes,alive,NA,yes,no,no,no,no,no,no,no,no
+a. pulchra,2025-06-04 00:00:00,0.0,28.0,9.0,d,gene/physio,118.0,yes,alive,NA,yes,no,no,no,no,no,no,no,no
+a. pulchra,2025-06-04 00:00:00,0.0,28.0,9.0,c,gene/physio,121.0,yes,alive,NA,yes,no,no,no,no,no,no,no,no
+a. pulchra,2025-06-04 00:00:00,0.0,31.0,10.0,a,gene/physio,175.0,yes,alive,NA,yes,no,no,no,no,no,no,no,no
+a. pulchra,2025-06-04 00:00:00,0.0,31.0,10.0,c,gene/physio,119.0,yes,alive,NA,yes,no,no,no,no,no,no,no,no
+a. pulchra,2025-06-04 00:00:00,0.0,31.0,10.0,d,gene/physio,110.0,yes,alive,NA,yes,no,no,no,no,no,no,no,no
+a. pulchra,2025-06-04 00:00:00,0.0,31.0,11.0,a,gene/physio,174.0,yes,alive,NA,yes,no,no,no,no,no,no,no,no
+a. pulchra,2025-06-04 00:00:00,0.0,31.0,11.0,c,gene/physio,116.0,yes,alive,NA,yes,no,no,no,no,no,no,no,no
+a. pulchra,2025-06-04 00:00:00,0.0,31.0,11.0,d,gene/physio,149.0,yes,alive,NA,yes,no,no,no,no,no,no,no,no
+a. pulchra,2025-06-04 00:00:00,0.0,28.0,12.0,a,gene/physio,177.0,yes,alive,NA,yes,no,no,no,no,no,no,no,no
+a. pulchra,2025-06-04 00:00:00,0.0,28.0,12.0,c,gene/physio,130.0,yes,alive,NA,yes,no,no,no,no,no,no,no,no
+a. pulchra,2025-06-04 00:00:00,0.0,28.0,12.0,d,gene/physio,144.0,yes,alive,NA,yes,no,no,no,no,no,no,no,no
+a. pulchra,2025-06-04 00:00:00,0.0,28.0,3.0,a,gene/physio,162.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-04 00:00:00,0.0,28.0,3.0,c,gene/physio,139.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-04 00:00:00,0.0,28.0,3.0,d,gene/physio,156.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-04 00:00:00,0.0,31.0,4.0,a,gene/physio,165.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-04 00:00:00,0.0,31.0,4.0,d,gene/physio,150.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-04 00:00:00,0.0,31.0,4.0,c,gene/physio,141.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-04 00:00:00,0.0,31.0,5.0,a,gene/physio,161.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-04 00:00:00,0.0,31.0,5.0,c,gene/physio,124.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-04 00:00:00,0.0,31.0,5.0,d,gene/physio,154.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-04 00:00:00,0.0,28.0,6.0,a,gene/physio,169.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-04 00:00:00,0.0,28.0,6.0,c,gene/physio,123.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-04 00:00:00,0.0,28.0,6.0,d,gene/physio,145.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-04 00:00:00,0.0,28.0,9.0,a,gene/physio,173.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-04 00:00:00,0.0,28.0,9.0,c,gene/physio,131.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-04 00:00:00,0.0,28.0,9.0,d,gene/physio,122.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-04 00:00:00,0.0,31.0,10.0,a,gene/physio,178.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-04 00:00:00,0.0,31.0,10.0,c,gene/physio,132.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-04 00:00:00,0.0,31.0,10.0,d,gene/physio,120.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-04 00:00:00,0.0,31.0,11.0,a,gene/physio,163.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-04 00:00:00,0.0,31.0,11.0,c,gene/physio,127.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-04 00:00:00,0.0,31.0,11.0,d,gene/physio,128.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-04 00:00:00,0.0,28.0,12.0,a,gene/physio,176.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-04 00:00:00,0.0,28.0,12.0,c,gene/physio,125.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-04 00:00:00,0.0,28.0,12.0,d,gene/physio,147.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-05 00:00:00,1.0,28.0,3.0,a,gene/physio,172.0,yes,alive,NA,yes,no,no,no,no,no,no,no,no
+a. pulchra,2025-06-05 00:00:00,1.0,28.0,3.0,c,gene/physio,129.0,yes,alive,NA,yes,no,no,no,no,no,no,no,no
+a. pulchra,2025-06-05 00:00:00,1.0,28.0,3.0,d,gene/physio,113.0,yes,alive,NA,yes,no,no,no,no,no,no,no,no,tripod photo
+a. pulchra,2025-06-05 00:00:00,1.0,31.0,4.0,a,gene/physio,152.0,yes,alive,NA,yes,no,no,no,no,no,no,no,no
+a. pulchra,2025-06-05 00:00:00,1.0,31.0,4.0,c,gene/physio,133.0,yes,alive,NA,yes,no,no,no,no,no,no,no,no
+a. pulchra,2025-06-05 00:00:00,1.0,31.0,4.0,d,gene/physio,143.0,yes,alive,NA,yes,no,no,no,no,no,no,no,no,tripod photo
+a. pulchra,2025-06-05 00:00:00,1.0,31.0,5.0,a,gene/physio,170.0,yes,alive,NA,yes,no,no,no,no,no,no,no,no
+a. pulchra,2025-06-05 00:00:00,1.0,31.0,5.0,c,gene/physio,115.0,yes,alive,NA,yes,no,no,no,no,no,no,no,no
+a. pulchra,2025-06-05 00:00:00,1.0,31.0,5.0,d,gene/physio,126.0,yes,alive,NA,yes,no,no,no,no,no,no,no,no
+a. pulchra,2025-06-05 00:00:00,1.0,28.0,6.0,a,gene/physio,179.0,yes,alive,NA,yes,no,no,no,no,no,no,no,no
+a. pulchra,2025-06-05 00:00:00,1.0,28.0,6.0,c,gene/physio,117.0,yes,alive,NA,yes,no,no,no,no,no,no,no,no
+a. pulchra,2025-06-05 00:00:00,1.0,28.0,6.0,d,gene/physio,146.0,yes,alive,NA,yes,no,no,no,no,no,no,no,no
+a. pulchra,2025-06-05 00:00:00,1.0,28.0,9.0,a,gene/physio,166.0,yes,alive,NA,yes,no,no,no,no,no,no,no,no
+a. pulchra,2025-06-05 00:00:00,1.0,28.0,9.0,d,gene/physio,118.0,yes,alive,NA,yes,no,no,no,no,no,no,no,no
+a. pulchra,2025-06-05 00:00:00,1.0,28.0,9.0,c,gene/physio,121.0,yes,alive,NA,yes,no,no,no,no,no,no,no,no
+a. pulchra,2025-06-05 00:00:00,1.0,31.0,10.0,a,gene/physio,175.0,yes,alive,NA,yes,no,no,no,no,no,no,no,no
+a. pulchra,2025-06-05 00:00:00,1.0,31.0,10.0,c,gene/physio,119.0,yes,alive,NA,yes,no,no,no,no,no,no,no,no
+a. pulchra,2025-06-05 00:00:00,1.0,31.0,10.0,d,gene/physio,110.0,yes,alive,NA,yes,no,no,no,no,no,no,no,no
+a. pulchra,2025-06-05 00:00:00,1.0,31.0,11.0,a,gene/physio,174.0,yes,alive,NA,yes,no,no,no,no,no,no,no,no
+a. pulchra,2025-06-05 00:00:00,1.0,31.0,11.0,c,gene/physio,116.0,yes,alive,NA,yes,no,no,no,no,no,no,no,no
+a. pulchra,2025-06-05 00:00:00,1.0,31.0,11.0,d,gene/physio,149.0,yes,alive,NA,yes,no,no,no,no,no,no,no,no
+a. pulchra,2025-06-05 00:00:00,1.0,28.0,12.0,a,gene/physio,177.0,yes,alive,NA,yes,no,no,no,no,no,no,no,no
+a. pulchra,2025-06-05 00:00:00,1.0,28.0,12.0,c,gene/physio,130.0,yes,alive,NA,yes,no,no,no,no,no,no,no,no
+a. pulchra,2025-06-05 00:00:00,1.0,28.0,12.0,d,gene/physio,144.0,yes,alive,NA,yes,no,no,no,no,no,no,no,no
+a. pulchra,2025-06-05 00:00:00,1.0,28.0,3.0,a,gene/physio,162.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-05 00:00:00,1.0,28.0,3.0,c,gene/physio,139.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA,tripod photo
+a. pulchra,2025-06-05 00:00:00,1.0,28.0,3.0,d,gene/physio,156.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-05 00:00:00,1.0,31.0,4.0,a,gene/physio,165.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-05 00:00:00,1.0,31.0,4.0,d,gene/physio,150.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA,tripod photo
+a. pulchra,2025-06-05 00:00:00,1.0,31.0,4.0,c,gene/physio,141.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-05 00:00:00,1.0,31.0,5.0,a,gene/physio,161.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-05 00:00:00,1.0,31.0,5.0,c,gene/physio,124.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-05 00:00:00,1.0,31.0,5.0,d,gene/physio,154.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-05 00:00:00,1.0,28.0,6.0,a,gene/physio,169.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-05 00:00:00,1.0,28.0,6.0,c,gene/physio,123.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-05 00:00:00,1.0,28.0,6.0,d,gene/physio,145.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-05 00:00:00,1.0,28.0,9.0,a,gene/physio,173.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-05 00:00:00,1.0,28.0,9.0,c,gene/physio,131.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-05 00:00:00,1.0,28.0,9.0,d,gene/physio,122.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-05 00:00:00,1.0,31.0,10.0,a,gene/physio,178.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-05 00:00:00,1.0,31.0,10.0,c,gene/physio,132.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-05 00:00:00,1.0,31.0,10.0,d,gene/physio,120.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-05 00:00:00,1.0,31.0,11.0,a,gene/physio,163.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-05 00:00:00,1.0,31.0,11.0,c,gene/physio,127.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-05 00:00:00,1.0,31.0,11.0,d,gene/physio,128.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-05 00:00:00,1.0,28.0,12.0,a,gene/physio,176.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-05 00:00:00,1.0,28.0,12.0,c,gene/physio,125.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-05 00:00:00,1.0,28.0,12.0,d,gene/physio,147.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-06 00:00:00,2.0,28.0,3.0,a,gene/physio,172.0,yes,alive,NA,yes,no,no,no,no,no,no,no,no
+a. pulchra,2025-06-06 00:00:00,2.0,28.0,3.0,c,gene/physio,129.0,yes,alive,NA,yes,no,no,no,no,no,no,no,no
+a. pulchra,2025-06-06 00:00:00,2.0,28.0,3.0,d,gene/physio,113.0,yes,alive,NA,yes,no,no,no,no,no,no,no,no,tripod photo
+a. pulchra,2025-06-06 00:00:00,2.0,31.0,4.0,a,gene/physio,152.0,yes,alive,NA,yes,no,no,no,no,no,no,no,no
+a. pulchra,2025-06-06 00:00:00,2.0,31.0,4.0,c,gene/physio,133.0,yes,alive,NA,yes,no,no,no,no,no,no,no,no
+a. pulchra,2025-06-06 00:00:00,2.0,31.0,4.0,d,gene/physio,143.0,yes,alive,NA,yes,no,no,no,no,no,no,no,no,tripod photo
+a. pulchra,2025-06-06 00:00:00,2.0,31.0,5.0,a,gene/physio,170.0,yes,alive,NA,yes,no,no,no,no,no,no,no,no
+a. pulchra,2025-06-06 00:00:00,2.0,31.0,5.0,c,gene/physio,115.0,yes,alive,NA,yes,no,no,no,no,no,no,no,no
+a. pulchra,2025-06-06 00:00:00,2.0,31.0,5.0,d,gene/physio,126.0,yes,alive,NA,yes,no,no,no,no,no,no,no,no,tripod photo
+a. pulchra,2025-06-06 00:00:00,2.0,28.0,6.0,a,gene/physio,179.0,yes,alive,NA,yes,no,no,no,no,no,no,no,no,tripod photo
+a. pulchra,2025-06-06 00:00:00,2.0,28.0,6.0,c,gene/physio,117.0,yes,alive,NA,yes,no,no,no,no,no,no,no,no
+a. pulchra,2025-06-06 00:00:00,2.0,28.0,6.0,d,gene/physio,146.0,yes,alive,NA,yes,no,no,no,no,no,no,no,no
+a. pulchra,2025-06-06 00:00:00,2.0,28.0,9.0,a,gene/physio,166.0,yes,alive,NA,yes,no,no,no,no,no,no,no,no
+a. pulchra,2025-06-06 00:00:00,2.0,28.0,9.0,d,gene/physio,118.0,yes,alive,NA,yes,no,no,no,no,no,no,no,no
+a. pulchra,2025-06-06 00:00:00,2.0,28.0,9.0,c,gene/physio,121.0,yes,alive,NA,yes,no,no,no,no,no,no,no,no
+a. pulchra,2025-06-06 00:00:00,2.0,31.0,10.0,a,gene/physio,175.0,yes,alive,NA,yes,no,no,no,no,no,no,no,no
+a. pulchra,2025-06-06 00:00:00,2.0,31.0,10.0,c,gene/physio,119.0,yes,alive,NA,yes,no,no,no,no,no,no,no,no
+a. pulchra,2025-06-06 00:00:00,2.0,31.0,10.0,d,gene/physio,110.0,yes,alive,NA,yes,no,no,no,no,no,no,no,no
+a. pulchra,2025-06-06 00:00:00,2.0,31.0,11.0,a,gene/physio,174.0,yes,alive,NA,yes,no,no,no,no,no,no,no,no
+a. pulchra,2025-06-06 00:00:00,2.0,31.0,11.0,c,gene/physio,116.0,yes,alive,NA,yes,no,no,no,no,no,no,no,no
+a. pulchra,2025-06-06 00:00:00,2.0,31.0,11.0,d,gene/physio,149.0,yes,alive,NA,yes,no,no,no,no,no,no,no,no
+a. pulchra,2025-06-06 00:00:00,2.0,28.0,12.0,a,gene/physio,177.0,yes,alive,NA,yes,no,no,no,no,no,no,no,no
+a. pulchra,2025-06-06 00:00:00,2.0,28.0,12.0,c,gene/physio,130.0,yes,alive,NA,yes,no,no,no,no,no,no,no,no
+a. pulchra,2025-06-06 00:00:00,2.0,28.0,12.0,d,gene/physio,144.0,yes,alive,NA,yes,no,no,no,no,no,no,no,no
+a. pulchra,2025-06-06 00:00:00,2.0,28.0,3.0,a,gene/physio,162.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-06 00:00:00,2.0,28.0,3.0,c,gene/physio,139.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA,tripod photo
+a. pulchra,2025-06-06 00:00:00,2.0,28.0,3.0,d,gene/physio,156.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-06 00:00:00,2.0,31.0,4.0,a,gene/physio,165.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-06 00:00:00,2.0,31.0,4.0,d,gene/physio,150.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA,tripod photo
+a. pulchra,2025-06-06 00:00:00,2.0,31.0,4.0,c,gene/physio,141.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-06 00:00:00,2.0,31.0,5.0,a,gene/physio,161.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-06 00:00:00,2.0,31.0,5.0,c,gene/physio,124.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-06 00:00:00,2.0,31.0,5.0,d,gene/physio,154.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-06 00:00:00,2.0,28.0,6.0,a,gene/physio,169.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-06 00:00:00,2.0,28.0,6.0,c,gene/physio,123.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-06 00:00:00,2.0,28.0,6.0,d,gene/physio,145.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-06 00:00:00,2.0,28.0,9.0,a,gene/physio,173.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-06 00:00:00,2.0,28.0,9.0,c,gene/physio,131.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-06 00:00:00,2.0,28.0,9.0,d,gene/physio,122.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-06 00:00:00,2.0,31.0,10.0,a,gene/physio,178.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-06 00:00:00,2.0,31.0,10.0,c,gene/physio,132.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-06 00:00:00,2.0,31.0,10.0,d,gene/physio,120.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-06 00:00:00,2.0,31.0,11.0,a,gene/physio,163.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-06 00:00:00,2.0,31.0,11.0,c,gene/physio,127.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-06 00:00:00,2.0,31.0,11.0,d,gene/physio,128.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-06 00:00:00,2.0,28.0,12.0,a,gene/physio,176.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-06 00:00:00,2.0,28.0,12.0,c,gene/physio,125.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-06 00:00:00,2.0,28.0,12.0,d,gene/physio,147.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-07 00:00:00,3.0,28.0,3.0,a,gene/physio,172.0,yes,alive,NA,yes,yes,yes,no,no,no,no,no,no,checked and treated for AEF by pipette
+a. pulchra,2025-06-07 00:00:00,3.0,28.0,3.0,c,gene/physio,129.0,yes,alive,NA,yes,yes,yes,no,no,no,no,no,no,checked and treated for AEF by pipette
+a. pulchra,2025-06-07 00:00:00,3.0,28.0,3.0,d,gene/physio,113.0,yes,alive,NA,yes,yes,yes,no,yes,no,no,no,no,checked and treated for AEF by pipette
+a. pulchra,2025-06-07 00:00:00,3.0,31.0,4.0,a,gene/physio,152.0,yes,alive,NA,yes,yes,yes,no,no,no,no,no,no,checked and treated for AEF by pipette
+a. pulchra,2025-06-07 00:00:00,3.0,31.0,4.0,c,gene/physio,133.0,yes,alive,NA,yes,yes,yes,no,no,no,no,no,no,checked and treated for AEF by pipette
+a. pulchra,2025-06-07 00:00:00,3.0,31.0,4.0,d,gene/physio,143.0,yes,alive,NA,yes,yes,yes,no,no,no,no,no,no,checked and treated for AEF by pipette
+a. pulchra,2025-06-07 00:00:00,3.0,31.0,5.0,a,gene/physio,170.0,yes,alive,NA,yes,yes,yes,no,no,no,no,no,no,checked and treated for AEF by pipette
+a. pulchra,2025-06-07 00:00:00,3.0,31.0,5.0,c,gene/physio,115.0,yes,alive,NA,yes,yes,yes,no,no,no,no,no,no,checked and treated for AEF by pipette
+a. pulchra,2025-06-07 00:00:00,3.0,31.0,5.0,d,gene/physio,126.0,yes,alive,AEF,yes,no,no,no,no,no,no,no,no,checked and treated for AEF by pipette
+a. pulchra,2025-06-07 00:00:00,3.0,28.0,6.0,a,gene/physio,179.0,yes,alive,NA,yes,no,no,no,no,no,no,no,no,checked and treated for AEF by pipette
+a. pulchra,2025-06-07 00:00:00,3.0,28.0,6.0,c,gene/physio,117.0,yes,alive,NA,yes,no,no,no,no,no,no,no,no,checked and treated for AEF by pipette
+a. pulchra,2025-06-07 00:00:00,3.0,28.0,6.0,d,gene/physio,146.0,yes,alive,NA,yes,no,no,no,yes,no,no,no,no,checked and treated for AEF by pipette
+a. pulchra,2025-06-07 00:00:00,3.0,28.0,9.0,a,gene/physio,166.0,yes,alive,NA,yes,no,no,no,no,no,no,no,no,checked and treated for AEF by pipette
+a. pulchra,2025-06-07 00:00:00,3.0,28.0,9.0,d,gene/physio,118.0,yes,alive,NA,yes,yes,yes,no,no,no,no,no,no,checked and treated for AEF by pipette
+a. pulchra,2025-06-07 00:00:00,3.0,28.0,9.0,c,gene/physio,121.0,yes,alive,NA,yes,no,no,no,no,no,no,no,no,checked and treated for AEF by pipette
+a. pulchra,2025-06-07 00:00:00,3.0,31.0,10.0,a,gene/physio,175.0,yes,alive,NA,yes,no,no,no,no,no,no,no,no,checked and treated for AEF by pipette
+a. pulchra,2025-06-07 00:00:00,3.0,31.0,10.0,c,gene/physio,119.0,yes,alive,AEF,yes,yes,yes,no,no,no,no,no,no,checked and treated for AEF by pipette
+a. pulchra,2025-06-07 00:00:00,3.0,31.0,10.0,d,gene/physio,110.0,yes,alive,AEF,yes,no,no,no,no,no,no,no,no,checked and treated for AEF by pipette
+a. pulchra,2025-06-07 00:00:00,3.0,31.0,11.0,a,gene/physio,174.0,yes,alive,NA,yes,yes,yes,no,yes,no,no,no,no,checked and treated for AEF by pipette
+a. pulchra,2025-06-07 00:00:00,3.0,31.0,11.0,c,gene/physio,116.0,yes,alive,NA,yes,no,no,no,no,no,no,no,no,checked and treated for AEF by pipette
+a. pulchra,2025-06-07 00:00:00,3.0,31.0,11.0,d,gene/physio,149.0,yes,alive,NA,yes,yes,yes,no,no,no,no,no,no,checked and treated for AEF by pipette
+a. pulchra,2025-06-07 00:00:00,3.0,28.0,12.0,a,gene/physio,177.0,yes,alive,NA,yes,yes,yes,no,no,no,no,no,no,checked and treated for AEF by pipette
+a. pulchra,2025-06-07 00:00:00,3.0,28.0,12.0,c,gene/physio,130.0,yes,alive,NA,yes,yes,yes,no,no,no,no,no,no,checked and treated for AEF by pipette
+a. pulchra,2025-06-07 00:00:00,3.0,28.0,12.0,d,gene/physio,144.0,yes,alive,NA,yes,no,no,no,no,no,no,no,no,checked and treated for AEF by pipette
+a. pulchra,2025-06-07 00:00:00,3.0,28.0,3.0,a,gene/physio,162.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA,checked and treated for AEF by pipette
+a. pulchra,2025-06-07 00:00:00,3.0,28.0,3.0,c,gene/physio,139.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA,checked and treated for AEF by pipette
+a. pulchra,2025-06-07 00:00:00,3.0,28.0,3.0,d,gene/physio,156.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA,checked and treated for AEF by pipette
+a. pulchra,2025-06-07 00:00:00,3.0,31.0,4.0,a,gene/physio,165.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA,checked and treated for AEF by pipette
+a. pulchra,2025-06-07 00:00:00,3.0,31.0,4.0,d,gene/physio,150.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA,checked and treated for AEF by pipette
+a. pulchra,2025-06-07 00:00:00,3.0,31.0,4.0,c,gene/physio,141.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA,checked and treated for AEF by pipette
+a. pulchra,2025-06-07 00:00:00,3.0,31.0,5.0,a,gene/physio,161.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA,checked and treated for AEF by pipette
+a. pulchra,2025-06-07 00:00:00,3.0,31.0,5.0,c,gene/physio,124.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA,checked and treated for AEF by pipette
+a. pulchra,2025-06-07 00:00:00,3.0,31.0,5.0,d,gene/physio,154.0,no,alive,AEF,yes,NA,NA,NA,NA,NA,NA,NA,NA,checked and treated for AEF by pipette
+a. pulchra,2025-06-07 00:00:00,3.0,28.0,6.0,a,gene/physio,169.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA,checked and treated for AEF by pipette
+a. pulchra,2025-06-07 00:00:00,3.0,28.0,6.0,c,gene/physio,123.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA,checked and treated for AEF by pipette
+a. pulchra,2025-06-07 00:00:00,3.0,28.0,6.0,d,gene/physio,145.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA,checked and treated for AEF by pipette
+a. pulchra,2025-06-07 00:00:00,3.0,28.0,9.0,a,gene/physio,173.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA,checked and treated for AEF by pipette
+a. pulchra,2025-06-07 00:00:00,3.0,28.0,9.0,c,gene/physio,131.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA,checked and treated for AEF by pipette
+a. pulchra,2025-06-07 00:00:00,3.0,28.0,9.0,d,gene/physio,122.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA,checked and treated for AEF by pipette
+a. pulchra,2025-06-07 00:00:00,3.0,31.0,10.0,a,gene/physio,178.0,no,alive,AEF,yes,NA,NA,NA,NA,NA,NA,NA,NA,checked and treated for AEF by pipette
+a. pulchra,2025-06-07 00:00:00,3.0,31.0,10.0,c,gene/physio,132.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA,checked and treated for AEF by pipette
+a. pulchra,2025-06-07 00:00:00,3.0,31.0,10.0,d,gene/physio,120.0,no,alive,AEF,yes,NA,NA,NA,NA,NA,NA,NA,NA,checked and treated for AEF by pipette
+a. pulchra,2025-06-07 00:00:00,3.0,31.0,11.0,a,gene/physio,163.0,no,alive,AEF,yes,NA,NA,NA,NA,NA,NA,NA,NA,checked and treated for AEF by pipette
+a. pulchra,2025-06-07 00:00:00,3.0,31.0,11.0,c,gene/physio,127.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA,checked and treated for AEF by pipette
+a. pulchra,2025-06-07 00:00:00,3.0,31.0,11.0,d,gene/physio,128.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA,checked and treated for AEF by pipette
+a. pulchra,2025-06-07 00:00:00,3.0,28.0,12.0,a,gene/physio,176.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA,checked and treated for AEF by pipette
+a. pulchra,2025-06-07 00:00:00,3.0,28.0,12.0,c,gene/physio,125.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA,checked and treated for AEF by pipette
+a. pulchra,2025-06-07 00:00:00,3.0,28.0,12.0,d,gene/physio,147.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA,checked and treated for AEF by pipette
+a. pulchra,2025-06-08 00:00:00,4.0,28.0,3.0,a,gene/physio,172.0,yes,alive,NA,no,yes,yes,yes,no,no,no,no,no,checked and treated for AEF by chemical treatment
+a. pulchra,2025-06-08 00:00:00,4.0,28.0,3.0,c,gene/physio,129.0,yes,alive,NA,no,yes,yes,yes,no,no,no,no,no,checked and treated for AEF by chemical treatment
+a. pulchra,2025-06-08 00:00:00,4.0,28.0,3.0,d,gene/physio,113.0,yes,alive,NA,no,yes,yes,yes,no,no,no,no,no,"tripod photo, checked and treated for AEF by chemical treatment"
+a. pulchra,2025-06-08 00:00:00,4.0,31.0,4.0,a,gene/physio,152.0,yes,alive,NA,no,yes,yes,yes,no,no,no,no,no,checked and treated for AEF by chemical treatment
+a. pulchra,2025-06-08 00:00:00,4.0,31.0,4.0,c,gene/physio,133.0,yes,alive,NA,no,yes,yes,yes,no,no,no,no,no,checked and treated for AEF by chemical treatment
+a. pulchra,2025-06-08 00:00:00,4.0,31.0,4.0,d,gene/physio,143.0,yes,alive,NA,no,yes,yes,yes,no,no,no,no,no,"tripod photo, checked and treated for AEF by chemical treatment"
+a. pulchra,2025-06-08 00:00:00,4.0,31.0,5.0,a,gene/physio,170.0,yes,alive,NA,no,yes,yes,yes,yes,no,no,no,no,checked and treated for AEF by chemical treatment
+a. pulchra,2025-06-08 00:00:00,4.0,31.0,5.0,c,gene/physio,115.0,yes,alive,NA,no,yes,yes,yes,no,no,no,no,no,checked and treated for AEF by chemical treatment
+a. pulchra,2025-06-08 00:00:00,4.0,31.0,5.0,d,gene/physio,126.0,yes,alive,AEF,no,yes,yes,yes,no,no,no,no,no,"tripod photo, checked and treated for AEF by chemical treatment"
+a. pulchra,2025-06-08 00:00:00,4.0,28.0,6.0,a,gene/physio,179.0,yes,alive,NA,no,yes,yes,yes,no,no,no,no,no,"tripod photo, checked and treated for AEF by chemical treatment"
+a. pulchra,2025-06-08 00:00:00,4.0,28.0,6.0,c,gene/physio,117.0,yes,alive,NA,no,yes,yes,yes,no,no,no,no,no,checked and treated for AEF by chemical treatment
+a. pulchra,2025-06-08 00:00:00,4.0,28.0,6.0,d,gene/physio,146.0,yes,alive,NA,no,yes,yes,no,no,no,no,no,no,checked and treated for AEF by chemical treatment
+a. pulchra,2025-06-08 00:00:00,4.0,28.0,9.0,a,gene/physio,166.0,yes,alive,NA,no,yes,yes,no,no,no,no,no,no,checked and treated for AEF by chemical treatment
+a. pulchra,2025-06-08 00:00:00,4.0,28.0,9.0,d,gene/physio,118.0,yes,alive,NA,no,yes,yes,yes,no,no,no,no,no,checked and treated for AEF by chemical treatment
+a. pulchra,2025-06-08 00:00:00,4.0,28.0,9.0,c,gene/physio,121.0,yes,alive,NA,no,no,no,no,no,no,no,no,no,checked and treated for AEF by chemical treatment
+a. pulchra,2025-06-08 00:00:00,4.0,31.0,10.0,a,gene/physio,175.0,yes,alive,NA,no,yes,yes,no,no,no,no,no,no,checked and treated for AEF by chemical treatment
+a. pulchra,2025-06-08 00:00:00,4.0,31.0,10.0,c,gene/physio,119.0,yes,alive,AEF,no,yes,yes,yes,no,no,no,no,no,checked and treated for AEF by chemical treatment
+a. pulchra,2025-06-08 00:00:00,4.0,31.0,10.0,d,gene/physio,110.0,yes,alive,AEF,no,yes,yes,yes,no,no,no,no,no,checked and treated for AEF by chemical treatment
+a. pulchra,2025-06-08 00:00:00,4.0,31.0,11.0,a,gene/physio,174.0,yes,alive,NA,no,yes,yes,yes,yes,no,no,no,no,checked and treated for AEF by chemical treatment
+a. pulchra,2025-06-08 00:00:00,4.0,31.0,11.0,c,gene/physio,116.0,yes,alive,NA,no,no,no,yes,no,no,no,no,no,checked and treated for AEF by chemical treatment
+a. pulchra,2025-06-08 00:00:00,4.0,31.0,11.0,d,gene/physio,149.0,yes,alive,NA,no,yes,yes,yes,no,no,no,no,no,checked and treated for AEF by chemical treatment
+a. pulchra,2025-06-08 00:00:00,4.0,28.0,12.0,a,gene/physio,177.0,yes,alive,NA,no,yes,yes,yes,no,no,no,no,no,checked and treated for AEF by chemical treatment
+a. pulchra,2025-06-08 00:00:00,4.0,28.0,12.0,c,gene/physio,130.0,yes,alive,NA,no,yes,yes,yes,no,no,no,no,no,checked and treated for AEF by chemical treatment
+a. pulchra,2025-06-08 00:00:00,4.0,28.0,12.0,d,gene/physio,144.0,yes,alive,NA,no,no,no,no,yes,no,no,no,no,checked and treated for AEF by chemical treatment
+a. pulchra,2025-06-08 00:00:00,4.0,28.0,3.0,a,gene/physio,162.0,no,alive,NA,no,NA,NA,NA,NA,NA,NA,NA,NA,checked and treated for AEF by chemical treatment
+a. pulchra,2025-06-08 00:00:00,4.0,28.0,3.0,c,gene/physio,139.0,no,alive,NA,no,NA,NA,NA,NA,NA,NA,NA,NA,"tripod photo, checked and treated for AEF by chemical treatment"
+a. pulchra,2025-06-08 00:00:00,4.0,28.0,3.0,d,gene/physio,156.0,no,alive,NA,no,NA,NA,NA,NA,NA,NA,NA,NA,checked and treated for AEF by chemical treatment
+a. pulchra,2025-06-08 00:00:00,4.0,31.0,4.0,a,gene/physio,165.0,no,alive,NA,no,NA,NA,NA,NA,NA,NA,NA,NA,checked and treated for AEF by chemical treatment
+a. pulchra,2025-06-08 00:00:00,4.0,31.0,4.0,d,gene/physio,150.0,no,alive,NA,no,NA,NA,NA,NA,NA,NA,NA,NA,"tripod photo, checked and treated for AEF by chemical treatment"
+a. pulchra,2025-06-08 00:00:00,4.0,31.0,4.0,c,gene/physio,141.0,no,alive,NA,no,NA,NA,NA,NA,NA,NA,NA,NA,checked and treated for AEF by chemical treatment
+a. pulchra,2025-06-08 00:00:00,4.0,31.0,5.0,a,gene/physio,161.0,no,alive,NA,no,NA,NA,NA,NA,NA,NA,NA,NA,checked and treated for AEF by chemical treatment
+a. pulchra,2025-06-08 00:00:00,4.0,31.0,5.0,c,gene/physio,124.0,no,alive,NA,no,NA,NA,NA,NA,NA,NA,NA,NA,checked and treated for AEF by chemical treatment
+a. pulchra,2025-06-08 00:00:00,4.0,31.0,5.0,d,gene/physio,154.0,no,alive,AEF,no,NA,NA,NA,NA,NA,NA,NA,NA,checked and treated for AEF by chemical treatment
+a. pulchra,2025-06-08 00:00:00,4.0,28.0,6.0,a,gene/physio,169.0,no,alive,NA,no,NA,NA,NA,NA,NA,NA,NA,NA,checked and treated for AEF by chemical treatment
+a. pulchra,2025-06-08 00:00:00,4.0,28.0,6.0,c,gene/physio,123.0,no,alive,NA,no,NA,NA,NA,NA,NA,NA,NA,NA,checked and treated for AEF by chemical treatment
+a. pulchra,2025-06-08 00:00:00,4.0,28.0,6.0,d,gene/physio,145.0,no,alive,NA,no,NA,NA,NA,NA,NA,NA,NA,NA,checked and treated for AEF by chemical treatment
+a. pulchra,2025-06-08 00:00:00,4.0,28.0,9.0,a,gene/physio,173.0,no,alive,NA,no,NA,NA,NA,NA,NA,NA,NA,NA,checked and treated for AEF by chemical treatment
+a. pulchra,2025-06-08 00:00:00,4.0,28.0,9.0,c,gene/physio,131.0,no,alive,NA,no,NA,NA,NA,NA,NA,NA,NA,NA,checked and treated for AEF by chemical treatment
+a. pulchra,2025-06-08 00:00:00,4.0,28.0,9.0,d,gene/physio,122.0,no,alive,NA,no,NA,NA,NA,NA,NA,NA,NA,NA,checked and treated for AEF by chemical treatment
+a. pulchra,2025-06-08 00:00:00,4.0,31.0,10.0,a,gene/physio,178.0,no,alive,AEF,no,NA,NA,NA,NA,NA,NA,NA,NA,checked and treated for AEF by chemical treatment
+a. pulchra,2025-06-08 00:00:00,4.0,31.0,10.0,c,gene/physio,132.0,no,alive,NA,no,NA,NA,NA,NA,NA,NA,NA,NA,checked and treated for AEF by chemical treatment
+a. pulchra,2025-06-08 00:00:00,4.0,31.0,10.0,d,gene/physio,120.0,no,alive,AEF,no,NA,NA,NA,NA,NA,NA,NA,NA,checked and treated for AEF by chemical treatment
+a. pulchra,2025-06-08 00:00:00,4.0,31.0,11.0,a,gene/physio,163.0,no,alive,AEF,no,NA,NA,NA,NA,NA,NA,NA,NA,checked and treated for AEF by chemical treatment
+a. pulchra,2025-06-08 00:00:00,4.0,31.0,11.0,c,gene/physio,127.0,no,alive,NA,no,NA,NA,NA,NA,NA,NA,NA,NA,checked and treated for AEF by chemical treatment
+a. pulchra,2025-06-08 00:00:00,4.0,31.0,11.0,d,gene/physio,128.0,no,alive,NA,no,NA,NA,NA,NA,NA,NA,NA,NA,checked and treated for AEF by chemical treatment
+a. pulchra,2025-06-08 00:00:00,4.0,28.0,12.0,a,gene/physio,176.0,no,alive,NA,no,NA,NA,NA,NA,NA,NA,NA,NA,checked and treated for AEF by chemical treatment
+a. pulchra,2025-06-08 00:00:00,4.0,28.0,12.0,c,gene/physio,125.0,no,alive,NA,no,NA,NA,NA,NA,NA,NA,NA,NA,checked and treated for AEF by chemical treatment
+a. pulchra,2025-06-08 00:00:00,4.0,28.0,12.0,d,gene/physio,147.0,no,alive,NA,no,NA,NA,NA,NA,NA,NA,NA,NA,checked and treated for AEF by chemical treatment
+a. pulchra,2025-06-09 00:00:00,5.0,28.0,3.0,a,gene/physio,172.0,yes,alive,NA,yes,yes,yes,yes,no,no,no,no,no
+a. pulchra,2025-06-09 00:00:00,5.0,28.0,3.0,c,gene/physio,129.0,yes,alive,NA,yes,yes,yes,yes,no,no,no,no,no
+a. pulchra,2025-06-09 00:00:00,5.0,28.0,3.0,d,gene/physio,113.0,yes,alive,NA,yes,yes,yes,yes,no,no,no,no,no
+a. pulchra,2025-06-09 00:00:00,5.0,31.0,4.0,a,gene/physio,152.0,yes,alive,NA,yes,yes,yes,yes,no,no,no,no,no
+a. pulchra,2025-06-09 00:00:00,5.0,31.0,4.0,c,gene/physio,133.0,yes,alive,NA,yes,yes,yes,yes,no,no,no,no,no
+a. pulchra,2025-06-09 00:00:00,5.0,31.0,4.0,d,gene/physio,143.0,yes,alive,NA,yes,yes,yes,yes,no,no,no,no,no
+a. pulchra,2025-06-09 00:00:00,5.0,31.0,5.0,a,gene/physio,170.0,yes,alive,NA,yes,yes,yes,yes,yes,no,no,no,no
+a. pulchra,2025-06-09 00:00:00,5.0,31.0,5.0,c,gene/physio,115.0,yes,alive,NA,yes,yes,yes,yes,no,no,no,no,no
+a. pulchra,2025-06-09 00:00:00,5.0,31.0,5.0,d,gene/physio,126.0,yes,alive,NA,yes,yes,yes,yes,no,no,no,no,no
+a. pulchra,2025-06-09 00:00:00,5.0,28.0,6.0,a,gene/physio,179.0,yes,alive,NA,yes,yes,yes,yes,no,no,no,no,no
+a. pulchra,2025-06-09 00:00:00,5.0,28.0,6.0,c,gene/physio,117.0,yes,alive,NA,yes,yes,yes,yes,no,no,no,no,no
+a. pulchra,2025-06-09 00:00:00,5.0,28.0,6.0,d,gene/physio,146.0,yes,alive,NA,yes,yes,yes,no,no,no,no,no,no
+a. pulchra,2025-06-09 00:00:00,5.0,28.0,9.0,a,gene/physio,166.0,yes,alive,NA,yes,yes,yes,no,no,no,no,no,no
+a. pulchra,2025-06-09 00:00:00,5.0,28.0,9.0,d,gene/physio,118.0,yes,alive,NA,yes,yes,yes,yes,no,no,no,no,no
+a. pulchra,2025-06-09 00:00:00,5.0,28.0,9.0,c,gene/physio,121.0,yes,alive,NA,yes,no,no,no,no,no,no,no,no
+a. pulchra,2025-06-09 00:00:00,5.0,31.0,10.0,a,gene/physio,175.0,yes,alive,NA,yes,yes,yes,no,no,no,no,no,no
+a. pulchra,2025-06-09 00:00:00,5.0,31.0,10.0,c,gene/physio,119.0,yes,alive,NA,yes,yes,yes,yes,no,no,no,no,no
+a. pulchra,2025-06-09 00:00:00,5.0,31.0,10.0,d,gene/physio,110.0,yes,alive,NA,yes,yes,yes,yes,no,no,no,no,no
+a. pulchra,2025-06-09 00:00:00,5.0,31.0,11.0,a,gene/physio,174.0,yes,alive,NA,yes,yes,yes,yes,yes,no,no,no,no
+a. pulchra,2025-06-09 00:00:00,5.0,31.0,11.0,c,gene/physio,116.0,yes,alive,NA,yes,no,no,yes,no,no,no,no,no
+a. pulchra,2025-06-09 00:00:00,5.0,31.0,11.0,d,gene/physio,149.0,yes,alive,NA,yes,yes,yes,yes,no,no,no,no,no
+a. pulchra,2025-06-09 00:00:00,5.0,28.0,12.0,a,gene/physio,177.0,yes,alive,NA,yes,yes,yes,yes,no,no,no,no,no
+a. pulchra,2025-06-09 00:00:00,5.0,28.0,12.0,c,gene/physio,130.0,yes,alive,NA,yes,yes,yes,yes,no,no,no,no,no
+a. pulchra,2025-06-09 00:00:00,5.0,28.0,12.0,d,gene/physio,144.0,yes,alive,NA,yes,no,no,no,yes,no,no,no,no
+a. pulchra,2025-06-09 00:00:00,5.0,28.0,3.0,a,gene/physio,162.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-09 00:00:00,5.0,28.0,3.0,c,gene/physio,139.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-09 00:00:00,5.0,28.0,3.0,d,gene/physio,156.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-09 00:00:00,5.0,31.0,4.0,a,gene/physio,165.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-09 00:00:00,5.0,31.0,4.0,d,gene/physio,150.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-09 00:00:00,5.0,31.0,4.0,c,gene/physio,141.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-09 00:00:00,5.0,31.0,5.0,a,gene/physio,161.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-09 00:00:00,5.0,31.0,5.0,c,gene/physio,124.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-09 00:00:00,5.0,31.0,5.0,d,gene/physio,154.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-09 00:00:00,5.0,28.0,6.0,a,gene/physio,169.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-09 00:00:00,5.0,28.0,6.0,c,gene/physio,123.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-09 00:00:00,5.0,28.0,6.0,d,gene/physio,145.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-09 00:00:00,5.0,28.0,9.0,a,gene/physio,173.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-09 00:00:00,5.0,28.0,9.0,c,gene/physio,131.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-09 00:00:00,5.0,28.0,9.0,d,gene/physio,122.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-09 00:00:00,5.0,31.0,10.0,a,gene/physio,178.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-09 00:00:00,5.0,31.0,10.0,c,gene/physio,132.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-09 00:00:00,5.0,31.0,10.0,d,gene/physio,120.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-09 00:00:00,5.0,31.0,11.0,a,gene/physio,163.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-09 00:00:00,5.0,31.0,11.0,c,gene/physio,127.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-09 00:00:00,5.0,31.0,11.0,d,gene/physio,128.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-09 00:00:00,5.0,28.0,12.0,a,gene/physio,176.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-09 00:00:00,5.0,28.0,12.0,c,gene/physio,125.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-09 00:00:00,5.0,28.0,12.0,d,gene/physio,147.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-10 00:00:00,6.0,28.0,3.0,a,gene/physio,172.0,yes,alive,NA,yes,yes,yes,yes,no,yes,no,no,no
+a. pulchra,2025-06-10 00:00:00,6.0,28.0,3.0,c,gene/physio,129.0,yes,alive,NA,yes,yes,yes,yes,no,yes,no,no,no
+a. pulchra,2025-06-10 00:00:00,6.0,28.0,3.0,d,gene/physio,113.0,yes,alive,NA,yes,yes,yes,yes,no,yes,no,no,no,tripod photo
+a. pulchra,2025-06-10 00:00:00,6.0,31.0,4.0,a,gene/physio,152.0,yes,alive,NA,yes,yes,yes,yes,no,yes,no,no,no
+a. pulchra,2025-06-10 00:00:00,6.0,31.0,4.0,c,gene/physio,133.0,yes,alive,NA,yes,yes,yes,yes,no,yes,no,no,no
+a. pulchra,2025-06-10 00:00:00,6.0,31.0,4.0,d,gene/physio,143.0,yes,alive,NA,yes,yes,yes,yes,no,no,no,no,no,tripod photo
+a. pulchra,2025-06-10 00:00:00,6.0,31.0,5.0,a,gene/physio,170.0,yes,alive,NA,yes,yes,yes,yes,no,yes,no,no,no
+a. pulchra,2025-06-10 00:00:00,6.0,31.0,5.0,c,gene/physio,115.0,yes,alive,NA,yes,yes,yes,yes,no,no,no,no,no
+a. pulchra,2025-06-10 00:00:00,6.0,31.0,5.0,d,gene/physio,126.0,yes,alive,NA,no,yes,yes,yes,no,yes,no,no,no,tripod photo
+a. pulchra,2025-06-10 00:00:00,6.0,28.0,6.0,a,gene/physio,179.0,yes,alive,NA,yes,yes,yes,yes,no,yes,no,no,no,tripod photo
+a. pulchra,2025-06-10 00:00:00,6.0,28.0,6.0,c,gene/physio,117.0,yes,alive,NA,yes,yes,yes,yes,no,no,no,no,no
+a. pulchra,2025-06-10 00:00:00,6.0,28.0,6.0,d,gene/physio,146.0,yes,alive,NA,yes,yes,yes,yes,no,yes,no,no,no
+a. pulchra,2025-06-10 00:00:00,6.0,28.0,9.0,a,gene/physio,166.0,yes,alive,NA,yes,yes,yes,yes,no,yes,no,no,no
+a. pulchra,2025-06-10 00:00:00,6.0,28.0,9.0,d,gene/physio,118.0,yes,alive,NA,yes,yes,yes,yes,no,yes,no,no,no
+a. pulchra,2025-06-10 00:00:00,6.0,28.0,9.0,c,gene/physio,121.0,yes,alive,NA,yes,no,no,yes,no,no,no,no,no
+a. pulchra,2025-06-10 00:00:00,6.0,31.0,10.0,a,gene/physio,175.0,yes,alive,NA,no,yes,yes,yes,no,no,no,no,no
+a. pulchra,2025-06-10 00:00:00,6.0,31.0,10.0,c,gene/physio,119.0,yes,alive,NA,yes,yes,yes,yes,no,no,no,no,no
+a. pulchra,2025-06-10 00:00:00,6.0,31.0,10.0,d,gene/physio,110.0,yes,alive,NA,yes,yes,yes,yes,no,yes,no,no,no
+a. pulchra,2025-06-10 00:00:00,6.0,31.0,11.0,a,gene/physio,174.0,yes,alive,NA,yes,yes,yes,yes,no,no,no,no,no
+a. pulchra,2025-06-10 00:00:00,6.0,31.0,11.0,c,gene/physio,116.0,yes,alive,NA,yes,no,no,yes,no,yes,no,no,no
+a. pulchra,2025-06-10 00:00:00,6.0,31.0,11.0,d,gene/physio,149.0,yes,alive,NA,yes,yes,yes,yes,no,yes,no,no,no
+a. pulchra,2025-06-10 00:00:00,6.0,28.0,12.0,a,gene/physio,177.0,yes,alive,NA,yes,yes,yes,yes,no,yes,no,no,no
+a. pulchra,2025-06-10 00:00:00,6.0,28.0,12.0,c,gene/physio,130.0,yes,alive,NA,yes,yes,yes,yes,no,no,no,no,no
+a. pulchra,2025-06-10 00:00:00,6.0,28.0,12.0,d,gene/physio,144.0,yes,alive,NA,yes,yes,yes,yes,no,yes,no,no,no
+a. pulchra,2025-06-10 00:00:00,6.0,28.0,3.0,a,gene/physio,162.0,no,alive,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-10 00:00:00,6.0,28.0,3.0,c,gene/physio,139.0,no,alive,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,tripod photo
+a. pulchra,2025-06-10 00:00:00,6.0,28.0,3.0,d,gene/physio,156.0,no,alive,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-10 00:00:00,6.0,31.0,4.0,a,gene/physio,165.0,no,alive,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-10 00:00:00,6.0,31.0,4.0,d,gene/physio,150.0,no,alive,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,tripod photo
+a. pulchra,2025-06-10 00:00:00,6.0,31.0,4.0,c,gene/physio,141.0,no,alive,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-10 00:00:00,6.0,31.0,5.0,a,gene/physio,161.0,no,alive,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-10 00:00:00,6.0,31.0,5.0,c,gene/physio,124.0,no,alive,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-10 00:00:00,6.0,31.0,5.0,d,gene/physio,154.0,no,alive,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-10 00:00:00,6.0,28.0,6.0,a,gene/physio,169.0,no,alive,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-10 00:00:00,6.0,28.0,6.0,c,gene/physio,123.0,no,alive,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-10 00:00:00,6.0,28.0,6.0,d,gene/physio,145.0,no,alive,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-10 00:00:00,6.0,28.0,9.0,a,gene/physio,173.0,no,alive,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-10 00:00:00,6.0,28.0,9.0,c,gene/physio,131.0,no,alive,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-10 00:00:00,6.0,28.0,9.0,d,gene/physio,122.0,no,alive,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-10 00:00:00,6.0,31.0,10.0,a,gene/physio,178.0,no,alive,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-10 00:00:00,6.0,31.0,10.0,c,gene/physio,132.0,no,alive,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-10 00:00:00,6.0,31.0,10.0,d,gene/physio,120.0,no,alive,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-10 00:00:00,6.0,31.0,11.0,a,gene/physio,163.0,no,alive,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-10 00:00:00,6.0,31.0,11.0,c,gene/physio,127.0,no,alive,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-10 00:00:00,6.0,31.0,11.0,d,gene/physio,128.0,no,alive,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-10 00:00:00,6.0,28.0,12.0,a,gene/physio,176.0,no,alive,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-10 00:00:00,6.0,28.0,12.0,c,gene/physio,125.0,no,alive,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-10 00:00:00,6.0,28.0,12.0,d,gene/physio,147.0,no,alive,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-11 00:00:00,7.0,28.0,3.0,a,gene/physio,172.0,yes,alive,NA,yes,yes,yes,yes,no,yes,no,no,no
+a. pulchra,2025-06-11 00:00:00,7.0,28.0,3.0,c,gene/physio,129.0,yes,alive,NA,yes,yes,yes,yes,no,yes,no,no,no
+a. pulchra,2025-06-11 00:00:00,7.0,28.0,3.0,d,gene/physio,113.0,yes,alive,NA,yes,yes,yes,yes,no,yes,no,no,no
+a. pulchra,2025-06-11 00:00:00,7.0,31.0,4.0,a,gene/physio,152.0,yes,alive,NA,yes,yes,yes,yes,no,yes,no,no,no
+a. pulchra,2025-06-11 00:00:00,7.0,31.0,4.0,c,gene/physio,133.0,yes,alive,NA,yes,yes,yes,yes,no,yes,no,no,no
+a. pulchra,2025-06-11 00:00:00,7.0,31.0,4.0,d,gene/physio,143.0,yes,alive,NA,no,yes,yes,yes,no,no,no,no,no
+a. pulchra,2025-06-11 00:00:00,7.0,31.0,5.0,a,gene/physio,170.0,yes,alive,NA,no,yes,yes,yes,no,yes,no,no,no
+a. pulchra,2025-06-11 00:00:00,7.0,31.0,5.0,c,gene/physio,115.0,yes,alive,NA,no,yes,yes,yes,no,no,no,no,no
+a. pulchra,2025-06-11 00:00:00,7.0,31.0,5.0,d,gene/physio,126.0,yes,alive,NA,no,yes,yes,yes,no,yes,no,no,no
+a. pulchra,2025-06-11 00:00:00,7.0,28.0,6.0,a,gene/physio,179.0,yes,alive,NA,yes,yes,yes,yes,no,yes,no,no,no
+a. pulchra,2025-06-11 00:00:00,7.0,28.0,6.0,c,gene/physio,117.0,yes,alive,NA,yes,yes,yes,yes,no,no,no,no,no
+a. pulchra,2025-06-11 00:00:00,7.0,28.0,6.0,d,gene/physio,146.0,yes,alive,NA,yes,yes,yes,yes,no,yes,no,no,no
+a. pulchra,2025-06-11 00:00:00,7.0,28.0,9.0,a,gene/physio,166.0,yes,alive,NA,yes,yes,yes,yes,no,yes,no,no,no
+a. pulchra,2025-06-11 00:00:00,7.0,28.0,9.0,d,gene/physio,118.0,yes,alive,NA,yes,yes,yes,yes,no,yes,no,no,no
+a. pulchra,2025-06-11 00:00:00,7.0,28.0,9.0,c,gene/physio,121.0,yes,alive,NA,yes,no,no,yes,no,no,no,no,no
+a. pulchra,2025-06-11 00:00:00,7.0,31.0,10.0,a,gene/physio,175.0,yes,alive,NA,yes,yes,yes,yes,no,no,no,no,no
+a. pulchra,2025-06-11 00:00:00,7.0,31.0,10.0,c,gene/physio,119.0,yes,alive,NA,yes,yes,yes,yes,no,no,no,no,no
+a. pulchra,2025-06-11 00:00:00,7.0,31.0,10.0,d,gene/physio,110.0,yes,alive,NA,yes,yes,yes,yes,no,yes,no,no,no
+a. pulchra,2025-06-11 00:00:00,7.0,31.0,11.0,a,gene/physio,174.0,yes,alive,NA,yes,yes,yes,yes,no,no,no,no,no
+a. pulchra,2025-06-11 00:00:00,7.0,31.0,11.0,c,gene/physio,116.0,yes,alive,NA,yes,no,no,yes,no,yes,no,no,no
+a. pulchra,2025-06-11 00:00:00,7.0,31.0,11.0,d,gene/physio,149.0,yes,alive,NA,yes,yes,yes,yes,no,yes,no,no,no
+a. pulchra,2025-06-11 00:00:00,7.0,28.0,12.0,a,gene/physio,177.0,yes,alive,NA,yes,yes,yes,yes,no,yes,no,no,no
+a. pulchra,2025-06-11 00:00:00,7.0,28.0,12.0,c,gene/physio,130.0,yes,alive,NA,yes,yes,yes,yes,no,no,no,no,no
+a. pulchra,2025-06-11 00:00:00,7.0,28.0,12.0,d,gene/physio,144.0,yes,alive,NA,yes,yes,yes,yes,no,yes,no,no,no
+a. pulchra,2025-06-11 00:00:00,7.0,28.0,3.0,a,gene/physio,162.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-11 00:00:00,7.0,28.0,3.0,c,gene/physio,139.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-11 00:00:00,7.0,28.0,3.0,d,gene/physio,156.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-11 00:00:00,7.0,31.0,4.0,a,gene/physio,165.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-11 00:00:00,7.0,31.0,4.0,d,gene/physio,150.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-11 00:00:00,7.0,31.0,4.0,c,gene/physio,141.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-11 00:00:00,7.0,31.0,5.0,a,gene/physio,161.0,no,alive,NA,no,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-11 00:00:00,7.0,31.0,5.0,c,gene/physio,124.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-11 00:00:00,7.0,31.0,5.0,d,gene/physio,154.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-11 00:00:00,7.0,28.0,6.0,a,gene/physio,169.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-11 00:00:00,7.0,28.0,6.0,c,gene/physio,123.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-11 00:00:00,7.0,28.0,6.0,d,gene/physio,145.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-11 00:00:00,7.0,28.0,9.0,a,gene/physio,173.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-11 00:00:00,7.0,28.0,9.0,c,gene/physio,131.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-11 00:00:00,7.0,28.0,9.0,d,gene/physio,122.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-11 00:00:00,7.0,31.0,10.0,a,gene/physio,178.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-11 00:00:00,7.0,31.0,10.0,c,gene/physio,132.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-11 00:00:00,7.0,31.0,10.0,d,gene/physio,120.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-11 00:00:00,7.0,31.0,11.0,a,gene/physio,163.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-11 00:00:00,7.0,31.0,11.0,c,gene/physio,127.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-11 00:00:00,7.0,31.0,11.0,d,gene/physio,128.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-11 00:00:00,7.0,28.0,12.0,a,gene/physio,176.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-11 00:00:00,7.0,28.0,12.0,c,gene/physio,125.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-11 00:00:00,7.0,28.0,12.0,d,gene/physio,147.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-12 00:00:00,8.0,28.0,3.0,a,gene/physio,172.0,yes,alive,NA,yes,yes,yes,yes,no,yes,yes,no,no,checked for worms by pipette
+a. pulchra,2025-06-12 00:00:00,8.0,28.0,3.0,c,gene/physio,129.0,yes,alive,NA,yes,yes,yes,yes,no,yes,yes,no,no,checked for worms by pipette
+a. pulchra,2025-06-12 00:00:00,8.0,28.0,3.0,d,gene/physio,113.0,yes,alive,NA,yes,yes,yes,yes,no,yes,yes,no,no,checked for worms by pipette
+a. pulchra,2025-06-12 00:00:00,8.0,31.0,4.0,a,gene/physio,152.0,yes,alive,NA,yes,yes,yes,yes,no,yes,yes,no,no,checked for worms by pipette
+a. pulchra,2025-06-12 00:00:00,8.0,31.0,4.0,c,gene/physio,133.0,yes,alive,NA,yes,yes,yes,yes,no,yes,yes,no,no,checked for worms by pipette
+a. pulchra,2025-06-12 00:00:00,8.0,31.0,4.0,d,gene/physio,143.0,yes,alive,NA,yes,yes,yes,yes,no,yes,no,no,no,checked for worms by pipette
+a. pulchra,2025-06-12 00:00:00,8.0,31.0,5.0,a,gene/physio,170.0,yes,alive,NA,yes,yes,yes,yes,no,yes,yes,no,no,checked for worms by pipette
+a. pulchra,2025-06-12 00:00:00,8.0,31.0,5.0,c,gene/physio,115.0,yes,alive,NA,yes,yes,yes,yes,no,yes,no,no,no,checked for worms by pipette
+a. pulchra,2025-06-12 00:00:00,8.0,31.0,5.0,d,gene/physio,126.0,yes,alive,NA,yes,yes,yes,yes,no,yes,yes,no,no,checked for worms by pipette
+a. pulchra,2025-06-12 00:00:00,8.0,28.0,6.0,a,gene/physio,179.0,yes,alive,NA,yes,yes,yes,yes,no,yes,yes,no,no,checked for worms by pipette
+a. pulchra,2025-06-12 00:00:00,8.0,28.0,6.0,c,gene/physio,117.0,yes,alive,NA,yes,yes,yes,yes,no,yes,yes,no,no,checked for worms by pipette
+a. pulchra,2025-06-12 00:00:00,8.0,28.0,6.0,d,gene/physio,146.0,yes,alive,NA,yes,yes,yes,yes,no,yes,yes,no,no,checked for worms by pipette
+a. pulchra,2025-06-12 00:00:00,8.0,28.0,9.0,a,gene/physio,166.0,yes,alive,NA,yes,yes,yes,yes,no,yes,yes,no,no,checked for worms by pipette
+a. pulchra,2025-06-12 00:00:00,8.0,28.0,9.0,d,gene/physio,118.0,yes,alive,NA,yes,yes,yes,yes,no,yes,yes,no,no,checked for worms by pipette
+a. pulchra,2025-06-12 00:00:00,8.0,28.0,9.0,c,gene/physio,121.0,yes,alive,NA,yes,no,no,yes,no,yes,no,no,no,checked for worms by pipette
+a. pulchra,2025-06-12 00:00:00,8.0,31.0,10.0,a,gene/physio,175.0,yes,alive,NA,yes,yes,yes,yes,no,yes,yes,no,no,checked for worms by pipette
+a. pulchra,2025-06-12 00:00:00,8.0,31.0,10.0,c,gene/physio,119.0,yes,alive,NA,yes,yes,yes,yes,no,yes,no,no,no,checked for worms by pipette
+a. pulchra,2025-06-12 00:00:00,8.0,31.0,10.0,d,gene/physio,110.0,yes,alive,NA,yes,yes,yes,yes,no,yes,yes,no,no,checked for worms by pipette
+a. pulchra,2025-06-12 00:00:00,8.0,31.0,11.0,a,gene/physio,174.0,yes,alive,NA,yes,yes,yes,yes,no,yes,yes,no,no,checked for worms by pipette
+a. pulchra,2025-06-12 00:00:00,8.0,31.0,11.0,c,gene/physio,116.0,yes,alive,NA,yes,no,no,yes,no,yes,no,no,no,checked for worms by pipette
+a. pulchra,2025-06-12 00:00:00,8.0,31.0,11.0,d,gene/physio,149.0,yes,alive,NA,yes,yes,yes,yes,no,yes,yes,no,no,checked for worms by pipette
+a. pulchra,2025-06-12 00:00:00,8.0,28.0,12.0,a,gene/physio,177.0,yes,alive,NA,yes,yes,yes,yes,no,yes,yes,no,no,checked for worms by pipette
+a. pulchra,2025-06-12 00:00:00,8.0,28.0,12.0,c,gene/physio,130.0,yes,alive,NA,yes,yes,yes,yes,no,yes,yes,no,no,checked for worms by pipette
+a. pulchra,2025-06-12 00:00:00,8.0,28.0,12.0,d,gene/physio,144.0,yes,alive,NA,yes,yes,yes,yes,no,yes,yes,no,no,checked for worms by pipette
+a. pulchra,2025-06-12 00:00:00,8.0,28.0,3.0,a,gene/physio,162.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA,checked for worms by pipette
+a. pulchra,2025-06-12 00:00:00,8.0,28.0,3.0,c,gene/physio,139.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA,checked for worms by pipette
+a. pulchra,2025-06-12 00:00:00,8.0,28.0,3.0,d,gene/physio,156.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA,checked for worms by pipette
+a. pulchra,2025-06-12 00:00:00,8.0,31.0,4.0,a,gene/physio,165.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA,checked for worms by pipette
+a. pulchra,2025-06-12 00:00:00,8.0,31.0,4.0,d,gene/physio,150.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA,checked for worms by pipette
+a. pulchra,2025-06-12 00:00:00,8.0,31.0,4.0,c,gene/physio,141.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA,checked for worms by pipette
+a. pulchra,2025-06-12 00:00:00,8.0,31.0,5.0,a,gene/physio,161.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA,checked for worms by pipette
+a. pulchra,2025-06-12 00:00:00,8.0,31.0,5.0,c,gene/physio,124.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA,checked for worms by pipette
+a. pulchra,2025-06-12 00:00:00,8.0,31.0,5.0,d,gene/physio,154.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA,checked for worms by pipette
+a. pulchra,2025-06-12 00:00:00,8.0,28.0,6.0,a,gene/physio,169.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA,checked for worms by pipette
+a. pulchra,2025-06-12 00:00:00,8.0,28.0,6.0,c,gene/physio,123.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA,checked for worms by pipette
+a. pulchra,2025-06-12 00:00:00,8.0,28.0,6.0,d,gene/physio,145.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA,checked for worms by pipette
+a. pulchra,2025-06-12 00:00:00,8.0,28.0,9.0,a,gene/physio,173.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA,checked for worms by pipette
+a. pulchra,2025-06-12 00:00:00,8.0,28.0,9.0,c,gene/physio,131.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA,checked for worms by pipette
+a. pulchra,2025-06-12 00:00:00,8.0,28.0,9.0,d,gene/physio,122.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA,checked for worms by pipette
+a. pulchra,2025-06-12 00:00:00,8.0,31.0,10.0,a,gene/physio,178.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA,checked for worms by pipette
+a. pulchra,2025-06-12 00:00:00,8.0,31.0,10.0,c,gene/physio,132.0,no,alive,AEF,yes,NA,NA,NA,NA,NA,NA,NA,NA,checked for worms by pipette
+a. pulchra,2025-06-12 00:00:00,8.0,31.0,10.0,d,gene/physio,120.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA,checked for worms by pipette
+a. pulchra,2025-06-12 00:00:00,8.0,31.0,11.0,a,gene/physio,163.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA,checked for worms by pipette
+a. pulchra,2025-06-12 00:00:00,8.0,31.0,11.0,c,gene/physio,127.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA,checked for worms by pipette
+a. pulchra,2025-06-12 00:00:00,8.0,31.0,11.0,d,gene/physio,128.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA,checked for worms by pipette
+a. pulchra,2025-06-12 00:00:00,8.0,28.0,12.0,a,gene/physio,176.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA,checked for worms by pipette
+a. pulchra,2025-06-12 00:00:00,8.0,28.0,12.0,c,gene/physio,125.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA,checked for worms by pipette
+a. pulchra,2025-06-12 00:00:00,8.0,28.0,12.0,d,gene/physio,147.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA,checked for worms by pipette
+a. pulchra,2025-06-13 00:00:00,9.0,28.0,3.0,a,gene/physio,172.0,yes,alive,NA,yes,yes,yes,yes,no,yes,yes,no,no
+a. pulchra,2025-06-13 00:00:00,9.0,28.0,3.0,c,gene/physio,129.0,yes,alive,NA,yes,yes,yes,yes,,yes,yes,no,no
+a. pulchra,2025-06-13 00:00:00,9.0,28.0,3.0,d,gene/physio,113.0,yes,alive,NA,yes,yes,yes,yes,,yes,yes,no,no
+a. pulchra,2025-06-13 00:00:00,9.0,31.0,4.0,a,gene/physio,152.0,yes,alive,NA,yes,yes,yes,yes,,yes,yes,no,no
+a. pulchra,2025-06-13 00:00:00,9.0,31.0,4.0,c,gene/physio,133.0,yes,alive,NA,yes,yes,yes,yes,,yes,yes,no,no
+a. pulchra,2025-06-13 00:00:00,9.0,31.0,4.0,d,gene/physio,143.0,yes,alive,NA,yes,yes,yes,yes,,no,no,no,no
+a. pulchra,2025-06-13 00:00:00,9.0,31.0,5.0,a,gene/physio,170.0,yes,alive,NA,yes,yes,yes,yes,,yes,yes,no,no
+a. pulchra,2025-06-13 00:00:00,9.0,31.0,5.0,c,gene/physio,115.0,yes,alive,NA,yes,yes,yes,yes,,yes,no,no,no
+a. pulchra,2025-06-13 00:00:00,9.0,31.0,5.0,d,gene/physio,126.0,yes,alive,NA,yes,yes,yes,yes,,yes,no,no,no
+a. pulchra,2025-06-13 00:00:00,9.0,28.0,6.0,a,gene/physio,179.0,yes,alive,NA,yes,yes,yes,yes,,yes,yes,no,no
+a. pulchra,2025-06-13 00:00:00,9.0,28.0,6.0,c,gene/physio,117.0,yes,alive,NA,yes,yes,yes,yes,,yes,yes,no,no
+a. pulchra,2025-06-13 00:00:00,9.0,28.0,6.0,d,gene/physio,146.0,yes,alive,NA,yes,yes,yes,yes,,yes,yes,no,no
+a. pulchra,2025-06-13 00:00:00,9.0,28.0,9.0,a,gene/physio,166.0,yes,alive,NA,yes,yes,yes,yes,,yes,yes,no,no
+a. pulchra,2025-06-13 00:00:00,9.0,28.0,9.0,d,gene/physio,118.0,yes,alive,NA,yes,yes,yes,yes,,yes,yes,no,no
+a. pulchra,2025-06-13 00:00:00,9.0,28.0,9.0,c,gene/physio,121.0,yes,alive,NA,yes,yes,yes,yes,,no,no,no,no
+a. pulchra,2025-06-13 00:00:00,9.0,31.0,10.0,a,gene/physio,175.0,yes,alive,NA,no,yes,yes,yes,,yes,no,no,no
+a. pulchra,2025-06-13 00:00:00,9.0,31.0,10.0,c,gene/physio,119.0,yes,alive,NA,yes,yes,yes,yes,,yes,no,no,no
+a. pulchra,2025-06-13 00:00:00,9.0,31.0,10.0,d,gene/physio,110.0,yes,alive,NA,no,yes,yes,yes,,yes,yes,no,no
+a. pulchra,2025-06-13 00:00:00,9.0,31.0,11.0,a,gene/physio,174.0,yes,alive,NA,yes,yes,yes,yes,,yes,yes,no,no
+a. pulchra,2025-06-13 00:00:00,9.0,31.0,11.0,c,gene/physio,116.0,yes,alive,NA,yes,yes,yes,yes,,no,no,no,no
+a. pulchra,2025-06-13 00:00:00,9.0,31.0,11.0,d,gene/physio,149.0,yes,alive,NA,yes,yes,yes,yes,,yes,yes,no,no
+a. pulchra,2025-06-13 00:00:00,9.0,28.0,12.0,a,gene/physio,177.0,yes,alive,NA,yes,yes,yes,yes,,yes,yes,no,no
+a. pulchra,2025-06-13 00:00:00,9.0,28.0,12.0,c,gene/physio,130.0,yes,alive,NA,yes,yes,yes,yes,,yes,yes,no,no
+a. pulchra,2025-06-13 00:00:00,9.0,28.0,12.0,d,gene/physio,144.0,yes,alive,NA,yes,yes,yes,yes,,yes,yes,no,no
+a. pulchra,2025-06-13 00:00:00,9.0,28.0,3.0,a,gene/physio,162.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-13 00:00:00,9.0,28.0,3.0,c,gene/physio,139.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-13 00:00:00,9.0,28.0,3.0,d,gene/physio,156.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-13 00:00:00,9.0,31.0,4.0,a,gene/physio,165.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-13 00:00:00,9.0,31.0,4.0,d,gene/physio,150.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-13 00:00:00,9.0,31.0,4.0,c,gene/physio,141.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-13 00:00:00,9.0,31.0,5.0,a,gene/physio,161.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-13 00:00:00,9.0,31.0,5.0,c,gene/physio,124.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-13 00:00:00,9.0,31.0,5.0,d,gene/physio,154.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-13 00:00:00,9.0,28.0,6.0,a,gene/physio,169.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-13 00:00:00,9.0,28.0,6.0,c,gene/physio,123.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-13 00:00:00,9.0,28.0,6.0,d,gene/physio,145.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-13 00:00:00,9.0,28.0,9.0,a,gene/physio,173.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-13 00:00:00,9.0,28.0,9.0,c,gene/physio,131.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-13 00:00:00,9.0,28.0,9.0,d,gene/physio,122.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-13 00:00:00,9.0,31.0,10.0,a,gene/physio,178.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-13 00:00:00,9.0,31.0,10.0,c,gene/physio,132.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-13 00:00:00,9.0,31.0,10.0,d,gene/physio,120.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-13 00:00:00,9.0,31.0,11.0,a,gene/physio,163.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-13 00:00:00,9.0,31.0,11.0,c,gene/physio,127.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-13 00:00:00,9.0,31.0,11.0,d,gene/physio,128.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-13 00:00:00,9.0,28.0,12.0,a,gene/physio,176.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-13 00:00:00,9.0,28.0,12.0,c,gene/physio,125.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-13 00:00:00,9.0,28.0,12.0,d,gene/physio,147.0,no,alive,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-14 00:00:00,10.0,28.0,3.0,a,gene/physio,172.0,yes,alive,NA,yes,yes,yes,yes,no,yes,yes,no,no
+a. pulchra,2025-06-14 00:00:00,10.0,28.0,3.0,c,gene/physio,129.0,yes,alive,NA,yes,yes,yes,yes,no,yes,yes,no,no
+a. pulchra,2025-06-14 00:00:00,10.0,28.0,3.0,d,gene/physio,113.0,yes,alive,NA,yes,yes,yes,yes,no,yes,yes,no,no
+a. pulchra,2025-06-14 00:00:00,10.0,31.0,4.0,a,gene/physio,152.0,yes,alive,NA,yes,yes,yes,yes,no,yes,yes,no,no
+a. pulchra,2025-06-14 00:00:00,10.0,31.0,4.0,c,gene/physio,133.0,yes,alive,NA,yes,yes,yes,yes,no,yes,yes,no,no
+a. pulchra,2025-06-14 00:00:00,10.0,31.0,4.0,d,gene/physio,143.0,yes,alive,NA,yes,yes,yes,yes,no,no,no,no,no
+a. pulchra,2025-06-14 00:00:00,10.0,31.0,5.0,a,gene/physio,170.0,yes,alive,NA,yes,yes,yes,yes,no,yes,yes,no,no
+a. pulchra,2025-06-14 00:00:00,10.0,31.0,5.0,c,gene/physio,115.0,yes,alive,NA,yes,yes,yes,yes,no,yes,no,no,no
+a. pulchra,2025-06-14 00:00:00,10.0,31.0,5.0,d,gene/physio,126.0,yes,alive,NA,yes,yes,yes,yes,no,yes,no,no,no
+a. pulchra,2025-06-14 00:00:00,10.0,28.0,6.0,a,gene/physio,179.0,yes,alive,NA,yes,yes,yes,yes,no,yes,yes,no,no
+a. pulchra,2025-06-14 00:00:00,10.0,28.0,6.0,c,gene/physio,117.0,yes,alive,NA,yes,yes,yes,yes,no,yes,yes,no,no
+a. pulchra,2025-06-14 00:00:00,10.0,28.0,6.0,d,gene/physio,146.0,yes,alive,NA,yes,yes,yes,yes,no,yes,yes,no,no
+a. pulchra,2025-06-14 00:00:00,10.0,28.0,9.0,a,gene/physio,166.0,yes,alive,NA,yes,yes,yes,yes,no,yes,yes,no,no
+a. pulchra,2025-06-14 00:00:00,10.0,28.0,9.0,d,gene/physio,118.0,yes,alive,NA,yes,yes,yes,yes,no,yes,yes,no,no
+a. pulchra,2025-06-14 00:00:00,10.0,28.0,9.0,c,gene/physio,121.0,yes,alive,NA,yes,yes,yes,yes,no,no,no,no,no
+a. pulchra,2025-06-14 00:00:00,10.0,31.0,10.0,a,gene/physio,175.0,yes,alive,NA,yes,yes,yes,yes,no,yes,no,no,no
+a. pulchra,2025-06-14 00:00:00,10.0,31.0,10.0,c,gene/physio,119.0,yes,alive,NA,yes,yes,yes,yes,no,yes,yes,no,no
+a. pulchra,2025-06-14 00:00:00,10.0,31.0,10.0,d,gene/physio,110.0,yes,alive,NA,yes,yes,yes,yes,no,yes,yes,no,no
+a. pulchra,2025-06-14 00:00:00,10.0,31.0,11.0,a,gene/physio,174.0,yes,alive,NA,yes,yes,yes,yes,no,yes,yes,no,no
+a. pulchra,2025-06-14 00:00:00,10.0,31.0,11.0,c,gene/physio,116.0,yes,alive,NA,yes,yes,yes,yes,no,yes,no,no,no
+a. pulchra,2025-06-14 00:00:00,10.0,31.0,11.0,d,gene/physio,149.0,yes,alive,NA,yes,yes,yes,yes,no,yes,yes,no,no
+a. pulchra,2025-06-14 00:00:00,10.0,28.0,12.0,a,gene/physio,177.0,yes,alive,NA,yes,yes,yes,yes,no,yes,yes,no,no
+a. pulchra,2025-06-14 00:00:00,10.0,28.0,12.0,c,gene/physio,130.0,yes,alive,NA,yes,yes,yes,yes,no,yes,yes,no,no
+a. pulchra,2025-06-14 00:00:00,10.0,28.0,12.0,d,gene/physio,144.0,yes,alive,NA,yes,yes,yes,yes,no,yes,yes,no,no
+a. pulchra,2025-06-14 00:00:00,10.0,28.0,3.0,a,gene/physio,162.0,no,alive,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-14 00:00:00,10.0,28.0,3.0,c,gene/physio,139.0,no,alive,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-14 00:00:00,10.0,28.0,3.0,d,gene/physio,156.0,no,alive,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-14 00:00:00,10.0,31.0,4.0,a,gene/physio,165.0,no,alive,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-14 00:00:00,10.0,31.0,4.0,d,gene/physio,150.0,no,alive,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-14 00:00:00,10.0,31.0,4.0,c,gene/physio,141.0,no,alive,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-14 00:00:00,10.0,31.0,5.0,a,gene/physio,161.0,no,alive,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-14 00:00:00,10.0,31.0,5.0,c,gene/physio,124.0,no,alive,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-14 00:00:00,10.0,31.0,5.0,d,gene/physio,154.0,no,alive,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-14 00:00:00,10.0,28.0,6.0,a,gene/physio,169.0,no,alive,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-14 00:00:00,10.0,28.0,6.0,c,gene/physio,123.0,no,alive,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-14 00:00:00,10.0,28.0,6.0,d,gene/physio,145.0,no,alive,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-14 00:00:00,10.0,28.0,9.0,a,gene/physio,173.0,no,alive,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-14 00:00:00,10.0,28.0,9.0,c,gene/physio,131.0,no,alive,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-14 00:00:00,10.0,28.0,9.0,d,gene/physio,122.0,no,alive,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-14 00:00:00,10.0,31.0,10.0,a,gene/physio,178.0,no,alive,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-14 00:00:00,10.0,31.0,10.0,c,gene/physio,132.0,no,alive,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-14 00:00:00,10.0,31.0,10.0,d,gene/physio,120.0,no,alive,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-14 00:00:00,10.0,31.0,11.0,a,gene/physio,163.0,no,alive,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-14 00:00:00,10.0,31.0,11.0,c,gene/physio,127.0,no,alive,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-14 00:00:00,10.0,31.0,11.0,d,gene/physio,128.0,no,alive,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-14 00:00:00,10.0,28.0,12.0,a,gene/physio,176.0,no,alive,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-14 00:00:00,10.0,28.0,12.0,c,gene/physio,125.0,no,alive,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-14 00:00:00,10.0,28.0,12.0,d,gene/physio,147.0,no,alive,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-15 00:00:00,11.0,28.0,3.0,a,gene/physio,172.0,yes,alive,NA,yes,yes,yes,yes,no,yes,yes,no,no
+a. pulchra,2025-06-15 00:00:00,11.0,28.0,3.0,c,gene/physio,129.0,yes,alive,NA,yes,yes,yes,yes,no,yes,yes,no,no
+a. pulchra,2025-06-15 00:00:00,11.0,28.0,3.0,d,gene/physio,113.0,yes,alive,NA,yes,yes,yes,yes,no,yes,yes,no,no
+a. pulchra,2025-06-15 00:00:00,11.0,31.0,4.0,a,gene/physio,152.0,yes,alive,NA,yes,yes,yes,yes,no,yes,yes,no,no
+a. pulchra,2025-06-15 00:00:00,11.0,31.0,4.0,c,gene/physio,133.0,yes,alive,NA,yes,yes,yes,yes,no,yes,yes,no,no
+a. pulchra,2025-06-15 00:00:00,11.0,31.0,4.0,d,gene/physio,143.0,yes,alive,NA,no,yes,yes,yes,no,no,no,no,no
+a. pulchra,2025-06-15 00:00:00,11.0,31.0,5.0,a,gene/physio,170.0,yes,alive,NA,no,yes,yes,yes,no,yes,yes,no,no,pale
+a. pulchra,2025-06-15 00:00:00,11.0,31.0,5.0,c,gene/physio,115.0,yes,alive,NA,yes,yes,yes,yes,no,yes,no,no,no
+a. pulchra,2025-06-15 00:00:00,11.0,31.0,5.0,d,gene/physio,126.0,yes,alive,NA,no,yes,yes,yes,no,yes,no,no,no
+a. pulchra,2025-06-15 00:00:00,11.0,28.0,6.0,a,gene/physio,179.0,yes,alive,NA,yes,yes,yes,yes,no,yes,yes,no,no
+a. pulchra,2025-06-15 00:00:00,11.0,28.0,6.0,c,gene/physio,117.0,yes,alive,NA,yes,yes,yes,yes,no,yes,yes,no,no
+a. pulchra,2025-06-15 00:00:00,11.0,28.0,6.0,d,gene/physio,146.0,yes,alive,NA,yes,yes,yes,yes,no,yes,yes,no,no
+a. pulchra,2025-06-15 00:00:00,11.0,28.0,9.0,a,gene/physio,166.0,yes,alive,NA,yes,yes,yes,yes,no,yes,yes,no,no
+a. pulchra,2025-06-15 00:00:00,11.0,28.0,9.0,d,gene/physio,118.0,yes,alive,NA,yes,yes,yes,yes,no,yes,yes,no,no
+a. pulchra,2025-06-15 00:00:00,11.0,28.0,9.0,c,gene/physio,121.0,yes,alive,NA,yes,yes,yes,yes,no,no,no,no,no
+a. pulchra,2025-06-15 00:00:00,11.0,31.0,10.0,a,gene/physio,175.0,yes,alive,NA,yes,yes,yes,yes,no,yes,no,no,no
+a. pulchra,2025-06-15 00:00:00,11.0,31.0,10.0,c,gene/physio,119.0,yes,alive,NA,yes,yes,yes,yes,no,yes,yes,no,no
+a. pulchra,2025-06-15 00:00:00,11.0,31.0,10.0,d,gene/physio,110.0,yes,alive,NA,yes,yes,yes,yes,no,yes,yes,no,no
+a. pulchra,2025-06-15 00:00:00,11.0,31.0,11.0,a,gene/physio,174.0,yes,alive,NA,yes,yes,yes,yes,no,yes,yes,no,no
+a. pulchra,2025-06-15 00:00:00,11.0,31.0,11.0,c,gene/physio,116.0,yes,alive,NA,yes,yes,yes,yes,no,yes,no,no,no
+a. pulchra,2025-06-15 00:00:00,11.0,31.0,11.0,d,gene/physio,149.0,yes,alive,NA,yes,yes,yes,yes,no,yes,yes,no,no
+a. pulchra,2025-06-15 00:00:00,11.0,28.0,12.0,a,gene/physio,177.0,yes,alive,NA,yes,yes,yes,yes,no,yes,yes,no,no
+a. pulchra,2025-06-15 00:00:00,11.0,28.0,12.0,c,gene/physio,130.0,yes,alive,NA,yes,yes,yes,yes,no,yes,yes,no,no
+a. pulchra,2025-06-15 00:00:00,11.0,28.0,12.0,d,gene/physio,144.0,yes,alive,NA,yes,yes,yes,yes,no,yes,yes,no,no
+a. pulchra,2025-06-15 00:00:00,11.0,28.0,3.0,a,gene/physio,162.0,no,alive,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-15 00:00:00,11.0,28.0,3.0,c,gene/physio,139.0,no,alive,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-15 00:00:00,11.0,28.0,3.0,d,gene/physio,156.0,no,alive,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-15 00:00:00,11.0,31.0,4.0,a,gene/physio,165.0,no,alive,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-15 00:00:00,11.0,31.0,4.0,d,gene/physio,150.0,no,alive,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-15 00:00:00,11.0,31.0,4.0,c,gene/physio,141.0,no,alive,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-15 00:00:00,11.0,31.0,5.0,a,gene/physio,161.0,no,alive,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-15 00:00:00,11.0,31.0,5.0,c,gene/physio,124.0,no,alive,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-15 00:00:00,11.0,31.0,5.0,d,gene/physio,154.0,no,alive,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-15 00:00:00,11.0,28.0,6.0,a,gene/physio,169.0,no,alive,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-15 00:00:00,11.0,28.0,6.0,c,gene/physio,123.0,no,alive,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-15 00:00:00,11.0,28.0,6.0,d,gene/physio,145.0,no,alive,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-15 00:00:00,11.0,28.0,9.0,a,gene/physio,173.0,no,alive,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-15 00:00:00,11.0,28.0,9.0,c,gene/physio,131.0,no,alive,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-15 00:00:00,11.0,28.0,9.0,d,gene/physio,122.0,no,alive,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-15 00:00:00,11.0,31.0,10.0,a,gene/physio,178.0,no,alive,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-15 00:00:00,11.0,31.0,10.0,c,gene/physio,132.0,no,alive,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-15 00:00:00,11.0,31.0,10.0,d,gene/physio,120.0,no,alive,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-15 00:00:00,11.0,31.0,11.0,a,gene/physio,163.0,no,alive,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-15 00:00:00,11.0,31.0,11.0,c,gene/physio,127.0,no,alive,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-15 00:00:00,11.0,31.0,11.0,d,gene/physio,128.0,no,alive,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-15 00:00:00,11.0,28.0,12.0,a,gene/physio,176.0,no,alive,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-15 00:00:00,11.0,28.0,12.0,c,gene/physio,125.0,no,alive,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-15 00:00:00,11.0,28.0,12.0,d,gene/physio,147.0,no,alive,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-16 00:00:00,12.0,28.0,3.0,a,gene/physio,172.0,yes,alive,NA,yes,yes,yes,yes,no,yes,yes,yes,no
+a. pulchra,2025-06-16 00:00:00,12.0,28.0,3.0,c,gene/physio,129.0,yes,alive,NA,yes,yes,yes,yes,no,yes,yes,yes,no
+a. pulchra,2025-06-16 00:00:00,12.0,28.0,3.0,d,gene/physio,113.0,yes,alive,NA,yes,yes,yes,yes,no,yes,yes,yes,no
+a. pulchra,2025-06-16 00:00:00,12.0,31.0,4.0,a,gene/physio,152.0,yes,alive,NA,yes,yes,yes,yes,no,yes,yes,no,no
+a. pulchra,2025-06-16 00:00:00,12.0,31.0,4.0,c,gene/physio,133.0,yes,alive,NA,yes,yes,yes,yes,no,yes,yes,no,no
+a. pulchra,2025-06-16 00:00:00,12.0,31.0,4.0,d,gene/physio,143.0,yes,alive,NA,yes,yes,yes,yes,no,no,no,no,no
+a. pulchra,2025-06-16 00:00:00,12.0,31.0,5.0,a,gene/physio,170.0,yes,alive,NA,no,yes,yes,yes,no,yes,yes,no,no
+a. pulchra,2025-06-16 00:00:00,12.0,31.0,5.0,c,gene/physio,115.0,yes,alive,NA,yes,yes,yes,yes,no,yes,no,no,no
+a. pulchra,2025-06-16 00:00:00,12.0,31.0,5.0,d,gene/physio,126.0,yes,alive,NA,yes,yes,yes,yes,no,yes,no,no,no
+a. pulchra,2025-06-16 00:00:00,12.0,28.0,6.0,a,gene/physio,179.0,yes,alive,NA,yes,yes,yes,yes,no,yes,yes,yes,no
+a. pulchra,2025-06-16 00:00:00,12.0,28.0,6.0,c,gene/physio,117.0,yes,alive,NA,yes,yes,yes,yes,no,yes,yes,no,no
+a. pulchra,2025-06-16 00:00:00,12.0,28.0,6.0,d,gene/physio,146.0,yes,alive,NA,yes,yes,yes,yes,no,yes,yes,yes,no
+a. pulchra,2025-06-16 00:00:00,12.0,28.0,9.0,a,gene/physio,166.0,yes,alive,NA,yes,yes,yes,yes,no,yes,yes,yes,no
+a. pulchra,2025-06-16 00:00:00,12.0,28.0,9.0,d,gene/physio,118.0,yes,alive,NA,yes,yes,yes,yes,no,yes,yes,yes,no
+a. pulchra,2025-06-16 00:00:00,12.0,28.0,9.0,c,gene/physio,121.0,yes,alive,NA,yes,yes,yes,yes,yes,no,no,no,no
+a. pulchra,2025-06-16 00:00:00,12.0,31.0,10.0,a,gene/physio,175.0,yes,alive,NA,yes,yes,yes,yes,no,yes,no,no,no
+a. pulchra,2025-06-16 00:00:00,12.0,31.0,10.0,c,gene/physio,119.0,yes,alive,NA,yes,yes,yes,yes,no,yes,yes,no,no
+a. pulchra,2025-06-16 00:00:00,12.0,31.0,10.0,d,gene/physio,110.0,yes,alive,NA,yes,yes,yes,yes,no,yes,yes,no,no
+a. pulchra,2025-06-16 00:00:00,12.0,31.0,11.0,a,gene/physio,174.0,yes,alive,NA,yes,yes,yes,yes,no,yes,yes,no,no
+a. pulchra,2025-06-16 00:00:00,12.0,31.0,11.0,c,gene/physio,116.0,yes,alive,NA,yes,yes,yes,yes,no,yes,no,no,no
+a. pulchra,2025-06-16 00:00:00,12.0,31.0,11.0,d,gene/physio,149.0,yes,alive,NA,yes,yes,yes,yes,no,yes,yes,yes,no
+a. pulchra,2025-06-16 00:00:00,12.0,28.0,12.0,a,gene/physio,177.0,yes,alive,NA,yes,yes,yes,yes,no,yes,yes,yes,no
+a. pulchra,2025-06-16 00:00:00,12.0,28.0,12.0,c,gene/physio,130.0,yes,alive,NA,yes,yes,yes,yes,no,yes,yes,no,no
+a. pulchra,2025-06-16 00:00:00,12.0,28.0,12.0,d,gene/physio,144.0,yes,alive,NA,yes,yes,yes,yes,no,yes,yes,yes,no
+a. pulchra,2025-06-16 00:00:00,12.0,28.0,3.0,a,gene/physio,162.0,no,alive,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-16 00:00:00,12.0,28.0,3.0,c,gene/physio,139.0,no,alive,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-16 00:00:00,12.0,28.0,3.0,d,gene/physio,156.0,no,alive,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-16 00:00:00,12.0,31.0,4.0,a,gene/physio,165.0,no,alive,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-16 00:00:00,12.0,31.0,4.0,d,gene/physio,150.0,no,alive,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-16 00:00:00,12.0,31.0,4.0,c,gene/physio,141.0,no,alive,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-16 00:00:00,12.0,31.0,5.0,a,gene/physio,161.0,no,alive,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-16 00:00:00,12.0,31.0,5.0,c,gene/physio,124.0,no,alive,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-16 00:00:00,12.0,31.0,5.0,d,gene/physio,154.0,no,alive,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-16 00:00:00,12.0,28.0,6.0,a,gene/physio,169.0,no,alive,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-16 00:00:00,12.0,28.0,6.0,c,gene/physio,123.0,no,alive,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-16 00:00:00,12.0,28.0,6.0,d,gene/physio,145.0,no,alive,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-16 00:00:00,12.0,28.0,9.0,a,gene/physio,173.0,no,alive,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-16 00:00:00,12.0,28.0,9.0,c,gene/physio,131.0,no,alive,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-16 00:00:00,12.0,28.0,9.0,d,gene/physio,122.0,no,alive,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-16 00:00:00,12.0,31.0,10.0,a,gene/physio,178.0,no,alive,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-16 00:00:00,12.0,31.0,10.0,c,gene/physio,132.0,no,alive,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-16 00:00:00,12.0,31.0,10.0,d,gene/physio,120.0,no,alive,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-16 00:00:00,12.0,31.0,11.0,a,gene/physio,163.0,no,alive,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-16 00:00:00,12.0,31.0,11.0,c,gene/physio,127.0,no,alive,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-16 00:00:00,12.0,31.0,11.0,d,gene/physio,128.0,no,alive,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-16 00:00:00,12.0,28.0,12.0,a,gene/physio,176.0,no,alive,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-16 00:00:00,12.0,28.0,12.0,c,gene/physio,125.0,no,alive,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-16 00:00:00,12.0,28.0,12.0,d,gene/physio,147.0,no,alive,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-17 00:00:00,13.0,28.0,3.0,a,gene/physio,172.0,yes,alive,NA,yes,yes,yes,yes,no,yes,yes,yes,no
+a. pulchra,2025-06-17 00:00:00,13.0,28.0,3.0,c,gene/physio,129.0,yes,alive,NA,yes,yes,yes,yes,no,yes,yes,yes,no
+a. pulchra,2025-06-17 00:00:00,13.0,28.0,3.0,d,gene/physio,113.0,yes,alive,NA,yes,yes,yes,yes,no,yes,yes,yes,no
+a. pulchra,2025-06-17 00:00:00,13.0,31.0,4.0,a,gene/physio,152.0,yes,alive,NA,yes,yes,yes,yes,no,yes,yes,no,no
+a. pulchra,2025-06-17 00:00:00,13.0,31.0,4.0,c,gene/physio,133.0,yes,alive,NA,yes,yes,yes,yes,no,yes,yes,no,no
+a. pulchra,2025-06-17 00:00:00,13.0,31.0,4.0,d,gene/physio,143.0,yes,alive,NA,yes,yes,yes,yes,no,no,no,no,no
+a. pulchra,2025-06-17 00:00:00,13.0,31.0,5.0,a,gene/physio,170.0,yes,alive,NA,no,yes,yes,yes,no,yes,yes,no,no
+a. pulchra,2025-06-17 00:00:00,13.0,31.0,5.0,c,gene/physio,115.0,yes,alive,NA,yes,yes,yes,yes,no,yes,no,no,no
+a. pulchra,2025-06-17 00:00:00,13.0,31.0,5.0,d,gene/physio,126.0,yes,alive,NA,yes,yes,yes,yes,no,yes,no,no,no
+a. pulchra,2025-06-17 00:00:00,13.0,28.0,6.0,a,gene/physio,179.0,yes,alive,NA,yes,yes,yes,yes,no,yes,yes,yes,no
+a. pulchra,2025-06-17 00:00:00,13.0,28.0,6.0,c,gene/physio,117.0,yes,alive,NA,yes,yes,yes,yes,no,yes,yes,no,no
+a. pulchra,2025-06-17 00:00:00,13.0,28.0,6.0,d,gene/physio,146.0,yes,alive,NA,yes,yes,yes,yes,no,yes,yes,yes,no
+a. pulchra,2025-06-17 00:00:00,13.0,28.0,9.0,a,gene/physio,166.0,yes,alive,NA,yes,yes,yes,yes,no,yes,yes,yes,no
+a. pulchra,2025-06-17 00:00:00,13.0,28.0,9.0,d,gene/physio,118.0,yes,alive,NA,yes,yes,yes,yes,no,yes,yes,yes,no
+a. pulchra,2025-06-17 00:00:00,13.0,28.0,9.0,c,gene/physio,121.0,yes,alive,NA,yes,yes,yes,yes,yes,no,no,no,no
+a. pulchra,2025-06-17 00:00:00,13.0,31.0,10.0,a,gene/physio,175.0,yes,alive,NA,no,yes,yes,yes,no,yes,no,no,no
+a. pulchra,2025-06-17 00:00:00,13.0,31.0,10.0,c,gene/physio,119.0,yes,alive,NA,yes,yes,yes,yes,no,yes,yes,no,no
+a. pulchra,2025-06-17 00:00:00,13.0,31.0,10.0,d,gene/physio,110.0,yes,alive,NA,yes,yes,yes,yes,no,yes,yes,no,no
+a. pulchra,2025-06-17 00:00:00,13.0,31.0,11.0,a,gene/physio,174.0,yes,alive,NA,yes,yes,yes,yes,no,yes,yes,no,no
+a. pulchra,2025-06-17 00:00:00,13.0,31.0,11.0,c,gene/physio,116.0,yes,alive,NA,yes,yes,yes,yes,no,yes,no,no,no
+a. pulchra,2025-06-17 00:00:00,13.0,31.0,11.0,d,gene/physio,149.0,yes,alive,NA,yes,yes,yes,yes,no,yes,yes,yes,no
+a. pulchra,2025-06-17 00:00:00,13.0,28.0,12.0,a,gene/physio,177.0,yes,alive,NA,yes,yes,yes,yes,no,yes,yes,yes,no
+a. pulchra,2025-06-17 00:00:00,13.0,28.0,12.0,c,gene/physio,130.0,yes,alive,NA,yes,yes,yes,yes,no,yes,yes,no,no
+a. pulchra,2025-06-17 00:00:00,13.0,28.0,12.0,d,gene/physio,144.0,yes,alive,NA,yes,yes,yes,yes,no,yes,yes,yes,no
+a. pulchra,2025-06-17 00:00:00,13.0,28.0,3.0,a,gene/physio,162.0,no,alive,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-17 00:00:00,13.0,28.0,3.0,c,gene/physio,139.0,no,alive,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-17 00:00:00,13.0,28.0,3.0,d,gene/physio,156.0,no,alive,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-17 00:00:00,13.0,31.0,4.0,a,gene/physio,165.0,no,alive,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-17 00:00:00,13.0,31.0,4.0,d,gene/physio,150.0,no,alive,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-17 00:00:00,13.0,31.0,4.0,c,gene/physio,141.0,no,alive,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-17 00:00:00,13.0,31.0,5.0,a,gene/physio,161.0,no,alive,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-17 00:00:00,13.0,31.0,5.0,c,gene/physio,124.0,no,alive,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-17 00:00:00,13.0,31.0,5.0,d,gene/physio,154.0,no,alive,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-17 00:00:00,13.0,28.0,6.0,a,gene/physio,169.0,no,alive,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-17 00:00:00,13.0,28.0,6.0,c,gene/physio,123.0,no,alive,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-17 00:00:00,13.0,28.0,6.0,d,gene/physio,145.0,no,alive,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-17 00:00:00,13.0,28.0,9.0,a,gene/physio,173.0,no,alive,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-17 00:00:00,13.0,28.0,9.0,c,gene/physio,131.0,no,alive,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-17 00:00:00,13.0,28.0,9.0,d,gene/physio,122.0,no,alive,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-17 00:00:00,13.0,31.0,10.0,a,gene/physio,178.0,no,alive,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-17 00:00:00,13.0,31.0,10.0,c,gene/physio,132.0,no,alive,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-17 00:00:00,13.0,31.0,10.0,d,gene/physio,120.0,no,alive,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-17 00:00:00,13.0,31.0,11.0,a,gene/physio,163.0,no,alive,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-17 00:00:00,13.0,31.0,11.0,c,gene/physio,127.0,no,alive,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-17 00:00:00,13.0,31.0,11.0,d,gene/physio,128.0,no,alive,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-17 00:00:00,13.0,28.0,12.0,a,gene/physio,176.0,no,alive,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-17 00:00:00,13.0,28.0,12.0,c,gene/physio,125.0,no,alive,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-17 00:00:00,13.0,28.0,12.0,d,gene/physio,147.0,no,alive,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-18 00:00:00,14.0,28.0,3.0,a,gene/physio,172.0,yes,alive,NA,yes,yes,yes,yes,no,yes,yes,yes,no
+a. pulchra,2025-06-18 00:00:00,14.0,28.0,3.0,c,gene/physio,129.0,yes,alive,NA,yes,yes,yes,yes,no,yes,yes,yes,no
+a. pulchra,2025-06-18 00:00:00,14.0,28.0,3.0,d,gene/physio,113.0,yes,alive,NA,yes,yes,yes,yes,no,yes,yes,yes,no
+a. pulchra,2025-06-18 00:00:00,14.0,31.0,4.0,a,gene/physio,152.0,yes,alive,NA,yes,yes,yes,yes,no,yes,yes,no,no
+a. pulchra,2025-06-18 00:00:00,14.0,31.0,4.0,c,gene/physio,133.0,yes,alive,NA,yes,yes,yes,yes,no,yes,yes,yes,no
+a. pulchra,2025-06-18 00:00:00,14.0,31.0,4.0,d,gene/physio,143.0,yes,alive,NA,yes,yes,yes,yes,no,no,no,no,no
+a. pulchra,2025-06-18 00:00:00,14.0,31.0,5.0,a,gene/physio,170.0,yes,alive,NA,no,yes,yes,yes,no,yes,yes,no,no
+a. pulchra,2025-06-18 00:00:00,14.0,31.0,5.0,c,gene/physio,115.0,yes,alive,NA,yes,yes,yes,yes,no,yes,no,yes,no
+a. pulchra,2025-06-18 00:00:00,14.0,31.0,5.0,d,gene/physio,126.0,yes,alive,NA,yes,yes,yes,yes,no,yes,no,no,no
+a. pulchra,2025-06-18 00:00:00,14.0,28.0,6.0,a,gene/physio,179.0,yes,alive,NA,yes,yes,yes,yes,no,yes,yes,yes,no
+a. pulchra,2025-06-18 00:00:00,14.0,28.0,6.0,c,gene/physio,117.0,yes,alive,NA,yes,yes,yes,yes,no,yes,yes,yes,no
+a. pulchra,2025-06-18 00:00:00,14.0,28.0,6.0,d,gene/physio,146.0,yes,alive,NA,yes,yes,yes,yes,no,yes,yes,yes,no
+a. pulchra,2025-06-18 00:00:00,14.0,28.0,9.0,a,gene/physio,166.0,yes,alive,NA,yes,yes,yes,yes,no,yes,yes,yes,no
+a. pulchra,2025-06-18 00:00:00,14.0,28.0,9.0,d,gene/physio,118.0,yes,alive,NA,yes,yes,yes,yes,no,yes,yes,yes,no
+a. pulchra,2025-06-18 00:00:00,14.0,28.0,9.0,c,gene/physio,121.0,yes,alive,NA,yes,yes,yes,yes,yes,no,no,no,no
+a. pulchra,2025-06-18 00:00:00,14.0,31.0,10.0,a,gene/physio,175.0,yes,alive,NA,no,yes,yes,yes,no,yes,no,no,no
+a. pulchra,2025-06-18 00:00:00,14.0,31.0,10.0,c,gene/physio,119.0,yes,alive,NA,yes,yes,yes,yes,no,yes,yes,yes,no
+a. pulchra,2025-06-18 00:00:00,14.0,31.0,10.0,d,gene/physio,110.0,yes,alive,NA,no,yes,yes,yes,no,yes,yes,no,no
+a. pulchra,2025-06-18 00:00:00,14.0,31.0,11.0,a,gene/physio,174.0,yes,alive,NA,no,yes,yes,yes,no,yes,yes,no,no
+a. pulchra,2025-06-18 00:00:00,14.0,31.0,11.0,c,gene/physio,116.0,yes,alive,NA,yes,yes,yes,yes,no,yes,yes,no,no
+a. pulchra,2025-06-18 00:00:00,14.0,31.0,11.0,d,gene/physio,149.0,yes,alive,NA,yes,yes,yes,yes,no,yes,yes,yes,no
+a. pulchra,2025-06-18 00:00:00,14.0,28.0,12.0,a,gene/physio,177.0,yes,alive,NA,yes,yes,yes,yes,no,yes,yes,yes,no
+a. pulchra,2025-06-18 00:00:00,14.0,28.0,12.0,c,gene/physio,130.0,yes,alive,NA,yes,yes,yes,yes,no,yes,yes,yes,no
+a. pulchra,2025-06-18 00:00:00,14.0,28.0,12.0,d,gene/physio,144.0,yes,alive,NA,yes,yes,yes,yes,no,yes,yes,yes,no
+a. pulchra,2025-06-18 00:00:00,14.0,28.0,3.0,a,gene/physio,162.0,no,alive,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-18 00:00:00,14.0,28.0,3.0,c,gene/physio,139.0,no,alive,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-18 00:00:00,14.0,28.0,3.0,d,gene/physio,156.0,no,alive,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-18 00:00:00,14.0,31.0,4.0,a,gene/physio,165.0,no,alive,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-18 00:00:00,14.0,31.0,4.0,d,gene/physio,150.0,no,alive,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-18 00:00:00,14.0,31.0,4.0,c,gene/physio,141.0,no,alive,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-18 00:00:00,14.0,31.0,5.0,a,gene/physio,161.0,no,alive,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-18 00:00:00,14.0,31.0,5.0,c,gene/physio,124.0,no,alive,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-18 00:00:00,14.0,31.0,5.0,d,gene/physio,154.0,no,alive,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-18 00:00:00,14.0,28.0,6.0,a,gene/physio,169.0,no,alive,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-18 00:00:00,14.0,28.0,6.0,c,gene/physio,123.0,no,alive,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-18 00:00:00,14.0,28.0,6.0,d,gene/physio,145.0,no,alive,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-18 00:00:00,14.0,28.0,9.0,a,gene/physio,173.0,no,alive,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-18 00:00:00,14.0,28.0,9.0,c,gene/physio,131.0,no,alive,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-18 00:00:00,14.0,28.0,9.0,d,gene/physio,122.0,no,alive,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-18 00:00:00,14.0,31.0,10.0,a,gene/physio,178.0,no,alive,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-18 00:00:00,14.0,31.0,10.0,c,gene/physio,132.0,no,alive,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-18 00:00:00,14.0,31.0,10.0,d,gene/physio,120.0,no,alive,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-18 00:00:00,14.0,31.0,11.0,a,gene/physio,163.0,no,alive,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-18 00:00:00,14.0,31.0,11.0,c,gene/physio,127.0,no,alive,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-18 00:00:00,14.0,31.0,11.0,d,gene/physio,128.0,no,alive,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-18 00:00:00,14.0,28.0,12.0,a,gene/physio,176.0,no,alive,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-18 00:00:00,14.0,28.0,12.0,c,gene/physio,125.0,no,alive,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-18 00:00:00,14.0,28.0,12.0,d,gene/physio,147.0,no,alive,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-19 00:00:00,15.0,28.0,3.0,a,gene/physio,172.0,yes,alive,NA,yes,yes,yes,yes,no,yes,yes,yes,no
+a. pulchra,2025-06-19 00:00:00,15.0,28.0,3.0,c,gene/physio,129.0,yes,alive,NA,yes,yes,yes,yes,no,yes,yes,yes,no
+a. pulchra,2025-06-19 00:00:00,15.0,28.0,3.0,d,gene/physio,113.0,yes,alive,NA,yes,yes,yes,yes,no,yes,yes,yes,no
+a. pulchra,2025-06-19 00:00:00,15.0,31.0,4.0,a,gene/physio,152.0,yes,alive,NA,yes,yes,yes,yes,no,yes,yes,no,no
+a. pulchra,2025-06-19 00:00:00,15.0,31.0,4.0,c,gene/physio,133.0,yes,alive,NA,yes,yes,yes,yes,yes,yes,yes,yes,no
+a. pulchra,2025-06-19 00:00:00,15.0,31.0,4.0,d,gene/physio,143.0,yes,alive,NA,no,yes,yes,yes,no,no,no,no,no
+a. pulchra,2025-06-19 00:00:00,15.0,31.0,5.0,a,gene/physio,170.0,yes,alive,NA,no,yes,yes,yes,no,yes,yes,no,no
+a. pulchra,2025-06-19 00:00:00,15.0,31.0,5.0,c,gene/physio,115.0,yes,alive,NA,yes,yes,yes,yes,yes,yes,yes,yes,no
+a. pulchra,2025-06-19 00:00:00,15.0,31.0,5.0,d,gene/physio,126.0,yes,alive,NA,no,yes,yes,yes,no,yes,no,no,no
+a. pulchra,2025-06-19 00:00:00,15.0,28.0,6.0,a,gene/physio,179.0,yes,alive,NA,yes,yes,yes,yes,no,yes,yes,yes,no
+a. pulchra,2025-06-19 00:00:00,15.0,28.0,6.0,c,gene/physio,117.0,yes,alive,NA,yes,yes,yes,yes,no,yes,yes,yes,no
+a. pulchra,2025-06-19 00:00:00,15.0,28.0,6.0,d,gene/physio,146.0,yes,alive,NA,yes,yes,yes,yes,no,yes,yes,yes,no
+a. pulchra,2025-06-19 00:00:00,15.0,28.0,9.0,a,gene/physio,166.0,yes,alive,NA,yes,yes,yes,yes,no,yes,yes,yes,no
+a. pulchra,2025-06-19 00:00:00,15.0,28.0,9.0,d,gene/physio,118.0,yes,alive,NA,yes,yes,yes,yes,no,yes,yes,yes,no
+a. pulchra,2025-06-19 00:00:00,15.0,28.0,9.0,c,gene/physio,121.0,yes,alive,NA,yes,yes,yes,yes,yes,no,no,yes,no
+a. pulchra,2025-06-19 00:00:00,15.0,31.0,10.0,a,gene/physio,175.0,yes,alive,NA,no,yes,yes,yes,no,yes,no,no,no
+a. pulchra,2025-06-19 00:00:00,15.0,31.0,10.0,c,gene/physio,119.0,yes,alive,NA,yes,yes,yes,yes,yes,yes,yes,yes,no
+a. pulchra,2025-06-19 00:00:00,15.0,31.0,10.0,d,gene/physio,110.0,yes,alive,NA,yes,yes,yes,yes,no,yes,yes,no,no
+a. pulchra,2025-06-19 00:00:00,15.0,31.0,11.0,a,gene/physio,174.0,yes,alive,NA,yes,yes,yes,yes,no,yes,yes,no,no
+a. pulchra,2025-06-19 00:00:00,15.0,31.0,11.0,c,gene/physio,116.0,yes,alive,NA,yes,yes,yes,yes,yes,yes,yes,no,no
+a. pulchra,2025-06-19 00:00:00,15.0,31.0,11.0,d,gene/physio,149.0,yes,alive,NA,yes,yes,yes,yes,no,yes,yes,yes,no
+a. pulchra,2025-06-19 00:00:00,15.0,28.0,12.0,a,gene/physio,177.0,yes,alive,NA,yes,yes,yes,yes,no,yes,yes,yes,no
+a. pulchra,2025-06-19 00:00:00,15.0,28.0,12.0,c,gene/physio,130.0,yes,alive,NA,yes,yes,yes,yes,no,yes,yes,yes,no
+a. pulchra,2025-06-19 00:00:00,15.0,28.0,12.0,d,gene/physio,144.0,yes,alive,NA,yes,yes,yes,yes,no,yes,yes,yes,no
+a. pulchra,2025-06-19 00:00:00,15.0,28.0,3.0,a,gene/physio,162.0,no,alive,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-19 00:00:00,15.0,28.0,3.0,c,gene/physio,139.0,no,alive,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-19 00:00:00,15.0,28.0,3.0,d,gene/physio,156.0,no,alive,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-19 00:00:00,15.0,31.0,4.0,a,gene/physio,165.0,no,alive,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-19 00:00:00,15.0,31.0,4.0,d,gene/physio,150.0,no,alive,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-19 00:00:00,15.0,31.0,4.0,c,gene/physio,141.0,no,alive,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-19 00:00:00,15.0,31.0,5.0,a,gene/physio,161.0,no,alive,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-19 00:00:00,15.0,31.0,5.0,c,gene/physio,124.0,no,alive,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-19 00:00:00,15.0,31.0,5.0,d,gene/physio,154.0,no,alive,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-19 00:00:00,15.0,28.0,6.0,a,gene/physio,169.0,no,alive,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-19 00:00:00,15.0,28.0,6.0,c,gene/physio,123.0,no,alive,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-19 00:00:00,15.0,28.0,6.0,d,gene/physio,145.0,no,alive,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-19 00:00:00,15.0,28.0,9.0,a,gene/physio,173.0,no,alive,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-19 00:00:00,15.0,28.0,9.0,c,gene/physio,131.0,no,alive,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-19 00:00:00,15.0,28.0,9.0,d,gene/physio,122.0,no,alive,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-19 00:00:00,15.0,31.0,10.0,a,gene/physio,178.0,no,alive,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-19 00:00:00,15.0,31.0,10.0,c,gene/physio,132.0,no,alive,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-19 00:00:00,15.0,31.0,10.0,d,gene/physio,120.0,no,alive,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-19 00:00:00,15.0,31.0,11.0,a,gene/physio,163.0,no,alive,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-19 00:00:00,15.0,31.0,11.0,c,gene/physio,127.0,no,alive,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-19 00:00:00,15.0,31.0,11.0,d,gene/physio,128.0,no,alive,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-19 00:00:00,15.0,28.0,12.0,a,gene/physio,176.0,no,alive,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-19 00:00:00,15.0,28.0,12.0,c,gene/physio,125.0,no,alive,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+a. pulchra,2025-06-19 00:00:00,15.0,28.0,12.0,d,gene/physio,147.0,no,alive,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
