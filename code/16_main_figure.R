@@ -71,19 +71,29 @@ pam_df <- pam |>
             .groups = "drop")
 
 pB <- ggplot(pam_df, aes(day, m, colour = treatment,
-                          fill = treatment, linetype = wound)) +
+                          fill = treatment, shape = wound)) +
   geom_ribbon(aes(ymin = m - se, ymax = m + se,
                   group = interaction(treatment, wound)),
               alpha = 0.15, colour = NA) +
-  geom_line(linewidth = 0.6) +
-  geom_point(size = 1.2) +
+  geom_line(aes(group = interaction(treatment, wound)),
+            linewidth = 0.6) +
+  geom_point(size = 1.6) +
   geom_vline(xintercept = 0, linetype = "dotted", colour = "grey50") +
+  # Embed small treatment labels at right edge instead of using a legend
+  annotate("text", x = max(pam_df$day) + 0.5, y = 0.575,
+           label = "31 °C", colour = "#D55E00", size = 2.7,
+           fontface = "bold", hjust = 0) +
+  annotate("text", x = max(pam_df$day) + 0.5, y = 0.675,
+           label = "28 °C", colour = "#0072B2", size = 2.7,
+           fontface = "bold", hjust = 0) +
+  coord_cartesian(xlim = c(min(pam_df$day), max(pam_df$day) + 2),
+                  clip = "off") +
   scale_colour_manual(values = c(`28C` = "#56B4E9", `31C` = "#D55E00"),
-                      name = NULL) +
+                      guide = "none") +
   scale_fill_manual(values   = c(`28C` = "#56B4E9", `31C` = "#D55E00"),
                     guide = "none") +
-  scale_linetype_manual(values = c(no = "solid", yes = "22"),
-                        name = "Wound") +
+  scale_shape_manual(values = c(no = 16, yes = 17), name = "Wound",
+                     guide = "none") +  # collected from panel D
   labs(x = "Days post-wounding", y = expression(F[v]/F[m]),
        tag = "B",
        subtitle = "Photochemical efficiency") +
@@ -172,10 +182,15 @@ pD <- ggplot(scores, aes(PC1, PC2, colour = treatment, shape = wound)) +
             size = 3, colour = "grey15", fontface = "bold",
             box.padding = 0.2, point.padding = 0.5,
             min.segment.length = Inf, seed = 42) +
+  # Direct-label wound status inside panel
+  annotate("text", x = min(scores$PC1) + 0.2, y = max(scores$PC2) - 0.3,
+           label = "● unwounded   ▲ wounded", colour = "grey25",
+           size = 2.6, hjust = 0) +
   scale_colour_manual(values = c(`28C` = "#56B4E9", `31C` = "#D55E00"),
-                      name = NULL) +
-  scale_fill_manual(values = c(`28C` = "#56B4E9", `31C` = "#D55E00")) +
-  scale_shape_manual(values = c(no = 16, yes = 17), name = "Wound") +
+                      guide = "none") +
+  scale_fill_manual(values = c(`28C` = "#56B4E9", `31C` = "#D55E00"),
+                    guide = "none") +
+  scale_shape_manual(values = c(no = 16, yes = 17), guide = "none") +
   labs(x = sprintf("PC1 (%.0f%%)", var_e[1]),
        y = sprintf("PC2 (%.0f%%)", var_e[2]),
        tag = "D",
