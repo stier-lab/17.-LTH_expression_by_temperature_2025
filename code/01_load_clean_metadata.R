@@ -9,9 +9,14 @@
 source(here::here("code", "00_setup.R"))
 
 # ---- Load ------------------------------------------------------------------
-meta_raw <- read_csv(file.path(DATA_RAW, "metadata", "metadata.csv"),
-                     show_col_types = FALSE) |>
-  janitor::clean_names()
+# Sheet has ~800 trailing empty rows from Google Sheets — drop them up front.
+meta_raw <- suppressWarnings(
+  read_csv(file.path(DATA_RAW, "metadata", "metadata.csv"),
+           show_col_types = FALSE,
+           guess_max = 5000)
+) |>
+  janitor::clean_names() |>
+  filter(!is.na(species) & !is.na(id))
 
 # ---- Tidy ------------------------------------------------------------------
 # Drop trailing whitespace in `thicket ` column; harmonize types

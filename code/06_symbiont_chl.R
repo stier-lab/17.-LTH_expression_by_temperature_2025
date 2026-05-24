@@ -13,71 +13,77 @@
 
 source(here::here("code", "00_setup.R"))
 
-raw_counts <- read_csv(file.path(DATA_RAW, "symbiont_counts", "Raw_counts.csv"),
-                       show_col_types = FALSE) |>
+raw_counts <- suppressWarnings(
+  read_csv(file.path(DATA_RAW, "symbiont_counts", "Raw_counts.csv"),
+           show_col_types = FALSE, guess_max = 2000)
+) |>
   janitor::clean_names()
-zoox_meta  <- read_csv(file.path(DATA_RAW, "symbiont_counts",
-                                 "metadata_ordered_merge.csv"),
-                       show_col_types = FALSE) |>
+zoox_meta  <- suppressWarnings(
+  read_csv(file.path(DATA_RAW, "symbiont_counts",
+                     "metadata_ordered_merge.csv"),
+           show_col_types = FALSE, guess_max = 2000)
+) |>
   janitor::clean_names()
 meta <- readRDS(file.path(DATA_PROC, "coral_metadata.rds"))
 
 # ---- Reps per coral -------------------------------------------------------
-# Raw_counts has 4 hemocytometer counts per coral; we aggregate to mean cells/mL,
-# then convert to cells/cm^2 using slurry volume and surface area.
+# Raw_counts has 4 hemocytometer quadrant counts (Q1, Q2, Q3, Q4) per
+# replicate count per coral, in a "long" tidy layout.
+# Columns: day, (blank), coral_id, count, q1, q2, q3, q4, average, coral_id_2
+# Some rows have Q values, some don't (partial cells). Aggregate per coral_id:
 reps <- raw_counts |>
+  rename(coral_id = coral_id_3) |>
   filter(!is.na(coral_id)) |>
+  mutate(across(c(q1, q2, q3, q4), as.numeric)) |>
+  rowwise() |>
+  mutate(quad_mean = mean(c(q1, q2, q3, q4), na.rm = TRUE)) |>
+  ungroup() |>
   group_by(coral_id) |>
   summarise(
-    mean_count    = mean(across(starts_with("count") | matches("^x?\\d")), na.rm = TRUE) |>
-                      pmax(0),
-    n_reps        = n(),
+    mean_quad_count = mean(quad_mean, na.rm = TRUE),
+    n_reps          = n(),
     .groups = "drop"
-  )
-
-# Fallback: many sheets pre-compute average; use Ordered_averages if reps are sparse
-if (nrow(reps) < 100) {
-  ordered <- read_csv(file.path(DATA_RAW, "symbiont_counts", "Ordered_averages.csv"),
-                      show_col_types = FALSE) |>
-    janitor::clean_names()
-  reps <- ordered |>
-    transmute(coral_id = as.integer(coral_id),
-              mean_count = as.numeric(average_10000),
-              n_reps = 4L)
-}
+  ) |>
+  filter(is.finite(mean_quad_count))
 
 # Join with per-coral metadata (treatment, day, SA, etc.)
+# metadata_ordered_merge has columns: species, thicket, id_3, sample, wound,
+# tank, treatment, biopsy_day, biopsy_date, average, coral_id, id_12,
+# calculated_sa_standard_curve, slurry_volume_m_l
 zoox <- zoox_meta |>
-  rename(thicket = matches("^thicket")) |>
+  rename(thicket = matches("^thicket"),
+         id      = id_3) |>
   mutate(
-    coral_id        = as.integer(coral_id),
+    id              = as.integer(id),
     treatment       = factor(as.integer(treatment), levels = c(28, 31),
                               labels = c("28C", "31C")),
     biopsy_day      = as.integer(biopsy_day),
     thicket         = str_to_lower(str_squish(thicket)),
+    wound           = factor(wound, levels = c("no", "yes")),
     sa_cm2          = as.numeric(calculated_sa_standard_curve),
     slurry_ml       = as.numeric(slurry_volume_m_l),
-    zoox_avg_hemo   = as.numeric(zoox_average),
-    cells_per_cm2   = (zoox_avg_hemo * 10000 * slurry_ml) / sa_cm2  # hemocytometer 1e4 dilution
+    zoox_avg_hemo   = as.numeric(average),
+    # Hemocytometer formula: density = (cells/quadrant) * 10^4 (cells/mL)
+    # Total in slurry = density * slurry_mL ; then per cm^2 = / SA
+    cells_per_cm2   = (zoox_avg_hemo * 1e4 * slurry_ml) / sa_cm2
   ) |>
-  select(coral_id, treatment, biopsy_day, thicket, sa_cm2, cells_per_cm2)
+  filter(!is.na(id)) |>
+  mutate(tank = as.integer(tank)) |>
+  select(id, treatment, wound, biopsy_day, thicket, tank, sa_cm2, cells_per_cm2)
 
 # Pull chlorophyll from master metadata
 chl <- meta |>
   filter(!is.na(chlorophyll_ug_cm2)) |>
-  select(id, treatment, wound, thicket, biopsy_day, chlorophyll_ug_cm2)
+  select(id, chlorophyll_ug_cm2)
 
 phys <- zoox |>
-  left_join(chl, by = c("coral_id" = "id",
-                        "treatment" = "treatment",
-                        "thicket"   = "thicket",
-                        "biopsy_day"= "biopsy_day"))
+  left_join(chl, by = "id")
 
 saveRDS(phys, file.path(DATA_PROC, "symbiont_chl_clean.rds"))
 
 # ---- Summary --------------------------------------------------------------
 summary_tbl <- phys |>
-  group_by(treatment, biopsy_day) |>
+  group_by(treatment, wound, biopsy_day) |>
   summarise(
     n             = n(),
     mean_cells    = mean(cells_per_cm2, na.rm = TRUE),

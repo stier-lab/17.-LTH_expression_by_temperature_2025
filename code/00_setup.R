@@ -45,8 +45,8 @@ PAL_TEMP <- c("28" = "#56B4E9",   # blue — ambient
               "32" = "#D55E00",   # red — severe-mod
               "34" = "#B40000")   # dark red — severe (placeholder; check actual treatments)
 
-# Genotype/thicket palette: A–E
-PAL_GENO <- setNames(PAL_OKABE[1:5], c("A", "B", "C", "D", "E"))
+# Genotype/thicket palette: lowercase a, c, d (matches raw data convention)
+PAL_GENO <- c(a = "#E69F00", c = "#009E73", d = "#0072B2")
 
 # ---- Theme -----------------------------------------------------------------
 # theme_pub(): single source of truth for figure text sizing.

@@ -28,7 +28,7 @@ ph <- raw |>
     thicket   = str_to_lower(str_squish(thicket)),
     id        = as.integer(id),
     wound     = factor(wound, levels = c("no", "yes")),
-    across(c(tissue_over_wound, hole_in_center, polyp_in_hole, wound_smoothed,
+    across(c(polyps_out, hole_in_center, polyp_in_hole, wound_smoothed,
              pigment_over_wound, tip_exist, tip_extension,
              new_corallites_on_tip, algae_on_wound),
            ~ as.integer(str_to_lower(str_squish(.x)) == "yes"))
@@ -37,9 +37,9 @@ ph <- raw |>
 saveRDS(ph, file.path(DATA_PROC, "physio_clean.rds"))
 
 # ---- Long-form for plotting ------------------------------------------------
-traits <- c("tissue_over_wound", "hole_in_center", "polyp_in_hole",
+traits <- c("polyps_out", "hole_in_center", "polyp_in_hole",
             "wound_smoothed", "pigment_over_wound", "tip_exist",
-            "tip_extension", "new_corallites_on_tip")
+            "tip_extension", "new_corallites_on_tip", "algae_on_wound")
 
 long <- ph |>
   filter(wound == "yes") |>
@@ -52,10 +52,11 @@ prop_df <- long |>
   group_by(day, treatment, trait) |>
   summarise(prop = mean(expressed), n = n(), .groups = "drop") |>
   mutate(trait = factor(trait, levels = traits,
-                        labels = c("Tissue over wound", "Hole in center",
+                        labels = c("Polyps out", "Hole in center",
                                    "Polyp in hole", "Wound smoothed",
                                    "Pigment over wound", "Tip exists",
-                                   "Tip extension", "New corallites on tip")))
+                                   "Tip extension", "New corallites on tip",
+                                   "Algae on wound")))
 
 p_traits <- ggplot(prop_df, aes(day, prop,
                                 colour = treatment, group = treatment)) +

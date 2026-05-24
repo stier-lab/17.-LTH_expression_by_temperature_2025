@@ -13,35 +13,38 @@
 
 source(here::here("code", "00_setup.R"))
 
-sc <- read_csv(file.path(DATA_RAW, "wax_dipping", "Standard_curve.csv"),
-               show_col_types = FALSE) |>
+sc <- suppressWarnings(
+  read_csv(file.path(DATA_RAW, "wax_dipping", "Standard_curve.csv"),
+           show_col_types = FALSE, guess_max = 2000)
+) |>
   janitor::clean_names()
 
-wax <- read_csv(file.path(DATA_RAW, "wax_dipping", "data.csv"),
-                show_col_types = FALSE) |>
+wax <- suppressWarnings(
+  read_csv(file.path(DATA_RAW, "wax_dipping", "data.csv"),
+           show_col_types = FALSE, guess_max = 2000)
+) |>
   janitor::clean_names()
 
 # ---- Standard curve --------------------------------------------------------
-# Drop rows lacking core columns
-sc_fit_data <- sc |>
-  select(any_of(c("wax_mass", "wax_g", "wax_2_minus_wax_1",
-                  "calculated_sa", "calculated_sa_caliper",
-                  "diameter", "height"))) |>
-  mutate(across(everything(), as.numeric))
+# Sheet columns: id, height_mm, diameter_mm, surface_area_mm (formula),
+# dry_weight_g, wax_weight_g, wax_minus_dry_g, ..., wax_dry, surface_area
+# The trailing `wax_dry` / `surface_area` pair is the values already evaluated.
+sc_clean <- sc |>
+  mutate(
+    height   = as.numeric(height_mm),
+    diameter = as.numeric(diameter_mm),
+    dry_g    = as.numeric(dry_weight_g),
+    wax_g    = as.numeric(wax_weight_g),
+    # `wax_dry_g` is a spreadsheet formula string; compute directly.
+    wax_minus_dry = wax_g - dry_g,
+    # Compute SA in cm^2 from diameter (mm) × height (mm): 2π(d/2)·h / 100
+    sa_cm2   = 2 * pi * (diameter / 2) * height / 100
+  ) |>
+  filter(!is.na(wax_minus_dry), !is.na(sa_cm2),
+         wax_minus_dry > 0, sa_cm2 > 0)
 
-# Locate the standard-curve x/y columns (sheet variant detection)
-if (all(c("wax_2_minus_wax_1", "calculated_sa_caliper") %in% names(sc_fit_data))) {
-  fit_df <- sc_fit_data |>
-    transmute(wax_g = wax_2_minus_wax_1, sa = calculated_sa_caliper) |>
-    filter(complete.cases(wax_g, sa), wax_g > 0, sa > 0)
-} else if (all(c("diameter", "height") %in% names(sc_fit_data))) {
-  fit_df <- sc_fit_data |>
-    transmute(wax_g = wax_2_minus_wax_1,
-              sa = 2 * pi * (diameter / 2) * height / 100) |>
-    filter(complete.cases(wax_g, sa), wax_g > 0, sa > 0)
-} else {
-  stop("Cannot locate standard-curve columns in Standard_curve.csv")
-}
+fit_df <- sc_clean |>
+  transmute(wax_g = wax_minus_dry, sa = sa_cm2)
 
 cal <- lm(sa ~ wax_g, data = fit_df)
 fit_tbl <- broom::tidy(cal, conf.int = TRUE)
