@@ -23,7 +23,8 @@ wax <- suppressWarnings(
   read_csv(file.path(DATA_RAW, "wax_dipping", "data.csv"),
            show_col_types = FALSE, guess_max = 2000)
 ) |>
-  janitor::clean_names()
+  janitor::clean_names() |>
+  filter(!is.na(species) & !is.na(id))
 
 # ---- Standard curve --------------------------------------------------------
 # Sheet columns: id, height_mm, diameter_mm, surface_area_mm (formula),
@@ -61,7 +62,10 @@ wax_proc <- wax |>
     diameter_mm  = as.numeric(diameter),
     height_mm    = as.numeric(height),
     dry_g        = as.numeric(dry_weight),
-    wax_g        = as.numeric(wax_2_minus_wax_1),
+    wax1_g       = as.numeric(wax_weight_1),
+    wax2_g       = as.numeric(wax_weight_2),
+    # wax_2_minus_wax_1 column is a string formula in the export; recompute
+    wax_g        = wax2_g - wax1_g,
     sa_caliper_cm2 = 2 * pi * (diameter_mm / 2) * height_mm / 100,
     sa_curve_cm2   = predict(cal, newdata = tibble(wax_g = wax_g))
   ) |>

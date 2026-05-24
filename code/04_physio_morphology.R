@@ -12,9 +12,12 @@
 
 source(here::here("code", "00_setup.R"))
 
-raw <- read_csv(file.path(DATA_RAW, "physio_morphology", "data.csv"),
-                show_col_types = FALSE) |>
-  janitor::clean_names()
+raw <- suppressWarnings(
+  read_csv(file.path(DATA_RAW, "physio_morphology", "data.csv"),
+           show_col_types = FALSE, guess_max = 2000)
+) |>
+  janitor::clean_names() |>
+  filter(!is.na(species) & !is.na(id))
 
 ph <- raw |>
   rename(thicket = matches("^thicket"),

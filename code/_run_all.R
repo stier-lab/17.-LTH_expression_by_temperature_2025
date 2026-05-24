@@ -24,7 +24,9 @@ scripts <- c(
   "13_genet_interaction.R",
   "14_morphology_kaplan.R",
   "15_multivariate.R",
-  "16_main_figure.R"
+  "16_main_figure.R",
+  "17_figure_audit.R",
+  "18_data_validation.R"
 )
 
 t0 <- Sys.time()

@@ -177,7 +177,7 @@ Nine binary traits scored on wounded corals only (n = 24 per treatment), trackin
 `figures/08_apex_temperature.png` (parsed from 6 XML datalogs spanning ~6 weeks) — confirms target temperatures were held within ~0.3 °C of nominal in each tank.
 
 ### Flatworm (AEFW) surveillance
-`figures/10_worm_presence.png`, `output/tables/10_worm_summary.csv` — flatworms checked on three dates (06/07, 06/08, 06/12). All zeros — no contamination flagged.
+`figures/10_worm_presence.png`, `output/tables/10_worm_summary.csv`. AEFW were checked on three dates (06/07, 06/08, 06/12). 21 unique corals tested worm-positive at some point, with 17/22 worm-positive observations concentrated in 31 °C tanks on **06/07** (3 days post-wounding). All corals were treated with the standard Worm Exit protocol (4 drops per 20 L + transfer-pipet rinse); subsequent surveys showed near-complete clearance. The temperature-biased early-experiment distribution suggests that heat-stressed corals may have been more vulnerable to flatworm reinfection from the source water; this is a *confound to monitor* in any future thermal-tolerance experiment. None of the published response analyses include a worm-presence covariate; sensitivity analyses can be added if Adrian wants to confirm robustness.
 
 ---
 

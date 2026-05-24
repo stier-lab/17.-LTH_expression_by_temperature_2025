@@ -1,0 +1,2 @@
+# Project R env settings — committed for reproducibility
+R_REMOTES_NO_ERRORS_FROM_WARNINGS=true
