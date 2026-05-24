@@ -73,49 +73,63 @@ daily <- hourly |>
 saveRDS(daily, file.path(DATA_PROC, "apex_temperature_daily.rds"))
 
 # ---- Filter to temperature-like probes ------------------------------------
+# Apex names tank temperatures as `Temp1`–`Temp12` (one per outlet/tank).
+# Values are in degrees F (Apex US default) when > 60; convert to C.
 temp_daily <- daily |>
-  filter(str_detect(probe, regex("Tmp|Temp|_T$|tnk\\d_T", ignore_case = TRUE)),
-         value_mean > 15, value_mean < 40) |>
+  filter(str_detect(probe, "^Temp\\d+$"),
+         is.finite(value_mean), value_mean > 0) |>
   mutate(
-    tank = case_when(
-      str_detect(probe, regex("tnk(\\d+)", ignore_case = TRUE)) ~
-        as.integer(str_match(probe, "tnk(\\d+)")[, 2]),
-      TRUE ~ NA_integer_
-    ),
+    tank = as.integer(str_extract(probe, "\\d+")),
+    # Convert F to C if reading looks Fahrenheit (Apex US firmware)
+    value_c = if_else(value_mean > 60, (value_mean - 32) * 5 / 9, value_mean),
     treatment = case_when(
       tank %in% c(3, 6, 9, 12)  ~ "28C",
       tank %in% c(4, 5, 10, 11) ~ "31C",
       TRUE ~ NA_character_
     )
-  )
+  ) |>
+  filter(!is.na(treatment), value_c > 15, value_c < 40)
 
 # ---- Plot ------------------------------------------------------------------
-if (any(!is.na(temp_daily$tank))) {
-  d_plot <- temp_daily |> filter(!is.na(tank))
-  p_apex <- ggplot(d_plot, aes(date, value_mean, group = tank,
-                                colour = treatment)) +
-    geom_line(linewidth = 0.4, alpha = 0.85) +
-    geom_point(size = 0.9, alpha = 0.7) +
-    scale_colour_manual(values = c(`28C` = "#56B4E9", `31C` = "#D55E00"),
-                        name = "Treatment") +
-    labs(x = NULL, y = "Daily mean tank T (°C)",
-         title = "Apex tank temperatures",
-         subtitle = "One line per tank; heat ramp visible early June 2025") +
-    theme_pub(10)
-} else {
-  # Use head-of-system Tmp only
-  p_apex <- ggplot(temp_daily, aes(date, value_mean, colour = probe)) +
-    geom_line(linewidth = 0.5) +
-    geom_point(size = 1.2) +
-    labs(x = NULL, y = "Daily mean head T (°C)",
-         title = "Apex datalog (head temperature)",
-         subtitle = paste("Per-tank probes not encoded in this datalog; probes:",
-                          paste(unique(temp_daily$probe), collapse = ", "))) +
-    theme_pub(10) +
-    theme(legend.position = "right")
-}
+# Restrict to the experimental window for cleanest display
+exp_window <- as_date(c("2025-05-25", "2025-06-25"))
+d_plot <- temp_daily |>
+  filter(between(date, exp_window[1], exp_window[2]))
 
-save_fig(p_apex, "08_apex_temperature", width = 170, height = 95)
+p_apex <- ggplot(d_plot, aes(date, value_c, group = tank,
+                              colour = treatment)) +
+  geom_hline(yintercept = c(28, 31), linetype = "dashed",
+             colour = "grey60", linewidth = 0.3) +
+  geom_line(linewidth = 0.4, alpha = 0.85) +
+  geom_point(size = 1.0, alpha = 0.75) +
+  geom_text(data = data.frame(date = exp_window[2], y = c(28, 31),
+                              lab = c("28 °C target", "31 °C target")),
+            aes(x = date, y = y, label = lab),
+            inherit.aes = FALSE, hjust = 1.1, vjust = -0.4,
+            size = 2.6, colour = "grey40") +
+  scale_colour_manual(values = c(`28C` = "#56B4E9", `31C` = "#D55E00"),
+                      name = "Treatment") +
+  scale_x_date(date_breaks = "5 days", date_labels = "%b %d") +
+  labs(x = NULL, y = "Daily mean tank T (°C)",
+       title = "Apex tank temperatures across the experimental window",
+       subtitle = "One line per tank; heat ramp begins late May, sustained 31 °C through experiment") +
+  theme_pub(10)
+
+save_fig(p_apex, "08_apex_temperature", width = 170, height = 100)
+
+# Companion: full-period view including ramps and cooldowns
+p_full <- ggplot(temp_daily, aes(date, value_c, group = tank,
+                                  colour = treatment)) +
+  geom_hline(yintercept = c(28, 31), linetype = "dashed",
+             colour = "grey60", linewidth = 0.3) +
+  geom_line(linewidth = 0.3, alpha = 0.75) +
+  scale_colour_manual(values = c(`28C` = "#56B4E9", `31C` = "#D55E00"),
+                      name = "Treatment") +
+  labs(x = NULL, y = "Daily mean tank T (°C)",
+       title = "Apex tank temperatures — full datalog period",
+       subtitle = "Tanks 3, 6, 9, 12 = 28 °C; tanks 4, 5, 10, 11 = 31 °C") +
+  theme_pub(10)
+save_fig(p_full, "08b_apex_temperature_full", width = 200, height = 100)
 
 cat("\nProbes detected (top 20 by record count):\n")
 hourly |> count(probe, sort = TRUE) |> head(20) |> print()

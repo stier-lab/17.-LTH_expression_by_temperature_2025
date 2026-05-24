@@ -60,12 +60,14 @@ pC <- ggplot(bw, aes(treatment, pct_growth, fill = wound)) +
   theme_pub(9)
 
 # ---- D: Symbionts ----------------------------------------------------------
-pD <- ggplot(phys, aes(factor(biopsy_day), cells_per_cm2, fill = treatment)) +
+pD <- ggplot(phys, aes(factor(biopsy_day), cells_per_cm2 / 1e6,
+                       fill = treatment)) +
   geom_boxplot(width = 0.55, outlier.shape = NA, alpha = 0.7) +
   geom_jitter(width = 0.12, alpha = 0.4, size = 0.7) +
   scale_fill_manual(values = c(`28C` = "#56B4E9", `31C` = "#D55E00"),
                     name = "Treatment") +
-  labs(x = "Biopsy day", y = expression(Symbionts~(cells~cm^{-2})),
+  labs(x = "Biopsy day",
+       y = expression(Symbionts~(10^6~cells~cm^{-2})),
        tag = "D") +
   theme_pub(9)
 

@@ -94,31 +94,53 @@ summary_tbl <- phys |>
   )
 write_csv(summary_tbl, file.path(TBL_DIR, "06_symbiont_chl_summary.csv"))
 
-# ---- Two-panel figure -----------------------------------------------------
-p_zoox <- ggplot(phys, aes(factor(biopsy_day), cells_per_cm2,
+# ---- Figure ----------------------------------------------------------------
+# Express counts in millions for readable axes
+p_zoox <- ggplot(phys, aes(factor(biopsy_day), cells_per_cm2 / 1e6,
                             fill = treatment)) +
   geom_boxplot(width = 0.6, outlier.shape = NA, alpha = 0.65) +
   geom_jitter(width = 0.15, height = 0, alpha = 0.4, size = 0.8) +
   scale_fill_manual(values = c(`28C` = "#56B4E9", `31C` = "#D55E00"),
                     name = "Temperature") +
-  labs(x = "Biopsy day", y = expression(Symbionts~(cells~cm^{-2})),
-       tag = "A") +
-  theme_pub(10) + theme(legend.position = "none")
-
-p_chl <- ggplot(phys, aes(factor(biopsy_day), chlorophyll_ug_cm2,
-                           fill = treatment)) +
-  geom_boxplot(width = 0.6, outlier.shape = NA, alpha = 0.65) +
-  geom_jitter(width = 0.15, height = 0, alpha = 0.4, size = 0.8) +
-  scale_fill_manual(values = c(`28C` = "#56B4E9", `31C` = "#D55E00"),
-                    name = "Temperature") +
-  labs(x = "Biopsy day", y = expression(Chl-a~(mu*g~cm^{-2})),
-       tag = "B") +
+  labs(x = "Biopsy day",
+       y = expression(Symbionts~(10^6~cells~cm^{-2})),
+       title = "Symbiont density loss under heating",
+       subtitle = expression(italic(A.~pulchra)~"biopsies, n = 192 corals across 5 timepoints")) +
   theme_pub(10)
 
-p_combo <- p_zoox + p_chl + patchwork::plot_layout(guides = "collect") &
-  theme(legend.position = "bottom")
-
-save_fig(p_combo, "06_symbiont_chl_by_day", width = 170, height = 95)
+has_chl <- any(is.finite(phys$chlorophyll_ug_cm2))
+if (has_chl) {
+  p_chl <- ggplot(phys, aes(factor(biopsy_day), chlorophyll_ug_cm2,
+                             fill = treatment)) +
+    geom_boxplot(width = 0.6, outlier.shape = NA, alpha = 0.65) +
+    geom_jitter(width = 0.15, height = 0, alpha = 0.4, size = 0.8) +
+    scale_fill_manual(values = c(`28C` = "#56B4E9", `31C` = "#D55E00"),
+                      name = "Temperature") +
+    labs(x = "Biopsy day", y = expression(Chl-a~(mu*g~cm^{-2})),
+         tag = "B") +
+    theme_pub(10)
+  p_combo <- (p_zoox + labs(tag = "A")) + p_chl +
+    patchwork::plot_layout(guides = "collect") &
+    theme(legend.position = "bottom")
+  save_fig(p_combo, "06_symbiont_chl_by_day", width = 170, height = 95)
+} else {
+  message("Chlorophyll values not yet populated in master metadata — ",
+          "saving single-panel symbiont figure.")
+  save_fig(p_zoox, "06_symbiont_density_by_day", width = 140, height = 100)
+  # Also write the two-panel layout with an explicit placeholder for chl
+  p_chl_placeholder <- ggplot() +
+    annotate("text", x = 0.5, y = 0.5,
+             label = "Chlorophyll-a values\nnot yet populated\n(awaiting assay)",
+             size = 4, colour = "grey30", lineheight = 1.1) +
+    theme_void() +
+    theme(panel.background = element_rect(fill = "grey96", colour = NA),
+          plot.tag = element_text(size = 11, face = "bold")) +
+    labs(tag = "B")
+  p_combo <- (p_zoox + labs(tag = "A")) + p_chl_placeholder +
+    patchwork::plot_layout(guides = "collect") &
+    theme(legend.position = "bottom")
+  save_fig(p_combo, "06_symbiont_chl_by_day", width = 170, height = 95)
+}
 
 cat("Wrote symbiont_chl_clean.rds, 06_symbiont_chl_summary.csv,",
     "06_symbiont_chl_by_day.{pdf,png}\n")
