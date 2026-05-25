@@ -104,8 +104,14 @@ bases <- baseline_means()
 # ===========================================================================
 # Block 1 — Continuous LMM ANOVA (script 12)
 # ===========================================================================
+# Block 1 covers continuous responses only. Morph rows in 12_anova are
+# duplicates of those in 04_morphology_trait_anova_genet.csv (same model,
+# different script that writes the table) — drop them here and pick up
+# the morphology ANOVAs in Block 4 below.
 anova12 <- read_csv(file.path(TBL_DIR, "12_anova_summary.csv"),
                     show_col_types = FALSE) |>
+  filter(!grepl("^morph_", response_id),
+         !grepl("^morph_", response)) |>
   transmute(
     domain          = "Physiology",
     response        = response_label_map[response] |> coalesce(response),

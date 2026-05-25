@@ -267,62 +267,6 @@ Physiology,log10 symbionts cm-2,LMM,wound:biopsy_day_c,ANOVA F,0.15,1,NA,NA,NA,N
 Physiology,log10 symbionts cm-2,LMM,wound:biopsy_day_c:thicket,ANOVA F,0.14,2,NA,NA,NA,NA,NA,wound:biopsy_day_c:thicket effect on log10 symbionts cm-2NA,code/12_extended_stats.R
 Physiology,log10 symbionts cm-2,LMM,wound:thicket,ANOVA F,1.52,2,NA,NA,NA,NA,NA,wound:thicket effect on log10 symbionts cm-2NA,code/12_extended_stats.R
 Physiology,log_zoox,LRT (null vs genet x trt),LRT: adding genet x treatment x wound x day,LRT chi-sq,73.57,15,192,-43.570 delta AIC,NA,NA,<0.001,Adding genet x trt improves fit by dAIC=-43.6 (sig),code/13_genet_interaction.R
-Physiology,morph_hole_in_center,LMM,day,Wald chi-sq,36.96,3,384,NA,NA,NA,<0.001,day effect on morph_hole_in_center (significant),code/12_extended_stats.R
-Physiology,morph_hole_in_center,LMM,day:thicket,Wald chi-sq,2.30,2,384,NA,NA,NA,0.317,day:thicket effect on morph_hole_in_center (n.s.),code/12_extended_stats.R
-Physiology,morph_hole_in_center,LMM,thicket,Wald chi-sq,5.89,5,384,NA,NA,NA,0.317,thicket effect on morph_hole_in_center (n.s.),code/12_extended_stats.R
-Physiology,morph_hole_in_center,LMM,treatment,Wald chi-sq,0.76,4,384,NA,NA,NA,0.943,treatment effect on morph_hole_in_center (n.s.),code/12_extended_stats.R
-Physiology,morph_hole_in_center,LMM,treatment:day,Wald chi-sq,0.01,1,384,NA,NA,NA,0.911,treatment:day effect on morph_hole_in_center (n.s.),code/12_extended_stats.R
-Physiology,morph_hole_in_center,LMM,treatment:day:thicket,Wald chi-sq,0.00,2,384,NA,NA,NA,1.000,treatment:day:thicket effect on morph_hole_in_center (n.s.),code/12_extended_stats.R
-Physiology,morph_hole_in_center,LMM,treatment:thicket,Wald chi-sq,0.45,2,384,NA,NA,NA,0.798,treatment:thicket effect on morph_hole_in_center (n.s.),code/12_extended_stats.R
-Physiology,morph_new_corallites_on_tip,LMM,day,Wald chi-sq,15.01,3,384,NA,NA,NA,0.002,day effect on morph_new_corallites_on_tip (significant),code/12_extended_stats.R
-Physiology,morph_new_corallites_on_tip,LMM,day:thicket,Wald chi-sq,2.25,2,384,NA,NA,NA,0.324,day:thicket effect on morph_new_corallites_on_tip (n.s.),code/12_extended_stats.R
-Physiology,morph_new_corallites_on_tip,LMM,thicket,Wald chi-sq,3.15,3,384,NA,NA,NA,0.369,thicket effect on morph_new_corallites_on_tip (n.s.),code/12_extended_stats.R
-Physiology,morph_new_corallites_on_tip,LMM,treatment,Wald chi-sq,1.78,2,384,NA,NA,NA,0.410,treatment effect on morph_new_corallites_on_tip (n.s.),code/12_extended_stats.R
-Physiology,morph_new_corallites_on_tip,LMM,treatment:day,Wald chi-sq,0.14,1,384,NA,NA,NA,0.711,treatment:day effect on morph_new_corallites_on_tip (n.s.),code/12_extended_stats.R
-Physiology,morph_new_corallites_on_tip,LMM,treatment:day:thicket,Wald chi-sq,0.00,2,384,NA,NA,NA,1.000,treatment:day:thicket effect on morph_new_corallites_on_tip (n.s.),code/12_extended_stats.R
-Physiology,morph_new_corallites_on_tip,LMM,treatment:thicket,Wald chi-sq,0.00,2,384,NA,NA,NA,1.000,treatment:thicket effect on morph_new_corallites_on_tip (n.s.),code/12_extended_stats.R
-Physiology,morph_pigment_over_wound,LMM,day,Wald chi-sq,7.69,3,361,NA,NA,NA,0.053,day effect on morph_pigment_over_wound (n.s.),code/12_extended_stats.R
-Physiology,morph_pigment_over_wound,LMM,day:thicket,Wald chi-sq,5.29,2,361,NA,NA,NA,0.071,day:thicket effect on morph_pigment_over_wound (n.s.),code/12_extended_stats.R
-Physiology,morph_pigment_over_wound,LMM,thicket,Wald chi-sq,6.25,3,361,NA,NA,NA,0.100,thicket effect on morph_pigment_over_wound (n.s.),code/12_extended_stats.R
-Physiology,morph_pigment_over_wound,LMM,treatment,Wald chi-sq,0.00,1,361,NA,NA,NA,0.998,treatment effect on morph_pigment_over_wound (n.s.),code/12_extended_stats.R
-Physiology,morph_pigment_over_wound,LMM,treatment:day,Wald chi-sq,0.00,1,361,NA,NA,NA,0.999,treatment:day effect on morph_pigment_over_wound (n.s.),code/12_extended_stats.R
-Physiology,morph_pigment_over_wound,LMM,treatment:day:thicket,Wald chi-sq,0.00,2,361,NA,NA,NA,1.000,treatment:day:thicket effect on morph_pigment_over_wound (n.s.),code/12_extended_stats.R
-Physiology,morph_pigment_over_wound,LMM,treatment:thicket,Wald chi-sq,0.00,2,361,NA,NA,NA,1.000,treatment:thicket effect on morph_pigment_over_wound (n.s.),code/12_extended_stats.R
-Physiology,morph_polyp_in_hole,LMM,day,Wald chi-sq,36.96,3,384,NA,NA,NA,<0.001,day effect on morph_polyp_in_hole (significant),code/12_extended_stats.R
-Physiology,morph_polyp_in_hole,LMM,day:thicket,Wald chi-sq,2.30,2,384,NA,NA,NA,0.317,day:thicket effect on morph_polyp_in_hole (n.s.),code/12_extended_stats.R
-Physiology,morph_polyp_in_hole,LMM,thicket,Wald chi-sq,5.89,5,384,NA,NA,NA,0.317,thicket effect on morph_polyp_in_hole (n.s.),code/12_extended_stats.R
-Physiology,morph_polyp_in_hole,LMM,treatment,Wald chi-sq,0.76,4,384,NA,NA,NA,0.943,treatment effect on morph_polyp_in_hole (n.s.),code/12_extended_stats.R
-Physiology,morph_polyp_in_hole,LMM,treatment:day,Wald chi-sq,0.01,1,384,NA,NA,NA,0.911,treatment:day effect on morph_polyp_in_hole (n.s.),code/12_extended_stats.R
-Physiology,morph_polyp_in_hole,LMM,treatment:day:thicket,Wald chi-sq,0.00,2,384,NA,NA,NA,1.000,treatment:day:thicket effect on morph_polyp_in_hole (n.s.),code/12_extended_stats.R
-Physiology,morph_polyp_in_hole,LMM,treatment:thicket,Wald chi-sq,0.45,2,384,NA,NA,NA,0.798,treatment:thicket effect on morph_polyp_in_hole (n.s.),code/12_extended_stats.R
-Physiology,morph_polyps_out,LMM,day,Wald chi-sq,0.01,1,384,NA,NA,NA,0.930,day effect on morph_polyps_out (n.s.),code/12_extended_stats.R
-Physiology,morph_polyps_out,LMM,day:thicket,Wald chi-sq,3.96,2,384,NA,NA,NA,0.138,day:thicket effect on morph_polyps_out (n.s.),code/12_extended_stats.R
-Physiology,morph_polyps_out,LMM,thicket,Wald chi-sq,1.70,2,384,NA,NA,NA,0.428,thicket effect on morph_polyps_out (n.s.),code/12_extended_stats.R
-Physiology,morph_polyps_out,LMM,treatment,Wald chi-sq,2.94,1,384,NA,NA,NA,0.087,treatment effect on morph_polyps_out (n.s.),code/12_extended_stats.R
-Physiology,morph_polyps_out,LMM,treatment:day,Wald chi-sq,6.70,1,384,NA,NA,NA,0.010,treatment:day effect on morph_polyps_out (significant),code/12_extended_stats.R
-Physiology,morph_polyps_out,LMM,treatment:day:thicket,Wald chi-sq,1.97,2,384,NA,NA,NA,0.374,treatment:day:thicket effect on morph_polyps_out (n.s.),code/12_extended_stats.R
-Physiology,morph_polyps_out,LMM,treatment:thicket,Wald chi-sq,0.50,2,384,NA,NA,NA,0.780,treatment:thicket effect on morph_polyps_out (n.s.),code/12_extended_stats.R
-Physiology,morph_tip_exist,LMM,day,Wald chi-sq,52.22,4,384,NA,NA,NA,<0.001,day effect on morph_tip_exist (significant),code/12_extended_stats.R
-Physiology,morph_tip_exist,LMM,day:thicket,Wald chi-sq,9.27,2,384,NA,NA,NA,0.010,day:thicket effect on morph_tip_exist (significant),code/12_extended_stats.R
-Physiology,morph_tip_exist,LMM,thicket,Wald chi-sq,10.10,4,384,NA,NA,NA,0.039,thicket effect on morph_tip_exist (significant),code/12_extended_stats.R
-Physiology,morph_tip_exist,LMM,treatment,Wald chi-sq,4.12,2,384,NA,NA,NA,0.127,treatment effect on morph_tip_exist (n.s.),code/12_extended_stats.R
-Physiology,morph_tip_exist,LMM,treatment:day,Wald chi-sq,2.83,1,384,NA,NA,NA,0.092,treatment:day effect on morph_tip_exist (n.s.),code/12_extended_stats.R
-Physiology,morph_tip_exist,LMM,treatment:day:thicket,Wald chi-sq,0.00,2,384,NA,NA,NA,1.000,treatment:day:thicket effect on morph_tip_exist (n.s.),code/12_extended_stats.R
-Physiology,morph_tip_exist,LMM,treatment:thicket,Wald chi-sq,0.00,2,384,NA,NA,NA,1.000,treatment:thicket effect on morph_tip_exist (n.s.),code/12_extended_stats.R
-Physiology,morph_tip_extension,LMM,day,Wald chi-sq,57.89,4,384,NA,NA,NA,<0.001,day effect on morph_tip_extension (significant),code/12_extended_stats.R
-Physiology,morph_tip_extension,LMM,day:thicket,Wald chi-sq,2.57,2,384,NA,NA,NA,0.277,day:thicket effect on morph_tip_extension (n.s.),code/12_extended_stats.R
-Physiology,morph_tip_extension,LMM,thicket,Wald chi-sq,7.22,4,384,NA,NA,NA,0.125,thicket effect on morph_tip_extension (n.s.),code/12_extended_stats.R
-Physiology,morph_tip_extension,LMM,treatment,Wald chi-sq,2.11,2,384,NA,NA,NA,0.347,treatment effect on morph_tip_extension (n.s.),code/12_extended_stats.R
-Physiology,morph_tip_extension,LMM,treatment:day,Wald chi-sq,1.83,1,384,NA,NA,NA,0.177,treatment:day effect on morph_tip_extension (n.s.),code/12_extended_stats.R
-Physiology,morph_tip_extension,LMM,treatment:day:thicket,Wald chi-sq,0.00,2,384,NA,NA,NA,1.000,treatment:day:thicket effect on morph_tip_extension (n.s.),code/12_extended_stats.R
-Physiology,morph_tip_extension,LMM,treatment:thicket,Wald chi-sq,0.00,2,384,NA,NA,NA,1.000,treatment:thicket effect on morph_tip_extension (n.s.),code/12_extended_stats.R
-Physiology,morph_wound_smoothed,LMM,day,Wald chi-sq,23.22,1,384,NA,NA,NA,<0.001,day effect on morph_wound_smoothed (significant),code/12_extended_stats.R
-Physiology,morph_wound_smoothed,LMM,day:thicket,Wald chi-sq,0.11,2,384,NA,NA,NA,0.945,day:thicket effect on morph_wound_smoothed (n.s.),code/12_extended_stats.R
-Physiology,morph_wound_smoothed,LMM,thicket,Wald chi-sq,1.44,2,384,NA,NA,NA,0.487,thicket effect on morph_wound_smoothed (n.s.),code/12_extended_stats.R
-Physiology,morph_wound_smoothed,LMM,treatment,Wald chi-sq,0.00,1,384,NA,NA,NA,0.999,treatment effect on morph_wound_smoothed (n.s.),code/12_extended_stats.R
-Physiology,morph_wound_smoothed,LMM,treatment:day,Wald chi-sq,0.00,1,384,NA,NA,NA,0.978,treatment:day effect on morph_wound_smoothed (n.s.),code/12_extended_stats.R
-Physiology,morph_wound_smoothed,LMM,treatment:day:thicket,Wald chi-sq,0.00,2,384,NA,NA,NA,1.000,treatment:day:thicket effect on morph_wound_smoothed (n.s.),code/12_extended_stats.R
-Physiology,morph_wound_smoothed,LMM,treatment:thicket,Wald chi-sq,0.00,2,384,NA,NA,NA,1.000,treatment:thicket effect on morph_wound_smoothed (n.s.),code/12_extended_stats.R
 Survival,Hole in center,Cox PH,HR 31C/28C [genet=a],Wald z,0.51,1,8,1.440 hazard ratio,+44.0%,"[0.36, 5.83]",0.610,"hole_in_center: no detectable change under 31C (HR=1.44, n.s.)",code/14_morphology_kaplan.R
 Survival,Hole in center,Cox PH,HR 31C/28C [genet=c],Wald z,0.27,1,8,1.209 hazard ratio,+20.9%,"[0.30, 4.88]",0.789,"hole_in_center: no detectable change under 31C (HR=1.21, n.s.)",code/14_morphology_kaplan.R
 Survival,Hole in center,Cox PH,HR 31C/28C [genet=d],Wald z,0.55,1,8,1.523 hazard ratio,+52.3%,"[0.34, 6.88]",0.584,"hole_in_center: no detectable change under 31C (HR=1.52, n.s.)",code/14_morphology_kaplan.R
