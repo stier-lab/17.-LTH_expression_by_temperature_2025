@@ -21,13 +21,16 @@ scripts <- c(
   "10_worms.R",
   "11_combined_figure.R",
   "12_extended_stats.R",
+  "12b_color_clmm_robustness.R",
+  "12c_morph_blme.R",
   "13_genet_interaction.R",
   "14_morphology_kaplan.R",
   "15_multivariate.R",
   "16_main_figure.R",
   "17_figure_audit.R",
   "18_data_validation.R",
-  "19_genet_dashboard.R"
+  "19_genet_dashboard.R",
+  "20_master_results_table.R"
 )
 
 t0 <- Sys.time()

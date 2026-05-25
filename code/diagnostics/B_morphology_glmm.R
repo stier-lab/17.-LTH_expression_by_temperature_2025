@@ -1,0 +1,343 @@
+# =============================================================================
+# Agent B: Diagnostic battery for morphological binomial GLMMs (script 12)
+# =============================================================================
+# Models fit in code/12_extended_stats.R are:
+#   glmer(y ~ treatment * day * thicket + (1|tank), family = binomial,
+#         data = filter(physio_clean, wound == "yes"))
+# 7-8 traits saved to output/models/12_morph_<trait>_glmm.rds.
+#
+# Checks:
+#   * DHARMa simulateResiduals (refit=FALSE; if dispersion fails, refit=TRUE)
+#       - uniformity (KS)
+#       - dispersion
+#       - outliers
+#       - zero inflation if mean(p) < 0.2 or > 0.8
+#   * convergence warnings, isSingular()
+#   * random-effect variance near zero
+#   * separation (any fixed-effect SE > 10)
+#   * effect sanity: predicted P(trait) at end of experiment, 28 vs 31 C
+#
+# Outputs:
+#   output/diagnostics/B_morphology_glmm_diagnostics.csv
+#   output/diagnostics/B_morphology_report.md
+#   figures/diagnostics/B_<trait>.png
+#
+# Run:  Rscript code/diagnostics/B_morphology_glmm.R
+# =============================================================================
+
+suppressPackageStartupMessages({
+  library(here)
+  library(lme4)
+  library(DHARMa)
+  library(dplyr)
+  library(tibble)
+  library(readr)
+  library(purrr)
+  library(stringr)
+})
+
+set.seed(20260524)
+
+# ---- paths ------------------------------------------------------------------
+ROOT       <- here::here()
+MOD_DIR    <- file.path(ROOT, "output", "models")
+DATA_PROC  <- file.path(ROOT, "data", "processed")
+DIAG_OUT   <- file.path(ROOT, "output", "diagnostics")
+DIAG_FIG   <- file.path(ROOT, "figures", "diagnostics")
+dir.create(DIAG_OUT, showWarnings = FALSE, recursive = TRUE)
+dir.create(DIAG_FIG, showWarnings = FALSE, recursive = TRUE)
+
+CSV_PATH <- file.path(DIAG_OUT, "B_morphology_glmm_diagnostics.csv")
+MD_PATH  <- file.path(DIAG_OUT, "B_morphology_report.md")
+
+# ---- helpers ----------------------------------------------------------------
+add_row_safe <- function(df, trait, check, statistic = NA_real_,
+                         p_value = NA_real_, status = "PASS", notes = "") {
+  bind_rows(df, tibble(
+    trait     = trait,
+    check     = check,
+    statistic = suppressWarnings(as.numeric(statistic)),
+    p_value   = suppressWarnings(as.numeric(p_value)),
+    status    = status,
+    notes     = notes
+  ))
+}
+
+classify_p <- function(p, alpha_warn = 0.05, alpha_fail = 0.001) {
+  if (is.na(p)) return("WARN")
+  if (p < alpha_fail) return("FAIL")
+  if (p < alpha_warn) return("WARN")
+  "PASS"
+}
+
+# ---- load source data -------------------------------------------------------
+phys_path <- file.path(DATA_PROC, "physio_clean.rds")
+if (!file.exists(phys_path)) {
+  stop("Cannot find data/processed/physio_clean.rds — script 12 source data")
+}
+ph_all <- readRDS(phys_path)
+ph <- ph_all |>
+  dplyr::filter(wound == "yes", !is.na(day), day >= 0) |>
+  dplyr::mutate(thicket = as.factor(thicket))
+
+end_day <- max(ph$day, na.rm = TRUE)
+treat_levels <- unique(as.character(ph$treatment))
+ambient <- treat_levels[stringr::str_detect(treat_levels, "28")][1]
+hot     <- treat_levels[stringr::str_detect(treat_levels, "31")][1]
+if (is.na(ambient)) ambient <- sort(treat_levels)[1]
+if (is.na(hot))     hot     <- sort(treat_levels)[length(treat_levels)]
+
+cat(sprintf("Source data: %d rows, %d corals, day range %s..%s\n",
+            nrow(ph), dplyr::n_distinct(ph$id),
+            min(ph$day, na.rm = TRUE), end_day))
+cat(sprintf("Treatments: ambient='%s', hot='%s'; end_day=%s\n",
+            ambient, hot, end_day))
+
+# ---- find models ------------------------------------------------------------
+mod_files <- list.files(MOD_DIR, pattern = "^12_morph_.*_glmm\\.rds$",
+                        full.names = TRUE)
+cat(sprintf("\nFound %d morphology GLMM files\n", length(mod_files)))
+
+# ---- diagnose one model -----------------------------------------------------
+diagnose_one <- function(mfile) {
+  trait <- sub("^12_morph_(.*)_glmm\\.rds$", "\\1", basename(mfile))
+  cat(sprintf("\n--- %s ---\n", trait))
+  res <- tibble()
+  notes_md <- c()
+
+  m <- tryCatch(readRDS(mfile), error = function(e) NULL)
+  if (is.null(m)) {
+    return(list(
+      rows = add_row_safe(tibble(), trait, "load_model", NA, NA,
+                          "FAIL", "Could not read .rds"),
+      md   = sprintf("## %s\n- FAIL: could not load model\n", trait)
+    ))
+  }
+
+  # subset trait data the way script 12 did
+  d <- ph |> dplyr::mutate(y = .data[[trait]]) |> dplyr::filter(!is.na(y))
+  mean_p <- mean(d$y, na.rm = TRUE)
+  notes_md <- c(notes_md,
+                sprintf("- N = %d, n_corals = %d, mean(y) = %.3f",
+                        nrow(d), dplyr::n_distinct(d$id), mean_p))
+
+  # 1) convergence + singularity
+  conv_msgs <- character(0)
+  opt_conv  <- m@optinfo$conv$opt
+  lme4_msgs <- m@optinfo$conv$lme4$messages
+  if (!is.null(lme4_msgs)) conv_msgs <- c(conv_msgs, lme4_msgs)
+  conv_ok <- (length(conv_msgs) == 0) && (is.null(opt_conv) || opt_conv == 0)
+  sing    <- isSingular(m, tol = 1e-4)
+  res <- add_row_safe(res, trait, "convergence",
+                      statistic = ifelse(is.null(opt_conv), NA, opt_conv),
+                      status = if (conv_ok) "PASS" else "WARN",
+                      notes = if (conv_ok) "no warnings"
+                              else paste(conv_msgs, collapse = "; "))
+  res <- add_row_safe(res, trait, "singular_fit",
+                      statistic = as.integer(sing),
+                      status = if (sing) "WARN" else "PASS",
+                      notes = if (sing) "isSingular=TRUE; RE variance ~0"
+                              else "non-singular")
+  notes_md <- c(notes_md,
+                sprintf("- Convergence: %s%s",
+                        if (conv_ok) "OK" else "WARN",
+                        if (length(conv_msgs)) paste0(" — ", paste(conv_msgs, collapse = "; ")) else ""),
+                sprintf("- Singular fit: %s", sing))
+
+  # 2) RE variance
+  vc <- as.data.frame(VarCorr(m))
+  for (i in seq_len(nrow(vc))) {
+    grp <- vc$grp[i]; v <- vc$vcov[i]
+    status <- if (is.na(v)) "WARN" else if (v < 1e-4) "WARN" else "PASS"
+    res <- add_row_safe(res, trait, paste0("re_var_", grp),
+                        statistic = v, status = status,
+                        notes = if (status == "WARN")
+                          "Near-zero variance component"
+                        else "variance > 1e-4")
+  }
+  notes_md <- c(notes_md, sprintf("- RE variance: %s",
+                                  paste(sprintf("%s=%.4g", vc$grp, vc$vcov),
+                                        collapse = ", ")))
+
+  # 3) separation: large fixed-effect SE
+  fe <- summary(m)$coefficients
+  max_se <- suppressWarnings(max(fe[, "Std. Error"], na.rm = TRUE))
+  sep_status <- if (!is.finite(max_se)) "FAIL"
+                else if (max_se > 50) "FAIL"
+                else if (max_se > 10) "WARN"
+                else "PASS"
+  res <- add_row_safe(res, trait, "max_fixed_effect_SE",
+                      statistic = max_se, status = sep_status,
+                      notes = if (sep_status == "FAIL") "Likely separation (SE >50 or non-finite)"
+                              else if (sep_status == "WARN") "Possible quasi-separation (SE 10-50)"
+                              else "SE in plausible range")
+  notes_md <- c(notes_md, sprintf("- Max fixed-effect SE: %.3g (%s)", max_se, sep_status))
+
+  # 4) DHARMa
+  dh <- tryCatch(DHARMa::simulateResiduals(m, n = 500, refit = FALSE,
+                                           plot = FALSE, seed = 42),
+                 error = function(e) NULL)
+  if (is.null(dh)) {
+    res <- add_row_safe(res, trait, "DHARMa", NA, NA, "FAIL",
+                        "simulateResiduals errored")
+    notes_md <- c(notes_md, "- DHARMa: FAIL — could not simulate residuals")
+  } else {
+    ks   <- DHARMa::testUniformity(dh, plot = FALSE)
+    disp <- DHARMa::testDispersion(dh, plot = FALSE)
+    outl <- DHARMa::testOutliers(dh, plot = FALSE, type = "binomial")
+
+    res <- add_row_safe(res, trait, "DHARMa_uniformity_KS",
+                        statistic = unname(ks$statistic), p_value = ks$p.value,
+                        status = classify_p(ks$p.value),
+                        notes = "KS test on scaled residuals")
+    res <- add_row_safe(res, trait, "DHARMa_dispersion",
+                        statistic = unname(disp$statistic), p_value = disp$p.value,
+                        status = classify_p(disp$p.value),
+                        notes = sprintf("ratio=%.3g", unname(disp$statistic)))
+    res <- add_row_safe(res, trait, "DHARMa_outliers",
+                        statistic = unname(outl$statistic), p_value = outl$p.value,
+                        status = classify_p(outl$p.value),
+                        notes = "binomial outlier test")
+
+    # zero inflation only if low or high mean p
+    if (mean_p < 0.2 || mean_p > 0.8) {
+      zi <- tryCatch(DHARMa::testZeroInflation(dh, plot = FALSE),
+                     error = function(e) NULL)
+      if (!is.null(zi)) {
+        res <- add_row_safe(res, trait, "DHARMa_zero_inflation",
+                            statistic = unname(zi$statistic), p_value = zi$p.value,
+                            status = classify_p(zi$p.value),
+                            notes = "tested because mean p extreme")
+      }
+    }
+
+    # if dispersion failed, also try refit=TRUE
+    if (!is.na(disp$p.value) && disp$p.value < 0.05) {
+      dh2 <- tryCatch(DHARMa::simulateResiduals(m, n = 200, refit = TRUE,
+                                                plot = FALSE, seed = 42),
+                      error = function(e) NULL)
+      if (!is.null(dh2)) {
+        disp2 <- DHARMa::testDispersion(dh2, plot = FALSE)
+        res <- add_row_safe(res, trait, "DHARMa_dispersion_refit",
+                            statistic = unname(disp2$statistic),
+                            p_value = disp2$p.value,
+                            status = classify_p(disp2$p.value),
+                            notes = "refit=TRUE follow-up")
+      }
+    }
+
+    # plot
+    png_path <- file.path(DIAG_FIG, sprintf("B_%s.png", trait))
+    tryCatch({
+      png(png_path, width = 1600, height = 800, res = 150)
+      plot(dh)
+      dev.off()
+    }, error = function(e) {
+      try(dev.off(), silent = TRUE)
+      message("plot failed for ", trait, ": ", conditionMessage(e))
+    })
+    notes_md <- c(notes_md,
+                  sprintf("- DHARMa: KS p=%.3g, dispersion p=%.3g (ratio %.2f), outliers p=%.3g",
+                          ks$p.value, disp$p.value, unname(disp$statistic), outl$p.value),
+                  sprintf("- Residual plot: figures/diagnostics/B_%s.png", trait))
+  }
+
+  # 5) biological sanity: predicted P at end_day, 28 vs 31, averaged across thickets
+  newd <- expand.grid(
+    treatment = c(ambient, hot),
+    day       = end_day,
+    thicket   = levels(d$thicket),
+    stringsAsFactors = FALSE
+  ) |>
+    dplyr::filter(treatment %in% unique(d$treatment),
+                  thicket %in% unique(as.character(d$thicket)))
+  newd$treatment <- factor(newd$treatment, levels = levels(d$treatment))
+  newd$thicket   <- factor(newd$thicket,   levels = levels(d$thicket))
+  pred <- tryCatch(predict(m, newdata = newd, re.form = NA, type = "response"),
+                   error = function(e) rep(NA_real_, nrow(newd)))
+  newd$p_pred <- pred
+  p_amb <- mean(newd$p_pred[newd$treatment == ambient], na.rm = TRUE)
+  p_hot <- mean(newd$p_pred[newd$treatment == hot],     na.rm = TRUE)
+  sane <- is.finite(p_amb) && is.finite(p_hot) &&
+          p_amb >= 0 && p_amb <= 1 && p_hot >= 0 && p_hot <= 1
+  res <- add_row_safe(res, trait, "pred_p_ambient_end",
+                      statistic = p_amb, status = if (sane) "PASS" else "WARN",
+                      notes = sprintf("predicted at day %s, %s", end_day, ambient))
+  res <- add_row_safe(res, trait, "pred_p_hot_end",
+                      statistic = p_hot, status = if (sane) "PASS" else "WARN",
+                      notes = sprintf("predicted at day %s, %s", end_day, hot))
+  notes_md <- c(notes_md,
+                sprintf("- Predicted P(trait) at day %s: ambient=%.3f, hot=%.3f, Δ=%+.3f",
+                        end_day, p_amb, p_hot, p_hot - p_amb))
+
+  list(rows = res, md = paste0("## ", trait, "\n",
+                                paste(notes_md, collapse = "\n"), "\n"))
+}
+
+# ---- run --------------------------------------------------------------------
+all_rows <- tibble()
+all_md   <- c("# Agent B — Morphological GLMM diagnostics",
+              sprintf("Generated: %s", Sys.time()),
+              sprintf("Source data: %s (N=%d rows, wound==yes only)",
+                      basename(phys_path), nrow(ph)),
+              "")
+
+for (f in mod_files) {
+  out <- diagnose_one(f)
+  all_rows <- bind_rows(all_rows, out$rows)
+  all_md   <- c(all_md, out$md)
+}
+
+# ---- per-trait summary ------------------------------------------------------
+summary_tab <- all_rows |>
+  dplyr::group_by(trait) |>
+  dplyr::summarise(
+    n_checks = dplyr::n(),
+    n_pass = sum(status == "PASS"),
+    n_warn = sum(status == "WARN"),
+    n_fail = sum(status == "FAIL"),
+    overall = dplyr::case_when(
+      n_fail > 0 ~ "FAIL",
+      n_warn > 0 ~ "WARN",
+      TRUE        ~ "PASS"
+    ),
+    .groups = "drop"
+  )
+
+readr::write_csv(all_rows, CSV_PATH)
+
+# build markdown report tail
+all_md <- c(all_md,
+            "## Per-trait summary",
+            "",
+            "| Trait | Checks | PASS | WARN | FAIL | Overall |",
+            "|-------|--------|------|------|------|---------|",
+            apply(summary_tab, 1, function(r)
+              sprintf("| %s | %s | %s | %s | %s | %s |",
+                      r["trait"], r["n_checks"], r["n_pass"],
+                      r["n_warn"], r["n_fail"], r["overall"])),
+            "",
+            sprintf("Totals: %d traits × ~%.1f checks; PASS=%d, WARN=%d, FAIL=%d",
+                    nrow(summary_tab), mean(summary_tab$n_checks),
+                    sum(all_rows$status == "PASS"),
+                    sum(all_rows$status == "WARN"),
+                    sum(all_rows$status == "FAIL")))
+
+writeLines(all_md, MD_PATH)
+
+cat("\n==============================\n")
+cat(sprintf("Wrote %s (%d rows)\n", CSV_PATH, nrow(all_rows)))
+cat(sprintf("Wrote %s\n", MD_PATH))
+cat(sprintf("Plots in %s\n", DIAG_FIG))
+cat(sprintf("Totals — traits: %d, checks: %d, PASS=%d WARN=%d FAIL=%d\n",
+            nrow(summary_tab), nrow(all_rows),
+            sum(all_rows$status == "PASS"),
+            sum(all_rows$status == "WARN"),
+            sum(all_rows$status == "FAIL")))
+
+# Print fail summary
+fails <- dplyr::filter(all_rows, status == "FAIL")
+if (nrow(fails)) {
+  cat("\nFAIL rows:\n")
+  print(fails, n = Inf)
+}
