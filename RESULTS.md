@@ -193,6 +193,8 @@ The `figures/19_genet_dashboard.png` forest plot collapses every standardized he
 | **d** | +0.29 | 3.35 | sensitive |
 | **c** | −0.03 | 1.03 | resilient |
 
+**Heat-only vs heat-while-wounded decomposition** (`figures/19c_decomposed_resilience.pdf`, `output/tables/19c_resilience_decomp_by_scope.csv`): the genet spread in resilience is largest in the **unwounded** heat response — A and D show standardized heat sensitivities of 0.99 and 0.87, vs C's 0.44. In the **wounded** state the gap compresses (A=0.36, D=0.26, C=0.28); all three genets respond more similarly when wounded. This pattern suggests genet C's resilience is most distinctive in physiological homeostasis under heat alone; wound healing imposes a more uniform metabolic load that flattens the genet differences.
+
 **Implication for the RNA-seq analysis:** comparing the gene expression of genet C against genets A and D — particularly in apical-tip biopsies at Day 10 (the timepoint where new-corallite formation diverges most sharply) — is the most likely route to identify candidate genes underlying heritable thermal tolerance in *A. pulchra*.
 
 ---
@@ -228,12 +230,12 @@ A diagnostic swarm (`output/diagnostics/{A,B,C,D}_*.{csv,md}`) checked every pri
 
 - **Cox per-genet events-per-variable.** Per-genet Cox models contain only 4–8 events per genet × treatment cell — below the rule-of-thumb 10 events per variable. We report quantitative hazard ratios only from the overall (thicket-stratified) Cox models; per-genet patterns are visualized as Kaplan–Meier curves (`figures/14b_morphology_KM_by_genet.pdf`) without point estimates being relied upon for inference.
 
-- **One PH violation.** The proportional-hazards assumption was met for every overall Cox model. In the per-genet decomposition, `pigment_over_wound` in genet C shows a Schoenfeld global p = 0.01, but with only 5 events the test is itself underpowered. Schoenfeld plot at `figures/diagnostics/C_pigment_over_wound_genet_c_schoenfeld.png`. We do not propagate the per-genet HR for this cell into the resilience composite.
+- **One PH violation.** The proportional-hazards assumption was met for every overall Cox model. In the per-genet decomposition, `pigment_over_wound` in genet C shows a Schoenfeld global p = 0.01 (n_event = 5). A time-varying-coefficient refit (`tt(treatment) * log(t+1)`, `output/tables/14c_cox_tt_pigment_genetC.csv`) yields a non-significant heat effect (coef = 0.65, p = 0.13), confirming that the original per-genet point HR was inflated by the PH violation. Schoenfeld plot at `figures/diagnostics/C_pigment_over_wound_genet_c_schoenfeld.png`. We do not propagate the original per-genet HR for this cell into the resilience composite.
 
 ## 11. What's still missing
 
 - **Chlorophyll-a values** — column exists in master metadata but is currently empty; need to fill in once spec values come back from the chl-a assay. The pipeline (`code/06_symbiont_chl.R`) already handles them via `left_join` once values are added to `data/raw/metadata/metadata.csv`.
-- **Gene expression data** — RNA-seq libraries at UC Davis Bay lab. Plate layout in `data/raw/plate_layout/Plate_{1,2}.csv`; sequencing plan in `notes/sequencing-plan-keck-LTH.md` (144 libraries: 4 tanks × 3 genets × 2 wound × 3 days × 2 temps). Stub DESeq2 pipeline at `code/20_rnaseq_stub.R`.
+- **Gene expression data** — RNA-seq libraries at UC Davis Bay lab. Plate layout in `data/raw/plate_layout/Plate_{1,2}.csv`; sequencing plan in `notes/sequencing-plan-keck-LTH.md` (144 libraries: 4 tanks × 3 genets × 2 wound × 3 days × 2 temps). Stub DESeq2 pipeline at `code/21_rnaseq_stub.R` (waiting on sequencing).
 - **Statistical write-up for manuscript** — these tables and figures need to be lifted into the Results section of `manuscript/Manuscript_LTH.md`. The starting prose is in `manuscript/Results_draft.md`.
 
 ---

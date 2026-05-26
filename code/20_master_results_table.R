@@ -310,6 +310,31 @@ cox_rows <- read_csv(file.path(TBL_DIR, "14_cox_hazard_ratios.csv"),
     source_artifact = "output/tables/14_cox_hazard_ratios.csv"
   )
 
+cox_tt <- if (file.exists(file.path(TBL_DIR, "14c_cox_tt_pigment_genetC.csv"))) {
+  read_csv(file.path(TBL_DIR, "14c_cox_tt_pigment_genetC.csv"),
+           show_col_types = FALSE) |>
+    transmute(
+      domain="Survival",
+      response=str_to_sentence(gsub("_", " ", trait)),
+      model_type="Cox PH (time-varying)",
+      term=sprintf("tt(treatment) [%s]", scope),
+      test="Wald z",
+      statistic=z,
+      df1=1, df2=NA_real_, n=n,
+      estimate=coef,
+      units="log-HR slope vs log(t+1)",
+      pct_change=NA_real_,
+      ci_low=coef - 1.96 * se, ci_high=coef + 1.96 * se,
+      p_value=p,
+      qualitative=sprintf("PH-corrected per-genet test (%s): %s. %s",
+                          scope,
+                          if_else(p < 0.05, "sig", "n.s. — original per-genet HR was inflated by PH violation"),
+                          note),
+      source_script="code/14_morphology_kaplan.R",
+      source_artifact="output/tables/14c_cox_tt_pigment_genetC.csv"
+    )
+} else tibble()
+
 cox_genet_lrt <- read_csv(file.path(TBL_DIR, "14_cox_genet_LRT.csv"),
                           show_col_types = FALSE)
 cox_genet_rows <- bind_rows(
@@ -540,7 +565,7 @@ zoox_means_rows <- zoox_raw |>
 # ===========================================================================
 master <- bind_rows(anova12, genet_rows, r2_rows,
                     morph_anova, morph_fixed,
-                    cox_rows, cox_genet_rows,
+                    cox_rows, cox_genet_rows, cox_tt,
                     lrt13, pca_load, pca_disp, bw_lm,
                     clmm_rows, bw_means_rows, bw_pct_drop, zoox_means_rows) |>
   mutate(across(c(statistic, estimate, pct_change, ci_low, ci_high, p_value),

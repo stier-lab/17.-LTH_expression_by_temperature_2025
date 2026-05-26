@@ -233,8 +233,49 @@ p_km_genet <- ggplot(km_curves_genet,
 
 save_fig(p_km_genet, "14b_morphology_KM_by_genet", width = 210, height = 135)
 
+# ---- Time-varying-coefficient refit for the one PH violation -------------
+# Agent C flagged pigment_over_wound in genet c (cox.zph chisq = 6.59,
+# p = 0.0103, n_event = 5) as violating PH. Refit with a log(t+1)
+# time-varying coefficient on treatment so the HR is allowed to evolve.
+pig_c <- events |>
+  filter(trait == "pigment_over_wound", thicket == "c", event_day > 0)
+
+cox_tt_pig_c <- if (sum(pig_c$event) >= 3 && length(unique(pig_c$treatment)) > 1) {
+  fit_tt <- tryCatch(
+    coxph(Surv(event_day, event) ~ tt(treatment),
+          data = pig_c,
+          tt   = function(x, t, ...) (as.integer(x == "31C")) * log(t + 1)),
+    error = function(e) { message("tt() fit failed: ", conditionMessage(e)); NULL }
+  )
+  if (is.null(fit_tt)) {
+    tibble(trait="pigment_over_wound", scope="genet=c (tt log(t+1))",
+           n=nrow(pig_c), n_event=sum(pig_c$event),
+           coef=NA_real_, se=NA_real_, z=NA_real_, p=NA_real_,
+           note="tt() fit failed")
+  } else {
+    s <- summary(fit_tt)
+    tibble(trait="pigment_over_wound",
+           scope="genet=c (tt log(t+1))",
+           n=s$n, n_event=s$nevent,
+           coef=s$coefficients[1,"coef"],
+           se=s$coefficients[1,"se(coef)"],
+           z=s$coefficients[1,"z"],
+           p=s$coefficients[1,"Pr(>|z|)"],
+           note="time-varying coefficient on treatment; HR is exp(coef * log(t+1))")
+  }
+} else {
+  tibble(trait="pigment_over_wound", scope="genet=c (tt log(t+1))",
+         n=nrow(pig_c), n_event=sum(pig_c$event),
+         coef=NA_real_, se=NA_real_, z=NA_real_, p=NA_real_,
+         note="insufficient events")
+}
+write_csv(cox_tt_pig_c, file.path(TBL_DIR, "14c_cox_tt_pigment_genetC.csv"))
+
 cat("\n=== Cox PH hazard ratios (31 °C vs 28 °C) — overall + per genet ===\n")
 print(cox_results |> mutate(across(where(is.numeric), \(x) round(x, 3))))
 
 cat("\n=== LRT: does adding genet × treatment improve Cox fit? ===\n")
 print(cox_lrt |> mutate(across(where(is.numeric), \(x) round(x, 3))))
+
+cat("\n=== Time-varying-coefficient refit for pigment_over_wound, genet c ===\n")
+print(cox_tt_pig_c |> mutate(across(where(is.numeric), \(x) round(x, 3))))

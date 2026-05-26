@@ -144,7 +144,94 @@ p_rank <- ggplot(resilience,
 
 save_fig(p_rank, "19b_genet_resilience_ranking", width = 130, height = 110)
 
+# ---- Decomposed dashboard: heat-only vs heat-while-wounded ---------------
+# The composite above pools across wound state. To answer "is genet C
+# resilient to heat per se, or only to heat-while-wounded?" we split the
+# continuous-response standardized effect into two scopes, plus an
+# implicit "wound effect at 28C" baseline (no genet x wound contrasts
+# are available in the current pipeline for an explicit wound-only column).
+cont_by_wound <- cont |>
+  # Drop morphology rows — they have wound=NA (wounded-only by construction)
+  # and are captured separately in cox_by_wound.
+  filter(!is.na(wound),
+         response %in% c("pam_fvfm", "color_dscale", "growth_pct",
+                          "log_zoox_density")) |>
+  group_by(response, thicket, wound) |>
+  summarise(estimate = mean(estimate, na.rm = TRUE),
+            se = mean(SE, na.rm = TRUE),
+            .groups = "drop") |>
+  group_by(response, wound) |>
+  mutate(z = estimate / max(abs(estimate), na.rm = TRUE)) |>
+  ungroup() |>
+  mutate(scope = if_else(wound == "yes",
+                         "heat while wounded",
+                         "heat only (unwounded)"))
+
+# Cox results are wounded-only by design — flag them as the third scope
+cox_by_wound <- cox_per_genet |>
+  select(response, thicket, z, scope_orig = scope) |>
+  mutate(scope = "heat while wounded",
+         wound = "yes")
+
+decomp <- bind_rows(
+  cont_by_wound |> select(response, thicket, wound, scope, z),
+  cox_by_wound  |> select(response, thicket, wound, scope, z)
+) |>
+  mutate(
+    response_label = case_when(
+      response == "pam_fvfm"         ~ "PAM Fv/Fm",
+      response == "color_dscale"     ~ "Color (D)",
+      response == "growth_pct"       ~ "Growth %",
+      response == "log_zoox_density" ~ "log symbionts",
+      grepl("^morph_", response)     ~ str_to_sentence(
+        gsub("_", " ", sub("^morph_", "", response))),
+      TRUE                            ~ response
+    ),
+    domain = case_when(
+      response %in% c("pam_fvfm","color_dscale","growth_pct","log_zoox_density")
+        ~ "Physiology",
+      grepl("hole|polyp|smoothed", response_label, ignore.case = TRUE)
+        ~ "Wound closure",
+      grepl("tip|corallite", response_label, ignore.case = TRUE)
+        ~ "Regeneration",
+      TRUE ~ "Other"
+    )
+  )
+
+p_decomp <- ggplot(decomp,
+                    aes(z, response_label,
+                        colour = thicket, shape = thicket)) +
+  geom_vline(xintercept = 0, linetype = "dashed",
+             colour = "grey60", linewidth = 0.3) +
+  geom_point(size = 2.8, alpha = 0.9) +
+  facet_grid(domain ~ scope, scales = "free_y", space = "free_y") +
+  scale_colour_manual(values = PAL_GENO, name = "Genet") +
+  scale_shape_manual(values = c(a = 16, c = 17, d = 15), name = "Genet") +
+  labs(x = "Standardized heat sensitivity (row-max scaled)",
+       y = NULL,
+       title = "Decomposed resilience: heat-only vs heat-while-wounded",
+       subtitle = "Right of zero = phenotype worse under 31 °C; Cox HRs are wounded-only by design") +
+  theme_pub(9) +
+  theme(panel.grid.major.y = element_line(colour = "grey95", linewidth = 0.2),
+        strip.text.y = element_text(face = "bold"),
+        strip.text.x = element_text(face = "bold"))
+
+save_fig(p_decomp, "19c_decomposed_resilience", width = 200, height = 175)
+
+# Per-genet × scope mean sensitivity
+resilience_decomp <- decomp |>
+  group_by(thicket, scope) |>
+  summarise(mean_sensitivity = mean(z, na.rm = TRUE),
+            n_responses      = n(),
+            .groups = "drop")
+
+write_csv(resilience_decomp,
+          file.path(TBL_DIR, "19c_resilience_decomp_by_scope.csv"))
+
 cat("\n=== Genet resilience summary ===\n")
 print(resilience |> mutate(across(where(is.numeric), \(x) round(x, 3))))
+cat("\n=== Decomposed resilience by scope ===\n")
+print(resilience_decomp |> mutate(across(where(is.numeric), \(x) round(x, 3))))
 cat("\nWrote 19_genet_dashboard.{pdf,png}, 19b_genet_resilience_ranking.{pdf,png},",
-    "19_genet_resilience_summary.csv\n")
+    "19c_decomposed_resilience.{pdf,png}, 19_genet_resilience_summary.csv,",
+    "19c_resilience_decomp_by_scope.csv\n")
