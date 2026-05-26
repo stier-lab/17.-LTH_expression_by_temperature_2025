@@ -141,8 +141,20 @@ Pigmentation was estimated with the Coral Watch Color Card (Siebeck et al., 2006
 Surface area of the remaining disk was estimated using the wax-dipping method and capping the top and bottom of disk with aluminum foil to exclude this surface from the final measurement. 
 
 *Morphological Characterization*  
-A subset of fragments (n=16) were used exclusively for microscopic morphological characterization. These fragments were collected, wounded, and housed according to the same schedule as those used for physiological and transcriptomic studies. Daily photographs were taken at 1.25x and 3.2x zoom under brightfield light. Samples were scored positively or negatively for eight key healing and regeneration attributes: Coenosarc coverage over wound bed, hole in center of wound, polyp in center of axial hole,  wound smoothed over, obvious pigment over wound, axial corallite formation, axial corallite extension, tangential corallites on axial corallite. These characteristics were used to assess both tissue healing and skeletal growth.  
-(Analysis was performed in R Studio)
+A subset of fragments (n=16) were used exclusively for microscopic morphological characterization. These fragments were collected, wounded, and housed according to the same schedule as those used for physiological and transcriptomic studies. Daily photographs were taken at 1.25x and 3.2x zoom under brightfield light. Samples were scored positively or negatively for nine key healing and regeneration attributes: polyps out, hole in center of wound, polyp in axial hole, wound smoothed over, obvious pigment over wound, tip exists, tip extension, new corallites on tip, and algae on wound. These characteristics were used to assess both tissue healing and skeletal growth.
+
+*Statistical analysis*  
+All analyses ran in R 4.5.2 (R Core Team, 2025) and are fully reproducible from `code/_run_all.R`; every numerical claim in the Results section traces to a row in `output/tables/20_master_results.csv`. We treat genet (thicket) as a fixed effect throughout, because only three thickets were collected — too few to estimate a random-effect variance reliably (Bolker, 2008; Gelman, 2005) — and because the per-genet treatment effects are themselves a primary inferential target.
+
+For each continuous physiological response — photochemical efficiency (Fv/Fm), Siebeck D-scale color, log-transformed symbiont density, and buoyant-weight % growth — we fit linear mixed-effects models (`lme4::lmer` 1.1-37 with Kenward-Roger denominator df from `lmerTest` 3.1-3) of the form `response ~ treatment × wound × day × thicket + (1 | tank) + (1 | id)`. The `(1 | id)` random effect was omitted for symbiont density (destructive sampling, one observation per coral) and for buoyant weight (single endpoint measurement; an OLS model was used for buoyant weight because `(1 | tank)` was singular with n = 48). The Siebeck D-scale is ordinal (D1–D5); we fit it as Gaussian for direct comparison with the other physiology metrics and confirmed every qualitative inference held under a cumulative-link mixed-model (`ordinal::clmm` 2025.12-29) robustness refit with the same fixed structure.
+
+For each of nine binary morphological wound-healing traits we fit binomial generalized linear mixed models (`lme4::glmer`, logit link) of the form `trait ~ treatment × day × thicket + (1 | tank)`, restricted to wounded corals. Seven of nine traits showed complete or quasi-complete separation in the four-way design; we therefore refit these models with weakly informative Cauchy(0, 2.5) priors on the fixed-effect coefficients (`blme::bglmer` 1.0-7; Gelman et al., 2008). Omnibus type-II Wald χ² statistics from `car::Anova` and predicted probabilities (used in figures) come from the unpenalized fits because they are unaffected by separation; per-coefficient Wald tests come from the penalized refits.
+
+Time-to-onset of each morphological healing milestone was analyzed via Cox proportional-hazards models (`survival::coxph` 3.5-8) stratified by thicket. The proportional-hazards assumption was tested via Schoenfeld residuals (`survival::cox.zph`) and met for every overall model. Per-genet Cox decomposition contains only 4–8 events per genet × treatment cell — below the conventional 10-events-per-variable threshold — so per-genet patterns are visualized as Kaplan-Meier curves only and quantitative hazard ratios are reported from the thicket-stratified overall models. The single overall PH violation, in `pigment_over_wound` for genet c (n = 5), was followed up with a time-varying-coefficient refit (`coxph(..., tt = function(x, t) (x == "31C") * log(t + 1))`).
+
+We summarized end-of-experiment whole-coral physiology with a centered and scaled principal-components analysis on the four continuous responses; per-genet thermal displacement was computed as the Euclidean distance between each genet's 28 °C and 31 °C centroid in the first two PCs. To synthesize across response domains we built a standardized heat-sensitivity dashboard (each per-genet contrast row-max scaled to the [-1, 1] range) and a composite resilience ranking averaging across 11 standardized response dimensions; a decomposed version split the standardized sensitivities into heat-only (unwounded) and heat-while-wounded scopes.
+
+All pairwise contrasts from `emmeans::emmeans` 1.10-7 were Tukey-adjusted unless otherwise noted. Residual diagnostics for every model were screened via `DHARMa::simulateResiduals` (n = 500) plus a dedicated diagnostic-agent suite; full reports are in `output/diagnostics/`.
 
 *Transcriptomics*  
 Wounded and unwounded fragments (n=) were subsampled at days 0, 1, 3, 10, and 15 by using a band-saw to carefully remove 0.5cm disks from the tip (unwounded), wound, middle, and far sections of the fragment (Figure 1). Disks were snap-frozen in liquid nitrogen and later submerged in DNA/RNA shield.   
@@ -152,24 +164,35 @@ Analytical methods?
 
 **Results**
 
-![][image1]  
-![][image2]
+*Sustained heating at 31 °C compromises photochemistry, pigmentation, growth, and symbiont retention*
 
-Fig 1: Time series panel of healing for heated and ambient at 1.5x and 3.2x (a). Characteristics indicative of healing and regeneration (b)
+Eight independent tanks were held at 28 °C or 31 °C (four per treatment) for the duration of the experiment, with daily means within ±0.3 °C of nominal (Fig. 2A). All 192 *A. pulchra* fragments were exposed to their assigned temperature for seven days before wounding (Day 0).
 
-*Morphological characterization*  
-	Wounded fragments showed similar rates of reaching early healing milestones (coenosarc coverage, hole and polyp in center of wound, formation of axial polyp), however, heated corals showed a diminished ability to reach final growth stages (extension of the axial corallite and formation of tangential corallite on axial corallite). 
+Whole-colony photochemical efficiency (Fv/Fm) declined linearly through the experiment in 31 °C tanks (~5 × 10⁻³ d⁻¹) while remaining stable at ~0.68 in 28 °C tanks (treatment × day F₁ = 112.68, p < 0.001; marginal R² = 0.62, conditional R² = 0.72; Fig. 2B). The decline was largest in genets a and d (Day-14 unwounded ΔFv/Fm = 0.126 and 0.107, respectively; both p < 0.001) and 2.7× smaller in the most resilient genet c (Δ = 0.046, p = 0.007). For wounded corals the genet contrast was sharper still: genet c showed no detectable Fv/Fm change under heat (Δ = 0.016, p = 0.34), while wounded genets a and d each lost 0.10 Fv/Fm units (both p < 0.001).
 
-![][image3]![][image4]![][image5]
+Pigmentation diverged more dramatically. Color score (Siebeck D-scale) was essentially flat in 28 °C controls (~D4) and dropped to ~D2 in 31 °C tanks by Day 14 (treatment × day F₁ = 240.67, p < 0.001; Fig. 2C). By Day 14, 67% of heated wounded corals and 58% of heated unwounded corals had visibly paled, against 0–8% in ambient. A significant treatment × wound interaction (F₁ = 16.90, p < 0.001) indicated wounded heated corals paled slightly less than unwounded heated corals — consistent with symbiont redistribution toward the regeneration front, and largely driven by genet c (wounded heated genet c corals lost only 0.25 D-units relative to 28 °C controls, p = 0.27, n.s., while unwounded heated genet c corals lost 0.63 D-units, p = 0.007).
 
-Fig 2: (A) PAM (B) Color card (C ) Buoyant weigh (D) Chlorophyll concentration (E) symbiont count
+Whole-colony growth (buoyant-weight % mass change over 14 days) was 34% lower in heated tanks (means 4.26% vs 6.45%; treatment F₁,₃₆ = 4.35, p = 0.044; Fig. 2D). Symbiont density dropped sharply in heated tanks across the four destructive biopsy timepoints, with a significant treatment × biopsy-day interaction (F₁ = 94.67, p < 0.001; marginal R² = 0.72, conditional R² = 0.76; Fig. 2E) and a significant three-way genet × treatment × biopsy-day interaction (F₂ = 6.32, p = 0.003) — symbiont-loss rates were ~3.5× steeper in genets a and d than in the resilient genet c.
 
-*Physiological studies*  
-	Basically, heated corals declined in condition (color, PAM) regardless of wounding status.
+A principal-components analysis of end-of-experiment physiology (PAM Fv/Fm, color, growth, log-symbionts) collapsed 81% of among-coral variance onto a single thermal-stress axis (PC1) on which all four variables loaded positively (~0.5 each; Fig. 3A). The 31 °C cloud was more dispersed along PC1 than the 28 °C cloud, indicating that individual-level variance in physiological response increases under thermal stress.
 
-*Transcriptomcis*
+*Heating impairs the regenerative-tip program, not wound closure*
 
-Fig 4+
+Wounded corals were tracked daily for nine binary morphological characteristics of healing. Wound closure proceeded at essentially identical rates in both treatments. By Day 5, ≥90% of corals in both treatments had a hole filled by a polyp (Cox HR = 1.38, 95% CI 0.60–3.15, p = 0.45) and a smooth wound surface (HR = 1.67, 95% CI 0.70–4.01, p = 0.25; Fig. 1, Fig. 3B). The one wound-closure trait with a detectable heat effect was *polyps out*: heated wounded corals were more likely to retain retracted polyps at later timepoints (Wald χ²₁ = 6.70, p = 0.010), but the overall hazard of any polyp emergence did not differ between treatments.
+
+By contrast, the regenerative-tip program was severely impaired by heating. By Day 15, all 28 °C wounded corals had developed new corallites at the tip; only 33% of 31 °C wounded corals had done so. The instantaneous hazard of new-corallite formation was 78% lower in 31 °C corals (Cox HR = 0.22, 95% CI 0.07–0.69, p = 0.010, stratified by thicket; Fig. 3B). Tip extension showed a similar but weaker pattern (HR = 0.80, 95% CI 0.34–1.87, p = 0.61), and pigment-over-wound was a late and rare event under both temperatures. A time-varying-coefficient refit confirmed that the per-genet pigment-over-wound effect for genet c, which violated the proportional-hazards assumption, was non-significant under PH-correction (coef = 0.65, p = 0.13).
+
+*Heritable variation in thermal tolerance among genets*
+
+The three field-collected genets (a, c, d) showed significant genet × treatment interactions for photochemistry (LRT χ²₁₅ = 90.5, p < 0.001), pigmentation (χ²₁₅ = 148.1, p < 0.001), and symbiont density (χ²₁₅ = 73.6, p < 0.001), but not for growth (χ²₆ = 5.3, p = 0.51). Genet c was consistently more thermally resilient than genets a and d across all three physiological dimensions (Fig. 3C), retaining higher Fv/Fm, more symbionts, and less paling under heating. A composite resilience ranking integrating standardized heat sensitivities across 11 response dimensions placed genet c (mean standardized sensitivity = −0.03) well clear of genets a (+0.42, most sensitive) and d (+0.29). In multivariate physiology space, genet c's centroid shifted only 1.03 PC-units under heat while genet a's shifted 3.74 and genet d's shifted 3.35 (Euclidean distance between 28 °C and 31 °C centroids in the PCA from Fig. 3A).
+
+Decomposing the standardized heat sensitivities by wound state clarified where the genet differences live. In unwounded corals, the genet spread was large (mean standardized sensitivity: a = 0.99, d = 0.87, c = 0.44), but in wounded corals the spread compressed to near-uniformity (a = 0.36, d = 0.26, c = 0.28). Wound healing appears to impose a metabolic load that homogenizes the genet-level heat response, while the unwounded homeostatic state best resolves the heritable variation.
+
+This heritable variation in thermal tolerance among only three genets indicates that *A. pulchra* on Mo'orea's fringing reef harbors substantial genotype-level diversity in heat response — a substrate for selection under continued ocean warming.
+
+*Transcriptomics*
+
+[RNA-seq data pending from UC Davis Bay lab; placeholder for differential-expression results once 144 libraries return.]
 
 **Discussion**
 
