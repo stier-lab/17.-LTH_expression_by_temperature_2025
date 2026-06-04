@@ -54,6 +54,44 @@ pam_avg <- pam |>
 
 saveRDS(pam_avg, file.path(DATA_PROC, "pam_clean.rds"))
 
+# ---- Location (top vs bottom) sensitivity check ----------------------------
+# Molly's original analysis (code/archive/molly_original/LTH_PAM.R) noted that
+# top vs bottom probe placement appeared to differ. The primary pipeline
+# averages the two as technical replicates (above). Here we test that decision
+# directly: fit the model on the UN-averaged data with location as a fixed
+# factor and report the location terms. If location and its interactions are
+# non-significant, averaging is justified.
+if ("location" %in% names(pam) &&
+    length(unique(na.omit(pam$location))) > 1) {
+  pam_loc <- pam |> mutate(location = factor(location))
+  # lmerTest::lmer (not lme4::lmer) so anova() returns Satterthwaite p-values.
+  mod_loc <- lmerTest::lmer(
+    fv_fm ~ treatment * wound * day * location + (1 | tank) + (1 | id),
+    data = pam_loc, REML = FALSE,
+    control = lme4::lmerControl(check.conv.singular = .makeCC("ignore", tol = 1e-4))
+  )
+  loc_anova <- as.data.frame(anova(mod_loc)) |>
+    tibble::rownames_to_column("term") |>
+    filter(grepl("location", term))
+  write_csv(loc_anova, file.path(TBL_DIR, "02b_pam_location_sensitivity.csv"))
+  cat("\n=== PAM location (top/bottom) sensitivity — terms involving location ===\n")
+  print(loc_anova)
+  # The decision that matters: does location INTERACT with the experimental
+  # factors? A pure main-effect offset is averaged out harmlessly; an
+  # interaction would mean averaging distorts the treatment/wound/day effects.
+  pcol <- intersect(c("Pr(>F)"), names(loc_anova))
+  interaction_terms <- loc_anova[grepl(":", loc_anova$term), , drop = FALSE]
+  inter_sig <- length(pcol) == 1 &&
+    any(interaction_terms[[pcol]] < 0.05, na.rm = TRUE)
+  main_sig <- length(pcol) == 1 &&
+    any(loc_anova[loc_anova$term == "location", pcol] < 0.05, na.rm = TRUE)
+  cat(sprintf(
+    "  location main effect %s; location x (experimental factor) interactions %s.\n",
+    if (main_sig) "SIGNIFICANT (real top/bottom offset)" else "n.s.",
+    if (inter_sig) "SIGNIFICANT — averaging may distort effects; see 02b table"
+    else "n.s. — averaging top/bottom is justified for treatment/wound/day effects"))
+}
+
 # ---- Mixed model -----------------------------------------------------------
 # Continuous day, factor treatment×wound. Random: tank + thicket + id (within).
 mod <- lme4::lmer(

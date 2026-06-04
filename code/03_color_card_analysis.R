@@ -12,6 +12,17 @@
 
 source(here::here("code", "00_setup.R"))
 
+# Convert a Siebeck D-scale text entry to numeric. Single scores ("D5") map to
+# their integer; split scores ("D3/D4") are averaged to the midpoint (3.5),
+# following Molly's original convention (code/archive/molly_original/). This
+# matters for 40 of ~962 scored observations (D1/D2, D2/D3, D3/D4); taking only
+# the first digit would bias those downward by 0.5.
+convert_color <- function(x) {
+  nums <- stringr::str_extract_all(x, "\\d+")
+  vapply(nums, function(v) if (length(v) == 0) NA_real_ else mean(as.numeric(v)),
+         numeric(1))
+}
+
 cc_raw <- read_csv(file.path(DATA_RAW, "color_card", "data.csv"),
                    show_col_types = FALSE) |>
   janitor::clean_names()
@@ -33,8 +44,8 @@ cc <- cc_raw |>
                        levels = c("no", "yes")),
     hole_at_center = factor(str_to_lower(str_squish(hole_at_center)),
                              levels = c("no", "yes")),
-    # Color: extract numeric from "D5" -> 5; treat NA / "" as missing
-    color_num = as.integer(str_extract(color, "\\d+"))
+    # Color: "D5" -> 5, "D3/D4" -> 3.5 (split scores averaged); NA/"" -> missing
+    color_num = convert_color(color)
   ) |>
   filter(!is.na(color_num))
 

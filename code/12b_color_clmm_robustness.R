@@ -19,7 +19,10 @@ source(here::here("code", "00_setup.R"))
 
 color <- readRDS(file.path(DATA_PROC, "color_clean.rds")) |>
   mutate(thicket = factor(thicket),
-         color_ord = factor(color_num, ordered = TRUE))
+         # Round split scores (e.g. 3.5) to the nearest integer so the ordinal
+         # factor stays a clean D1-D5 scale. The continuous color_num (with .5
+         # precision) is used by the primary Gaussian LMM in script 12.
+         color_ord = factor(round(color_num), ordered = TRUE))
 
 # The 4-way fixed × random structure is too rich for clmm (Hessian singular).
 # Robustness check: same data, ordinal likelihood, slightly reduced structure

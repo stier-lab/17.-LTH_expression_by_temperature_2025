@@ -30,6 +30,7 @@ scripts <- c(
   "17_figure_audit.R",
   "18_data_validation.R",
   "19_genet_dashboard.R",
+  "22_sensitivity_flagged.R",
   "20_master_results_table.R"
 )
 

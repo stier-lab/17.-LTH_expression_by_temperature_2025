@@ -1,0 +1,7 @@
+response,term,F_value,p_value
+PAM Fv/Fm (full data),treatment:day,95.28,1.25e-19
+PAM Fv/Fm (flagged dropped),treatment:day,72.34,1.97e-15
+Color D-scale (full data),treatment:day,155.6,4.3000000000000004e-29
+Color D-scale (flagged dropped),treatment:day,139.68,6.57e-26
+Growth % (full data),treatment,23.26,2.58e-5
+Growth % (flagged dropped),treatment,71.52,3.39e-9

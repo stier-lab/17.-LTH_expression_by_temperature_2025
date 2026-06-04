@@ -89,7 +89,7 @@ color <- readRDS(file.path(DATA_PROC, "color_clean.rds"))
 add("color", "n observations", if (nrow(color) > 300) "PASS" else "WARN",
     nrow(color), "~336")
 add("color", "D-scale range", "INFO",
-    sprintf("[%d, %d]", min(color$color_num), max(color$color_num)),
+    sprintf("[%g, %g]", min(color$color_num), max(color$color_num)),
     "[1, 6]")
 check_tanks("color", color)
 
