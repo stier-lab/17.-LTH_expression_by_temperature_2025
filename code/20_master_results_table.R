@@ -569,13 +569,39 @@ zoox_means_rows <- zoox_raw |>
   )
 
 # ===========================================================================
+# Block 11 — Time-series diagnostics (script 23): autocorrelation,
+#            random slope, nonlinearity-of-time for repeated-measures responses
+# ===========================================================================
+ts_rows <- if (file.exists(file.path(TBL_DIR, "23_timeseries_diagnostics.csv"))) {
+  read_csv(file.path(TBL_DIR, "23_timeseries_diagnostics.csv"),
+           show_col_types = FALSE) |>
+    transmute(
+      domain          = "Time-series diagnostic",
+      response        = response,
+      model_type      = "diagnostic",
+      term            = check,
+      test            = "LRT / Wald",
+      statistic       = statistic,
+      df1             = suppressWarnings(as.numeric(df)), df2 = NA_real_,
+      n               = NA_real_,
+      estimate        = NA_real_, units = NA_character_,
+      pct_change      = NA_real_, ci_low = NA_real_, ci_high = NA_real_,
+      p_value         = p_value,
+      qualitative     = conclusion,
+      source_script   = "code/23_timeseries_diagnostics.R",
+      source_artifact = "output/tables/23_timeseries_diagnostics.csv"
+    )
+} else tibble()
+
+# ===========================================================================
 # Combine and write
 # ===========================================================================
 master <- bind_rows(anova12, genet_rows, r2_rows,
                     morph_anova, morph_fixed,
                     cox_rows, cox_genet_rows, cox_tt,
                     lrt13, pca_load, pca_disp, bw_lm,
-                    clmm_rows, bw_means_rows, bw_pct_drop, zoox_means_rows) |>
+                    clmm_rows, bw_means_rows, bw_pct_drop, zoox_means_rows,
+                    ts_rows) |>
   mutate(across(c(statistic, estimate, pct_change, ci_low, ci_high, p_value),
                 \(x) round(x, 4))) |>
   arrange(domain, response, model_type, term)
