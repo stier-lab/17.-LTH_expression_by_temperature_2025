@@ -138,22 +138,31 @@ emm_color_end <- emmeans::emmeans(m_color, ~ treatment | thicket * wound,
                                    at = list(day = 14))
 record_genet_effect(emm_color_end, "color_dscale")
 
-# ---- 3. Buoyant-weight growth ----------------------------------------------
-cat("\n=== 3. Buoyant weight ===\n")
+# ---- 3. Coral calcification (areal, mg cm^-2 d^-1) -------------------------
+# PRIMARY growth metric is areal calcification rate (surface-area normalized;
+# see code/05_buoyant_weight.R and notes/growth_allometry.md). % mass change
+# is recorded as a robustness response below.
+cat("\n=== 3. Calcification (areal) ===\n")
 bw <- readRDS(file.path(DATA_PROC, "buoyant_weight_clean.rds")) |>
   mutate(thicket = as.factor(thicket))
+bw_a <- bw |> filter(is.finite(areal_calc))
 
-# n=48 corals with 1 obs each — saturated random effects collapse. Drop (1|id)
+# n<=48 corals with 1 obs each — saturated random effects collapse. Drop (1|id)
 # (each id has exactly 1 obs) and (1|tank) (singular). Use OLS with full
 # treatment × wound × thicket fixed structure.
-m_bw <- lm(pct_growth ~ treatment * wound * thicket, data = bw)
+m_bw <- lm(areal_calc ~ treatment * wound * thicket, data = bw_a)
 saveRDS(m_bw, file.path(MOD_DIR, "12_bw_lm.rds"))
-record_results(m_bw, "growth_pct")
+record_results(m_bw, "growth_areal")
 
 emm_bw <- emmeans::emmeans(m_bw, ~ treatment | thicket * wound)
-results_emm[["growth_pct"]] <- as_tibble(pairs(emm_bw, adjust = "tukey")) |>
-  mutate(response = "growth_pct", day = NA_integer_)
-record_genet_effect(emm_bw, "growth_pct")
+results_emm[["growth_areal"]] <- as_tibble(pairs(emm_bw, adjust = "tukey")) |>
+  mutate(response = "growth_areal", day = NA_integer_)
+record_genet_effect(emm_bw, "growth_areal")
+
+# Robustness: % mass change (the previous primary metric)
+m_bw_pct <- lm(pct_growth ~ treatment * wound * thicket, data = bw)
+saveRDS(m_bw_pct, file.path(MOD_DIR, "12_bw_pct_lm.rds"))
+record_results(m_bw_pct, "growth_pct")
 
 # ---- 4. Symbiont density (cells/cm^2) --------------------------------------
 cat("\n=== 4. Symbiont density ===\n")
@@ -257,7 +266,8 @@ write_csv(all_genet, file.path(TBL_DIR, "12_genet_treatment_effects.csv"))
 cat("\n=== Type-III ANOVA: continuous responses (genet terms highlighted) ===\n")
 print(all_anova |>
         filter(response_id %in% c("pam_fvfm", "color_dscale",
-                                   "growth_pct", "log_zoox_density"),
+                                   "growth_areal", "growth_pct",
+                                   "log_zoox_density"),
                grepl("thicket|treatment", term, ignore.case = TRUE)) |>
         select(response_id, term, any_of(c("F value", "F", "Pr(>F)",
                                            "Chisq", "Pr(>Chisq)"))))

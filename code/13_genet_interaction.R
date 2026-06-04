@@ -80,12 +80,13 @@ genet_tests <- bind_rows(
   fit_and_report(phys,  "log(cells_per_cm2)", "log_zoox",
                  fixed_extra = "biopsy_day_c", include_id = FALSE)
 )
-# Growth has no time dim — simpler test
-m_bw_null  <- lm(pct_growth ~ treatment * wound + thicket, data = bw)
-m_bw_genet <- lm(pct_growth ~ treatment * wound * thicket, data = bw)
+# Growth (areal calcification) has no time dim — simpler test
+bw_a       <- bw |> filter(is.finite(areal_calc))
+m_bw_null  <- lm(areal_calc ~ treatment * wound + thicket, data = bw_a)
+m_bw_genet <- lm(areal_calc ~ treatment * wound * thicket, data = bw_a)
 genet_tests <- bind_rows(genet_tests, tibble(
-  response  = "growth_pct",
-  n_obs     = nrow(bw),
+  response  = "growth_areal",
+  n_obs     = nrow(bw_a),
   aic_null  = AIC(m_bw_null),
   aic_genet = AIC(m_bw_genet),
   delta_aic = AIC(m_bw_genet) - AIC(m_bw_null),
@@ -119,12 +120,12 @@ make_react_norm <- function(data, response_col, label) {
 emm_long <- bind_rows(
   make_react_norm(pam,   "fv_fm",                "PAM Fv/Fm"),
   make_react_norm(color, "color_num",            "Color (D-scale)"),
-  bw |> group_by(treatment, thicket) |>
-    summarise(mean = mean(pct_growth, na.rm = TRUE),
-              se   = sd(pct_growth, na.rm = TRUE) / sqrt(n()),
+  bw_a |> group_by(treatment, thicket) |>
+    summarise(mean = mean(areal_calc, na.rm = TRUE),
+              se   = sd(areal_calc, na.rm = TRUE) / sqrt(n()),
               n    = n(),
               .groups = "drop") |>
-    mutate(response = "Growth (%)"),
+    mutate(response = "Calcification (mg cm⁻² d⁻¹)"),
   phys |> mutate(log10_cells = log10(cells_per_cm2)) |>
     group_by(treatment, thicket) |>
     summarise(mean = mean(log10_cells, na.rm = TRUE),

@@ -37,7 +37,7 @@ zoox_last <- phys |>
 
 bw_summary <- bw |>
   group_by(id, treatment, wound, thicket) |>
-  summarise(growth_pct = pct_growth[1], .groups = "drop")
+  summarise(growth_areal = areal_calc[1], .groups = "drop")
 
 # Wide-format physiology per coral
 wide <- pam_last |>
@@ -50,7 +50,7 @@ cat("PCA-eligible corals:", nrow(wide),
     "(with all 4 responses:", sum(complete.cases(wide)), ")\n")
 
 # PCA on the 3 universal vars (Apply zoox if available)
-pca_vars <- c("pam_end", "color_end", "growth_pct")
+pca_vars <- c("pam_end", "color_end", "growth_areal")
 if (any(!is.na(wide$zoox_end))) pca_vars <- c(pca_vars, "zoox_end")
 
 pca_input <- wide[, pca_vars, drop = FALSE] |> drop_na()

@@ -55,6 +55,7 @@ qual_dir <- function(estimate, p, response_label,
 response_label_map <- c(
   pam_fvfm         = "PAM Fv/Fm",
   color_dscale     = "Color (Siebeck D)",
+  growth_areal     = "Areal calcification (mg cm-2 d-1)",
   growth_pct       = "Buoyant weight growth (%)",
   log_zoox_density = "log10 symbionts cm-2",
   pct_growth       = "Buoyant weight growth (%)"
@@ -63,6 +64,7 @@ response_label_map <- c(
 natural_units <- c(
   pam_fvfm         = "Fv/Fm",
   color_dscale     = "D-scale units",
+  growth_areal     = "mg cm-2 d-1",
   growth_pct       = "%",
   log_zoox_density = "log10 cells cm-2",
   pct_growth       = "%"
@@ -85,6 +87,10 @@ baseline_means <- function() {
       filter(day == max(day, na.rm = TRUE), treatment == "28C") |>
       group_by(thicket, wound) |>
       summarise(baseline = mean(color_num, na.rm = TRUE), .groups = "drop"),
+    growth_areal = bw |>
+      filter(treatment == "28C", is.finite(areal_calc)) |>
+      group_by(thicket, wound) |>
+      summarise(baseline = mean(areal_calc, na.rm = TRUE), .groups = "drop"),
     growth_pct   = bw |>
       filter(treatment == "28C") |>
       group_by(thicket, wound) |>
@@ -115,7 +121,8 @@ anova12 <- read_csv(file.path(TBL_DIR, "12_anova_summary.csv"),
   transmute(
     domain          = "Physiology",
     response        = response_label_map[response] |> coalesce(response),
-    model_type      = if_else(response_id == "growth_pct", "LM", "LMM"),
+    model_type      = if_else(response_id %in% c("growth_pct", "growth_areal"),
+                              "LM", "LMM"),
     term            = term,
     test            = if_else(is.na(`F value`), "Wald chi-sq", "ANOVA F"),
     statistic       = coalesce(`F value`, Chisq),
@@ -160,7 +167,7 @@ attach_pct <- function(df, response_key) {
 genet_eff_pct <- bind_rows(
   attach_pct(filter(genet_eff, response == "pam_fvfm"),       "pam_fvfm"),
   attach_pct(filter(genet_eff, response == "color_dscale"),   "color_dscale"),
-  attach_pct(filter(genet_eff, response == "growth_pct"),     "growth_pct"),
+  attach_pct(filter(genet_eff, response == "growth_areal"),   "growth_areal"),
   attach_pct(filter(genet_eff, response == "log_zoox_density"),"log_zoox_density")
 )
 
@@ -168,7 +175,8 @@ genet_rows <- genet_eff_pct |>
   transmute(
     domain          = "Physiology",
     response        = response_label_map[response] |> coalesce(response),
-    model_type      = if_else(response == "growth_pct", "LM", "LMM"),
+    model_type      = if_else(response %in% c("growth_pct", "growth_areal"),
+                              "LM", "LMM"),
     term            = sprintf("contrast: 28C - 31C | genet=%s | wound=%s",
                               thicket, wound),
     test            = if_else(!is.na(z.ratio), "Wald z", "Satterthwaite t"),

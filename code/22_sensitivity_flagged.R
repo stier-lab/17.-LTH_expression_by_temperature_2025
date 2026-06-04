@@ -54,9 +54,10 @@ c_drop <- lmerTest::lmer(color_num ~ treatment * wound * day + (1|tank) + (1|thi
 results$col_full <- grab(c_full, "Color D-scale (full data)",     "treatment:day")
 results$col_drop <- grab(c_drop, "Color D-scale (flagged dropped)","treatment:day")
 
-# ---- Buoyant-weight growth: treatment main effect (OLS, single obs/coral) ----
+# ---- Areal calcification: treatment main effect (OLS, single obs/coral) ----
 bw <- readRDS(file.path(DATA_PROC, "buoyant_weight_clean.rds")) |>
-  mutate(thicket = factor(thicket))
+  mutate(thicket = factor(thicket)) |>
+  filter(is.finite(areal_calc))
 bw_drop <- bw |> filter(!id %in% FLAGGED_IDS, tank != FLAGGED_TANK)
 
 grab_lm <- function(model, label) {
@@ -67,10 +68,10 @@ grab_lm <- function(model, label) {
          F_value = round(row[["F value"]], 2),
          p_value = signif(row[["Pr(>F)"]], 3))
 }
-g_full <- lm(pct_growth ~ treatment * wound * thicket, data = bw)
-g_drop <- lm(pct_growth ~ treatment * wound * thicket, data = bw_drop)
-results$bw_full <- grab_lm(g_full, "Growth % (full data)")
-results$bw_drop <- grab_lm(g_drop, "Growth % (flagged dropped)")
+g_full <- lm(areal_calc ~ treatment * wound * thicket, data = bw)
+g_drop <- lm(areal_calc ~ treatment * wound * thicket, data = bw_drop)
+results$bw_full <- grab_lm(g_full, "Areal calcification (full data)")
+results$bw_drop <- grab_lm(g_drop, "Areal calcification (flagged dropped)")
 
 out <- bind_rows(results)
 write_csv(out, file.path(TBL_DIR, "22_sensitivity_flagged.csv"))

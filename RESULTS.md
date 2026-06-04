@@ -98,13 +98,17 @@ A significant treatment × wound interaction (F₁ = 16.90) indicates wounded he
 
 ---
 
-## 3. Growth (buoyant weight, % mass change over 14 d)
+## 3. Calcification (areal, mg CaCO₃ cm⁻² d⁻¹)
 
-**Model:** `pct_growth ~ treatment * wound * thicket` (n = 48; single observation per coral means no random effects estimable). `output/models/12_bw_lm.rds`.
+**Metric.** Growth is reported as **areal calcification rate** — dry-mass gain normalized to the coral's calcifying surface area and to time (mg CaCO₃ cm⁻² d⁻¹), the field-standard buoyant-weight unit. Calcification is a surface-mediated process, so surface area (living tissue), not skeletal mass, is the mechanistically correct denominator; surface area came from the day-15 wax-dipping standard curve and does not differ by treatment (28 °C 4.46 vs 31 °C 4.73 cm², p = 0.27), so it is an unbiased denominator. Full reasoning and the allometric checks (log-log exponent b = 0.97, mass gain independent of size) are in `notes/growth_allometry.md`.
 
-**ANOVA:** treatment main effect significant (F₁,₃₆ = 4.35, p = 0.044); all higher-order interactions including genet are non-significant. This is the one response where genets respond *similarly* to heat — the per-genet treatment effects all fall in the 1.4–2.4 percentage-point range. Raw means: 28 °C corals grew 6.45% over 14 days; 31 °C corals grew 4.26% — a 34% reduction in mass accretion under sustained heat.
+**Model:** `areal_calc ~ treatment * wound * thicket` (n = 48; single endpoint observation per coral means no random effects estimable). `output/models/12_bw_lm.rds`.
 
-The genet × treatment LRT is the only non-significant test in `output/tables/13_genet_anova.csv` (ΔAIC = +5.3, p = 0.51), confirming no detectable G × E for growth. Likely under-powered with n = 48; future experiments should expand the genet sample to detect plausible 10–20% effect-size differences.
+**ANOVA:** treatment main effect highly significant (F₁ = 25.5, p = 9.0×10⁻⁶). Mean areal calcification fell from **7.62 mg cm⁻² d⁻¹ at 28 °C to 4.75 at 31 °C — a 38% reduction** under sustained heating (treatment estimate −2.98 mg cm⁻² d⁻¹, 95% CI [−4.60, −1.37]). All higher-order interactions including genet are non-significant.
+
+**Metric-invariance.** The heat effect is robust to the growth metric (`output/tables/05b_growth_metric_comparison.csv`): treatment F = 25.5 (areal), 23.5 (% mass change), 23.4 (specific growth rate); all p ≈ 1×10⁻⁵. The previous primary metric (% mass change) gave the same conclusion (28 °C 6.45% vs 31 °C 4.26% over 14 d, a 34% reduction; F₁,₃₆ = 4.35, p = 0.044) and is retained as a robustness model (`output/models/12_bw_pct_lm.rds`).
+
+**Genet.** The genet × treatment LRT is the only non-significant interaction test in `output/tables/13_genet_anova.csv` (p ≈ 0.7), confirming no statistically detectable G × E for growth (n = 4 per genet × treatment cell — underpowered). Directionally, genet c is the least heat-suppressed in areal calcification (≈−21% vs ≈−45% for genets a and d), consistent with its resilience in PAM, color, and symbiont density, but this is not significant for growth.
 
 **Figure:** `figures/05_buoyant_weight_growth.{pdf,png}`.
 

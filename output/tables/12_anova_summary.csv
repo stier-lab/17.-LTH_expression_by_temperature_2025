@@ -29,6 +29,15 @@ color_dscale,2,0.73037,0.36519,6.31367,treatment:wound:thicket,color_dscale,NA,N
 color_dscale,2,3.44718,1.72359,29.79904,treatment:day:thicket,color_dscale,NA,NA,NA,NA,NA
 color_dscale,2,0.04577,0.02288,0.39565,wound:day:thicket,color_dscale,NA,NA,NA,NA,NA
 color_dscale,2,0.29994,0.14997,2.5928,treatment:wound:day:thicket,color_dscale,NA,NA,NA,NA,NA
+growth_areal,NA,316.57735,NA,75.05914,(Intercept),growth_areal,1,0,NA,NA,NA
+growth_areal,NA,24.56644,NA,5.8246,treatment,growth_areal,1,0.02102,NA,NA,NA
+growth_areal,NA,1.63947,NA,0.38871,wound,growth_areal,1,0.53691,NA,NA,NA
+growth_areal,NA,3.31929,NA,0.39349,thicket,growth_areal,2,0.67756,NA,NA,NA
+growth_areal,NA,0.12999,NA,0.03082,treatment:wound,growth_areal,1,0.86163,NA,NA,NA
+growth_areal,NA,2.03512,NA,0.24126,treatment:thicket,growth_areal,2,0.7869,NA,NA,NA
+growth_areal,NA,2.6829,NA,0.31805,wound:thicket,growth_areal,2,0.72959,NA,NA,NA
+growth_areal,NA,2.65087,NA,0.31425,treatment:wound:thicket,growth_areal,2,0.73232,NA,NA,NA
+growth_areal,NA,151.83739,NA,NA,Residuals,growth_areal,36,NA,NA,NA,NA
 growth_pct,NA,176.32875,NA,78.37343,(Intercept),growth_pct,1,0,NA,NA,NA
 growth_pct,NA,9.79302,NA,4.35274,treatment,growth_pct,1,0.04409,NA,NA,NA
 growth_pct,NA,0.00287,NA,0.00127,wound,growth_pct,1,0.97171,NA,NA,NA
