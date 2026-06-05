@@ -32,6 +32,7 @@ scripts <- c(
   "19_genet_dashboard.R",
   "22_sensitivity_flagged.R",
   "23_timeseries_diagnostics.R",
+  "24_headline_model_comparison.R",
   "20_master_results_table.R"
 )
 

@@ -1,0 +1,166 @@
+# =============================================================================
+# Purpose: Decide whether to upgrade the primary PAM/color models. The
+#          time-series diagnostics (script 23) showed the linear / random-
+#          intercept models are a simplification (nonlinear trajectories,
+#          random slopes improve fit, AR(1) autocorrelation in PAM). Here we
+#          fit the upgraded "maximum-rigor" specification and compare it
+#          head-to-head with the current primary model on the quantities the
+#          manuscript actually reports:
+#            - model fit (AIC)
+#            - significance of the treatment × time interaction
+#            - the day-14 heat effect (28C - 31C marginal contrast, with CI)
+#          If the upgrade does not change the effect size or the conclusion,
+#          the simpler model is retained and this is documented; if it does,
+#          the upgrade is adopted.
+#
+#          Models compared (PAM and color):
+#            current : resp ~ treatment*wound*day*thicket + (1|tank)+(1|id)
+#            upgraded: resp ~ treatment*wound*poly(day,2)*thicket
+#                             + (1+day|id) + (1|tank)        [random slopes + quad time]
+#            ar1     : (PAM only) nlme lme, linear day, random slope, corAR1
+# Output:  output/tables/24_headline_model_comparison.csv
+#          output/diagnostics/J_headline_model_comparison.md
+# =============================================================================
+
+source(here::here("code", "00_setup.R"))
+suppressPackageStartupMessages({ library(nlme); library(emmeans) })
+
+ctrl <- lme4::lmerControl(check.conv.singular = .makeCC("ignore", 1e-4),
+                          optimizer = "bobyqa",
+                          optCtrl = list(maxfun = 2e5))
+
+rows <- list()
+add <- function(...) rows[[length(rows) + 1]] <<- tibble(...)
+
+# Marginal 28C-31C contrast at day 14 (averaged over wound & genet), with CI
+day14_effect <- function(m, dayval = 14) {
+  e <- tryCatch(
+    emmeans::emmeans(m, ~ treatment, at = list(day = dayval), lmerTest.limit = 1e5,
+                     pbkrtest.limit = 1e5),
+    error = function(err) NULL)
+  if (is.null(e)) return(c(est = NA, lo = NA, hi = NA, p = NA))
+  p <- as.data.frame(pairs(e))
+  ci <- as.data.frame(confint(pairs(e)))
+  c(est = p$estimate[1], lo = ci$lower.CL[1], hi = ci$upper.CL[1],
+    p = p$p.value[1])
+}
+
+compare_response <- function(data, response, label, do_ar1 = FALSE) {
+  data <- data |>
+    mutate(thicket = factor(thicket), tank = factor(tank), id = factor(id)) |>
+    rename(.y = all_of(response)) |>
+    filter(!is.na(.y), !is.na(day))
+
+  # --- Current primary model ---
+  m_cur <- lme4::lmer(.y ~ treatment * wound * day * thicket +
+                        (1 | tank) + (1 | id),
+                      data = data, REML = TRUE, control = ctrl)
+
+  # --- Upgraded: random slopes + quadratic time ---
+  m_up <- lme4::lmer(.y ~ treatment * wound * poly(day, 2, raw = TRUE) * thicket +
+                       (1 + day | id) + (1 | tank),
+                     data = data, REML = TRUE, control = ctrl)
+
+  # Treatment×time significance (Type-II)
+  a_cur <- car::Anova(m_cur, type = 2)
+  a_up  <- car::Anova(m_up,  type = 2)
+  p_cur <- a_cur[grep("^treatment:day$", rownames(a_cur)), "Pr(>Chisq)"]
+  # upgraded: any treatment:poly(day) term
+  up_terms <- grep("treatment:poly", rownames(a_up), value = TRUE)
+  p_up <- if (length(up_terms)) min(a_up[up_terms, "Pr(>Chisq)"], na.rm = TRUE) else NA
+
+  e_cur <- day14_effect(m_cur)
+  e_up  <- day14_effect(m_up)
+
+  add(response = label, model = "current (linear, rand-intercept)",
+      AIC = round(AIC(m_cur), 1),
+      trt_time_p = signif(p_cur, 3),
+      day14_effect = round(e_cur["est"], 4),
+      day14_CI = sprintf("[%.3f, %.3f]", e_cur["lo"], e_cur["hi"]),
+      day14_p = signif(e_cur["p"], 3))
+  add(response = label, model = "upgraded (quad time + rand-slope)",
+      AIC = round(AIC(m_up), 1),
+      trt_time_p = signif(p_up, 3),
+      day14_effect = round(e_up["est"], 4),
+      day14_CI = sprintf("[%.3f, %.3f]", e_up["lo"], e_up["hi"]),
+      day14_p = signif(e_up["p"], 3))
+
+  # --- AR(1) (PAM only): nlme, linear day, random slope ---
+  if (do_ar1) {
+    m_ar1 <- tryCatch(
+      nlme::lme(.y ~ treatment * wound * day * thicket,
+                random = ~ 1 + day | id,
+                correlation = nlme::corAR1(form = ~ day | id),
+                data = data, method = "REML",
+                control = nlme::lmeControl(opt = "optim", maxIter = 300,
+                                           msMaxIter = 300, returnObject = TRUE)),
+      error = function(e) { message(label, " AR1 lme failed: ", conditionMessage(e)); NULL })
+    if (!is.null(m_ar1)) {
+      tt <- summary(m_ar1)$tTable
+      r <- grep("treatment.*:day$", rownames(tt)); r <- r[1]
+      e_ar <- day14_effect(m_ar1)
+      add(response = label, model = "AR(1) + rand-slope (nlme)",
+          AIC = round(AIC(m_ar1), 1),
+          trt_time_p = if (!is.na(r)) signif(tt[r, "p-value"], 3) else NA,
+          day14_effect = round(e_ar["est"], 4),
+          day14_CI = sprintf("[%.3f, %.3f]", e_ar["lo"], e_ar["hi"]),
+          day14_p = signif(e_ar["p"], 3))
+    }
+  }
+}
+
+cat("=== Headline model comparison ===\n")
+pam <- readRDS(file.path(DATA_PROC, "pam_clean.rds"))
+compare_response(pam, "fv_fm", "PAM Fv/Fm", do_ar1 = TRUE)
+
+color <- readRDS(file.path(DATA_PROC, "color_clean.rds"))
+compare_response(color, "color_num", "Color (D-scale)", do_ar1 = FALSE)
+
+out <- bind_rows(rows)
+write_csv(out, file.path(TBL_DIR, "24_headline_model_comparison.csv"))
+
+# ---- Verdict --------------------------------------------------------------
+verdict <- out |>
+  group_by(response) |>
+  summarise(
+    cur_eff = day14_effect[model == "current (linear, rand-intercept)"][1],
+    up_eff  = day14_effect[grepl("upgraded", model)][1],
+    cur_sig = day14_p[model == "current (linear, rand-intercept)"][1] < 0.05,
+    up_sig  = day14_p[grepl("upgraded", model)][1] < 0.05,
+    .groups = "drop") |>
+  mutate(
+    pct_diff = round(100 * (up_eff - cur_eff) / cur_eff, 1),
+    same_conclusion = cur_sig == up_sig,
+    worth_it = abs(pct_diff) > 15 | !same_conclusion
+  )
+
+report <- c(
+  "# Headline model upgrade — is it worth it?",
+  "",
+  "Compares the current primary PAM/color models (linear `day`, random",
+  "intercepts) with an upgraded specification (quadratic time + random slopes;",
+  "AR(1) for PAM) on the day-14 heat effect (28C - 31C, averaged over wound",
+  "and genet) and the treatment x time interaction. Generated by",
+  "code/24_headline_model_comparison.R.",
+  "",
+  "| Response | Model | AIC | trt×time p | day-14 effect | 95% CI | day-14 p |",
+  "|---|---|---|---|---|---|---|"
+)
+report <- c(report, out |>
+  mutate(line = sprintf("| %s | %s | %s | %s | %s | %s | %s |",
+                        response, model, AIC, trt_time_p, day14_effect,
+                        day14_CI, day14_p)) |> pull(line))
+report <- c(report, "", "## Verdict", "")
+report <- c(report, verdict |>
+  mutate(line = sprintf("- **%s**: day-14 effect %.3f (current) vs %.3f (upgraded), %+.1f%%; conclusion %s. Upgrade %s.",
+                        response, cur_eff, up_eff, pct_diff,
+                        ifelse(same_conclusion, "unchanged", "CHANGES"),
+                        ifelse(worth_it, "WORTH ADOPTING", "not necessary (document as robustness)"))) |>
+  pull(line))
+writeLines(report, file.path(here::here("output", "diagnostics"),
+                             "J_headline_model_comparison.md"))
+
+cat("\n"); print(as.data.frame(out))
+cat("\n=== Verdict ===\n"); print(as.data.frame(verdict))
+cat("\nWrote output/tables/24_headline_model_comparison.csv,",
+    "output/diagnostics/J_headline_model_comparison.md\n")

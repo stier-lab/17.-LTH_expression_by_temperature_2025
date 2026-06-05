@@ -247,7 +247,11 @@ A diagnostic swarm (`output/diagnostics/{A,B,C,D}_*.{csv,md}`) checked every pri
   - *Random slopes*: a random slope of day by coral significantly improves fit for both PAM (LRT p < 10⁻⁵) and color (p < 10⁻¹⁸) — individual corals follow different decline trajectories — so the intercept-only model understates among-individual variation, though it does not bias the fixed-effect treatment × day inference.
   - *Linearity of time*: all three trajectories (PAM p = 0.007, color p = 4×10⁻⁴, symbionts p = 0.013) are significantly nonlinear (decline accelerates). The linear `day` term is therefore an approximation of the dominant directional trend; per-day `emmeans` contrasts (reported above) characterize the actual timepoint-specific divergence without assuming linearity.
 
-  None of these change the qualitative conclusions, but for maximum rigor the primary PAM/color models could be upgraded to include random slopes and a spline/quadratic time term (and AR(1) for PAM). Residual ACF plots are in `figures/diagnostics/I_*_acf.png`.
+  None of these change the qualitative conclusions. We tested whether upgrading the headline models is warranted by fitting the full "maximum-rigor" specification — quadratic time + random slopes, plus AR(1) for PAM — and comparing it head-to-head with the current model on the reported day-14 heat effect (`code/24_headline_model_comparison.R`, `output/tables/24_headline_model_comparison.csv`, `output/diagnostics/J_headline_model_comparison.md`):
+  - The day-14 effect size shifts by only **+12.5% (PAM, 0.084 → 0.094)** and **+9.4% (color, 1.15 → 1.26)**, and remains highly significant in every specification — conclusion unchanged.
+  - The quadratic-time + random-slope model with the full four-way interaction actually has **worse AIC** than the linear/intercept model (PAM −1199 → −1051; color 234 → 251): the extra interaction parameters are not justified by the fit. The AR(1) model for PAM does improve AIC (−1199 → −1226), confirming the autocorrelation is real, but its day-14 effect (0.083) is essentially identical to the current model (0.084).
+
+  **Verdict: the parsimonious linear / random-intercept model is retained for the headline.** The richer model neither changes the conclusions nor improves the fit (except AR(1) for PAM, which leaves the estimates unchanged); the simplification is therefore justified rather than merely convenient. Residual ACF plots are in `figures/diagnostics/I_*_acf.png`.
 
 ## 11. What's still missing
 
