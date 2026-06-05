@@ -1,0 +1,40 @@
+# K. Model diagnostic coverage
+
+Every fitted model cross-referenced to its residual/assumption diagnostic and the figure that visualizes its result. **34/34 models covered; 0 gaps.**
+
+| Model | Class | Diagnostic figure | Result figure | Status |
+|---|---|---|---|---|
+| `12c_morph_hole_in_center_blme` | bglmerMod | G_12c_morph_hole_in_center_blme_dharma.png | figures/04_morphology_trajectories.pdf / figures/14_morphology_KM.pdf | covered (existing) |
+| `12c_morph_new_corallites_on_tip_blme` | bglmerMod | G_12c_morph_new_corallites_on_tip_blme_dharma.png | figures/04_morphology_trajectories.pdf / figures/14_morphology_KM.pdf | covered (existing) |
+| `12c_morph_pigment_over_wound_blme` | bglmerMod | G_12c_morph_pigment_over_wound_blme_dharma.png | figures/04_morphology_trajectories.pdf / figures/14_morphology_KM.pdf | covered (existing) |
+| `12c_morph_polyp_in_hole_blme` | bglmerMod | G_12c_morph_polyp_in_hole_blme_dharma.png | figures/04_morphology_trajectories.pdf / figures/14_morphology_KM.pdf | covered (existing) |
+| `12c_morph_polyps_out_blme` | bglmerMod | G_12c_morph_polyps_out_blme_dharma.png | figures/04_morphology_trajectories.pdf / figures/14_morphology_KM.pdf | covered (existing) |
+| `12c_morph_tip_exist_blme` | bglmerMod | G_12c_morph_tip_exist_blme_dharma.png | figures/04_morphology_trajectories.pdf / figures/14_morphology_KM.pdf | covered (existing) |
+| `12c_morph_tip_extension_blme` | bglmerMod | G_12c_morph_tip_extension_blme_dharma.png | figures/04_morphology_trajectories.pdf / figures/14_morphology_KM.pdf | covered (existing) |
+| `12c_morph_wound_smoothed_blme` | bglmerMod | G_12c_morph_wound_smoothed_blme_dharma.png | figures/04_morphology_trajectories.pdf / figures/14_morphology_KM.pdf | covered (existing) |
+| `12b_color_clmm` | clmm | G_12b_color_clmm_observed.png | figures/03_color_trajectory.pdf | covered (existing) |
+| `cox_overall_hole_in_center` | coxph | 14_cox_ph_hole_in_center.png | figures/14_morphology_KM.pdf | covered (cox.zph Schoenfeld) |
+| `cox_overall_new_corallites_on_tip` | coxph | 14_cox_ph_new_corallites_on_tip.png | figures/14_morphology_KM.pdf | covered (cox.zph Schoenfeld) |
+| `cox_overall_pigment_over_wound` | coxph | 14_cox_ph_pigment_over_wound.png | figures/14_morphology_KM.pdf | covered (cox.zph Schoenfeld) |
+| `cox_overall_polyp_in_hole` | coxph | 14_cox_ph_polyp_in_hole.png | figures/14_morphology_KM.pdf | covered (cox.zph Schoenfeld) |
+| `cox_overall_tip_exist` | coxph | 14_cox_ph_tip_exist.png | figures/14_morphology_KM.pdf | covered (cox.zph Schoenfeld) |
+| `cox_overall_tip_extension` | coxph | 14_cox_ph_tip_extension.png | figures/14_morphology_KM.pdf | covered (cox.zph Schoenfeld) |
+| `cox_overall_wound_smoothed` | coxph | 14_cox_ph_wound_smoothed.png | figures/14_morphology_KM.pdf | covered (cox.zph Schoenfeld) |
+| `12_morph_hole_in_center_glmm` | glmerMod | B_hole_in_center.png | figures/04_morphology_trajectories.pdf / figures/14_morphology_KM.pdf | covered (existing) |
+| `12_morph_new_corallites_on_tip_glmm` | glmerMod | B_new_corallites_on_tip.png | figures/04_morphology_trajectories.pdf / figures/14_morphology_KM.pdf | covered (existing) |
+| `12_morph_pigment_over_wound_glmm` | glmerMod | B_pigment_over_wound.png | figures/04_morphology_trajectories.pdf / figures/14_morphology_KM.pdf | covered (existing) |
+| `12_morph_polyp_in_hole_glmm` | glmerMod | B_polyp_in_hole.png | figures/04_morphology_trajectories.pdf / figures/14_morphology_KM.pdf | covered (existing) |
+| `12_morph_polyps_out_glmm` | glmerMod | B_polyps_out.png | figures/04_morphology_trajectories.pdf / figures/14_morphology_KM.pdf | covered (existing) |
+| `12_morph_tip_exist_glmm` | glmerMod | B_tip_exist.png | figures/04_morphology_trajectories.pdf / figures/14_morphology_KM.pdf | covered (existing) |
+| `12_morph_tip_extension_glmm` | glmerMod | B_tip_extension.png | figures/04_morphology_trajectories.pdf / figures/14_morphology_KM.pdf | covered (existing) |
+| `12_morph_wound_smoothed_glmm` | glmerMod | B_wound_smoothed.png | figures/04_morphology_trajectories.pdf / figures/14_morphology_KM.pdf | covered (existing) |
+| `12_bw_lm` | lm | A_bw_dharma.png | figures/05_buoyant_weight_growth.pdf | covered (existing) |
+| `12_bw_pct_lm` | lm | growth_pct.png | figures/05_buoyant_weight_growth.pdf | covered (existing) |
+| `13_growth_genet_lm` | lm | K_13_growth_genet_lm_dharma.png | figures/05_buoyant_weight_growth.pdf | covered (built K_) |
+| `02_pam_lmer` | lmerMod | K_02_pam_lmer_dharma.png | figures/02_pam_fvfm_trajectory.pdf | covered (built K_) |
+| `12_color_lmm` | lmerMod | A_color_dharma.png | figures/03_color_trajectory.pdf | covered (existing) |
+| `12_pam_lmm` | lmerMod | A_pam_dharma.png | figures/02_pam_fvfm_trajectory.pdf | covered (existing) |
+| `12_zoox_lmm` | lmerMod | A_zoox_dharma.png | figures/06_symbiont_chl_by_day.pdf | covered (existing) |
+| `13_color_dscale_genet_lmm` | lmerMod | K_13_color_dscale_genet_lmm_dharma.png | figures/03_color_trajectory.pdf | covered (built K_) |
+| `13_log_zoox_genet_lmm` | lmerMod | K_13_log_zoox_genet_lmm_dharma.png | figures/06_symbiont_chl_by_day.pdf | covered (built K_) |
+| `13_pam_fvfm_genet_lmm` | lmerMod | K_13_pam_fvfm_genet_lmm_dharma.png | figures/02_pam_fvfm_trajectory.pdf | covered (built K_) |

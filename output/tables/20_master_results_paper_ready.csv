@@ -320,6 +320,13 @@ Survival,Wound smoothed,Cox PH,HR 31C/28C [genet=d],Wald z,1.32,1,8,3.202 hazard
 Survival,Wound smoothed,Cox PH,HR 31C/28C [overall (strata=thicket)],Wald z,1.15,1,24,1.670 hazard ratio,+67.0%,"[0.69, 4.01]",0.252,"wound_smoothed: no detectable change under 31C (HR=1.67, n.s.)",code/14_morphology_kaplan.R
 Survival,Wound smoothed,Cox PH,LRT: genet main effect,LRT chi-sq,0.48,2,NA,NA,NA,NA,0.785,Genet main effect on wound_smoothed healing: n.s.,code/14_morphology_kaplan.R
 Survival,Wound smoothed,Cox PH,LRT: genet x treatment,LRT chi-sq,1.11,2,NA,NA,NA,NA,0.574,Genet x treatment on wound_smoothed healing: n.s.,code/14_morphology_kaplan.R
+Survival diagnostic,Hole in center,cox.zph (Schoenfeld),proportional-hazards test (treatment),cox.zph chi-sq,0.08,1,24,NA,NA,NA,0.771,PH assumption met (p>=0.05),code/14_morphology_kaplan.R
+Survival diagnostic,New corallites on tip,cox.zph (Schoenfeld),proportional-hazards test (treatment),cox.zph chi-sq,3.56,1,16,NA,NA,NA,0.059,PH assumption met (p>=0.05),code/14_morphology_kaplan.R
+Survival diagnostic,Pigment over wound,cox.zph (Schoenfeld),proportional-hazards test (treatment),cox.zph chi-sq,3.31,1,10,NA,NA,NA,0.069,PH assumption met (p>=0.05),code/14_morphology_kaplan.R
+Survival diagnostic,Polyp in hole,cox.zph (Schoenfeld),proportional-hazards test (treatment),cox.zph chi-sq,0.08,1,24,NA,NA,NA,0.771,PH assumption met (p>=0.05),code/14_morphology_kaplan.R
+Survival diagnostic,Tip exist,cox.zph (Schoenfeld),proportional-hazards test (treatment),cox.zph chi-sq,0.26,1,24,NA,NA,NA,0.613,PH assumption met (p>=0.05),code/14_morphology_kaplan.R
+Survival diagnostic,Tip extension,cox.zph (Schoenfeld),proportional-hazards test (treatment),cox.zph chi-sq,2.55,1,22,NA,NA,NA,0.110,PH assumption met (p>=0.05),code/14_morphology_kaplan.R
+Survival diagnostic,Wound smoothed,cox.zph (Schoenfeld),proportional-hazards test (treatment),cox.zph chi-sq,0.15,1,24,NA,NA,NA,0.700,PH assumption met (p>=0.05),code/14_morphology_kaplan.R
 Time-series diagnostic,Color (D-scale),diagnostic,AR(1) temporal autocorrelation (LRT vs no-corr),LRT / Wald,0.00,1,NA,NA,NA,NA,1.000,no significant residual autocorrelation,code/23_timeseries_diagnostics.R
 Time-series diagnostic,Color (D-scale),diagnostic,"nonlinearity of time (quadratic vs linear, LRT)",LRT / Wald,15.77,2,NA,NA,NA,NA,<0.001,trajectory is NONLINEAR — linear slope is an approximation,code/23_timeseries_diagnostics.R
 Time-series diagnostic,Color (D-scale),diagnostic,random slope of time by coral (LRT vs intercept-only),LRT / Wald,83.98,2,NA,NA,NA,NA,<0.001,random slope improves fit (individual trajectories differ),code/23_timeseries_diagnostics.R

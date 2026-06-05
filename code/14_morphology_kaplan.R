@@ -125,6 +125,53 @@ cox_per_genet <- map_dfr(traits, fit_cox_per_genet)
 cox_results   <- bind_rows(cox_overall, cox_per_genet)
 write_csv(cox_results, file.path(TBL_DIR, "14_cox_hazard_ratios.csv"))
 
+# ---- Proportional-hazards diagnostics for EVERY overall Cox model ----------
+# cox.zph (Schoenfeld residual test + plot) for all traits, not just the one
+# that violated PH. Documents the assumption visually for each model.
+DIAG_DIR <- file.path(FIG_DIR, "diagnostics")
+dir.create(DIAG_DIR, recursive = TRUE, showWarnings = FALSE)
+ph_rows <- list()
+for (tr in traits) {
+  d <- events |> filter(trait == tr)
+  if (sum(d$event) < 5) next
+  fit <- tryCatch(coxph(Surv(event_day, event) ~ treatment + strata(thicket),
+                        data = d), error = function(e) NULL)
+  if (is.null(fit)) next
+  zph <- tryCatch(cox.zph(fit), error = function(e) NULL)
+  if (is.null(zph)) next
+  ph_rows[[tr]] <- tibble(
+    trait      = tr,
+    n_event    = fit$nevent,
+    zph_chisq  = zph$table["treatment", "chisq"],
+    zph_p      = zph$table["treatment", "p"],
+    ph_ok      = zph$table["treatment", "p"] >= 0.05
+  )
+  ttl <- sprintf("PH check: %s (zph p=%.3f)", tr, zph$table["treatment", "p"])
+  tt  <- as.numeric(zph$time); yy <- as.numeric(zph$y)
+  png(file.path(DIAG_DIR, paste0("14_cox_ph_", tr, ".png")),
+      width = 800, height = 500, res = 130)
+  # plot.cox.zph's smoothing spline needs >4 distinct event times; with fewer
+  # it silently skips the panel. Use the spline plot when there are enough
+  # distinct times, otherwise a manual scaled-Schoenfeld scatter (always valid).
+  if (length(unique(tt)) > 4) {
+    ok <- tryCatch({ plot(zph, resid = TRUE, main = ttl); TRUE },
+                   error = function(e) FALSE)
+  } else ok <- FALSE
+  if (!ok) {
+    plot(tt, yy, xlab = "Time (days)", ylab = "Scaled Schoenfeld residual",
+         main = ttl, pch = 19, col = "grey40",
+         ylim = range(c(0, yy), na.rm = TRUE))
+    abline(h = 0, lty = 2, col = "grey60")
+    if (length(unique(tt)) > 2)
+      try(lines(lowess(tt, yy), col = "#D55E00", lwd = 2), silent = TRUE)
+  }
+  dev.off()
+}
+cox_ph <- bind_rows(ph_rows)
+write_csv(cox_ph, file.path(TBL_DIR, "14_cox_ph_tests.csv"))
+cat("\n=== Proportional-hazards (cox.zph) tests, all overall Cox models ===\n")
+print(as.data.frame(cox_ph |> mutate(across(where(is.numeric), \(x) round(x, 4)))))
+
 # ---- LRT: does genet × treatment improve over treatment + genet? ----------
 fit_lrt <- function(tr) {
   d <- events |> filter(trait == tr)

@@ -594,6 +594,29 @@ ts_rows <- if (file.exists(file.path(TBL_DIR, "23_timeseries_diagnostics.csv")))
 } else tibble()
 
 # ===========================================================================
+# Block 12 — Cox proportional-hazards tests (script 14, all overall models)
+# ===========================================================================
+coxph_rows <- if (file.exists(file.path(TBL_DIR, "14_cox_ph_tests.csv"))) {
+  read_csv(file.path(TBL_DIR, "14_cox_ph_tests.csv"), show_col_types = FALSE) |>
+    transmute(
+      domain          = "Survival diagnostic",
+      response        = str_to_sentence(gsub("_", " ", trait)),
+      model_type      = "cox.zph (Schoenfeld)",
+      term            = "proportional-hazards test (treatment)",
+      test            = "cox.zph chi-sq",
+      statistic       = zph_chisq,
+      df1             = 1, df2 = NA_real_, n = n_event,
+      estimate        = NA_real_, units = NA_character_,
+      pct_change      = NA_real_, ci_low = NA_real_, ci_high = NA_real_,
+      p_value         = zph_p,
+      qualitative     = if_else(ph_ok, "PH assumption met (p>=0.05)",
+                                "PH violated — see time-varying refit"),
+      source_script   = "code/14_morphology_kaplan.R",
+      source_artifact = "output/tables/14_cox_ph_tests.csv"
+    )
+} else tibble()
+
+# ===========================================================================
 # Combine and write
 # ===========================================================================
 master <- bind_rows(anova12, genet_rows, r2_rows,
@@ -601,7 +624,7 @@ master <- bind_rows(anova12, genet_rows, r2_rows,
                     cox_rows, cox_genet_rows, cox_tt,
                     lrt13, pca_load, pca_disp, bw_lm,
                     clmm_rows, bw_means_rows, bw_pct_drop, zoox_means_rows,
-                    ts_rows) |>
+                    ts_rows, coxph_rows) |>
   mutate(across(c(statistic, estimate, pct_change, ci_low, ci_high, p_value),
                 \(x) round(x, 4))) |>
   arrange(domain, response, model_type, term)

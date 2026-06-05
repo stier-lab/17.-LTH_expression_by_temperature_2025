@@ -253,6 +253,8 @@ A diagnostic swarm (`output/diagnostics/{A,B,C,D}_*.{csv,md}`) checked every pri
 
   **Verdict: the parsimonious linear / random-intercept model is retained for the headline.** The richer model neither changes the conclusions nor improves the fit (except AR(1) for PAM, which leaves the estimates unchanged); the simplification is therefore justified rather than merely convenient. Residual ACF plots are in `figures/diagnostics/I_*_acf.png`.
 
+- **Diagnostic coverage (complete).** Every fitted model has both a result visualization and a residual/assumption diagnostic, audited by `code/25_model_diagnostic_coverage.R` (`output/tables/25_model_diagnostic_coverage.csv`, `output/diagnostics/K_model_coverage_report.md`): **34/34 models covered, 0 gaps.** Continuous LMMs and the OLS/GLMM models use DHARMa simulated-residual plots; the ordinal color model uses an observed-vs-fitted check; the penalized morphology GLMMs each have a DHARMa plot; and **all seven overall Cox models now have proportional-hazards (Schoenfeld) diagnostics** (`figures/diagnostics/14_cox_ph_*.png`, `output/tables/14_cox_ph_tests.csv`) — the PH assumption is met for every overall model (all cox.zph p ≥ 0.059). Every diagnostic test statistic is also recorded in the master results table (`output/tables/20_master_results.csv`, domains `Time-series diagnostic` and `Survival diagnostic`).
+
 ## 11. What's still missing
 
 - **Chlorophyll-a values** — column exists in master metadata but is currently empty; need to fill in once spec values come back from the chl-a assay. The pipeline (`code/06_symbiont_chl.R`) already handles them via `left_join` once values are added to `data/raw/metadata/metadata.csv`.
