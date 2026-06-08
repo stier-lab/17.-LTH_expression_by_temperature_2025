@@ -617,6 +617,28 @@ coxph_rows <- if (file.exists(file.path(TBL_DIR, "14_cox_ph_tests.csv"))) {
 } else tibble()
 
 # ===========================================================================
+# Block 13 — Thermal context vs Cunning et al. 2024 acute ED50 (script 26)
+# ===========================================================================
+thermal_rows <- if (file.exists(file.path(TBL_DIR, "26_thermal_context.csv"))) {
+  read_csv(file.path(TBL_DIR, "26_thermal_context.csv"), show_col_types = FALSE) |>
+    transmute(
+      domain          = "Thermal context (external benchmark)",
+      response        = "A. pulchra acute Fv/Fm ED50 (Cunning et al. 2024, Mahana)",
+      model_type      = "CBASS reference",
+      term            = metric,
+      test            = "reference value",
+      statistic       = value,
+      df1 = NA_real_, df2 = NA_real_, n = NA_real_,
+      estimate = value, units = "°C or count",
+      pct_change = NA_real_, ci_low = NA_real_, ci_high = NA_real_,
+      p_value = NA_real_,
+      qualitative = "acute thermal-tolerance benchmark; 31C chronic is sublethal (below acute ED50)",
+      source_script = "code/26_thermal_context.R",
+      source_artifact = "data/external/cunning2024_apulchra_ed50.csv"
+    )
+} else tibble()
+
+# ===========================================================================
 # Combine and write
 # ===========================================================================
 master <- bind_rows(anova12, genet_rows, r2_rows,
@@ -624,7 +646,7 @@ master <- bind_rows(anova12, genet_rows, r2_rows,
                     cox_rows, cox_genet_rows, cox_tt,
                     lrt13, pca_load, pca_disp, bw_lm,
                     clmm_rows, bw_means_rows, bw_pct_drop, zoox_means_rows,
-                    ts_rows, coxph_rows) |>
+                    ts_rows, coxph_rows, thermal_rows) |>
   mutate(across(c(statistic, estimate, pct_change, ci_low, ci_high, p_value),
                 \(x) round(x, 4))) |>
   arrange(domain, response, model_type, term)

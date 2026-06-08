@@ -224,6 +224,18 @@ Standard curve: SA (cm²) = 0.75 + 61.9 × wax mass (g), based on 15 cylinders o
 
 ---
 
+## 9b. Thermal context — LTH treatments vs *A. pulchra* acute thermal tolerance
+
+We benchmarked the LTH design against an independent, calibrated acute thermal-tolerance dataset for the **same species and island**: Cunning et al. 2024 (*Coral Reefs*) measured CBASS Fv/Fm **ED50** for 20 *A. pulchra* genets from **Mahana, Mo'orea** (`data/external/cunning2024_apulchra_ed50.csv`; `code/26_thermal_context.R`; `figures/26_thermal_context.{pdf,png}`).
+
+**(1) The LTH chronic treatments are sublethal relative to acute limits.** Acute ED50 averaged **35.4 °C** across genets (range 34.4–36.6 °C, SD 0.59). The LTH heated treatment (31 °C) sits **4.4 °C below the mean acute ED50** (3.4 °C below even the most heat-sensitive genet); ambient (28 °C) is 7.4 °C below. The strong, progressive Fv/Fm decline, paling, symbiont loss, and calcification suppression we observe at 31 °C are therefore a **chronic-sublethal** response — accumulated over weeks well below the acute photochemical threshold — not acute photoinhibition. (ED50 is an 18-h acute metric and is used here only as a reference axis, not as the chronic temperature scale.)
+
+**(2) Among-genotype thermal-tolerance variation is concordant across methods.** Cunning's acute assay resolved substantial heritable variation (ED50 range 2.2 °C; ED50 predicts classic bleaching, R = 0.74). The LTH chronic experiment independently detects among-genotype variation in the same population — the resilience ranking **C > D > A** across PAM, color, symbionts, and calcification (`output/tables/26_genotype_variation_concordance.csv`). Both the acute (CBASS) and chronic (LTH) methods thus agree that Mahana *A. pulchra* harbors ecologically meaningful, genotype-level thermal-tolerance variation.
+
+**Caveat / future work.** The LTH thicket labels (A, C, D) are arbitrary and **not genotype-matched** to Cunning's numbered genets, so we cannot yet correlate ED50 against chronic resilience at the individual-genet level. Cunning's genets are genotyped (`genet_map` in the CBASS_methods repo); calling SNPs from the forthcoming LTH RNA-seq and matching them to that map would enable the direct acute-vs-chronic genet correlation — the natural next test.
+
+---
+
 ## 10. Statistical limitations and robustness
 
 A diagnostic swarm (`output/diagnostics/{A,B,C,D}_*.{csv,md}`) checked every primary model. Four concerns are worth flagging in the Methods section of the manuscript:
