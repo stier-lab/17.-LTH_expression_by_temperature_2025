@@ -28,6 +28,16 @@ Rscript code/15_multivariate.R     # PCA already includes chl placeholder
 - `code/22_go_enrichment.R` — top genes per contrast → GO term enrichment
 - `code/23_expression_x_phenotype.R` — link gene-level fold changes to the physiological response axis from `code/15_multivariate.R` (PC1)
 
+**Collaborator brief:** a full RNA-seq analysis proposal + phenotype-anchored DE contrasts for Shreya (Bay lab) is in **`docs/for_shreya/analysis_proposal.md`**.
+
+### Genet matching: link thickets A/C/D to Cunning et al. 2024 CBASS genets
+**Why:** Cunning measured acute Fv/Fm ED50 for 20 genotyped *A. pulchra* genets from **Mahana, Mo'orea** (same site as LTH; `data/external/cunning2024_apulchra_ed50.csv`). Matching A/C/D to those genets would let us test whether acute ED50 predicts our chronic resilience ranking (C > D > A).
+**What we have:** exact per-thicket collection GPS (Mahana / Tiahura, NW Mo'orea) from `metadata.csv` —
+- Thicket **A**: 17.49735 °S, 149.91557 °W
+- Thicket **C**: 17.49808 °S, 149.91595 °W
+- Thicket **D**: 17.49726 °S, 149.91581 °W
+**Plan:** call SNPs from LTH host RNA-seq → per-thicket genotypes → match to Cunning's genotyped genets (`genet_map` in github.com/jrcunning/CBASS_methods). Full step-by-step in `docs/for_shreya/analysis_proposal.md` §4. Open ask: obtain Cunning/Putnam host genotype data + reference genome.
+
 ### Microscope photo series (Molly's n=16 photo subset)
 **Status:** Photos on Stier-NAS at `smb://stier-nas1.eemb.ucsb.edu`. Index documents extracted to `notes/LTH_Microscope_Characterization_Photos.md` and `notes/LTH_Color_Card_Photos.md`.
 **Use case:** Supplementary Figure of representative wound-healing time series — one row of photos per treatment, columns = days. Doesn't need pipeline integration; just a layout.
